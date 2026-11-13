@@ -1,0 +1,40 @@
+{
+  "uci_id": 501,
+  "path": "datasets/uci_501_beijing_pm25/data.jsonl",
+  "changed_records": 758,
+  "changed_fields": {
+    "input.TEMP": 691,
+    "input.PRES": 249
+  },
+  "max_absolute_change": 3.3301148505415767e-09,
+  "max_relative_change": 3.3188955459864326e-12,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "input.TEMP",
+      4.66666666666667,
+      4.66666666667
+    ],
+    [
+      "input.TEMP",
+      9.33333333333333,
+      9.33333333333
+    ],
+    [
+      "input.PRES",
+      1015.66666666667,
+      1015.66666667
+    ],
+    [
+      "input.TEMP",
+      3.85714285714286,
+      3.85714285714
+    ],
+    [
+      "input.TEMP",
+      21.0571428571429,
+      21.0571428571
+    ]
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 10,
+    "name": "Automobile",
+    "batch": 2,
+    "raw_rows_selected": 205,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 201,
+    "invalid_label_examples": 4,
+    "excluded_source_rows": 0,
+    "output_examples": 201,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 138,
+    "input_field_count": 23,
+    "examples_with_null_input": 8,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 8,
+    "source_url": "https://archive.ics.uci.edu/dataset/10/automobile",
+    "files": [
+      {
+        "path": "datasets/uci_10_automobile_price/part-00001.jsonl.gz",
+        "records": 201,
+        "sha256": "d0231717e27d5a5b0b8e77e654b3486d38926c592d6ce579830be4559f0dc6d0",
+        "bytes": 27201
+      }
+    ],
+    "uncompressed_sha256": "ffc2687e92b2f2be5434b5573c683f96bfb751c157cc4ccdfc2b092ff875f305"
+  },
+  "contract": {
+    "key": "automobile_price",
+    "targets": [
+      [
+        "price",
+        "automobile_price",
+        "source price unit (not specified in archive)",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the price of a 1985 automobile from its specifications.",
+    "context": "make, fuel_type, aspiration, body_style, drive_wheels, engine_location, engine_type and fuel_system are categorical specifications. Door/cylinder counts are decoded. Other measurements retain the original UCI scales. Insurance risk and normalized insurance losses are excluded.",
+    "split": "group_by_recorded_vehicle_configuration; exact model IDs unavailable"
+  },
+  "input_fields": [
+    "make",
+    "fuel_type",
+    "aspiration",
+    "num_doors",
+    "body_style",
+    "drive_wheels",
+    "engine_location",
+    "wheel_base",
+    "length",
+    "width",
+    "height",
+    "curb_weight",
+    "engine_type",
+    "num_cylinders",
+    "engine_size",
+    "fuel_system",
+    "bore",
+    "stroke",
+    "compression_ratio",
+    "horsepower",
+    "peak_rpm",
+    "city_mpg",
+    "highway_mpg"
+  ],
+  "excluded_input_columns": [
+    "symboling",
+    "normalized_losses",
+    "price"
+  ],
+  "grouping_columns": [
+    "make",
+    "body_style",
+    "engine_type",
+    "engine_size",
+    "wheel_base",
+    "length",
+    "width",
+    "height"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/10/automobile"
+  },
+  "source_archive_sha256": "0360d2379d2d505540f0c43bfe0ada96244ad2662faf9dada1629824948294ec",
+  "dataset_doi": "10.24432/C5B01C",
+  "creators": [
+    "Jeffrey Schlimmer"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_10/automobile_price": {
+      "examples": 201,
+      "label_quantiles": {
+        "0.0": 5118,
+        "0.01": 5195,
+        "0.5": 10295,
+        "0.99": 40960,
+        "1.0": 45400
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 1021,
+        "median": 1029,
+        "max": 1044
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "insurance_features_removed",
+      "count": 2,
+      "action": "remove",
+      "detail": "symboling is explicitly price-related in the source; insurance-loss summary also excluded."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 8,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

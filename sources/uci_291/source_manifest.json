@@ -1,0 +1,22 @@
+{
+  "uci_id": "291",
+  "priority": "A",
+  "name": "Airfoil Self-Noise",
+  "domain": "航空声学",
+  "reported_size": "1503",
+  "target": "声压级，dB",
+  "input_description": "频率、攻角、弦长、气流速度、位移厚度",
+  "missingness": "官网无缺失",
+  "proposed_split": "按实验工况分组，随机划分仅作补充",
+  "screening_notes": "5个输入，单位清晰，适合短prompt；工况分组键需用原文件验证",
+  "source_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/291/airfoil+self+noise.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "5c7767ba53ad827d3f48ba1eb9434117f4892df8f10bc4c99e118a9e8a7ae07c",
+  "archive_bytes": 60126,
+  "metadata_status": "ok"
+}

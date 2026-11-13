@@ -1,0 +1,22 @@
+{
+  "uci_id": "275",
+  "priority": "A",
+  "name": "Bike Sharing",
+  "domain": "城市出行",
+  "reported_size": "约1.74万小时记录，官网标17389",
+  "target": "cnt，总租借量",
+  "input_description": "日期、小时、天气、节假日",
+  "missingness": "官网无缺失",
+  "proposed_split": "按时间划分",
+  "screening_notes": "删除casual和registered，二者相加就是cnt；小时与日汇总不能跨split混用；原始行数待文件核验",
+  "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/275/bike+sharing+dataset.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+  "archive_bytes": 279992,
+  "metadata_status": "ok"
+}

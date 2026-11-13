@@ -1,0 +1,23 @@
+{
+  "uci_id": "162",
+  "priority": "B",
+  "name": "Forest Fires",
+  "domain": "林业与灾害",
+  "reported_size": "517",
+  "target": "area，过火面积",
+  "input_description": "气象、火险指数、月份与空间坐标",
+  "missingness": "官网无缺失",
+  "proposed_split": "空间或事件分组可行性待查",
+  "screening_notes": "偏斜目标，官方实验使用log1p；需核验零值比例，保留原单位评估；小样本难任务不能过采样",
+  "source_url": "https://archive.ics.uci.edu/dataset/162/forest+fires",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/162/forest+fires",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/162/forest+fires.zip",
+  "downloaded_at_utc": "2026-11-09T20:14:00Z",
+  "archive_sha256": "abd40d6142b5e30fea73ff7292f91dcdd8b64bf3b3f36e20f96c37f5d14f06fb",
+  "archive_bytes": 8932,
+  "metadata_status": "ok",
+  "batch": 2
+}

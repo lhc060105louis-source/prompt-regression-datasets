@@ -1,0 +1,22 @@
+{
+  "uci_id": "464",
+  "priority": "A",
+  "name": "Superconductivty Data",
+  "domain": "超导材料",
+  "reported_size": "21263",
+  "target": "临界温度，单位需随原文件核对",
+  "input_description": "81项材料统计特征；可研究化学式输入版本",
+  "missingness": "官网无缺失",
+  "proposed_split": "按化学组成或材料家族分组",
+  "screening_notes": "train.csv与unique_m.csv是同一批材料的不同表征，不能当独立数据集；化学式版本的效果尚未验证",
+  "source_url": "https://archive.ics.uci.edu/dataset/464/superconductivty+data",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/464/superconductivty+data",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/464/superconductivty+data.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:59Z",
+  "archive_sha256": "87f4490d73390ff94ee01dbf0d7d32abc80b22f2c803d471765cfc46a9f6371e",
+  "archive_bytes": 8300005,
+  "metadata_status": "ok"
+}

@@ -1,0 +1,30 @@
+[
+  {
+    "source_index": 9,
+    "file": "imports-85.data",
+    "row": 10,
+    "target": "price",
+    "reason": "missing_nonfinite_or_negative_label"
+  },
+  {
+    "source_index": 44,
+    "file": "imports-85.data",
+    "row": 45,
+    "target": "price",
+    "reason": "missing_nonfinite_or_negative_label"
+  },
+  {
+    "source_index": 45,
+    "file": "imports-85.data",
+    "row": 46,
+    "target": "price",
+    "reason": "missing_nonfinite_or_negative_label"
+  },
+  {
+    "source_index": 129,
+    "file": "imports-85.data",
+    "row": 130,
+    "target": "price",
+    "reason": "missing_nonfinite_or_negative_label"
+  }
+]

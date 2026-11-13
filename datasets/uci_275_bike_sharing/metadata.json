@@ -1,0 +1,182 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 275,
+    "name": "Bike Sharing",
+    "raw_rows_selected": 17379,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 17379,
+    "invalid_label_examples": 0,
+    "output_examples": 17379,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 731,
+    "input_field_count": 10,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_275_bike_sharing/part-00001.jsonl.gz",
+        "records": 17379,
+        "sha256": "9204d8339f54190931f0e7fadd1e2aded1e851882b3e1514ea6e459608b0d2b0",
+        "bytes": 1691786
+      }
+    ],
+    "uncompressed_sha256": "41d2ec8691a148e34819207b144f0855637c805e17a9f74d975d8d18a29ab4c8"
+  },
+  "contract": {
+    "key": "bike_sharing",
+    "targets": [
+      [
+        "cnt",
+        "hourly_bike_rentals",
+        "rentals per hour",
+        "count"
+      ]
+    ],
+    "task": "Estimate the total number of Capital Bikeshare rentals during the specified hour given the recorded weather and calendar conditions.",
+    "context": "dteday: date; hr: hour 0-23; holiday and workingday: yes/no; weekday: source day-of-week code; weathersit: source weather category. temp, atemp, hum and windspeed retain the original normalized source values, not raw physical units. This is a contemporaneous conditional estimate, not a future-weather forecast.",
+    "exclude": [
+      "instant",
+      "casual",
+      "registered",
+      "season",
+      "yr",
+      "mnth"
+    ],
+    "group": [
+      "dteday"
+    ],
+    "group_note": "All hours in the same day. Daily aggregate file is excluded from prepared examples.",
+    "split": "chronological_by_date",
+    "source_file": "hour.csv"
+  },
+  "input_fields": [
+    "dteday",
+    "hr",
+    "holiday",
+    "weekday",
+    "workingday",
+    "weathersit",
+    "temp",
+    "atemp",
+    "hum",
+    "windspeed"
+  ],
+  "excluded_input_columns": [
+    "cnt",
+    "instant",
+    "casual",
+    "registered",
+    "season",
+    "yr",
+    "mnth"
+  ],
+  "grouping_rule": "All hours in the same day. Daily aggregate file is excluded from prepared examples. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "b70182d0d0508e9abbb79306ce5c0cec34869000f8220175ac83d11dbe845401",
+  "dataset_doi": "10.24432/C5W894",
+  "creators": [
+    "Hadi Fanaee-T"
+  ],
+  "citation_paper": {
+    "ID": 422,
+    "type": "NATIVE",
+    "title": "Event labeling combining ensemble detectors and background knowledge",
+    "authors": "Hadi Fanaee-T, João Gama",
+    "venue": "Progress in Artificial Intelligence",
+    "year": 2013,
+    "journal": null,
+    "DOI": "10.1007/s13748-013-0040-3",
+    "URL": "https://www.semanticscholar.org/paper/bc42899f599d31a5d759f3e0a3ea8b52479d6423",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_275/hourly_bike_rentals": {
+      "examples": 17379,
+      "label_quantiles": {
+        "0.0": 1,
+        "0.01": 2,
+        "0.5": 142,
+        "0.99": 782.2200000000012,
+        "1.0": 977
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 836,
+        "median": 848,
+        "max": 849
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "direct_target_components",
+      "count": 17379,
+      "action": "remove_casual_and_registered",
+      "detail": "Verified casual + registered == cnt on every row.",
+      "severity": "medium"
+    },
+    {
+      "code": "website_row_count_mismatch",
+      "count": 17379,
+      "action": "use_actual_file_count",
+      "detail": "Actual hour.csv has 17379 rows; API reports 17389. Daily aggregates are excluded.",
+      "severity": "medium"
+    },
+    {
+      "code": "normalization_and_season_documentation_conflict",
+      "count": 17379,
+      "action": "retain_normalized_values_and_drop_season",
+      "detail": "Website and archive disagree on temperature normalization and season code descriptions. No inverse conversion is performed; season is dropped as redundant to date.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

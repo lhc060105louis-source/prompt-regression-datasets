@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate appliance energy use during a ten-minute observation in a monitored house from contemporaneous measurements.",
+  "context": "T1..T9 are Celsius temperatures and RH_1..RH_9 percent humidities: kitchen, living room, laundry, office, bathroom, outside north wall, ironing room, teenager room, parents room. lights: lighting energy in Wh; T_out/Tdewpoint: outdoor/dewpoint Celsius; Press_mm_hg: pressure in mm Hg; RH_out: percent; Windspeed: m/s; Visibility: km; date: timestamp. Source weather is hourly/interpolated; no real-time forecasting claim is made.",
+  "targets": [
+    {
+      "column": "Appliances",
+      "name": "appliance_energy",
+      "unit": "Wh per 10-minute observation",
+      "type": "continuous"
+    }
+  ]
+}

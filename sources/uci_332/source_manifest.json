@@ -1,0 +1,23 @@
+{
+  "uci_id": "332",
+  "priority": "B",
+  "name": "Online News Popularity",
+  "domain": "媒体传播",
+  "reported_size": "约4万；官网标39797",
+  "target": "shares，分享次数",
+  "input_description": "标题/正文统计、主题与情感特征",
+  "missingness": "官网无缺失",
+  "proposed_split": "按发布时间顺序或相对时间划分",
+  "screening_notes": "不含新闻正文；排除url及非预测字段；关键词/引用文章的分享统计需检查是否含未来信息；不自动抓取原文扩充",
+  "source_url": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/332/online+news+popularity.zip",
+  "downloaded_at_utc": "2026-11-09T20:14:01Z",
+  "archive_sha256": "dba2ae526f62ccef6f2f8efb53b0268319f4d0d2719bb98d88958cfe31d58a22",
+  "archive_bytes": 7476401,
+  "metadata_status": "ok",
+  "batch": 2
+}

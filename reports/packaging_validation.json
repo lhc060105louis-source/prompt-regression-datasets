@@ -1,0 +1,220 @@
+{
+  "status": "passed",
+  "dataset_version": "2.1.0",
+  "records": 1067479,
+  "sources": 29,
+  "tasks": 33,
+  "datasets": [
+    {
+      "uci_id": 165,
+      "records": 1005,
+      "shards": 1,
+      "uncompressed_sha256": "6f9a9cf76c1f30beac89d9e11bece8b6b0c79dca1029c8a21caefcb8cb87457c",
+      "status": "passed"
+    },
+    {
+      "uci_id": 242,
+      "records": 1536,
+      "shards": 1,
+      "uncompressed_sha256": "57469df967c389fedf02c1bacbd8fcad33ab6abaae604c96bf5e64b3d9d27fa2",
+      "status": "passed"
+    },
+    {
+      "uci_id": 294,
+      "records": 9527,
+      "shards": 1,
+      "uncompressed_sha256": "6f59aae13a92d60ab278852f8e28b814b81d3e1b8199d3ae9d1fb9dbca056194",
+      "status": "passed"
+    },
+    {
+      "uci_id": 291,
+      "records": 1503,
+      "shards": 1,
+      "uncompressed_sha256": "46dc18d9fa4bcfcd700a2dd449905ae52d3f6e9a87bde5212c186f0e4cd20fb0",
+      "status": "passed"
+    },
+    {
+      "uci_id": 243,
+      "records": 308,
+      "shards": 1,
+      "uncompressed_sha256": "30d1d38803614b67f1a51694d3abd5361cae89155e2ce2085a9ab55c16ac0f73",
+      "status": "passed"
+    },
+    {
+      "uci_id": 1,
+      "records": 4177,
+      "shards": 1,
+      "uncompressed_sha256": "8677e532c744dfe63f0e3d719076e8cdd2b03f0c22a3ac6b4b676ae7197b5aa5",
+      "status": "passed"
+    },
+    {
+      "uci_id": 9,
+      "records": 398,
+      "shards": 1,
+      "uncompressed_sha256": "ce85884d92c6b4ca952d551b5ffa19c40af2dfe93e83b90169c62f9d662aca1c",
+      "status": "passed"
+    },
+    {
+      "uci_id": 477,
+      "records": 414,
+      "shards": 1,
+      "uncompressed_sha256": "917c4304f22baa80409272cf68eca284dfec0ca7adea0a862de0385daf7601a7",
+      "status": "passed"
+    },
+    {
+      "uci_id": 29,
+      "records": 209,
+      "shards": 1,
+      "uncompressed_sha256": "55835c64fb0f0647b484e767c6edeb0c0e9880f93bd33638e3923f8b959fc880",
+      "status": "passed"
+    },
+    {
+      "uci_id": 87,
+      "records": 167,
+      "shards": 1,
+      "uncompressed_sha256": "1e4e0a895ae940f974d68aea3e16553dc11debc7dbf1542efe20389bbe810b4d",
+      "status": "passed"
+    },
+    {
+      "uci_id": 464,
+      "records": 21193,
+      "shards": 1,
+      "uncompressed_sha256": "762dda6dd6acec429b28718d6caecb7d8ef5774bce379144cc14ce3c8393ef7a",
+      "status": "passed"
+    },
+    {
+      "uci_id": 504,
+      "records": 907,
+      "shards": 1,
+      "uncompressed_sha256": "bd7b5dc8aed59f8810c3baa3ce3e78b9ad3b6c7c31692c2da0ff8261b41669fe",
+      "status": "passed"
+    },
+    {
+      "uci_id": 186,
+      "records": 5320,
+      "shards": 1,
+      "uncompressed_sha256": "deda2e6d958efdbb6ea8a37d5c45518f97e07ef3e572c664ad0d046321feabee",
+      "status": "passed"
+    },
+    {
+      "uci_id": 320,
+      "records": 1043,
+      "shards": 1,
+      "uncompressed_sha256": "e24750f5aa812446bd3413596a506e7045be737304c7afba6e5ea6d6327bf84b",
+      "status": "passed"
+    },
+    {
+      "uci_id": 189,
+      "records": 11750,
+      "shards": 1,
+      "uncompressed_sha256": "c554164e09b9242708c0e71c54f4d821ef74e796a8d68ba09a0947baaab03c24",
+      "status": "passed"
+    },
+    {
+      "uci_id": 597,
+      "records": 1197,
+      "shards": 1,
+      "uncompressed_sha256": "c7db103100fcd9cbf858e2073da02575649bc00d73182438944342e65537742f",
+      "status": "passed"
+    },
+    {
+      "uci_id": 275,
+      "records": 17379,
+      "shards": 1,
+      "uncompressed_sha256": "41d2ec8691a148e34819207b144f0855637c805e17a9f74d975d8d18a29ab4c8",
+      "status": "passed"
+    },
+    {
+      "uci_id": 492,
+      "records": 48187,
+      "shards": 1,
+      "uncompressed_sha256": "1593dff7ea446563cf13c692f8db980dfe690e602af5b122603eadd70f35182b",
+      "status": "passed"
+    },
+    {
+      "uci_id": 10,
+      "records": 201,
+      "shards": 1,
+      "uncompressed_sha256": "ffc2687e92b2f2be5434b5573c683f96bfb751c157cc4ccdfc2b092ff875f305",
+      "status": "passed"
+    },
+    {
+      "uci_id": 265,
+      "records": 44019,
+      "shards": 1,
+      "uncompressed_sha256": "34778c35ecd1dd80506d2387b0b065b6c4cbd947bb55f341b4a05f5b5e1f2971",
+      "status": "passed"
+    },
+    {
+      "uci_id": 560,
+      "records": 8760,
+      "shards": 1,
+      "uncompressed_sha256": "d42acf005d6e4b39caa9e89f5fc783cb4146c6023dfdf3664966f8f5052be821",
+      "status": "passed"
+    },
+    {
+      "uci_id": 374,
+      "records": 19735,
+      "shards": 1,
+      "uncompressed_sha256": "4dde7a1e40dcd956b0aee0529f8adda1bdb876fdc71422168b79c116a24284f4",
+      "status": "passed"
+    },
+    {
+      "uci_id": 501,
+      "records": 412029,
+      "shards": 5,
+      "uncompressed_sha256": "39a7bd09aad812077bf66e7fc7d144b8cf280447edd2aad317d1ccb63f313c2b",
+      "status": "passed"
+    },
+    {
+      "uci_id": 551,
+      "records": 73452,
+      "shards": 1,
+      "uncompressed_sha256": "8a951fdf66474d5432b572d55bf96ac21c7e00948c78a41ecc778db7f409593a",
+      "status": "passed"
+    },
+    {
+      "uci_id": 440,
+      "records": 241600,
+      "shards": 3,
+      "uncompressed_sha256": "509fcbd7bf9f12fdf82521f68a1ef2665f4563668a8159ae78676c25e0661788",
+      "status": "passed"
+    },
+    {
+      "uci_id": 332,
+      "records": 39644,
+      "shards": 1,
+      "uncompressed_sha256": "35a83067bad432ff112c2de960a1155d5d5824790db5a1e4a0a9fd6d5f896968",
+      "status": "passed"
+    },
+    {
+      "uci_id": 555,
+      "records": 99277,
+      "shards": 1,
+      "uncompressed_sha256": "36f5d2a5cf6b57812294e7b6df23522b6265ffbbcf27913c2fdaecf3b393eaa7",
+      "status": "passed"
+    },
+    {
+      "uci_id": 162,
+      "records": 513,
+      "shards": 1,
+      "uncompressed_sha256": "bcf2ac91d43309d2430189c51f3a7a34d9f374715c56a84b4f1eace63197f0dc",
+      "status": "passed"
+    },
+    {
+      "uci_id": 925,
+      "records": 2029,
+      "shards": 1,
+      "uncompressed_sha256": "96db79263b25ebba0e56095f28177adfe782de5116ebfcf4ae21f967d77621a1",
+      "status": "passed"
+    }
+  ],
+  "checks": [
+    "Each source data.jsonl matched the v2.1.0 checksum",
+    "Decompressing and concatenating shards reproduces the original data.jsonl byte for byte",
+    "Every shard below 50 MiB",
+    "No training executed"
+  ],
+  "raw_archives_included": false,
+  "local_histories_included": false
+}

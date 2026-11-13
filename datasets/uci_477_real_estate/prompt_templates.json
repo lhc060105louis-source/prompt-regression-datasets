@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the house price per unit area in Sindian, New Taipei City, Taiwan.",
+  "context": "house_age_years: age in years; mrt_distance_m: distance to the nearest MRT station in metres; convenience_stores: nearby store count; latitude and longitude: degrees. transaction_date retains the source decimal-year code. One ping is approximately 3.3 square metres. The target is not the total property price.",
+  "targets": [
+    {
+      "column": "price_per_area",
+      "name": "house_price_per_unit_area",
+      "unit": "10000 New Taiwan dollars per ping",
+      "type": "continuous"
+    }
+  ]
+}

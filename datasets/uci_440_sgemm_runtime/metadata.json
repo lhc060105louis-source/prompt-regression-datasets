@@ -1,0 +1,176 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 440,
+    "name": "SGEMM GPU kernel performance",
+    "batch": 2,
+    "raw_rows_selected": 241600,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 241600,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 241600,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 241600,
+    "input_field_count": 14,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+    "files": [
+      {
+        "path": "datasets/uci_440_sgemm_runtime/part-00001.jsonl.gz",
+        "records": 100000,
+        "sha256": "dc9a84f3a32bcf2e511fa1e365cad72205c1f5d8691b46f7a54ae8d772c77c93",
+        "bytes": 9565169
+      },
+      {
+        "path": "datasets/uci_440_sgemm_runtime/part-00002.jsonl.gz",
+        "records": 100000,
+        "sha256": "622fb419c9b49beefddebbdf9c63e841b14b65e8253017dedd505240942a7aa7",
+        "bytes": 9638849
+      },
+      {
+        "path": "datasets/uci_440_sgemm_runtime/part-00003.jsonl.gz",
+        "records": 41600,
+        "sha256": "89bacd414e5e254a6c580ccbb1562e0ae3a8a07ac137871140b0749061b9735f",
+        "bytes": 4116677
+      }
+    ],
+    "uncompressed_sha256": "509fcbd7bf9f12fdf82521f68a1ef2665f4563668a8159ae78676c25e0661788"
+  },
+  "contract": {
+    "key": "sgemm_runtime",
+    "targets": [
+      [
+        "mean_runtime_ms",
+        "mean_kernel_runtime",
+        "milliseconds",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the arithmetic mean runtime over four runs of a GPU SGEMM kernel multiplying two 2048 x 2048 matrices on the source workstation.",
+    "context": "MWG/NWG: workgroup tile dimensions; KWG: inner tile dimension; MDIMC/NDIMC: local workgroup sizes; MDIMA/NDIMB: local memory shape; KWI: loop unrolling; VWM/VWN: vector widths; STRM/STRN: memory stride flags; SA/SB: manual-cache flags. Hardware is the fixed NVIDIA GTX 680 setup in the source. Measured runtimes are outcomes and are not inputs.",
+    "split": "group_by_kernel_configuration; repeated run values remain together"
+  },
+  "input_fields": [
+    "MWG",
+    "NWG",
+    "KWG",
+    "MDIMC",
+    "NDIMC",
+    "MDIMA",
+    "NDIMB",
+    "KWI",
+    "VWM",
+    "VWN",
+    "STRM",
+    "STRN",
+    "SA",
+    "SB"
+  ],
+  "excluded_input_columns": [
+    "Run1 (ms)",
+    "Run2 (ms)",
+    "Run3 (ms)",
+    "Run4 (ms)"
+  ],
+  "grouping_columns": [
+    "MWG",
+    "NWG",
+    "KWG",
+    "MDIMC",
+    "NDIMC",
+    "MDIMA",
+    "NDIMB",
+    "KWI",
+    "VWM",
+    "VWN",
+    "STRM",
+    "STRN",
+    "SA",
+    "SB"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance"
+  },
+  "source_archive_sha256": "8d3ee0d82708df11b54debc6a4fbade77c604a047f019fa7940413032eb7b096",
+  "dataset_doi": "10.24432/C5MK70",
+  "creators": [
+    "Enrique Paredes",
+    "Rafael Ballester-Ripoll"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_440/mean_kernel_runtime": {
+      "examples": 241600,
+      "label_quantiles": {
+        "0.0": 13.3175,
+        "0.01": 20.885,
+        "0.5": 69.79,
+        "0.99": 2207.143875,
+        "1.0": 3341.5075
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 857,
+        "median": 860,
+        "max": 863
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "four_repeat_measurements",
+      "count": 241600,
+      "action": "arithmetic_mean_target",
+      "detail": "One mean-runtime target per configuration. Original four times saved in target_observations, never included in prompt. No fabricated variance label."
+    },
+    {
+      "code": "readme_internal_count_conflict",
+      "count": 241600,
+      "action": "use_file_count",
+      "detail": "Actual CSV has 241600 configurations; a paragraph of original Readme incorrectly says 261400."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 67399,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

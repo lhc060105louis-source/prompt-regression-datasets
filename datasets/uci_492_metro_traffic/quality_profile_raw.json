@@ -1,0 +1,176 @@
+{
+  "rows": 48204,
+  "columns": 9,
+  "exact_duplicate_rows": 17,
+  "column_profiles": {
+    "holiday": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "top_values": {
+        "None": 48143,
+        "Labor Day": 7,
+        "Thanksgiving Day": 6,
+        "Christmas Day": 6,
+        "New Years Day": 6,
+        "Martin Luther King Jr Day": 6,
+        "Columbus Day": 5,
+        "Veterans Day": 5,
+        "Washingtons Birthday": 5,
+        "Memorial Day": 5,
+        "Independence Day": 5,
+        "State Fair": 5
+      }
+    },
+    "temp": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5843,
+      "nonfinite_count": 0,
+      "zero_count": 10,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 250.7803,
+        "0.25": 272.16,
+        "0.5": 282.45,
+        "0.75": 291.806,
+        "0.99": 302.82,
+        "1.0": 310.07
+      }
+    },
+    "rain_1h": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 372,
+      "nonfinite_count": 0,
+      "zero_count": 44737,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 0,
+        "0.99": 3.27,
+        "1.0": 9831.3
+      }
+    },
+    "snow_1h": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "nonfinite_count": 0,
+      "zero_count": 48141,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 0,
+        "0.99": 0,
+        "1.0": 0.51
+      }
+    },
+    "clouds_all": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 60,
+      "nonfinite_count": 0,
+      "zero_count": 1988,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 1,
+        "0.5": 64,
+        "0.75": 90,
+        "0.99": 92,
+        "1.0": 100
+      }
+    },
+    "weather_main": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 11,
+      "top_values": {
+        "Clouds": 15164,
+        "Clear": 13391,
+        "Mist": 5950,
+        "Rain": 5672,
+        "Snow": 2876,
+        "Drizzle": 1821,
+        "Haze": 1360,
+        "Thunderstorm": 1034,
+        "Fog": 912,
+        "Smoke": 20,
+        "Squall": 4
+      }
+    },
+    "weather_description": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 38,
+      "top_values": {
+        "sky is clear": 11665,
+        "mist": 5950,
+        "overcast clouds": 5081,
+        "broken clouds": 4666,
+        "scattered clouds": 3461,
+        "light rain": 3372,
+        "few clouds": 1956,
+        "light snow": 1946,
+        "Sky is Clear": 1726,
+        "moderate rain": 1664,
+        "haze": 1360,
+        "light intensity drizzle": 1100
+      }
+    },
+    "date_time": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 40575,
+      "top_values": {
+        "2013-04-18 22:00:00": 6,
+        "2013-05-19 10:00:00": 6,
+        "2012-10-25 15:00:00": 5,
+        "2012-10-26 04:00:00": 5,
+        "2012-11-11 04:00:00": 5,
+        "2012-11-11 09:00:00": 5,
+        "2012-12-16 09:00:00": 5,
+        "2012-12-16 19:00:00": 5,
+        "2012-12-16 21:00:00": 5,
+        "2013-02-11 10:00:00": 5,
+        "2013-04-11 01:00:00": 5,
+        "2013-04-18 23:00:00": 5
+      }
+    },
+    "traffic_volume": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 6704,
+      "nonfinite_count": 0,
+      "zero_count": 2,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 257,
+        "0.25": 1193,
+        "0.5": 3380,
+        "0.75": 4933,
+        "0.99": 6701.970000000001,
+        "1.0": 7280
+      }
+    }
+  }
+}

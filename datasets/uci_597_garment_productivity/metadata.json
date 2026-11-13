@@ -1,0 +1,175 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 597,
+    "name": "Productivity Prediction of Garment Employees",
+    "raw_rows_selected": 1197,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 1197,
+    "invalid_label_examples": 0,
+    "output_examples": 1197,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 59,
+    "input_field_count": 11,
+    "examples_with_null_input": 506,
+    "flagged_examples": 37,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_597_garment_productivity/part-00001.jsonl.gz",
+        "records": 1197,
+        "sha256": "ba537b8796e884fdcaf5ba41ad6d4be4b2a4a8a9d437425d69b63ecac39287a6",
+        "bytes": 133284
+      }
+    ],
+    "uncompressed_sha256": "c7db103100fcd9cbf858e2073da02575649bc00d73182438944342e65537742f"
+  },
+  "contract": {
+    "key": "garment_productivity",
+    "targets": [
+      [
+        "actual_productivity",
+        "actual_productivity",
+        "source productivity ratio",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the actual productivity ratio of a garment-production team using the supplied production-context measurements.",
+    "context": "date: calendar date; quarter: source within-month segment, not a calendar quarter; department: production department; team: categorical team number; targeted_productivity: management target ratio; smv: standard minutes allocated to a task; wip: unfinished-item count; over_time: team overtime minutes; no_of_style_change: style-change count; no_of_workers: recorded staffing quantity, which may be fractional. This is a retrospective conditional estimate, not a guaranteed pre-shift forecast. The target can exceed 1 in the observed source records.",
+    "exclude": [
+      "incentive",
+      "idle_time",
+      "idle_men"
+    ],
+    "group": [
+      "date"
+    ],
+    "group_note": "All teams on the same date are grouped; time must be respected when splitting.",
+    "split": "chronological_by_date",
+    "source_file": "garments_worker_productivity.csv"
+  },
+  "input_fields": [
+    "date",
+    "quarter",
+    "department",
+    "day",
+    "team",
+    "targeted_productivity",
+    "smv",
+    "wip",
+    "over_time",
+    "no_of_style_change",
+    "no_of_workers"
+  ],
+  "excluded_input_columns": [
+    "actual_productivity",
+    "incentive",
+    "idle_time",
+    "idle_men"
+  ],
+  "grouping_rule": "All teams on the same date are grouped; time must be respected when splitting. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "446026846b37d73800d1fd01b852ceaf95f086f15a626802d784154f63885bc2",
+  "dataset_doi": "10.24432/C51S6D",
+  "creators": [],
+  "citation_paper": {
+    "ID": 399,
+    "type": "NATIVE",
+    "title": "Mining the productivity data of the garment industry",
+    "authors": "Abdullah Al Imran, Md Shamsur Rahim, Tanvir Ahmed",
+    "venue": "International Journal of Business Intelligence and Data Mining",
+    "year": 2021,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://dl.acm.org/doi/abs/10.1504/ijbidm.2021.118183",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_597/actual_productivity": {
+      "examples": 1197,
+      "label_quantiles": {
+        "0.0": 0.233705476,
+        "0.01": 0.26359303688,
+        "0.5": 0.773333333,
+        "0.99": 1.00515583344,
+        "1.0": 1.1204375
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 1126,
+        "median": 1133,
+        "max": 1139
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "target_exceeds_documented_0_1_range",
+      "count": 37,
+      "action": "retain_and_flag",
+      "detail": "Observed productivity can exceed 1; do not clip labels or constrain output to [0,1].",
+      "severity": "medium"
+    },
+    {
+      "code": "missing_wip",
+      "count": 506,
+      "action": "retain_as_null",
+      "detail": "Missing WIP is confined to finishing department; do not replace with zero.",
+      "severity": "medium"
+    },
+    {
+      "code": "ambiguous_feature_timing",
+      "count": 1197,
+      "action": "define_retrospective_task",
+      "detail": "Remove incentive and idle variables. Remaining production measures are used for conditional estimation, not claimed available pre-shift.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

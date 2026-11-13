@@ -1,0 +1,162 @@
+{
+  "rows": 4177,
+  "columns": 9,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "sex": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "top_values": {
+        "male": 1528,
+        "infant": 1342,
+        "female": 1307
+      }
+    },
+    "length_scaled": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 134,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.075,
+        "0.01": 0.195,
+        "0.25": 0.45,
+        "0.5": 0.545,
+        "0.75": 0.615,
+        "0.99": 0.735,
+        "1.0": 0.815
+      }
+    },
+    "diameter_scaled": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 111,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.055,
+        "0.01": 0.14,
+        "0.25": 0.35,
+        "0.5": 0.425,
+        "0.75": 0.48,
+        "0.99": 0.58,
+        "1.0": 0.65
+      }
+    },
+    "height_scaled": {
+      "dtype": "float64",
+      "missing_count": 2,
+      "missing_rate": 0.00047881254488867607,
+      "distinct_nonmissing": 50,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.01,
+        "0.01": 0.045,
+        "0.25": 0.115,
+        "0.5": 0.14,
+        "0.75": 0.165,
+        "0.99": 0.22,
+        "1.0": 1.13
+      }
+    },
+    "whole_weight_scaled": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2429,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.002,
+        "0.01": 0.03576,
+        "0.25": 0.4415,
+        "0.5": 0.7995,
+        "0.75": 1.153,
+        "0.99": 2.1444199999999984,
+        "1.0": 2.8255
+      }
+    },
+    "shucked_weight_scaled": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1515,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.001,
+        "0.01": 0.0135,
+        "0.25": 0.186,
+        "0.5": 0.336,
+        "0.75": 0.502,
+        "0.99": 0.9977799999999979,
+        "1.0": 1.488
+      }
+    },
+    "viscera_weight_scaled": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 880,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.0005,
+        "0.01": 0.00788,
+        "0.25": 0.0935,
+        "0.5": 0.171,
+        "0.75": 0.253,
+        "0.99": 0.4760999999999994,
+        "1.0": 0.76
+      }
+    },
+    "shell_weight_scaled": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 926,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.0015,
+        "0.01": 0.01038,
+        "0.25": 0.13,
+        "0.5": 0.234,
+        "0.75": 0.329,
+        "0.99": 0.62,
+        "1.0": 1.005
+      }
+    },
+    "rings": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 28,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 4,
+        "0.25": 8,
+        "0.5": 9,
+        "0.75": 11,
+        "0.99": 20,
+        "1.0": 29
+      }
+    }
+  }
+}

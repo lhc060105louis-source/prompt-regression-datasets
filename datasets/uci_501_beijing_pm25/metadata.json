@@ -1,0 +1,198 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 501,
+    "name": "Beijing Multi-Site Air Quality",
+    "batch": 2,
+    "raw_rows_selected": 420768,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 412029,
+    "invalid_label_examples": 8739,
+    "excluded_source_rows": 0,
+    "output_examples": 412029,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 34983,
+    "input_field_count": 8,
+    "examples_with_null_input": 1885,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data",
+    "files": [
+      {
+        "path": "datasets/uci_501_beijing_pm25/part-00001.jsonl.gz",
+        "records": 100000,
+        "sha256": "2c424c00fdd65f785714359b4b9b779411eace622a8318ace84291d0228d2e7c",
+        "bytes": 11285739
+      },
+      {
+        "path": "datasets/uci_501_beijing_pm25/part-00002.jsonl.gz",
+        "records": 100000,
+        "sha256": "1d08e9555360ee8ddc2665a5a52dd576cce078bd8c085a9d45c4cccded61eb0f",
+        "bytes": 11272933
+      },
+      {
+        "path": "datasets/uci_501_beijing_pm25/part-00003.jsonl.gz",
+        "records": 100000,
+        "sha256": "05d1aa9842e5c5528772fe3583e66222a391f65d9021b20d5464ba01a570b533",
+        "bytes": 11296587
+      },
+      {
+        "path": "datasets/uci_501_beijing_pm25/part-00004.jsonl.gz",
+        "records": 100000,
+        "sha256": "c523bf59f4481cd4425c5873ab2f82ce81f9b1fe034d40140fc01dce7b391613",
+        "bytes": 11284171
+      },
+      {
+        "path": "datasets/uci_501_beijing_pm25/part-00005.jsonl.gz",
+        "records": 12029,
+        "sha256": "e12a3d7fd9e23cc50ed845cb408ad4c8fc72f3982699897f9dc04497bb56e05d",
+        "bytes": 1360765
+      }
+    ],
+    "uncompressed_sha256": "39a7bd09aad812077bf66e7fc7d144b8cf280447edd2aad317d1ccb63f313c2b"
+  },
+  "contract": {
+    "key": "beijing_pm25",
+    "targets": [
+      [
+        "PM2.5",
+        "pm25_concentration",
+        "micrograms per cubic metre",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate PM2.5 concentration at a Beijing monitoring station from same-hour meteorological and calendar information.",
+    "context": "timestamp is local YYYY-MM-DD HH:MM:SS. station is the monitoring site. TEMP and DEWP: Celsius; PRES: hPa; RAIN: mm; wd: wind-direction category; WSPM: m/s. Other same-hour pollutant measurements are excluded. This is contemporaneous estimation, not forecasting from future observed weather.",
+    "split": "chronological blocks across all stations; station holdout separately supported by entity_id"
+  },
+  "input_fields": [
+    "TEMP",
+    "PRES",
+    "DEWP",
+    "RAIN",
+    "wd",
+    "WSPM",
+    "station",
+    "timestamp"
+  ],
+  "excluded_input_columns": [
+    "No",
+    "year",
+    "month",
+    "day",
+    "hour",
+    "PM2.5",
+    "PM10",
+    "SO2",
+    "NO2",
+    "CO",
+    "O3"
+  ],
+  "grouping_columns": [
+    "timestamp"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data"
+  },
+  "source_archive_sha256": "b04da438b2f331ac0ffd45aebdfec0d20d2367feb5f6948c4b1f7ce1191e33c4",
+  "dataset_doi": "10.24432/C5RK5G",
+  "creators": [
+    "Song Chen"
+  ],
+  "citation_paper": {
+    "ID": 418,
+    "type": "NATIVE",
+    "title": "Cautionary tales on air-quality improvement in Beijing",
+    "authors": "Shuyi Zhang, Bin Guo, Anlan Dong, Jing He, Ziping Xu, S. Chen",
+    "venue": "Proceedings of the Royal Society A",
+    "year": 2017,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/Cautionary-tales-on-air-quality-improvement-in-Zhang-Guo/59c99a7bf19617b43be0aa9f492def8c80ffae19",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_501/pm25_concentration": {
+      "examples": 412029,
+      "label_quantiles": {
+        "0.0": 2,
+        "0.01": 3,
+        "0.5": 55,
+        "0.99": 370,
+        "1.0": 999
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 784,
+        "median": 796,
+        "max": 821
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "missing_pm25_labels",
+      "count": 8739,
+      "action": "exclude_label_missing",
+      "detail": "Do not impute PM2.5 outcomes; retain rows with missing meteorological inputs as null."
+    },
+    {
+      "code": "pollutant_targets_removed",
+      "count": 5,
+      "action": "remove",
+      "detail": "Only meteorology, time and station are inputs; other same-hour pollutant concentrations excluded."
+    },
+    {
+      "code": "station_time_grain",
+      "count": 12,
+      "action": "preserve",
+      "detail": "12 stations x 35064 hours; same timestamp grouped across stations, and station saved as entity_id for separate station-held-out protocols."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 758,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

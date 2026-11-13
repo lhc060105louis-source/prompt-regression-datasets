@@ -1,0 +1,39 @@
+{
+  "uci_id": 165,
+  "path": "datasets/uci_165_concrete_strength/data.jsonl",
+  "changed_records": 249,
+  "changed_fields": {
+    "label": 249
+  },
+  "max_absolute_change": 4.136779807595303e-11,
+  "max_relative_change": 2.7444581102591947e-12,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "label",
+      61.887365759999994,
+      61.88736576
+    ],
+    [
+      "label",
+      40.269535256000005,
+      40.269535256
+    ],
+    [
+      "label",
+      47.029847436000004,
+      47.029847436
+    ],
+    [
+      "label",
+      38.074243671999994,
+      38.074243672
+    ],
+    [
+      "label",
+      52.908319811999995,
+      52.908319812
+    ]
+  ]
+}

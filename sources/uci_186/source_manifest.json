@@ -1,0 +1,22 @@
+{
+  "uci_id": "186",
+  "priority": "A",
+  "name": "Wine Quality",
+  "domain": "食品质量",
+  "reported_size": "白葡萄酒4898；另有红葡萄酒子集",
+  "target": "quality，0—10有序评分",
+  "input_description": "11项理化指标，加红白酒类型",
+  "missingness": "官网无缺失",
+  "proposed_split": "去重后划分；红白作为同一家族",
+  "screening_notes": "有序离散评分，可作为回归但应单独标注；官网首页数量不是红白合计，合计待原文件核验",
+  "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/186/wine+quality.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "3ed56667f4b828242bd732d7d1dd7f2861e54432239d7fa63877014cbb0304d4",
+  "archive_bytes": 91353,
+  "metadata_status": "ok"
+}

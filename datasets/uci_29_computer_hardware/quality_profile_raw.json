@@ -1,0 +1,191 @@
+{
+  "rows": 209,
+  "columns": 10,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "vendor": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 30,
+      "top_values": {
+        "ibm": 32,
+        "nas": 19,
+        "honeywell": 13,
+        "ncr": 13,
+        "sperry": 13,
+        "siemens": 12,
+        "amdahl": 9,
+        "cdc": 9,
+        "burroughs": 8,
+        "dg": 7,
+        "hp": 7,
+        "harris": 7
+      }
+    },
+    "model": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 209,
+      "top_values": {
+        "32/60": 1,
+        "470v/7": 1,
+        "470v/7a": 1,
+        "470v/7b": 1,
+        "470v/7c": 1,
+        "470v/b": 1,
+        "580-5840": 1,
+        "580-5850": 1,
+        "580-5860": 1,
+        "580-5880": 1,
+        "dn320": 1,
+        "dn420": 1
+      }
+    },
+    "cycle_time_ns": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 60,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 17,
+        "0.01": 23,
+        "0.25": 50,
+        "0.5": 110,
+        "0.75": 225,
+        "0.99": 1100,
+        "1.0": 1500
+      }
+    },
+    "memory_min_kb": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 25,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 64,
+        "0.01": 133.12,
+        "0.25": 768,
+        "0.5": 2000,
+        "0.75": 4000,
+        "0.99": 16000,
+        "1.0": 32000
+      }
+    },
+    "memory_max_kb": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 23,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 64,
+        "0.01": 532.48,
+        "0.25": 4000,
+        "0.5": 8000,
+        "0.75": 16000,
+        "0.99": 64000,
+        "1.0": 64000
+      }
+    },
+    "cache_kb": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 22,
+      "nonfinite_count": 0,
+      "zero_count": 69,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 8,
+        "0.75": 32,
+        "0.99": 158.55999999999977,
+        "1.0": 256
+      }
+    },
+    "channels_min": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 15,
+      "nonfinite_count": 0,
+      "zero_count": 5,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 6,
+        "0.99": 31.519999999999925,
+        "1.0": 52
+      }
+    },
+    "channels_max": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 31,
+      "nonfinite_count": 0,
+      "zero_count": 5,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 5,
+        "0.5": 8,
+        "0.75": 24,
+        "0.99": 128,
+        "1.0": 176
+      }
+    },
+    "PRP": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 116,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 6,
+        "0.01": 7.08,
+        "0.25": 27,
+        "0.5": 50,
+        "0.75": 113,
+        "0.99": 892.6799999999965,
+        "1.0": 1150
+      }
+    },
+    "ERP": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 104,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 15,
+        "0.01": 17.08,
+        "0.25": 28,
+        "0.5": 45,
+        "0.75": 101,
+        "0.99": 905.3999999999978,
+        "1.0": 1238
+      }
+    }
+  }
+}

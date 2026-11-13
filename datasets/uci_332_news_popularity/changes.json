@@ -1,0 +1,29 @@
+[
+  {
+    "source_index": 31037,
+    "file": "OnlineNewsPopularity.csv",
+    "row": 31038,
+    "field": "n_unique_tokens",
+    "original": 701,
+    "replacement": null,
+    "reason": "ratio_outside_0_1_to_null"
+  },
+  {
+    "source_index": 31037,
+    "file": "OnlineNewsPopularity.csv",
+    "row": 31038,
+    "field": "n_non_stop_words",
+    "original": 1042,
+    "replacement": null,
+    "reason": "ratio_outside_0_1_to_null"
+  },
+  {
+    "source_index": 31037,
+    "file": "OnlineNewsPopularity.csv",
+    "row": 31038,
+    "field": "n_non_stop_unique_tokens",
+    "original": 650,
+    "replacement": null,
+    "reason": "ratio_outside_0_1_to_null"
+  }
+]

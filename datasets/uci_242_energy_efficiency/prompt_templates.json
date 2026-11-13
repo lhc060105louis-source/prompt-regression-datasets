@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the specified energy load of a simulated residential building.",
+  "context": "Fields describe building geometry, orientation and glazing. orientation and glazing_distribution retain the original category codes. Values retain their original UCI scales.",
+  "targets": [
+    {
+      "column": "heating_load",
+      "name": "heating_load",
+      "unit": "source load unit (not specified in UCI metadata)",
+      "type": "continuous"
+    },
+    {
+      "column": "cooling_load",
+      "name": "cooling_load",
+      "unit": "source load unit (not specified in UCI metadata)",
+      "type": "continuous"
+    }
+  ]
+}

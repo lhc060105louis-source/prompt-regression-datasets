@@ -1,0 +1,163 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 492,
+    "name": "Metro Interstate Traffic Volume",
+    "raw_rows_selected": 48204,
+    "raw_exact_duplicate_rows": 17,
+    "candidate_task_examples": 48204,
+    "invalid_label_examples": 0,
+    "output_examples": 48187,
+    "collapsed_duplicate_examples": 17,
+    "task_count": 1,
+    "split_groups": 40575,
+    "input_field_count": 8,
+    "examples_with_null_input": 10,
+    "flagged_examples": 11,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_492_metro_traffic/part-00001.jsonl.gz",
+        "records": 48187,
+        "sha256": "1a5166d3da9c3a1f4c3abbde39c78a55b63325b166f57084e43a7e815ec8b052",
+        "bytes": 4726850
+      }
+    ],
+    "uncompressed_sha256": "1593dff7ea446563cf13c692f8db980dfe690e602af5b122603eadd70f35182b"
+  },
+  "contract": {
+    "key": "metro_traffic",
+    "targets": [
+      [
+        "traffic_volume",
+        "hourly_traffic_volume",
+        "vehicles per hour",
+        "count"
+      ]
+    ],
+    "task": "Estimate the hourly westbound I-94 traffic volume at the Minneapolis-St Paul monitoring station from recorded weather and calendar information.",
+    "context": "date_time: source local timestamp; holiday: holiday name or no holiday; temp: temperature in Kelvin; rain_1h and snow_1h: precipitation in millimetres; clouds_all: cloud cover percent; weather_main and weather_description: observed weather labels. Multiple source weather descriptions can refer to the same traffic hour. This is a contemporaneous estimate, not a future-weather forecast.",
+    "exclude": [],
+    "group": [
+      "date_time"
+    ],
+    "group_note": "All records at the same timestamp, including distinct weather descriptions.",
+    "split": "chronological_by_timestamp; same timestamp never crosses splits",
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz"
+  },
+  "input_fields": [
+    "holiday",
+    "temp",
+    "rain_1h",
+    "snow_1h",
+    "clouds_all",
+    "weather_main",
+    "weather_description",
+    "date_time"
+  ],
+  "excluded_input_columns": [
+    "traffic_volume"
+  ],
+  "grouping_rule": "All records at the same timestamp, including distinct weather descriptions. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+  "dataset_doi": "10.24432/C5X60B",
+  "creators": [
+    "John Hogue"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_492/hourly_traffic_volume": {
+      "examples": 48187,
+      "label_quantiles": {
+        "0.0": 0,
+        "0.01": 257,
+        "0.5": 3379,
+        "0.99": 6702,
+        "1.0": 7280
+      },
+      "zero_labels": 2,
+      "prompt_characters": {
+        "min": 947,
+        "median": 961,
+        "max": 995
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "literal_None_is_not_missing",
+      "count": 48143,
+      "action": "decode_as_no_holiday",
+      "detail": "Read CSV with keep_default_na=False; None is a valid no-holiday category.",
+      "severity": "medium"
+    },
+    {
+      "code": "invalid_kelvin",
+      "count": 10,
+      "action": "replace_feature_with_null",
+      "detail": "Zero Kelvin is invalid ambient temperature, not a missing target.",
+      "severity": "medium"
+    },
+    {
+      "code": "extreme_rainfall",
+      "count": 1,
+      "action": "retain_and_flag",
+      "detail": "One reported hourly rainfall is 9831.3 mm; flagged for review, not silently winsorized.",
+      "severity": "medium"
+    },
+    {
+      "code": "multiple_rows_per_timestamp",
+      "count": 7629,
+      "action": "retain_distinct_weather_rows_and_group",
+      "detail": "Traffic labels agree within each timestamp, but some weather values differ; no arbitrary weather aggregation.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 17,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 71,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

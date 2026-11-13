@@ -1,0 +1,123 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 87,
+    "name": "Servo",
+    "raw_rows_selected": 167,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 167,
+    "invalid_label_examples": 0,
+    "output_examples": 167,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 167,
+    "input_field_count": 4,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/87/servo",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_87_servo_response/part-00001.jsonl.gz",
+        "records": 167,
+        "sha256": "1b874868f4c02a3dd2f44758fbf434063e5d6c92459e6e8c98ca6a5b0a40cd69",
+        "bytes": 15222
+      }
+    ],
+    "uncompressed_sha256": "1e4e0a895ae940f974d68aea3e16553dc11debc7dbf1542efe20389bbe810b4d"
+  },
+  "contract": {
+    "key": "servo_response",
+    "targets": [
+      [
+        "response",
+        "servo_response",
+        "source response unit (not specified)",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the response value of a simulated servo system.",
+    "context": "motor and screw are categorical mechanical choices; pgain and vgain are gain settings. The original description interprets the response as a rise time but does not establish its unit; retain the source response scale.",
+    "exclude": [],
+    "group": [],
+    "group_note": "Identical servo configuration.",
+    "split": "group_by_configuration",
+    "source_file": "servo.data"
+  },
+  "input_fields": [
+    "motor",
+    "screw",
+    "pgain",
+    "vgain"
+  ],
+  "excluded_input_columns": [
+    "response"
+  ],
+  "grouping_rule": "Identical servo configuration. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/87/servo",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "02822bd9f00d8af7394163649e6398711da0a0b02170e380fd4d15b14e8a5659",
+  "dataset_doi": "10.24432/C5Q30F",
+  "creators": [
+    "Karl Ulrich"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_87/servo_response": {
+      "examples": 167,
+      "label_quantiles": {
+        "0.0": 0.13124992,
+        "0.01": 0.20625044,
+        "0.5": 0.7312541,
+        "0.99": 6.108061274000004,
+        "1.0": 7.1001077
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 589,
+        "median": 589,
+        "max": 589
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

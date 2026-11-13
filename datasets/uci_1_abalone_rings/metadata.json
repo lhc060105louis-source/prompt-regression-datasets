@@ -1,0 +1,152 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 1,
+    "name": "Abalone",
+    "raw_rows_selected": 4177,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 4177,
+    "invalid_label_examples": 0,
+    "output_examples": 4177,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 4177,
+    "input_field_count": 8,
+    "examples_with_null_input": 2,
+    "flagged_examples": 3,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_1_abalone_rings/part-00001.jsonl.gz",
+        "records": 4177,
+        "sha256": "f963e60b442486d922bcb00cbca6898b36a4edcc66b5976d00ddf4887d6a6b9c",
+        "bytes": 491703
+      }
+    ],
+    "uncompressed_sha256": "8677e532c744dfe63f0e3d719076e8cdd2b03f0c22a3ac6b4b676ae7197b5aa5"
+  },
+  "contract": {
+    "key": "abalone_rings",
+    "targets": [
+      [
+        "rings",
+        "shell_ring_count",
+        "rings",
+        "count"
+      ]
+    ],
+    "task": "Predict the number of shell rings of an abalone from its physical measurements.",
+    "context": "sex is male, female or infant. Fields ending in _scaled are UCI-stored measurements, retained in their source-scaled form; do not interpret these stored numbers as unscaled millimetres or grams. The target is ring count, not age in years.",
+    "exclude": [],
+    "group": [],
+    "group_note": "Identical recorded physical inputs; no animal identifier is available.",
+    "split": "group_by_identical_input",
+    "source_file": "abalone.data"
+  },
+  "input_fields": [
+    "sex",
+    "length_scaled",
+    "diameter_scaled",
+    "height_scaled",
+    "whole_weight_scaled",
+    "shucked_weight_scaled",
+    "viscera_weight_scaled",
+    "shell_weight_scaled"
+  ],
+  "excluded_input_columns": [
+    "rings"
+  ],
+  "grouping_rule": "Identical recorded physical inputs; no animal identifier is available. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "755a6a67c5b266961a3f149ea13be2cfb6e6c727e48cee3c83bc0b4526210ee4",
+  "dataset_doi": "10.24432/C55C7W",
+  "creators": [
+    "Warwick Nash",
+    "Tracy Sellers",
+    "Simon Talbot",
+    "Andrew Cawthorn",
+    "Wes Ford"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_1/shell_ring_count": {
+      "examples": 4177,
+      "label_quantiles": {
+        "0.0": 1,
+        "0.01": 4,
+        "0.5": 9,
+        "0.99": 20,
+        "1.0": 29
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 751,
+        "median": 759,
+        "max": 764
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "source_scaled_features",
+      "count": 4177,
+      "action": "retain_source_scale",
+      "detail": "Original documentation states continuous features were scaled; prompts do not label them as unscaled mm/g.",
+      "severity": "medium"
+    },
+    {
+      "code": "nonpositive_height",
+      "count": 2,
+      "action": "replace_feature_with_null",
+      "detail": "Physical height zero is invalid; preserve label and raw source.",
+      "severity": "medium"
+    },
+    {
+      "code": "height_exceeds_length",
+      "count": 1,
+      "action": "retain_and_flag",
+      "detail": "Potential outliers are not silently clipped or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

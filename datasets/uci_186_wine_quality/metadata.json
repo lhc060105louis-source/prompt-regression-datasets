@@ -1,0 +1,165 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 186,
+    "name": "Wine Quality",
+    "raw_rows_selected": 6497,
+    "raw_exact_duplicate_rows": 1177,
+    "candidate_task_examples": 6497,
+    "invalid_label_examples": 0,
+    "output_examples": 5320,
+    "collapsed_duplicate_examples": 1177,
+    "task_count": 1,
+    "split_groups": 5320,
+    "input_field_count": 12,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_186_wine_quality/part-00001.jsonl.gz",
+        "records": 5320,
+        "sha256": "2700c5bcf899a30cbac3a193217d35cad7aa4efc5db10cb5e8c137380a274133",
+        "bytes": 728561
+      }
+    ],
+    "uncompressed_sha256": "deda2e6d958efdbb6ea8a37d5c45518f97e07ef3e572c664ad0d046321feabee"
+  },
+  "contract": {
+    "key": "wine_quality",
+    "targets": [
+      [
+        "quality",
+        "wine_quality_score",
+        "score on a 0-10 scale",
+        "ordinal"
+      ]
+    ],
+    "task": "Predict the sensory quality score of Portuguese Vinho Verde wine from physicochemical tests.",
+    "context": "wine_type identifies red or white wine. Other fields describe acidity, sugar, chlorides, sulfur dioxide, density, pH, sulphates and alcohol, retained on their original laboratory-data scales. Predict an ordered quality score, not a wine class.",
+    "exclude": [],
+    "group": [],
+    "group_note": "Identical physicochemical inputs and wine type; bottle IDs are unavailable.",
+    "split": "group_by_identical_inputs; red and white are one dataset family",
+    "source_file": "winequality-red.csv + winequality-white.csv"
+  },
+  "input_fields": [
+    "fixed acidity",
+    "volatile acidity",
+    "citric acid",
+    "residual sugar",
+    "chlorides",
+    "free sulfur dioxide",
+    "total sulfur dioxide",
+    "density",
+    "pH",
+    "sulphates",
+    "alcohol",
+    "wine_type"
+  ],
+  "excluded_input_columns": [
+    "quality"
+  ],
+  "grouping_rule": "Identical physicochemical inputs and wine type; bottle IDs are unavailable. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "3ed56667f4b828242bd732d7d1dd7f2861e54432239d7fa63877014cbb0304d4",
+  "dataset_doi": "10.24432/C56S3T",
+  "creators": [
+    "Paulo Cortez",
+    "A. Cerdeira",
+    "F. Almeida",
+    "T. Matos",
+    "J. Reis"
+  ],
+  "citation_paper": {
+    "ID": 252,
+    "type": "NATIVE",
+    "title": "Modeling wine preferences by data mining from physicochemical properties",
+    "authors": "P. Cortez, A. Cerdeira, Fernando Almeida, Telmo Matos, J. Reis",
+    "venue": "Decision Support Systems",
+    "year": 2009,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/Modeling-wine-preferences-by-data-mining-from-Cortez-Cerdeira/bf15a0ccc14ac1deb5cea570c870389c16be019c",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_186/wine_quality_score": {
+      "examples": 5320,
+      "label_quantiles": {
+        "0.0": 3,
+        "0.01": 4,
+        "0.5": 6,
+        "0.99": 8,
+        "1.0": 9
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 817,
+        "median": 828,
+        "max": 841
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "red_white_subsets",
+      "count": 6497,
+      "action": "combine_with_wine_type",
+      "detail": "Red=1599; white=4898. Treat as one source family.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 1177,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 32,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

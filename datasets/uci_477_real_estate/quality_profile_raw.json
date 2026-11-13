@@ -1,0 +1,151 @@
+{
+  "rows": 414,
+  "columns": 8,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "id": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 414,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 5.13,
+        "0.25": 104.25,
+        "0.5": 207.5,
+        "0.75": 310.75,
+        "0.99": 409.87,
+        "1.0": 414
+      }
+    },
+    "transaction_date": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2012.6666667,
+        "0.01": 2012.6666667,
+        "0.25": 2012.9166667,
+        "0.5": 2013.1666667,
+        "0.75": 2013.4166667,
+        "0.99": 2013.5833333,
+        "1.0": 2013.5833333
+      }
+    },
+    "house_age_years": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 236,
+      "nonfinite_count": 0,
+      "zero_count": 17,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 9.025,
+        "0.5": 16.1,
+        "0.75": 28.15,
+        "0.99": 41.248,
+        "1.0": 43.8
+      }
+    },
+    "mrt_distance_m": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 259,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 23.38284,
+        "0.01": 56.47425,
+        "0.25": 289.3248,
+        "0.5": 492.2313,
+        "0.75": 1454.279,
+        "0.99": 5394.220430000004,
+        "1.0": 6488.021
+      }
+    },
+    "convenience_stores": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 11,
+      "nonfinite_count": 0,
+      "zero_count": 67,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 1,
+        "0.5": 4,
+        "0.75": 6,
+        "0.99": 10,
+        "1.0": 10
+      }
+    },
+    "latitude": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 234,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 24.93207,
+        "0.01": 24.93885,
+        "0.25": 24.963,
+        "0.5": 24.9711,
+        "0.75": 24.977455,
+        "0.99": 24.991734,
+        "1.0": 25.01459
+      }
+    },
+    "longitude": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 232,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 121.47353,
+        "0.01": 121.48594369999999,
+        "0.25": 121.528085,
+        "0.5": 121.53863,
+        "0.75": 121.543305,
+        "0.99": 121.5590121,
+        "1.0": 121.56627
+      }
+    },
+    "price_per_area": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 270,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 7.6,
+        "0.01": 12.8,
+        "0.25": 27.7,
+        "0.5": 38.45,
+        "0.75": 46.6,
+        "0.99": 70.88300000000001,
+        "1.0": 117.5
+      }
+    }
+  }
+}

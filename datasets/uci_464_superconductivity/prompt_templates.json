@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the superconducting critical temperature of a material known to be a superconductor.",
+  "context": "Descriptors summarize atomic mass, first ionization energy (fie), atomic radius, density, electron affinity, fusion heat, thermal conductivity and valence of constituent elements. mean/gmean/std/range/entropy are source summary statistics; wtd denotes source composition weighting. Input descriptor values retain their original source scales.",
+  "targets": [
+    {
+      "column": "critical_temp",
+      "name": "critical_temperature",
+      "unit": "K",
+      "type": "continuous"
+    }
+  ]
+}

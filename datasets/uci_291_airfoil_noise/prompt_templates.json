@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the scaled sound pressure level produced by an airfoil in a wind-tunnel experiment.",
+  "context": "frequency_hz: frequency in Hz; attack_angle_deg: attack angle in degrees; chord_length_m: chord length in metres; free_stream_velocity_m_s: air speed in m/s; displacement_thickness_m: suction-side displacement thickness in metres.",
+  "targets": [
+    {
+      "column": "sound_pressure_db",
+      "name": "sound_pressure_level",
+      "unit": "dB",
+      "type": "continuous"
+    }
+  ]
+}

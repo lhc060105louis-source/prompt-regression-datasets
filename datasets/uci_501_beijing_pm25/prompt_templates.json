@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate PM2.5 concentration at a Beijing monitoring station from same-hour meteorological and calendar information.",
+  "context": "timestamp is local YYYY-MM-DD HH:MM:SS. station is the monitoring site. TEMP and DEWP: Celsius; PRES: hPa; RAIN: mm; wd: wind-direction category; WSPM: m/s. Other same-hour pollutant measurements are excluded. This is contemporaneous estimation, not forecasting from future observed weather.",
+  "targets": [
+    {
+      "column": "PM2.5",
+      "name": "pm25_concentration",
+      "unit": "micrograms per cubic metre",
+      "type": "continuous"
+    }
+  ]
+}

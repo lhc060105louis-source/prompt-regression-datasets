@@ -1,0 +1,22 @@
+{
+  "uci_id": "9",
+  "priority": "A",
+  "name": "Auto MPG",
+  "domain": "汽车节能",
+  "reported_size": "398",
+  "target": "mpg，英里/加仑",
+  "input_description": "7项汽车技术与年份产地变量",
+  "missingness": "horsepower有缺失",
+  "proposed_split": "去重；按车型族分组可作更严格评估",
+  "screening_notes": "从有标签版本导入；车名默认为标识信息，不作为核心输入；不要将mpg误称为L/100km",
+  "source_url": "https://archive.ics.uci.edu/dataset/9/auto+mpg",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/9/auto+mpg",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/9/auto+mpg.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "5fc1507522b73b8050d3aa45df51eefe1b666ae5f428a5f1347b6483339f1003",
+  "archive_bytes": 14873,
+  "metadata_status": "ok"
+}

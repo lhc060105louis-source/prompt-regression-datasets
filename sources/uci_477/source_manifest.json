@@ -1,0 +1,22 @@
+{
+  "uci_id": "477",
+  "priority": "A",
+  "name": "Real Estate Valuation",
+  "domain": "房地产",
+  "reported_size": "414",
+  "target": "单位面积房价，万新台币/坪",
+  "input_description": "交易时间、房龄、地铁距离、商店数和经纬度",
+  "missingness": "官网无缺失",
+  "proposed_split": "按交易时间；空间分组作补充",
+  "screening_notes": "这是单位面积价格，不是总房价；删除编号；不把日期的小数格式当普通测量量",
+  "source_url": "https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/477/real+estate+valuation+data+set.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "aa437bdac3ca23200258a0a58d251c0af90651aeaf7c7a07aaa714f0f9f25e2c",
+  "archive_bytes": 32885,
+  "metadata_status": "ok"
+}

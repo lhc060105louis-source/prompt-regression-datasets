@@ -1,0 +1,39 @@
+{
+  "uci_id": 492,
+  "path": "datasets/uci_492_metro_traffic/data.jsonl",
+  "changed_records": 71,
+  "changed_fields": {
+    "input.temp": 71
+  },
+  "max_absolute_change": 1.1368683772161603e-13,
+  "max_relative_change": 4.0307477679983264e-16,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "input.temp",
+      272.11400000000003,
+      272.114
+    ],
+    [
+      "input.temp",
+      286.9240000000001,
+      286.924
+    ],
+    [
+      "input.temp",
+      286.9240000000001,
+      286.924
+    ],
+    [
+      "input.temp",
+      286.9240000000001,
+      286.924
+    ],
+    [
+      "input.temp",
+      276.54200000000003,
+      276.542
+    ]
+  ]
+}

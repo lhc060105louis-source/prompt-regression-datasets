@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the compressive strength of a concrete mixture at the specified age.",
+  "context": "Mixture ingredient quantities are in kg/m^3; age_days is in days.",
+  "targets": [
+    {
+      "column": "strength_mpa",
+      "name": "compressive_strength",
+      "unit": "MPa",
+      "type": "continuous"
+    }
+  ]
+}

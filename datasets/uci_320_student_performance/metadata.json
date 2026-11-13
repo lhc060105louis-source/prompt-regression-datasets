@@ -1,0 +1,217 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 320,
+    "name": "Student Performance",
+    "raw_rows_selected": 1044,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 1044,
+    "invalid_label_examples": 0,
+    "output_examples": 1043,
+    "collapsed_duplicate_examples": 1,
+    "task_count": 2,
+    "split_groups": 662,
+    "input_field_count": 30,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 1,
+    "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_320_student_performance/part-00001.jsonl.gz",
+        "records": 1043,
+        "sha256": "b3651e816b19172e95db21a4f5044d85968d142cf180d69c5e966c5928db79db",
+        "bytes": 147671
+      }
+    ],
+    "uncompressed_sha256": "e24750f5aa812446bd3413596a506e7045be737304c7afba6e5ea6d6327bf84b"
+  },
+  "contract": {
+    "key": "student_performance",
+    "targets": [
+      [
+        "G3",
+        "final_grade",
+        "grade points on a 0-20 scale",
+        "ordinal"
+      ]
+    ],
+    "task": "Estimate a student final grade in the specified secondary-school subject from background and study information, without previous-period grades.",
+    "context": "subject identifies Mathematics or Portuguese. school is the original school code. age is in years. Other demographic, family and study fields are decoded where their category meaning is documented. G1, G2 and cumulative absences are not supplied. This is a background-only estimation task; exact survey collection time is not established. Medu/Fedu: mother/father education; Mjob/Fjob: mother/father job; Pstatus: parental cohabitation; famsize: family size; reason: school-choice reason; guardian: primary guardian; traveltime: commute duration; studytime: weekly study time; failures: recorded past class failures; schoolsup/famsup: school/family educational support; paid: extra paid classes; activities: extracurricular activities; nursery: nursery attendance; higher: intention for higher education; internet: home internet; romantic: relationship status. famrel is family-relationship quality (1 worst, 5 best); freetime and goout are 1-5 frequencies; Dalc/Walc are workday/weekend alcohol-use levels (1 low, 5 high); health is self-rated health (1 poor, 5 good).",
+    "exclude": [
+      "G1",
+      "G2",
+      "absences"
+    ],
+    "group": [
+      "school",
+      "sex",
+      "age",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Medu",
+      "Fedu",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "nursery",
+      "internet"
+    ],
+    "group_note": "Official 13-field cross-course matching proxy, not a unique verified student ID.",
+    "split": "group_by_official_student_proxy across both courses",
+    "source_file": "student.zip/student-mat.csv + student.zip/student-por.csv"
+  },
+  "input_fields": [
+    "school",
+    "sex",
+    "age",
+    "address",
+    "famsize",
+    "Pstatus",
+    "Medu",
+    "Fedu",
+    "Mjob",
+    "Fjob",
+    "reason",
+    "guardian",
+    "traveltime",
+    "studytime",
+    "failures",
+    "schoolsup",
+    "famsup",
+    "paid",
+    "activities",
+    "nursery",
+    "higher",
+    "internet",
+    "romantic",
+    "famrel",
+    "freetime",
+    "goout",
+    "Dalc",
+    "Walc",
+    "health",
+    "subject"
+  ],
+  "excluded_input_columns": [
+    "G3",
+    "G1",
+    "G2",
+    "absences"
+  ],
+  "grouping_rule": "Official 13-field cross-course matching proxy, not a unique verified student ID. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "82ae9d66437b9808df42e8c89d2bb179c46e9cfbcf06f38abc1d20b3b747e177",
+  "dataset_doi": "10.24432/C5TG7T",
+  "creators": [
+    "Paulo Cortez"
+  ],
+  "citation_paper": {
+    "ID": 360,
+    "type": "NATIVE",
+    "title": "Using data mining to predict secondary school student performance",
+    "authors": "P. Cortez, A. M. G. Silva",
+    "venue": "Proceedings of 5th Annual Future Business Technology Conference",
+    "year": 2008,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/61d468d5254730bbecf822c6b60d7d6595d9889c",
+    "sha": null,
+    "corpus": "16621299",
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_320/final_grade/mat": {
+      "examples": 395,
+      "label_quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.5": 11,
+        "0.99": 19,
+        "1.0": 20
+      },
+      "zero_labels": 38,
+      "prompt_characters": {
+        "min": 1989,
+        "median": 2016,
+        "max": 2051
+      }
+    },
+    "uci_320/final_grade/por": {
+      "examples": 648,
+      "label_quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.5": 12,
+        "0.99": 18,
+        "1.0": 19
+      },
+      "zero_labels": 15,
+      "prompt_characters": {
+        "min": 1982,
+        "median": 2015,
+        "max": 2051
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "student_identity_proxy_collision",
+      "count": 16,
+      "action": "conservatively_group",
+      "detail": "Official 13-field matching key is not unique within a course. It is a leakage-control proxy, not an exact student identity.",
+      "severity": "medium"
+    },
+    {
+      "code": "previous_grades_and_absences",
+      "count": 1044,
+      "action": "remove_features",
+      "detail": "G1/G2 and cumulative absences removed. Survey timing is not known, so this is not advertised as a verified start-of-year forecast.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 1,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 1,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

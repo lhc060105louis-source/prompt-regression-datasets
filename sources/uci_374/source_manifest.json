@@ -1,0 +1,23 @@
+{
+  "uci_id": "374",
+  "priority": "B",
+  "name": "Appliances Energy Prediction",
+  "domain": "家庭能源",
+  "reported_size": "19735",
+  "target": "Appliances，Wh",
+  "input_description": "室内外温湿度、天气与时间",
+  "missingness": "官网无缺失",
+  "proposed_split": "按时间划分，窗口任务设置边界间隔",
+  "screening_notes": "删除rv1、rv2随机变量；只有一栋住宅，不能据此证明跨住宅泛化；明确同时刻估计或未来预测",
+  "source_url": "https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/374/appliances+energy+prediction.zip",
+  "downloaded_at_utc": "2026-11-09T20:14:00Z",
+  "archive_sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+  "archive_bytes": 11979507,
+  "metadata_status": "ok",
+  "batch": 2
+}

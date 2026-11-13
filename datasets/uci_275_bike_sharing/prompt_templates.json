@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the total number of Capital Bikeshare rentals during the specified hour given the recorded weather and calendar conditions.",
+  "context": "dteday: date; hr: hour 0-23; holiday and workingday: yes/no; weekday: source day-of-week code; weathersit: source weather category. temp, atemp, hum and windspeed retain the original normalized source values, not raw physical units. This is a contemporaneous conditional estimate, not a future-weather forecast.",
+  "targets": [
+    {
+      "column": "cnt",
+      "name": "hourly_bike_rentals",
+      "unit": "rentals per hour",
+      "type": "count"
+    }
+  ]
+}

@@ -1,0 +1,392 @@
+[
+  {
+    "source_index": 6394,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 6395,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 6395,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 6396,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 7056,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 7057,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 7119,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 7120,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 11930,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 11931,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 50406,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 50407,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 50630,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 50631,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 50679,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 50680,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 50967,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 50968,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 50971,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 50972,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 50986,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 50987,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51029,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51030,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51286,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51287,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51287,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51288,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51288,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51289,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51289,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51290,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51290,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51291,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51291,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51292,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51293,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51294,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51294,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51295,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51295,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51296,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51296,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51297,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51297,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51298,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51300,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51301,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51301,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51302,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51302,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51303,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51303,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51304,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51304,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51305,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51306,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51307,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51307,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51308,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51308,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51309,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51309,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51310,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51310,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51311,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51311,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51312,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51312,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51313,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51313,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51314,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51314,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51315,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51315,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51316,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51316,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51317,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51317,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51318,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51318,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51319,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51320,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51321,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51321,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51322,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51322,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51323,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51323,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51324,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51324,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51325,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51325,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51326,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51327,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51328,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51328,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51329,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51329,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51330,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51330,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51331,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51331,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51332,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51332,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51333,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51333,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51334,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 51653,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 51654,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 57230,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 57231,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 62646,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 62647,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 68844,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 68845,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 75995,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 75996,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 91265,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 91266,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 92570,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 92571,
+    "reason": "not_apartment_category"
+  },
+  {
+    "source_index": 6729,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 6730,
+    "reason": "not_unambiguous_monthly_rent"
+  },
+  {
+    "source_index": 7245,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 7246,
+    "reason": "not_unambiguous_monthly_rent"
+  },
+  {
+    "source_index": 49908,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 49909,
+    "reason": "not_unambiguous_monthly_rent"
+  },
+  {
+    "source_index": 83395,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 83396,
+    "reason": "not_unambiguous_monthly_rent"
+  }
+]

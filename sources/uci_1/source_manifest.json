@@ -1,0 +1,22 @@
+{
+  "uci_id": "1",
+  "priority": "A",
+  "name": "Abalone",
+  "domain": "生物与水产",
+  "reported_size": "4177",
+  "target": "Rings；或明确定义年龄=Rings+1.5年",
+  "input_description": "性别、尺寸与重量等8项",
+  "missingness": "官网无缺失",
+  "proposed_split": "去重后固定划分",
+  "screening_notes": "计数型标签可以回归；原说明涉及数值缩放，不能未经核对就把存储值解释为物理原值",
+  "source_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/1/abalone.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "755a6a67c5b266961a3f149ea13be2cfb6e6c727e48cee3c83bc0b4526210ee4",
+  "archive_bytes": 55357,
+  "metadata_status": "ok"
+}

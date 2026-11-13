@@ -1,0 +1,22 @@
+{
+  "uci_id": "504",
+  "priority": "A",
+  "name": "QSAR fish toxicity",
+  "domain": "化学与生态毒理",
+  "reported_size": "908",
+  "target": "LC50的负对数，-log(mol/L)",
+  "input_description": "6个分子描述符",
+  "missingness": "官网无缺失",
+  "proposed_split": "去重；有结构映射时采用分子结构分组",
+  "screening_notes": "目标已做对数变换，不能再当原始浓度处理；只有描述符时不要声称完成骨架留出",
+  "source_url": "https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/504/qsar+fish+toxicity.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "d8047cb6cf5b690c0c4d6f495a29dc07df6347d45741b3441f545bf67785680c",
+  "archive_bytes": 31346,
+  "metadata_status": "ok"
+}

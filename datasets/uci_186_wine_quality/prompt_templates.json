@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the sensory quality score of Portuguese Vinho Verde wine from physicochemical tests.",
+  "context": "wine_type identifies red or white wine. Other fields describe acidity, sugar, chlorides, sulfur dioxide, density, pH, sulphates and alcohol, retained on their original laboratory-data scales. Predict an ordered quality score, not a wine class.",
+  "targets": [
+    {
+      "column": "quality",
+      "name": "wine_quality_score",
+      "unit": "score on a 0-10 scale",
+      "type": "ordinal"
+    }
+  ]
+}

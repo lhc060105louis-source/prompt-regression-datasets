@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the RMSD score of a candidate protein structure from supplied structural descriptors.",
+  "context": "F1: total surface area; F2: nonpolar exposed area; F3/F4: source exposed-area descriptors; F5: mass-weighted exposed area; F6: deviation from standard exposed area; F7: Euclidean-distance descriptor; F8: secondary-structure penalty; F9: spatial-distribution constraints. Original descriptor scales are retained.",
+  "targets": [
+    {
+      "column": "RMSD",
+      "name": "protein_structure_rmsd",
+      "unit": "source RMSD units",
+      "type": "continuous"
+    }
+  ]
+}

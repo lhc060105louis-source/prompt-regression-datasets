@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the number of shell rings of an abalone from its physical measurements.",
+  "context": "sex is male, female or infant. Fields ending in _scaled are UCI-stored measurements, retained in their source-scaled form; do not interpret these stored numbers as unscaled millimetres or grams. The target is ring count, not age in years.",
+  "targets": [
+    {
+      "column": "rings",
+      "name": "shell_ring_count",
+      "unit": "rings",
+      "type": "count"
+    }
+  ]
+}

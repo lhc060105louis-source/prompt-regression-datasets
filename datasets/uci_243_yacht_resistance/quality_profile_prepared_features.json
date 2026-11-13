@@ -1,0 +1,133 @@
+{
+  "rows": 308,
+  "columns": 7,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "buoyancy_position": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 56,
+      "negative_count": 252,
+      "quantiles": {
+        "0.0": -5,
+        "0.01": -5,
+        "0.25": -2.4,
+        "0.5": -2.3,
+        "0.75": -2.3,
+        "0.99": 0,
+        "1.0": 0
+      }
+    },
+    "prismatic_coefficient": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 10,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.53,
+        "0.01": 0.53,
+        "0.25": 0.546,
+        "0.5": 0.565,
+        "0.75": 0.574,
+        "0.99": 0.6,
+        "1.0": 0.6
+      }
+    },
+    "length_displacement_ratio": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 8,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 4.34,
+        "0.01": 4.34,
+        "0.25": 4.77,
+        "0.5": 4.78,
+        "0.75": 5.1,
+        "0.99": 5.14,
+        "1.0": 5.14
+      }
+    },
+    "beam_draught_ratio": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 17,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.81,
+        "0.01": 2.81,
+        "0.25": 3.75,
+        "0.5": 3.955,
+        "0.75": 4.17,
+        "0.99": 5.35,
+        "1.0": 5.35
+      }
+    },
+    "length_beam_ratio": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 10,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.73,
+        "0.01": 2.73,
+        "0.25": 3.15,
+        "0.5": 3.15,
+        "0.75": 3.51,
+        "0.99": 3.64,
+        "1.0": 3.64
+      }
+    },
+    "froude_number": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 14,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.125,
+        "0.01": 0.125,
+        "0.25": 0.2,
+        "0.5": 0.2875,
+        "0.75": 0.375,
+        "0.99": 0.45,
+        "1.0": 0.45
+      }
+    },
+    "residuary_resistance": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 258,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.01,
+        "0.01": 0.04070000000000001,
+        "0.25": 0.7775000000000001,
+        "0.5": 3.065,
+        "0.75": 12.815000000000001,
+        "0.99": 55.8399,
+        "1.0": 62.42
+      }
+    }
+  }
+}

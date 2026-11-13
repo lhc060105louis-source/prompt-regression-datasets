@@ -1,0 +1,22 @@
+{
+  "uci_id": "320",
+  "priority": "A",
+  "name": "Student Performance",
+  "domain": "教育",
+  "reported_size": "葡语649；另有数学子集",
+  "target": "G3，最终成绩",
+  "input_description": "人口、家庭、学习环境；G1/G2是否使用按预测时点确定",
+  "missingness": "官网无缺失",
+  "proposed_split": "同一学生跨科目分组",
+  "screening_notes": "预测学年初成绩时删除G1/G2；后期预测可保留；两个科目不能当独立来源做任务泛化证明",
+  "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/320/student+performance.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "82ae9d66437b9808df42e8c89d2bb179c46e9cfbcf06f38abc1d20b3b747e177",
+  "archive_bytes": 40735,
+  "metadata_status": "ok"
+}

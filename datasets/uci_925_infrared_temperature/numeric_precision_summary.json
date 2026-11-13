@@ -1,0 +1,65 @@
+{
+  "uci_id": 925,
+  "path": "datasets/uci_925_infrared_temperature/data.jsonl",
+  "changed_records": 2019,
+  "changed_fields": {
+    "input.aveAllR13_mean": 650,
+    "input.aveAllL13_mean": 656,
+    "input.T_Max_mean": 667,
+    "input.T_RC_Dry_mean": 648,
+    "input.T_LC_Dry_mean": 668,
+    "input.RCC_mean": 644,
+    "input.LCC_mean": 640,
+    "input.canthi4Max_mean": 632,
+    "input.T_FHLC_mean": 633,
+    "input.T_FHTC_mean": 648,
+    "input.T_offset_mean": 755,
+    "input.T_RC_mean": 668,
+    "input.T_RC_Max_mean": 684,
+    "input.T_FHBC_mean": 630,
+    "input.T_FH_Max_mean": 657,
+    "input.T_RC_Wet_mean": 620,
+    "input.T_LC_mean": 650,
+    "input.T_FHC_Max_mean": 625,
+    "input.T_OR_Max_mean": 634,
+    "input.T_OR_mean": 674,
+    "input.Max1R13_mean": 618,
+    "input.T_FHCC_mean": 656,
+    "input.T_FHRC_mean": 662,
+    "input.Max1L13_mean": 627,
+    "input.T_LC_Wet_mean": 611,
+    "input.T_LC_Max_mean": 633,
+    "input.canthiMax_mean": 635
+  },
+  "max_absolute_change": 3.33457705892215e-11,
+  "max_relative_change": 3.2259141594551925e-12,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "input.aveAllR13_mean",
+      34.400000000000006,
+      34.4
+    ],
+    [
+      "input.aveAllL13_mean",
+      34.917500000000004,
+      34.9175
+    ],
+    [
+      "input.T_Max_mean",
+      35.692499999999995,
+      35.6925
+    ],
+    [
+      "input.T_RC_Dry_mean",
+      34.63249999999999,
+      34.6325
+    ],
+    [
+      "input.T_LC_Dry_mean",
+      34.537499999999994,
+      34.5375
+    ]
+  ]
+}

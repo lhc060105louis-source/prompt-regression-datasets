@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the price of a 1985 automobile from its specifications.",
+  "context": "make, fuel_type, aspiration, body_style, drive_wheels, engine_location, engine_type and fuel_system are categorical specifications. Door/cylinder counts are decoded. Other measurements retain the original UCI scales. Insurance risk and normalized insurance losses are excluded.",
+  "targets": [
+    {
+      "column": "price",
+      "name": "automobile_price",
+      "unit": "source price unit (not specified in archive)",
+      "type": "continuous"
+    }
+  ]
+}

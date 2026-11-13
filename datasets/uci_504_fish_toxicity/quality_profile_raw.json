@@ -1,0 +1,133 @@
+{
+  "rows": 908,
+  "columns": 7,
+  "exact_duplicate_rows": 1,
+  "column_profiles": {
+    "CIC0": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 502,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.667,
+        "0.01": 1.07633,
+        "0.25": 2.347,
+        "0.5": 2.934,
+        "0.75": 3.407,
+        "0.99": 4.5638999999999985,
+        "1.0": 5.926
+      }
+    },
+    "SM1_Dz_Z": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 186,
+      "nonfinite_count": 0,
+      "zero_count": 36,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0.223,
+        "0.5": 0.57,
+        "0.75": 0.89275,
+        "0.99": 1.7384599999999988,
+        "1.0": 2.171
+      }
+    },
+    "GATS1i": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 557,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.396,
+        "0.01": 0.70977,
+        "0.25": 0.95075,
+        "0.5": 1.2405,
+        "0.75": 1.5622500000000001,
+        "0.99": 2.3258799999999993,
+        "1.0": 2.92
+      }
+    },
+    "NdsCH": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 760,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 0,
+        "0.99": 3,
+        "1.0": 4
+      }
+    },
+    "NdssC": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "nonfinite_count": 0,
+      "zero_count": 622,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 1,
+        "0.99": 4,
+        "1.0": 6
+      }
+    },
+    "MLOGP": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 559,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 69,
+      "quantiles": {
+        "0.0": -2.884,
+        "0.01": -1.169,
+        "0.25": 1.209,
+        "0.5": 2.127,
+        "0.75": 3.105,
+        "0.99": 5.359459999999999,
+        "1.0": 6.515
+      }
+    },
+    "LC50": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 827,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.053,
+        "0.01": 0.78241,
+        "0.25": 3.15175,
+        "0.5": 3.9875,
+        "0.75": 4.9075,
+        "0.99": 8.166409999999999,
+        "1.0": 9.612
+      }
+    }
+  }
+}

@@ -1,0 +1,169 @@
+{
+  "rows": 1005,
+  "columns": 9,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "cement": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 280,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 102,
+        "0.01": 116,
+        "0.25": 190.68,
+        "0.5": 265,
+        "0.75": 349,
+        "0.99": 531.3,
+        "1.0": 540
+      }
+    },
+    "blast_furnace_slag": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 187,
+      "nonfinite_count": 0,
+      "zero_count": 465,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 20,
+        "0.75": 142.5,
+        "0.99": 290.2,
+        "1.0": 359.4
+      }
+    },
+    "fly_ash": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 163,
+      "nonfinite_count": 0,
+      "zero_count": 541,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 118.27,
+        "0.99": 185.288,
+        "1.0": 200.1
+      }
+    },
+    "water": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 205,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 121.75,
+        "0.01": 127.012,
+        "0.25": 166.61,
+        "0.5": 185.7,
+        "0.75": 192.94,
+        "0.99": 228,
+        "1.0": 247
+      }
+    },
+    "superplasticizer": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 155,
+      "nonfinite_count": 0,
+      "zero_count": 378,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 6.1,
+        "0.75": 10,
+        "0.99": 23.4,
+        "1.0": 32.2
+      }
+    },
+    "coarse_aggregate": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 284,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 801,
+        "0.01": 817.904,
+        "0.25": 932,
+        "0.5": 968,
+        "0.75": 1031,
+        "0.99": 1125,
+        "1.0": 1145
+      }
+    },
+    "fine_aggregate": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 304,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 594,
+        "0.01": 594,
+        "0.25": 724.3,
+        "0.5": 780,
+        "0.75": 822.2,
+        "0.99": 943.1,
+        "1.0": 992.6
+      }
+    },
+    "age_days": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 14,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 3,
+        "0.25": 7,
+        "0.5": 28,
+        "0.75": 56,
+        "0.99": 365,
+        "1.0": 365
+      }
+    },
+    "strength_mpa": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 938,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.331807832,
+        "0.01": 6.88447301808,
+        "0.25": 23.523542168,
+        "0.5": 33.79811352,
+        "0.75": 44.868340176,
+        "0.99": 75.4772135104,
+        "1.0": 82.5992248
+      }
+    }
+  }
+}

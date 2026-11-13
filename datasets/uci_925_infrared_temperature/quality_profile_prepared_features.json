@@ -1,0 +1,615 @@
+{
+  "rows": 2029,
+  "columns": 35,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "T_offset_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 808,
+      "nonfinite_count": 0,
+      "zero_count": 1,
+      "negative_count": 967,
+      "quantiles": {
+        "0.0": -1.35666666667,
+        "0.01": -0.6193,
+        "0.25": -0.315,
+        "0.5": 0.183333333333,
+        "0.75": 0.945,
+        "0.99": 1.7986,
+        "1.0": 2.875
+      }
+    },
+    "Max1R13_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 939,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.2075,
+        "0.01": 34.2318666667,
+        "0.25": 35.17,
+        "0.5": 35.4925,
+        "0.75": 35.8433333333,
+        "0.99": 37.6668666667,
+        "1.0": 38.84
+      }
+    },
+    "Max1L13_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 917,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.475,
+        "0.01": 34.2934,
+        "0.25": 35.22,
+        "0.5": 35.52,
+        "0.75": 35.855,
+        "0.99": 37.5498,
+        "1.0": 38.78
+      }
+    },
+    "aveAllR13_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1097,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 31.595,
+        "0.01": 32.6524,
+        "0.25": 34.315,
+        "0.5": 34.8125,
+        "0.75": 35.25,
+        "0.99": 37.0433,
+        "1.0": 38.2833333333
+      }
+    },
+    "aveAllL13_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1013,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 30.195,
+        "0.01": 33.2284,
+        "0.25": 34.545,
+        "0.5": 34.9525,
+        "0.75": 35.345,
+        "0.99": 36.9501333333,
+        "1.0": 38.4033333333
+      }
+    },
+    "T_RC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 917,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.315,
+        "0.01": 34.4314,
+        "0.25": 35.26,
+        "0.5": 35.5525,
+        "0.75": 35.8925,
+        "0.99": 37.6936,
+        "1.0": 38.87
+      }
+    },
+    "T_RC_Dry_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 935,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.205,
+        "0.01": 34.311,
+        "0.25": 35.1775,
+        "0.5": 35.4875,
+        "0.75": 35.8375,
+        "0.99": 37.606,
+        "1.0": 38.8433333333
+      }
+    },
+    "T_RC_Wet_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 925,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 32.1,
+        "0.01": 34.2278,
+        "0.25": 35.14,
+        "0.5": 35.4225,
+        "0.75": 35.775,
+        "0.99": 37.502,
+        "1.0": 38.7866666667
+      }
+    },
+    "T_RC_Max_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 894,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.3325,
+        "0.01": 34.4649,
+        "0.25": 35.29,
+        "0.5": 35.5825,
+        "0.75": 35.9233333333,
+        "0.99": 37.733,
+        "1.0": 38.9066666667
+      }
+    },
+    "T_LC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 879,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.7925,
+        "0.01": 34.4182,
+        "0.25": 35.2566666667,
+        "0.5": 35.5625,
+        "0.75": 35.875,
+        "0.99": 37.5557333333,
+        "1.0": 38.7333333333
+      }
+    },
+    "T_LC_Dry_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 912,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.145,
+        "0.01": 34.3549,
+        "0.25": 35.225,
+        "0.5": 35.535,
+        "0.75": 35.855,
+        "0.99": 37.5318,
+        "1.0": 38.7333333333
+      }
+    },
+    "T_LC_Wet_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 899,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.2566666667,
+        "0.01": 34.0514,
+        "0.25": 35.045,
+        "0.5": 35.345,
+        "0.75": 35.6875,
+        "0.99": 37.4896,
+        "1.0": 38.6366666667
+      }
+    },
+    "T_LC_Max_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 909,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.83,
+        "0.01": 34.4499,
+        "0.25": 35.2925,
+        "0.5": 35.5925,
+        "0.75": 35.9066666667,
+        "0.99": 37.5862,
+        "1.0": 38.78
+      }
+    },
+    "RCC_mean": {
+      "dtype": "float64",
+      "missing_count": 1,
+      "missing_rate": 0.000492853622474,
+      "distinct_nonmissing": 980,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 31.15,
+        "0.01": 33.7643166667,
+        "0.25": 34.79,
+        "0.5": 35.1458333333,
+        "0.75": 35.53,
+        "0.99": 37.3661333333,
+        "1.0": 38.46
+      }
+    },
+    "LCC_mean": {
+      "dtype": "float64",
+      "missing_count": 1,
+      "missing_rate": 0.000492853622474,
+      "distinct_nonmissing": 964,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 32.6066666667,
+        "0.01": 33.68635,
+        "0.25": 34.7575,
+        "0.5": 35.08875,
+        "0.75": 35.44,
+        "0.99": 37.22095,
+        "1.0": 38.4066666667
+      }
+    },
+    "canthiMax_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 868,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 34.04,
+        "0.01": 34.6753,
+        "0.25": 35.415,
+        "0.5": 35.6875,
+        "0.75": 36.0233333333,
+        "0.99": 37.7708,
+        "1.0": 38.9066666667
+      }
+    },
+    "canthi4Max_mean": {
+      "dtype": "float64",
+      "missing_count": 1,
+      "missing_rate": 0.000492853622474,
+      "distinct_nonmissing": 881,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 34.005,
+        "0.01": 34.650675,
+        "0.25": 35.3866666667,
+        "0.5": 35.66,
+        "0.75": 35.99,
+        "0.99": 37.755475,
+        "1.0": 38.8666666667
+      }
+    },
+    "T_FHCC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1037,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 29.765,
+        "0.01": 32.503,
+        "0.25": 34.0625,
+        "0.5": 34.495,
+        "0.75": 34.88,
+        "0.99": 36.3344,
+        "1.0": 37.5966666667
+      }
+    },
+    "T_FHRC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1051,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 30.05,
+        "0.01": 32.4898666667,
+        "0.25": 34.0525,
+        "0.5": 34.4966666667,
+        "0.75": 34.8725,
+        "0.99": 36.3697,
+        "1.0": 37.5066666667
+      }
+    },
+    "T_FHLC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1060,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 30.52,
+        "0.01": 32.2079,
+        "0.25": 34.0225,
+        "0.5": 34.48,
+        "0.75": 34.88,
+        "0.99": 36.3402,
+        "1.0": 37.64
+      }
+    },
+    "T_FHBC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1045,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 30.225,
+        "0.01": 32.3535,
+        "0.25": 33.955,
+        "0.5": 34.3875,
+        "0.75": 34.7875,
+        "0.99": 36.2871333333,
+        "1.0": 37.6933333333
+      }
+    },
+    "T_FHTC_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1050,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 30.03,
+        "0.01": 31.9653,
+        "0.25": 34.0766666667,
+        "0.5": 34.5175,
+        "0.75": 34.9325,
+        "0.99": 36.4630666667,
+        "1.0": 37.8233333333
+      }
+    },
+    "T_FH_Max_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 909,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 32.515,
+        "0.01": 33.954,
+        "0.25": 35.025,
+        "0.5": 35.3266666667,
+        "0.75": 35.6433333333,
+        "0.99": 37.26,
+        "1.0": 38.61
+      }
+    },
+    "T_FHC_Max_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 968,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 31.09,
+        "0.01": 33.3914,
+        "0.25": 34.64,
+        "0.5": 35.0175,
+        "0.75": 35.36,
+        "0.99": 36.7724,
+        "1.0": 38.1333333333
+      }
+    },
+    "T_Max_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 833,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 34.39,
+        "0.01": 35.1011,
+        "0.25": 35.76,
+        "0.5": 36.0325,
+        "0.75": 36.285,
+        "0.99": 37.9722,
+        "1.0": 39.1566666667
+      }
+    },
+    "T_OR_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 942,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.155,
+        "0.01": 34.2913,
+        "0.25": 35.405,
+        "0.5": 35.77,
+        "0.75": 36.1025,
+        "0.99": 37.6793,
+        "1.0": 39.1066666667
+      }
+    },
+    "T_OR_Max_mean": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 946,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 33.23,
+        "0.01": 34.3291,
+        "0.25": 35.445,
+        "0.5": 35.81,
+        "0.75": 36.1333333333,
+        "0.99": 37.7243,
+        "1.0": 39.1433333333
+      }
+    },
+    "device": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "FLIR": 1020,
+        "ICI": 1009
+      }
+    },
+    "Gender": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "Female": 1206,
+        "Male": 823
+      }
+    },
+    "Age": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 8,
+      "top_values": {
+        "18-20": 1060,
+        "21-25": 705,
+        "26-30": 134,
+        "31-40": 62,
+        "21-30": 22,
+        "51-60": 22,
+        "41-50": 18,
+        ">60": 6
+      }
+    },
+    "Ethnicity": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 6,
+      "top_values": {
+        "White": 1005,
+        "Asian": 518,
+        "Black or African-American": 286,
+        "Hispanic/Latino": 112,
+        "Multiracial": 100,
+        "American Indian or Alaskan Native": 8
+      }
+    },
+    "T_atm": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 78,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 20.2,
+        "0.01": 21,
+        "0.25": 23.4,
+        "0.5": 24,
+        "0.75": 24.7,
+        "0.99": 28,
+        "1.0": 29.1
+      }
+    },
+    "Humidity": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 355,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 9.9,
+        "0.01": 11.5,
+        "0.25": 17.6,
+        "0.5": 26.2,
+        "0.75": 36.1,
+        "0.99": 59.3,
+        "1.0": 3021.1
+      }
+    },
+    "Distance": {
+      "dtype": "float64",
+      "missing_count": 4,
+      "missing_rate": 0.0019714144899,
+      "distinct_nonmissing": 33,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.54,
+        "0.01": 0.55,
+        "0.25": 0.6,
+        "0.5": 0.62,
+        "0.75": 0.7,
+        "0.99": 0.8,
+        "1.0": 79
+      }
+    },
+    "aveOralM": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 70,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 35.54,
+        "0.01": 36.14,
+        "0.25": 36.79,
+        "0.5": 36.94,
+        "0.75": 37.14,
+        "0.99": 38.94,
+        "1.0": 40.34
+      }
+    }
+  }
+}

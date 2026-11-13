@@ -1,0 +1,220 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 332,
+    "name": "Online News Popularity",
+    "batch": 2,
+    "raw_rows_selected": 39644,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 39644,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 39644,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 39644,
+    "input_field_count": 42,
+    "examples_with_null_input": 1,
+    "flagged_examples": 1,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+    "files": [
+      {
+        "path": "datasets/uci_332_news_popularity/part-00001.jsonl.gz",
+        "records": 39644,
+        "sha256": "748843d5f7262e6fe492247f155cda98d5f1292534790f7b5d83f73caaa246ea",
+        "bytes": 12303580
+      }
+    ],
+    "uncompressed_sha256": "35a83067bad432ff112c2de960a1155d5d5824790db5a1e4a0a9fd6d5f896968"
+  },
+  "contract": {
+    "key": "news_popularity",
+    "targets": [
+      [
+        "shares",
+        "article_share_count",
+        "shares accumulated by source collection",
+        "count"
+      ]
+    ],
+    "task": "Estimate the source snapshot share count of a news article from publication-date and content-statistic features.",
+    "context": "n_tokens*: word counts; n_unique_tokens/n_non_stop*: source token ratios; num_*: link/image/video/keyword counts; data_channel_*: channel flags; weekday_* and is_weekend: publication-day flags. Sentiment/subjectivity fields are source-derived text statistics. price-like keyword popularity, referenced-article share statistics, LDA topic scores, URLs and elapsed collection time are excluded. This is a retrospective snapshot task, not a fixed-horizon popularity forecast.",
+    "split": "chronological_by_publication_date; variable exposure horizon remains a limitation"
+  },
+  "input_fields": [
+    "n_tokens_title",
+    "n_tokens_content",
+    "n_unique_tokens",
+    "n_non_stop_words",
+    "n_non_stop_unique_tokens",
+    "num_hrefs",
+    "num_self_hrefs",
+    "num_imgs",
+    "num_videos",
+    "average_token_length",
+    "num_keywords",
+    "data_channel_is_lifestyle",
+    "data_channel_is_entertainment",
+    "data_channel_is_bus",
+    "data_channel_is_socmed",
+    "data_channel_is_tech",
+    "data_channel_is_world",
+    "weekday_is_monday",
+    "weekday_is_tuesday",
+    "weekday_is_wednesday",
+    "weekday_is_thursday",
+    "weekday_is_friday",
+    "weekday_is_saturday",
+    "weekday_is_sunday",
+    "is_weekend",
+    "global_subjectivity",
+    "global_sentiment_polarity",
+    "global_rate_positive_words",
+    "global_rate_negative_words",
+    "rate_positive_words",
+    "rate_negative_words",
+    "avg_positive_polarity",
+    "min_positive_polarity",
+    "max_positive_polarity",
+    "avg_negative_polarity",
+    "min_negative_polarity",
+    "max_negative_polarity",
+    "title_subjectivity",
+    "title_sentiment_polarity",
+    "abs_title_subjectivity",
+    "abs_title_sentiment_polarity",
+    "publication_date"
+  ],
+  "excluded_input_columns": [
+    "url",
+    "timedelta",
+    "kw_min_min",
+    "kw_max_min",
+    "kw_avg_min",
+    "kw_min_max",
+    "kw_max_max",
+    "kw_avg_max",
+    "kw_min_avg",
+    "kw_max_avg",
+    "kw_avg_avg",
+    "self_reference_min_shares",
+    "self_reference_max_shares",
+    "self_reference_avg_sharess",
+    "LDA_00",
+    "LDA_01",
+    "LDA_02",
+    "LDA_03",
+    "LDA_04",
+    "shares"
+  ],
+  "grouping_columns": [
+    "url"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/332/online+news+popularity"
+  },
+  "source_archive_sha256": "dba2ae526f62ccef6f2f8efb53b0268319f4d0d2719bb98d88958cfe31d58a22",
+  "dataset_doi": "10.24432/C5NS3V",
+  "creators": [
+    "Kelwin Fernandes",
+    "Pedro Vinagre",
+    "Paulo Cortez",
+    "Pedro Sernadela"
+  ],
+  "citation_paper": {
+    "ID": 390,
+    "type": "NATIVE",
+    "title": "A Proactive Intelligent Decision Support System for Predicting the Popularity of Online News",
+    "authors": "Kelwin Fernandes, Pedro Vinagre, P. Cortez",
+    "venue": "Portuguese Conference on Artificial Intelligence",
+    "year": 2015,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/A-Proactive-Intelligent-Decision-Support-System-for-Fernandes-Vinagre/ad7f3da7a5d6a1e18cc5a176f18f52687b912fea",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_332/article_share_count": {
+      "examples": 39644,
+      "label_quantiles": {
+        "0.0": 1,
+        "0.01": 381,
+        "0.5": 1400,
+        "0.99": 31657,
+        "1.0": 843300
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 1887,
+        "median": 2063,
+        "max": 2147
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "potential_future_share_features",
+      "count": 12,
+      "action": "remove",
+      "detail": "Nine kw_* and three self_reference_* share-derived features excluded because their as-of-time provenance is not verifiable."
+    },
+    {
+      "code": "full_corpus_topic_features",
+      "count": 5,
+      "action": "remove",
+      "detail": "LDA scores omitted because fitted-corpus provenance is not established."
+    },
+    {
+      "code": "variable_exposure_horizon",
+      "count": 39644,
+      "action": "limit_claim",
+      "detail": "Shares measured at collection with varying article ages. This is not a fixed 7-day/30-day future popularity label."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 4,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

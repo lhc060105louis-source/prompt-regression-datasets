@@ -1,0 +1,253 @@
+{
+  "version": "2.1.0",
+  "status": "passed",
+  "examples_verified": 1067479,
+  "source_label_links_verified": 1070689,
+  "numeric_policy": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "datasets": [
+    {
+      "uci_id": 165,
+      "status": "passed",
+      "examples_verified": 1005,
+      "changed_records": 249,
+      "source_label_links_verified": 1030,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "6f9a9cf76c1f30beac89d9e11bece8b6b0c79dca1029c8a21caefcb8cb87457c"
+    },
+    {
+      "uci_id": 242,
+      "status": "passed",
+      "examples_verified": 1536,
+      "changed_records": 0,
+      "data_sha256": "57469df967c389fedf02c1bacbd8fcad33ab6abaae604c96bf5e64b3d9d27fa2"
+    },
+    {
+      "uci_id": 294,
+      "status": "passed",
+      "examples_verified": 9527,
+      "changed_records": 0,
+      "data_sha256": "6f59aae13a92d60ab278852f8e28b814b81d3e1b8199d3ae9d1fb9dbca056194"
+    },
+    {
+      "uci_id": 291,
+      "status": "passed",
+      "examples_verified": 1503,
+      "changed_records": 0,
+      "data_sha256": "46dc18d9fa4bcfcd700a2dd449905ae52d3f6e9a87bde5212c186f0e4cd20fb0"
+    },
+    {
+      "uci_id": 243,
+      "status": "passed",
+      "examples_verified": 308,
+      "changed_records": 0,
+      "data_sha256": "30d1d38803614b67f1a51694d3abd5361cae89155e2ce2085a9ab55c16ac0f73"
+    },
+    {
+      "uci_id": 1,
+      "status": "passed",
+      "examples_verified": 4177,
+      "changed_records": 0,
+      "data_sha256": "8677e532c744dfe63f0e3d719076e8cdd2b03f0c22a3ac6b4b676ae7197b5aa5"
+    },
+    {
+      "uci_id": 9,
+      "status": "passed",
+      "examples_verified": 398,
+      "changed_records": 0,
+      "data_sha256": "ce85884d92c6b4ca952d551b5ffa19c40af2dfe93e83b90169c62f9d662aca1c"
+    },
+    {
+      "uci_id": 477,
+      "status": "passed",
+      "examples_verified": 414,
+      "changed_records": 0,
+      "data_sha256": "917c4304f22baa80409272cf68eca284dfec0ca7adea0a862de0385daf7601a7"
+    },
+    {
+      "uci_id": 29,
+      "status": "passed",
+      "examples_verified": 209,
+      "changed_records": 0,
+      "data_sha256": "55835c64fb0f0647b484e767c6edeb0c0e9880f93bd33638e3923f8b959fc880"
+    },
+    {
+      "uci_id": 87,
+      "status": "passed",
+      "examples_verified": 167,
+      "changed_records": 0,
+      "data_sha256": "1e4e0a895ae940f974d68aea3e16553dc11debc7dbf1542efe20389bbe810b4d"
+    },
+    {
+      "uci_id": 464,
+      "status": "passed",
+      "examples_verified": 21193,
+      "changed_records": 20916,
+      "source_label_links_verified": 21263,
+      "additional_duplicates_merged": 4,
+      "data_sha256": "762dda6dd6acec429b28718d6caecb7d8ef5774bce379144cc14ce3c8393ef7a"
+    },
+    {
+      "uci_id": 504,
+      "status": "passed",
+      "examples_verified": 907,
+      "changed_records": 0,
+      "data_sha256": "bd7b5dc8aed59f8810c3baa3ce3e78b9ad3b6c7c31692c2da0ff8261b41669fe"
+    },
+    {
+      "uci_id": 186,
+      "status": "passed",
+      "examples_verified": 5320,
+      "changed_records": 32,
+      "source_label_links_verified": 6497,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "deda2e6d958efdbb6ea8a37d5c45518f97e07ef3e572c664ad0d046321feabee"
+    },
+    {
+      "uci_id": 320,
+      "status": "passed",
+      "examples_verified": 1043,
+      "changed_records": 0,
+      "data_sha256": "e24750f5aa812446bd3413596a506e7045be737304c7afba6e5ea6d6327bf84b"
+    },
+    {
+      "uci_id": 189,
+      "status": "passed",
+      "examples_verified": 11750,
+      "changed_records": 0,
+      "data_sha256": "c554164e09b9242708c0e71c54f4d821ef74e796a8d68ba09a0947baaab03c24"
+    },
+    {
+      "uci_id": 597,
+      "status": "passed",
+      "examples_verified": 1197,
+      "changed_records": 0,
+      "data_sha256": "c7db103100fcd9cbf858e2073da02575649bc00d73182438944342e65537742f"
+    },
+    {
+      "uci_id": 275,
+      "status": "passed",
+      "examples_verified": 17379,
+      "changed_records": 0,
+      "data_sha256": "41d2ec8691a148e34819207b144f0855637c805e17a9f74d975d8d18a29ab4c8"
+    },
+    {
+      "uci_id": 492,
+      "status": "passed",
+      "examples_verified": 48187,
+      "changed_records": 71,
+      "source_label_links_verified": 48204,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "1593dff7ea446563cf13c692f8db980dfe690e602af5b122603eadd70f35182b"
+    },
+    {
+      "uci_id": 10,
+      "status": "passed",
+      "examples_verified": 201,
+      "changed_records": 0,
+      "data_sha256": "ffc2687e92b2f2be5434b5573c683f96bfb751c157cc4ccdfc2b092ff875f305"
+    },
+    {
+      "uci_id": 265,
+      "status": "passed",
+      "examples_verified": 44019,
+      "changed_records": 0,
+      "data_sha256": "34778c35ecd1dd80506d2387b0b065b6c4cbd947bb55f341b4a05f5b5e1f2971"
+    },
+    {
+      "uci_id": 560,
+      "status": "passed",
+      "examples_verified": 8760,
+      "changed_records": 0,
+      "data_sha256": "d42acf005d6e4b39caa9e89f5fc783cb4146c6023dfdf3664966f8f5052be821"
+    },
+    {
+      "uci_id": 374,
+      "status": "passed",
+      "examples_verified": 19735,
+      "changed_records": 19718,
+      "source_label_links_verified": 19735,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "4dde7a1e40dcd956b0aee0529f8adda1bdb876fdc71422168b79c116a24284f4"
+    },
+    {
+      "uci_id": 501,
+      "status": "passed",
+      "examples_verified": 412029,
+      "changed_records": 758,
+      "source_label_links_verified": 412029,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "39a7bd09aad812077bf66e7fc7d144b8cf280447edd2aad317d1ccb63f313c2b"
+    },
+    {
+      "uci_id": 551,
+      "status": "passed",
+      "examples_verified": 73452,
+      "changed_records": 0,
+      "data_sha256": "8a951fdf66474d5432b572d55bf96ac21c7e00948c78a41ecc778db7f409593a"
+    },
+    {
+      "uci_id": 440,
+      "status": "passed",
+      "examples_verified": 241600,
+      "changed_records": 67399,
+      "source_label_links_verified": 241600,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "509fcbd7bf9f12fdf82521f68a1ef2665f4563668a8159ae78676c25e0661788"
+    },
+    {
+      "uci_id": 332,
+      "status": "passed",
+      "examples_verified": 39644,
+      "changed_records": 4,
+      "source_label_links_verified": 39644,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "35a83067bad432ff112c2de960a1155d5d5824790db5a1e4a0a9fd6d5f896968"
+    },
+    {
+      "uci_id": 555,
+      "status": "passed",
+      "examples_verified": 99277,
+      "changed_records": 0,
+      "data_sha256": "36f5d2a5cf6b57812294e7b6df23522b6265ffbbcf27913c2fdaecf3b393eaa7"
+    },
+    {
+      "uci_id": 162,
+      "status": "passed",
+      "examples_verified": 513,
+      "changed_records": 0,
+      "data_sha256": "bcf2ac91d43309d2430189c51f3a7a34d9f374715c56a84b4f1eace63197f0dc"
+    },
+    {
+      "uci_id": 925,
+      "status": "passed",
+      "examples_verified": 2029,
+      "changed_records": 2019,
+      "source_label_links_verified": 2029,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "96db79263b25ebba0e56095f28177adfe782de5116ebfcf4ae21f967d77621a1"
+    }
+  ],
+  "training_executed": false,
+  "checks": [
+    "Every old record mapped to its normalized record; merged duplicates retain all source_refs and multiplicity",
+    "Every changed number independently checked within 5.01e-12 relative error using Decimal; nonzero values never rounded to zero",
+    "At most 12 significant digits for nonintegral prepared numbers",
+    "All prompts contain exactly the corresponding input JSON",
+    "Input hashes and content-derived sample IDs regenerated; uniqueness checked",
+    "Known groups, exclusions, text, units and unassigned splits preserved",
+    "Every combined gzip line equals its per-dataset source",
+    "Raw source files retain baseline SHA256 values"
+  ],
+  "source_validation_basis": "Original release fully source-validated; v2.1.0 verified exhaustively against that release with the declared precision transformation. Exact equality to unrounded floating source values is no longer claimed."
+}

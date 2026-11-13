@@ -1,0 +1,22 @@
+{
+  "uci_id": "87",
+  "priority": "A",
+  "name": "Servo",
+  "domain": "自动控制",
+  "reported_size": "167",
+  "target": "伺服系统响应值class，原说明认为是上升时间",
+  "input_description": "motor、screw、pgain、vgain",
+  "missingness": "官网无缺失",
+  "proposed_split": "配置去重后固定划分",
+  "screening_notes": "类别与数值混合；目标单位未明确，不擅自写成秒；小样本补充项",
+  "source_url": "https://archive.ics.uci.edu/dataset/87/servo",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/87/servo",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/87/servo.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "02822bd9f00d8af7394163649e6398711da0a0b02170e380fd4d15b14e8a5659",
+  "archive_bytes": 2423,
+  "metadata_status": "ok"
+}

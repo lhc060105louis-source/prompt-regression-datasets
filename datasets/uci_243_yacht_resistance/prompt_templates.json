@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the residuary resistance per unit displacement weight of a sailing yacht.",
+  "context": "Inputs are the longitudinal buoyancy-centre position, prismatic coefficient, length/displacement ratio, beam/draught ratio, length/beam ratio and Froude number. All are dimensionless source values.",
+  "targets": [
+    {
+      "column": "residuary_resistance",
+      "name": "residuary_resistance_per_displacement_weight",
+      "unit": "dimensionless source scale",
+      "type": "continuous"
+    }
+  ]
+}

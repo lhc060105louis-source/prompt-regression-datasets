@@ -1,0 +1,23 @@
+{
+  "uci_id": "560",
+  "priority": "B",
+  "name": "Seoul Bike Sharing Demand",
+  "domain": "城市出行",
+  "reported_size": "8760",
+  "target": "Rented Bike Count",
+  "input_description": "气象、时间、季节、节假日与运营状态",
+  "missingness": "官网无缺失",
+  "proposed_split": "按时间划分",
+  "screening_notes": "官网将目标列也标作Feature，必须手动移出输入；与275同属单车需求家族；区分运营关闭与低需求",
+  "source_url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/560/seoul+bike+sharing+demand.zip",
+  "downloaded_at_utc": "2026-11-09T20:13:58Z",
+  "archive_sha256": "139e9908f0a3544bb222386855c9ce107e96467306bb8e4ce936aab59e7baac4",
+  "archive_bytes": 604298,
+  "metadata_status": "ok",
+  "batch": 2
+}

@@ -1,0 +1,82 @@
+[
+  {
+    "source_row": 11899,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11900,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11901,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11902,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11947,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11948,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11949,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11950,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11951,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  },
+  {
+    "source_row": 11952,
+    "source_file": "Metro_Interstate_Traffic_Volume.csv.gz",
+    "field": "temp",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_kelvin_to_null"
+  }
+]

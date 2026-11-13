@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict acute toxicity to Pimephales promelas over 96 hours.",
+  "context": "CIC0 is an information-index descriptor; SM1_Dz_Z is a matrix-based descriptor; GATS1i is a 2D autocorrelation descriptor; NdsCH and NdssC are atom-type counts; MLOGP is a molecular lipophilicity descriptor. The target is already negative-log transformed in the source; do not output an untransformed concentration.",
+  "targets": [
+    {
+      "column": "LC50",
+      "name": "acute_fish_toxicity",
+      "unit": "negative log of LC50 in mol/L, as supplied",
+      "type": "continuous"
+    }
+  ]
+}

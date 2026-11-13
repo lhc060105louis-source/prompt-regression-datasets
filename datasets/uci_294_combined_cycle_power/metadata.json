@@ -1,0 +1,155 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 294,
+    "name": "Combined Cycle Power Plant",
+    "raw_rows_selected": 9568,
+    "raw_exact_duplicate_rows": 41,
+    "candidate_task_examples": 9568,
+    "invalid_label_examples": 0,
+    "output_examples": 9527,
+    "collapsed_duplicate_examples": 41,
+    "task_count": 1,
+    "split_groups": 9527,
+    "input_field_count": 4,
+    "examples_with_null_input": 0,
+    "flagged_examples": 55,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_294_combined_cycle_power/part-00001.jsonl.gz",
+        "records": 9527,
+        "sha256": "ef452a6457410f4613d00f41974595cb43b0578e84befc04cdd7d576ecfaf422",
+        "bytes": 1039256
+      }
+    ],
+    "uncompressed_sha256": "6f59aae13a92d60ab278852f8e28b814b81d3e1b8199d3ae9d1fb9dbca056194"
+  },
+  "contract": {
+    "key": "combined_cycle_power",
+    "targets": [
+      [
+        "PE",
+        "net_electrical_power",
+        "MW",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the hourly average net electrical power output of a combined-cycle power plant at full load.",
+    "context": "AT: ambient temperature in degrees Celsius; V: exhaust vacuum in cm Hg; AP: ambient pressure in millibar; RH: relative humidity in percent. Inputs are contemporaneous operating measurements.",
+    "exclude": [],
+    "group": [],
+    "group_note": "Identical input vectors; original timestamps are not provided.",
+    "split": "group_by_identical_input; not a temporal benchmark",
+    "source_file": "CCPP/Folds5x2_pp.xlsx#Sheet1"
+  },
+  "input_fields": [
+    "AT",
+    "V",
+    "AP",
+    "RH"
+  ],
+  "excluded_input_columns": [
+    "PE"
+  ],
+  "grouping_rule": "Identical input vectors; original timestamps are not provided. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "cc7b2a4977c0a44e8221c91d9a7e5746b3c68186cff7e5c61c70af6432b98c7a",
+  "dataset_doi": "10.24432/C5002N",
+  "creators": [
+    "Pnar Tfekci",
+    "Heysem Kaya"
+  ],
+  "citation_paper": {
+    "ID": 406,
+    "type": "NATIVE",
+    "title": "Prediction of full load electrical power output of a base load operated combined cycle power plant using machine learning methods",
+    "authors": "Pınar Tüfekci",
+    "venue": "International Journal of Electrical Power & Energy Systems",
+    "year": 2014,
+    "journal": null,
+    "DOI": "10.1016/j.ijepes.2014.02.027",
+    "URL": "https://www.semanticscholar.org/paper/f164ee353ada936ef97d0d379f8581336ddc9733",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_294/net_electrical_power": {
+      "examples": 9527,
+      "label_quantiles": {
+        "0.0": 420.26,
+        "0.01": 426.9152,
+        "0.5": 451.52,
+        "0.99": 489.6348,
+        "1.0": 495.76
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 574,
+        "median": 581,
+        "max": 582
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "reshuffled_workbook_copies",
+      "count": 4,
+      "action": "use_only_first_sheet",
+      "detail": "5 sheets each contain the same 9568 records in different orders.",
+      "severity": "medium"
+    },
+    {
+      "code": "relative_humidity_above_100",
+      "count": 55,
+      "action": "retain_and_flag",
+      "detail": "Small exceedance may reflect measurement/rounding; not automatically clipped.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 41,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

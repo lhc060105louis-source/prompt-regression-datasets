@@ -1,0 +1,33 @@
+{
+  "uci_id": "925",
+  "priority": "B",
+  "name": "Infrared Thermography Temperature",
+  "domain": "医疗测温",
+  "reported_size": "UCI版1020",
+  "target": "aveOralM或aveOralF，口腔温度",
+  "input_description": "面部温度读数、环境与人口信息，UCI列33特征",
+  "missingness": "UCI称无缺失；原始来源提示部分字段可能为空",
+  "proposed_split": "按受试者分组，跨设备数据同人同split",
+  "screening_notes": "热图已提取为表格，不需要视觉模型；删除另一口温目标；不同设备和合并文件不能重复计数；版本字段需核对",
+  "source_url": "https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset",
+  "license_observed": "CC0 1.0 (original PhysioNet release)",
+  "license_source_url": "https://physionet.org/content/face-oral-temp-data/1.0.0/",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://physionet.org/files/face-oral-temp-data/1.0.0/",
+  "downloaded_at_utc": "2026-11-09T20:14:04Z",
+  "archive_sha256": "26b9fbf63ebce08a4add325551d880ef05a36d90a26ff1e64c06e87d6a43bbd2",
+  "archive_bytes": 1627109,
+  "metadata_status": "ok",
+  "batch": 2,
+  "source_release": "PhysioNet 1.0.0",
+  "file_sha256": {
+    "FLIR_groups1and2.csv": "e14b023b146cca78077f1ca8cbc2151db518708604e5b48e82f23813130e83c5",
+    "ICI_groups1and2.csv": "2fc7ff21f6f970c2706308c7b77193d09b059c24397763e29cfd27df3c8a0eef",
+    "LICENSE.txt": "4d2eef679d5faf924534bcc132646322e9a852ce50ae5616694e0b95f7b8275d",
+    "SHA256SUMS.txt": "d4135a488526240a2e3e2612a5ae1a6a2876a4385eab4383d1d9f9249fbd31c5",
+    "_Table1.pdf": "6af32f83542a74f235eaafa8375b7858ee13c223347302759b6b13fbe0fcedbc",
+    "_Table2.pdf": "049720de1f7cec98797cb2b3f729017748778ee2975993511eb3dc859d2a8f1b"
+  },
+  "hash_type": "sha256_of_sorted_file_hash_manifest"
+}

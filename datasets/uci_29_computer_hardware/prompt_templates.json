@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the published relative performance of a computer from its hardware configuration.",
+  "context": "cycle_time_ns: cycle time in nanoseconds; memory_min_kb and memory_max_kb: main memory in kilobytes; cache_kb: cache in kilobytes; channels_min and channels_max: channel counts.",
+  "targets": [
+    {
+      "column": "PRP",
+      "name": "published_relative_performance",
+      "unit": "relative performance score",
+      "type": "continuous"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "uci_id": 332,
+  "path": "datasets/uci_332_news_popularity/data.jsonl",
+  "changed_records": 4,
+  "changed_fields": {
+    "input.title_sentiment_polarity": 4,
+    "input.abs_title_sentiment_polarity": 4
+  },
+  "max_absolute_change": 1.232595164407831e-32,
+  "max_relative_change": 2.220446049248626e-16,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "input.title_sentiment_polarity",
+      5.551115123130001e-17,
+      5.55111512313e-17
+    ],
+    [
+      "input.abs_title_sentiment_polarity",
+      5.551115123130001e-17,
+      5.55111512313e-17
+    ],
+    [
+      "input.title_sentiment_polarity",
+      1.8503717077100002e-17,
+      1.85037170771e-17
+    ],
+    [
+      "input.abs_title_sentiment_polarity",
+      1.8503717077100002e-17,
+      1.85037170771e-17
+    ],
+    [
+      "input.title_sentiment_polarity",
+      5.551115123130001e-17,
+      5.55111512313e-17
+    ]
+  ]
+}

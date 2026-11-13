@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the source snapshot share count of a news article from publication-date and content-statistic features.",
+  "context": "n_tokens*: word counts; n_unique_tokens/n_non_stop*: source token ratios; num_*: link/image/video/keyword counts; data_channel_*: channel flags; weekday_* and is_weekend: publication-day flags. Sentiment/subjectivity fields are source-derived text statistics. price-like keyword popularity, referenced-article share statistics, LDA topic scores, URLs and elapsed collection time are excluded. This is a retrospective snapshot task, not a fixed-horizon popularity forecast.",
+  "targets": [
+    {
+      "column": "shares",
+      "name": "article_share_count",
+      "unit": "shares accumulated by source collection",
+      "type": "count"
+    }
+  ]
+}

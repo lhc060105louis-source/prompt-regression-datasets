@@ -1,0 +1,208 @@
+{
+  "rows": 1197,
+  "columns": 12,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "date": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 59,
+      "top_values": {
+        "2015-01-31": 24,
+        "2015-03-11": 24,
+        "2015-01-11": 23,
+        "2015-01-12": 23,
+        "2015-01-24": 23,
+        "2015-03-10": 23,
+        "2015-01-05": 22,
+        "2015-01-07": 22,
+        "2015-01-08": 22,
+        "2015-01-10": 22,
+        "2015-01-13": 22,
+        "2015-01-22": 22
+      }
+    },
+    "quarter": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "top_values": {
+        "Quarter1": 360,
+        "Quarter2": 335,
+        "Quarter4": 248,
+        "Quarter3": 210,
+        "Quarter5": 44
+      }
+    },
+    "department": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "sewing": 691,
+        "finishing": 506
+      }
+    },
+    "day": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 6,
+      "top_values": {
+        "Wednesday": 208,
+        "Sunday": 203,
+        "Tuesday": 201,
+        "Thursday": 199,
+        "Monday": 199,
+        "Saturday": 187
+      }
+    },
+    "team": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 3,
+        "0.5": 6,
+        "0.75": 9,
+        "0.99": 12,
+        "1.0": 12
+      }
+    },
+    "targeted_productivity": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 9,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.07,
+        "0.01": 0.35,
+        "0.25": 0.7,
+        "0.5": 0.75,
+        "0.75": 0.8,
+        "0.99": 0.8,
+        "1.0": 0.8
+      }
+    },
+    "smv": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 70,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.9,
+        "0.01": 2.9,
+        "0.25": 3.94,
+        "0.5": 15.26,
+        "0.75": 24.26,
+        "0.99": 42.97,
+        "1.0": 54.56
+      }
+    },
+    "wip": {
+      "dtype": "float64",
+      "missing_count": 506,
+      "missing_rate": 0.4227234753550543,
+      "distinct_nonmissing": 548,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 7,
+        "0.01": 27.600000000000005,
+        "0.25": 774.5,
+        "0.5": 1039,
+        "0.75": 1252.5,
+        "0.99": 9072.000000000018,
+        "1.0": 23122
+      }
+    },
+    "over_time": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 143,
+      "nonfinite_count": 0,
+      "zero_count": 31,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 1440,
+        "0.5": 3960,
+        "0.75": 6960,
+        "0.99": 10620,
+        "1.0": 25920
+      }
+    },
+    "no_of_style_change": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "nonfinite_count": 0,
+      "zero_count": 1050,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 0,
+        "0.99": 2,
+        "1.0": 2
+      }
+    },
+    "no_of_workers": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 61,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2,
+        "0.01": 7,
+        "0.25": 9,
+        "0.5": 34,
+        "0.75": 57,
+        "0.99": 59.5,
+        "1.0": 89
+      }
+    },
+    "actual_productivity": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 879,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.233705476,
+        "0.01": 0.26359303688,
+        "0.25": 0.650307143,
+        "0.5": 0.773333333,
+        "0.75": 0.850252525,
+        "0.99": 1.00515583344,
+        "1.0": 1.1204375
+      }
+    }
+  }
+}

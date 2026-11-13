@@ -1,0 +1,201 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 189,
+    "name": "Parkinsons Telemonitoring",
+    "raw_rows_selected": 5875,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 11750,
+    "invalid_label_examples": 0,
+    "output_examples": 11750,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 2,
+    "split_groups": 42,
+    "input_field_count": 16,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_189_parkinsons/part-00001.jsonl.gz",
+        "records": 11750,
+        "sha256": "053723acc43ea9e5bc08d1fa8f7f7594bcfde93d8ad630a38bf109b354b8886b",
+        "bytes": 1506219
+      }
+    ],
+    "uncompressed_sha256": "c554164e09b9242708c0e71c54f4d821ef74e796a8d68ba09a0947baaab03c24"
+  },
+  "contract": {
+    "key": "parkinsons",
+    "targets": [
+      [
+        "motor_UPDRS",
+        "motor_updrs",
+        "UPDRS score",
+        "continuous"
+      ],
+      [
+        "total_UPDRS",
+        "total_updrs",
+        "UPDRS score",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the specified Parkinson disease symptom score from biomedical voice measurements.",
+    "context": "Jitter fields measure fundamental-frequency variation; Shimmer fields measure amplitude variation; NHR and HNR measure noise relative to tonal components; RPDE, DFA and PPE are nonlinear voice descriptors. Values retain their supplied scales. Targets are the source clinician scores linearly interpolated over time. Patient ID, demographics, elapsed time and the other symptom score are not provided.",
+    "exclude": [
+      "subject#",
+      "age",
+      "sex",
+      "test_time"
+    ],
+    "group": [
+      "subject#"
+    ],
+    "group_note": "Verified subject number, linking all voice recordings and both outcomes.",
+    "split": "group_by_patient",
+    "source_file": "parkinsons_updrs.data"
+  },
+  "input_fields": [
+    "Jitter(%)",
+    "Jitter(Abs)",
+    "Jitter:RAP",
+    "Jitter:PPQ5",
+    "Jitter:DDP",
+    "Shimmer",
+    "Shimmer(dB)",
+    "Shimmer:APQ3",
+    "Shimmer:APQ5",
+    "Shimmer:APQ11",
+    "Shimmer:DDA",
+    "NHR",
+    "HNR",
+    "RPDE",
+    "DFA",
+    "PPE"
+  ],
+  "excluded_input_columns": [
+    "motor_UPDRS",
+    "total_UPDRS",
+    "subject#",
+    "age",
+    "sex",
+    "test_time"
+  ],
+  "grouping_rule": "Verified subject number, linking all voice recordings and both outcomes. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "2f82bb0ef96fa7d8d7edf4d97b89173e07c2cca7723440a64bc38918a83345df",
+  "dataset_doi": "10.24432/C5ZS3N",
+  "creators": [
+    "Athanasios Tsanas",
+    "Max Little"
+  ],
+  "citation_paper": {
+    "ID": 229,
+    "type": "NATIVE",
+    "title": "Accurate Telemonitoring of Parkinson's Disease Progression by Noninvasive Speech Tests",
+    "authors": "A. Tsanas, Max A. Little, P. McSharry, L. Ramig",
+    "venue": "IEEE Transactions on Biomedical Engineering",
+    "year": 2010,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/1fdf33b6d8b1bdb38866ba824c1dcaecdfb6bdd6",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": "19932995",
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_189/motor_updrs": {
+      "examples": 5875,
+      "label_quantiles": {
+        "0.0": 5.0377,
+        "0.01": 6,
+        "0.5": 20.871,
+        "0.99": 36.9369,
+        "1.0": 39.511
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 1033,
+        "median": 1042,
+        "max": 1045
+      }
+    },
+    "uci_189/total_updrs": {
+      "examples": 5875,
+      "label_quantiles": {
+        "0.0": 7,
+        "0.01": 7.0883,
+        "0.5": 27.576,
+        "0.99": 54.55,
+        "1.0": 54.992
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 1033,
+        "median": 1042,
+        "max": 1045
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "repeated_patients",
+      "count": 42,
+      "action": "group_by_patient",
+      "detail": "All recordings and both outcomes for a patient share a split group.",
+      "severity": "medium"
+    },
+    {
+      "code": "interpolated_labels",
+      "count": 5875,
+      "action": "retain_and_disclose",
+      "detail": "Original names file explicitly describes both UPDRS scores as linearly interpolated, not independently observed at every voice recording.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

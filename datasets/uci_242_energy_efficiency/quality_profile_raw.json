@@ -1,0 +1,187 @@
+{
+  "rows": 768,
+  "columns": 10,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "relative_compactness": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.62,
+        "0.01": 0.62,
+        "0.25": 0.6825,
+        "0.5": 0.75,
+        "0.75": 0.83,
+        "0.99": 0.98,
+        "1.0": 0.98
+      }
+    },
+    "surface_area": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 514.5,
+        "0.01": 514.5,
+        "0.25": 606.375,
+        "0.5": 673.75,
+        "0.75": 741.125,
+        "0.99": 808.5,
+        "1.0": 808.5
+      }
+    },
+    "wall_area": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 245,
+        "0.01": 245,
+        "0.25": 294,
+        "0.5": 318.5,
+        "0.75": 343,
+        "0.99": 416.5,
+        "1.0": 416.5
+      }
+    },
+    "roof_area": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 110.25,
+        "0.01": 110.25,
+        "0.25": 140.875,
+        "0.5": 183.75,
+        "0.75": 220.5,
+        "0.99": 220.5,
+        "1.0": 220.5
+      }
+    },
+    "overall_height": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 3.5,
+        "0.01": 3.5,
+        "0.25": 3.5,
+        "0.5": 5.25,
+        "0.75": 7,
+        "0.99": 7,
+        "1.0": 7
+      }
+    },
+    "orientation": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2,
+        "0.01": 2,
+        "0.25": 2.75,
+        "0.5": 3.5,
+        "0.75": 4.25,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "glazing_area": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 48,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0.1,
+        "0.5": 0.25,
+        "0.75": 0.4,
+        "0.99": 0.4,
+        "1.0": 0.4
+      }
+    },
+    "glazing_distribution": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 6,
+      "nonfinite_count": 0,
+      "zero_count": 48,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 1.75,
+        "0.5": 3,
+        "0.75": 4,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "heating_load": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 587,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 6.01,
+        "0.01": 6.6479,
+        "0.25": 12.9925,
+        "0.5": 18.95,
+        "0.75": 31.6675,
+        "0.99": 42.0899,
+        "1.0": 43.1
+      }
+    },
+    "cooling_load": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 636,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 10.9,
+        "0.01": 11.726700000000001,
+        "0.25": 15.620000000000001,
+        "0.5": 22.08,
+        "0.75": 33.1325,
+        "0.99": 45.5431,
+        "1.0": 48.03
+      }
+    }
+  }
+}

@@ -1,0 +1,896 @@
+{
+  "version": "2.1.0",
+  "created_date": "2026-11-09",
+  "datasets": [
+    {
+      "uci_id": 165,
+      "name": "Concrete Compressive Strength",
+      "raw_rows_selected": 1030,
+      "raw_exact_duplicate_rows": 25,
+      "candidate_task_examples": 1030,
+      "invalid_label_examples": 0,
+      "output_examples": 1005,
+      "collapsed_duplicate_examples": 25,
+      "task_count": 1,
+      "split_groups": 428,
+      "input_field_count": 8,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 9,
+      "source_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_165_concrete_strength/part-00001.jsonl.gz",
+          "records": 1005,
+          "sha256": "904d69b2bc4251d3181ecad15967678d3d57ca121feb8486906efdf3e7a6d39a",
+          "bytes": 101363
+        }
+      ],
+      "uncompressed_sha256": "6f9a9cf76c1f30beac89d9e11bece8b6b0c79dca1029c8a21caefcb8cb87457c"
+    },
+    {
+      "uci_id": 242,
+      "name": "Energy Efficiency",
+      "raw_rows_selected": 768,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1536,
+      "invalid_label_examples": 0,
+      "output_examples": 1536,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 2,
+      "split_groups": 12,
+      "input_field_count": 8,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_242_energy_efficiency/part-00001.jsonl.gz",
+          "records": 1536,
+          "sha256": "5cbc5be78422c74282c070c14f2b2c608b72a17e70f1566fa9aee1b8d83574ae",
+          "bytes": 94017
+        }
+      ],
+      "uncompressed_sha256": "57469df967c389fedf02c1bacbd8fcad33ab6abaae604c96bf5e64b3d9d27fa2"
+    },
+    {
+      "uci_id": 294,
+      "name": "Combined Cycle Power Plant",
+      "raw_rows_selected": 9568,
+      "raw_exact_duplicate_rows": 41,
+      "candidate_task_examples": 9568,
+      "invalid_label_examples": 0,
+      "output_examples": 9527,
+      "collapsed_duplicate_examples": 41,
+      "task_count": 1,
+      "split_groups": 9527,
+      "input_field_count": 4,
+      "examples_with_null_input": 0,
+      "flagged_examples": 55,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_294_combined_cycle_power/part-00001.jsonl.gz",
+          "records": 9527,
+          "sha256": "ef452a6457410f4613d00f41974595cb43b0578e84befc04cdd7d576ecfaf422",
+          "bytes": 1039256
+        }
+      ],
+      "uncompressed_sha256": "6f59aae13a92d60ab278852f8e28b814b81d3e1b8199d3ae9d1fb9dbca056194"
+    },
+    {
+      "uci_id": 291,
+      "name": "Airfoil Self-Noise",
+      "raw_rows_selected": 1503,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1503,
+      "invalid_label_examples": 0,
+      "output_examples": 1503,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 106,
+      "input_field_count": 5,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_291_airfoil_noise/part-00001.jsonl.gz",
+          "records": 1503,
+          "sha256": "2fc98e6ea44a0b960d149c10c6c0a3226ec5a9837ca80d04c093572add60ef77",
+          "bytes": 125262
+        }
+      ],
+      "uncompressed_sha256": "46dc18d9fa4bcfcd700a2dd449905ae52d3f6e9a87bde5212c186f0e4cd20fb0"
+    },
+    {
+      "uci_id": 243,
+      "name": "Yacht Hydrodynamics",
+      "raw_rows_selected": 308,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 308,
+      "invalid_label_examples": 0,
+      "output_examples": 308,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 22,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_243_yacht_resistance/part-00001.jsonl.gz",
+          "records": 308,
+          "sha256": "98e44c9c406b0fc6aca2d74591f8fb09b7e91fe5f6066acbe8407d62a37abdde",
+          "bytes": 25676
+        }
+      ],
+      "uncompressed_sha256": "30d1d38803614b67f1a51694d3abd5361cae89155e2ce2085a9ab55c16ac0f73"
+    },
+    {
+      "uci_id": 1,
+      "name": "Abalone",
+      "raw_rows_selected": 4177,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 4177,
+      "invalid_label_examples": 0,
+      "output_examples": 4177,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 4177,
+      "input_field_count": 8,
+      "examples_with_null_input": 2,
+      "flagged_examples": 3,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_1_abalone_rings/part-00001.jsonl.gz",
+          "records": 4177,
+          "sha256": "f963e60b442486d922bcb00cbca6898b36a4edcc66b5976d00ddf4887d6a6b9c",
+          "bytes": 491703
+        }
+      ],
+      "uncompressed_sha256": "8677e532c744dfe63f0e3d719076e8cdd2b03f0c22a3ac6b4b676ae7197b5aa5"
+    },
+    {
+      "uci_id": 9,
+      "name": "Auto MPG",
+      "raw_rows_selected": 398,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 398,
+      "invalid_label_examples": 0,
+      "output_examples": 398,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 305,
+      "input_field_count": 7,
+      "examples_with_null_input": 6,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/9/auto+mpg",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_9_auto_mpg/part-00001.jsonl.gz",
+          "records": 398,
+          "sha256": "e3a50096decaf5278ab596f516fdb9922bee0c0397857f76c45a135f953453db",
+          "bytes": 41014
+        }
+      ],
+      "uncompressed_sha256": "ce85884d92c6b4ca952d551b5ffa19c40af2dfe93e83b90169c62f9d662aca1c"
+    },
+    {
+      "uci_id": 477,
+      "name": "Real Estate Valuation",
+      "raw_rows_selected": 414,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 414,
+      "invalid_label_examples": 0,
+      "output_examples": 414,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 369,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 20,
+      "source_url": "https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_477_real_estate/part-00001.jsonl.gz",
+          "records": 414,
+          "sha256": "5bfbed9d212b53d0701f7f5217fe15fd4e7b766e184ef246a3da6583a54a8bd0",
+          "bytes": 50221
+        }
+      ],
+      "uncompressed_sha256": "917c4304f22baa80409272cf68eca284dfec0ca7adea0a862de0385daf7601a7"
+    },
+    {
+      "uci_id": 29,
+      "name": "Computer Hardware",
+      "raw_rows_selected": 209,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 209,
+      "invalid_label_examples": 0,
+      "output_examples": 209,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 190,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 15,
+      "source_url": "https://archive.ics.uci.edu/dataset/29/computer+hardware",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_29_computer_hardware/part-00001.jsonl.gz",
+          "records": 209,
+          "sha256": "30f20396e4c512a8e1256350f57b89b3e02e26673b39519fed3b850a35649f3d",
+          "bytes": 19179
+        }
+      ],
+      "uncompressed_sha256": "55835c64fb0f0647b484e767c6edeb0c0e9880f93bd33638e3923f8b959fc880"
+    },
+    {
+      "uci_id": 87,
+      "name": "Servo",
+      "raw_rows_selected": 167,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 167,
+      "invalid_label_examples": 0,
+      "output_examples": 167,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 167,
+      "input_field_count": 4,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/87/servo",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_87_servo_response/part-00001.jsonl.gz",
+          "records": 167,
+          "sha256": "1b874868f4c02a3dd2f44758fbf434063e5d6c92459e6e8c98ca6a5b0a40cd69",
+          "bytes": 15222
+        }
+      ],
+      "uncompressed_sha256": "1e4e0a895ae940f974d68aea3e16553dc11debc7dbf1542efe20389bbe810b4d"
+    },
+    {
+      "uci_id": 464,
+      "name": "Superconductivty Data",
+      "raw_rows_selected": 21263,
+      "raw_exact_duplicate_rows": 66,
+      "candidate_task_examples": 21263,
+      "invalid_label_examples": 0,
+      "output_examples": 21193,
+      "collapsed_duplicate_examples": 70,
+      "task_count": 1,
+      "split_groups": 15164,
+      "input_field_count": 81,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 2375,
+      "source_url": "https://archive.ics.uci.edu/dataset/464/superconductivty+data",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_464_superconductivity/part-00001.jsonl.gz",
+          "records": 21193,
+          "sha256": "c0f961d38d9c3a214de145fe05459be0f4580d23466be3b73d3a7e7c845bc3c7",
+          "bytes": 17193540
+        }
+      ],
+      "uncompressed_sha256": "762dda6dd6acec429b28718d6caecb7d8ef5774bce379144cc14ce3c8393ef7a"
+    },
+    {
+      "uci_id": 504,
+      "name": "QSAR fish toxicity",
+      "raw_rows_selected": 908,
+      "raw_exact_duplicate_rows": 1,
+      "candidate_task_examples": 908,
+      "invalid_label_examples": 0,
+      "output_examples": 907,
+      "collapsed_duplicate_examples": 1,
+      "task_count": 1,
+      "split_groups": 775,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 84,
+      "source_url": "https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_504_fish_toxicity/part-00001.jsonl.gz",
+          "records": 907,
+          "sha256": "f6129de5395ac939e4660b83ec48242b2022cd42950921a25b1a7686d505958a",
+          "bytes": 97670
+        }
+      ],
+      "uncompressed_sha256": "bd7b5dc8aed59f8810c3baa3ce3e78b9ad3b6c7c31692c2da0ff8261b41669fe"
+    },
+    {
+      "uci_id": 186,
+      "name": "Wine Quality",
+      "raw_rows_selected": 6497,
+      "raw_exact_duplicate_rows": 1177,
+      "candidate_task_examples": 6497,
+      "invalid_label_examples": 0,
+      "output_examples": 5320,
+      "collapsed_duplicate_examples": 1177,
+      "task_count": 1,
+      "split_groups": 5320,
+      "input_field_count": 12,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_186_wine_quality/part-00001.jsonl.gz",
+          "records": 5320,
+          "sha256": "2700c5bcf899a30cbac3a193217d35cad7aa4efc5db10cb5e8c137380a274133",
+          "bytes": 728561
+        }
+      ],
+      "uncompressed_sha256": "deda2e6d958efdbb6ea8a37d5c45518f97e07ef3e572c664ad0d046321feabee"
+    },
+    {
+      "uci_id": 320,
+      "name": "Student Performance",
+      "raw_rows_selected": 1044,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1044,
+      "invalid_label_examples": 0,
+      "output_examples": 1043,
+      "collapsed_duplicate_examples": 1,
+      "task_count": 2,
+      "split_groups": 662,
+      "input_field_count": 30,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 1,
+      "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_320_student_performance/part-00001.jsonl.gz",
+          "records": 1043,
+          "sha256": "b3651e816b19172e95db21a4f5044d85968d142cf180d69c5e966c5928db79db",
+          "bytes": 147671
+        }
+      ],
+      "uncompressed_sha256": "e24750f5aa812446bd3413596a506e7045be737304c7afba6e5ea6d6327bf84b"
+    },
+    {
+      "uci_id": 189,
+      "name": "Parkinsons Telemonitoring",
+      "raw_rows_selected": 5875,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 11750,
+      "invalid_label_examples": 0,
+      "output_examples": 11750,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 2,
+      "split_groups": 42,
+      "input_field_count": 16,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_189_parkinsons/part-00001.jsonl.gz",
+          "records": 11750,
+          "sha256": "053723acc43ea9e5bc08d1fa8f7f7594bcfde93d8ad630a38bf109b354b8886b",
+          "bytes": 1506219
+        }
+      ],
+      "uncompressed_sha256": "c554164e09b9242708c0e71c54f4d821ef74e796a8d68ba09a0947baaab03c24"
+    },
+    {
+      "uci_id": 597,
+      "name": "Productivity Prediction of Garment Employees",
+      "raw_rows_selected": 1197,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1197,
+      "invalid_label_examples": 0,
+      "output_examples": 1197,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 59,
+      "input_field_count": 11,
+      "examples_with_null_input": 506,
+      "flagged_examples": 37,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_597_garment_productivity/part-00001.jsonl.gz",
+          "records": 1197,
+          "sha256": "ba537b8796e884fdcaf5ba41ad6d4be4b2a4a8a9d437425d69b63ecac39287a6",
+          "bytes": 133284
+        }
+      ],
+      "uncompressed_sha256": "c7db103100fcd9cbf858e2073da02575649bc00d73182438944342e65537742f"
+    },
+    {
+      "uci_id": 275,
+      "name": "Bike Sharing",
+      "raw_rows_selected": 17379,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 17379,
+      "invalid_label_examples": 0,
+      "output_examples": 17379,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 731,
+      "input_field_count": 10,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_275_bike_sharing/part-00001.jsonl.gz",
+          "records": 17379,
+          "sha256": "9204d8339f54190931f0e7fadd1e2aded1e851882b3e1514ea6e459608b0d2b0",
+          "bytes": 1691786
+        }
+      ],
+      "uncompressed_sha256": "41d2ec8691a148e34819207b144f0855637c805e17a9f74d975d8d18a29ab4c8"
+    },
+    {
+      "uci_id": 492,
+      "name": "Metro Interstate Traffic Volume",
+      "raw_rows_selected": 48204,
+      "raw_exact_duplicate_rows": 17,
+      "candidate_task_examples": 48204,
+      "invalid_label_examples": 0,
+      "output_examples": 48187,
+      "collapsed_duplicate_examples": 17,
+      "task_count": 1,
+      "split_groups": 40575,
+      "input_field_count": 8,
+      "examples_with_null_input": 10,
+      "flagged_examples": 11,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_492_metro_traffic/part-00001.jsonl.gz",
+          "records": 48187,
+          "sha256": "1a5166d3da9c3a1f4c3abbde39c78a55b63325b166f57084e43a7e815ec8b052",
+          "bytes": 4726850
+        }
+      ],
+      "uncompressed_sha256": "1593dff7ea446563cf13c692f8db980dfe690e602af5b122603eadd70f35182b"
+    },
+    {
+      "uci_id": 10,
+      "name": "Automobile",
+      "batch": 2,
+      "raw_rows_selected": 205,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 201,
+      "invalid_label_examples": 4,
+      "excluded_source_rows": 0,
+      "output_examples": 201,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 138,
+      "input_field_count": 23,
+      "examples_with_null_input": 8,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 8,
+      "source_url": "https://archive.ics.uci.edu/dataset/10/automobile",
+      "files": [
+        {
+          "path": "datasets/uci_10_automobile_price/part-00001.jsonl.gz",
+          "records": 201,
+          "sha256": "d0231717e27d5a5b0b8e77e654b3486d38926c592d6ce579830be4559f0dc6d0",
+          "bytes": 27201
+        }
+      ],
+      "uncompressed_sha256": "ffc2687e92b2f2be5434b5573c683f96bfb751c157cc4ccdfc2b092ff875f305"
+    },
+    {
+      "uci_id": 265,
+      "name": "Physicochemical Properties of Protein Tertiary Structure",
+      "batch": 2,
+      "raw_rows_selected": 45730,
+      "raw_exact_duplicate_rows": 1711,
+      "candidate_task_examples": 45730,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 44019,
+      "collapsed_duplicate_examples": 1711,
+      "task_count": 1,
+      "split_groups": 43974,
+      "input_field_count": 9,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 38,
+      "source_url": "https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure",
+      "files": [
+        {
+          "path": "datasets/uci_265_protein_structure/part-00001.jsonl.gz",
+          "records": 44019,
+          "sha256": "0375244e592995c37ce6c21394ab5fafed1f55886b1f43b4745734fd2face057",
+          "bytes": 7377888
+        }
+      ],
+      "uncompressed_sha256": "34778c35ecd1dd80506d2387b0b065b6c4cbd947bb55f341b4a05f5b5e1f2971"
+    },
+    {
+      "uci_id": 560,
+      "name": "Seoul Bike Sharing Demand",
+      "batch": 2,
+      "raw_rows_selected": 8760,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 8760,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 8760,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 365,
+      "input_field_count": 13,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
+      "files": [
+        {
+          "path": "datasets/uci_560_seoul_bike/part-00001.jsonl.gz",
+          "records": 8760,
+          "sha256": "469672785da005fc76dcb75a27ada3bd7e3eb6a521524880cbcbd51afde40dfa",
+          "bytes": 1044303
+        }
+      ],
+      "uncompressed_sha256": "d42acf005d6e4b39caa9e89f5fc783cb4146c6023dfdf3664966f8f5052be821"
+    },
+    {
+      "uci_id": 374,
+      "name": "Appliances Energy Prediction",
+      "batch": 2,
+      "raw_rows_selected": 19735,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 19735,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 19735,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 138,
+      "input_field_count": 26,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction",
+      "files": [
+        {
+          "path": "datasets/uci_374_appliances_energy/part-00001.jsonl.gz",
+          "records": 19735,
+          "sha256": "17e83050a31572e4489dc60beae5c6ac9875b8b84c789f9ee580d11945f9faaf",
+          "bytes": 4104747
+        }
+      ],
+      "uncompressed_sha256": "4dde7a1e40dcd956b0aee0529f8adda1bdb876fdc71422168b79c116a24284f4"
+    },
+    {
+      "uci_id": 501,
+      "name": "Beijing Multi-Site Air Quality",
+      "batch": 2,
+      "raw_rows_selected": 420768,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 412029,
+      "invalid_label_examples": 8739,
+      "excluded_source_rows": 0,
+      "output_examples": 412029,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 34983,
+      "input_field_count": 8,
+      "examples_with_null_input": 1885,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data",
+      "files": [
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00001.jsonl.gz",
+          "records": 100000,
+          "sha256": "2c424c00fdd65f785714359b4b9b779411eace622a8318ace84291d0228d2e7c",
+          "bytes": 11285739
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00002.jsonl.gz",
+          "records": 100000,
+          "sha256": "1d08e9555360ee8ddc2665a5a52dd576cce078bd8c085a9d45c4cccded61eb0f",
+          "bytes": 11272933
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00003.jsonl.gz",
+          "records": 100000,
+          "sha256": "05d1aa9842e5c5528772fe3583e66222a391f65d9021b20d5464ba01a570b533",
+          "bytes": 11296587
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00004.jsonl.gz",
+          "records": 100000,
+          "sha256": "c523bf59f4481cd4425c5873ab2f82ce81f9b1fe034d40140fc01dce7b391613",
+          "bytes": 11284171
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00005.jsonl.gz",
+          "records": 12029,
+          "sha256": "e12a3d7fd9e23cc50ed845cb408ad4c8fc72f3982699897f9dc04497bb56e05d",
+          "bytes": 1360765
+        }
+      ],
+      "uncompressed_sha256": "39a7bd09aad812077bf66e7fc7d144b8cf280447edd2aad317d1ccb63f313c2b"
+    },
+    {
+      "uci_id": 551,
+      "name": "Gas Turbine CO and NOx Emission Data Set",
+      "batch": 2,
+      "raw_rows_selected": 36733,
+      "raw_exact_duplicate_rows": 7,
+      "candidate_task_examples": 73466,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 73452,
+      "collapsed_duplicate_examples": 14,
+      "task_count": 2,
+      "split_groups": 36726,
+      "input_field_count": 9,
+      "examples_with_null_input": 0,
+      "flagged_examples": 956,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "files": [
+        {
+          "path": "datasets/uci_551_gas_turbine_emissions/part-00001.jsonl.gz",
+          "records": 73452,
+          "sha256": "31fafd52f8f7f1936f3d59d107341e1a3cd9e898ccae5e137e978ce44df92354",
+          "bytes": 10810738
+        }
+      ],
+      "uncompressed_sha256": "8a951fdf66474d5432b572d55bf96ac21c7e00948c78a41ecc778db7f409593a"
+    },
+    {
+      "uci_id": 440,
+      "name": "SGEMM GPU kernel performance",
+      "batch": 2,
+      "raw_rows_selected": 241600,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 241600,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 241600,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 241600,
+      "input_field_count": 14,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+      "files": [
+        {
+          "path": "datasets/uci_440_sgemm_runtime/part-00001.jsonl.gz",
+          "records": 100000,
+          "sha256": "dc9a84f3a32bcf2e511fa1e365cad72205c1f5d8691b46f7a54ae8d772c77c93",
+          "bytes": 9565169
+        },
+        {
+          "path": "datasets/uci_440_sgemm_runtime/part-00002.jsonl.gz",
+          "records": 100000,
+          "sha256": "622fb419c9b49beefddebbdf9c63e841b14b65e8253017dedd505240942a7aa7",
+          "bytes": 9638849
+        },
+        {
+          "path": "datasets/uci_440_sgemm_runtime/part-00003.jsonl.gz",
+          "records": 41600,
+          "sha256": "89bacd414e5e254a6c580ccbb1562e0ae3a8a07ac137871140b0749061b9735f",
+          "bytes": 4116677
+        }
+      ],
+      "uncompressed_sha256": "509fcbd7bf9f12fdf82521f68a1ef2665f4563668a8159ae78676c25e0661788"
+    },
+    {
+      "uci_id": 332,
+      "name": "Online News Popularity",
+      "batch": 2,
+      "raw_rows_selected": 39644,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 39644,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 39644,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 39644,
+      "input_field_count": 42,
+      "examples_with_null_input": 1,
+      "flagged_examples": 1,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+      "files": [
+        {
+          "path": "datasets/uci_332_news_popularity/part-00001.jsonl.gz",
+          "records": 39644,
+          "sha256": "748843d5f7262e6fe492247f155cda98d5f1292534790f7b5d83f73caaa246ea",
+          "bytes": 12303580
+        }
+      ],
+      "uncompressed_sha256": "35a83067bad432ff112c2de960a1155d5d5824790db5a1e4a0a9fd6d5f896968"
+    },
+    {
+      "uci_id": 555,
+      "name": "Apartment for Rent Classified",
+      "batch": 2,
+      "raw_rows_selected": 99492,
+      "raw_exact_duplicate_rows": 84,
+      "candidate_task_examples": 99426,
+      "invalid_label_examples": 1,
+      "excluded_source_rows": 65,
+      "output_examples": 99277,
+      "collapsed_duplicate_examples": 149,
+      "task_count": 1,
+      "split_groups": 61375,
+      "input_field_count": 11,
+      "examples_with_null_input": 68994,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 186,
+      "source_url": "https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified",
+      "files": [
+        {
+          "path": "datasets/uci_555_apartment_rent/part-00001.jsonl.gz",
+          "records": 99277,
+          "sha256": "1fbf6a8725a7a25f680282869af3e6f29140e7402352adff70ab44aaf35f97f5",
+          "bytes": 41889743
+        }
+      ],
+      "uncompressed_sha256": "36f5d2a5cf6b57812294e7b6df23522b6265ffbbcf27913c2fdaecf3b393eaa7"
+    },
+    {
+      "uci_id": 162,
+      "name": "Forest Fires",
+      "batch": 2,
+      "raw_rows_selected": 517,
+      "raw_exact_duplicate_rows": 4,
+      "candidate_task_examples": 517,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 513,
+      "collapsed_duplicate_examples": 4,
+      "task_count": 1,
+      "split_groups": 36,
+      "input_field_count": 12,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 8,
+      "source_url": "https://archive.ics.uci.edu/dataset/162/forest+fires",
+      "files": [
+        {
+          "path": "datasets/uci_162_forest_fires/part-00001.jsonl.gz",
+          "records": 513,
+          "sha256": "e3f7e09d7755c09a9315eed1756dc5f6cf56e917d1da2d97145b0af9c704b3f7",
+          "bytes": 61979
+        }
+      ],
+      "uncompressed_sha256": "bcf2ac91d43309d2430189c51f3a7a34d9f374715c56a84b4f1eace63197f0dc"
+    },
+    {
+      "uci_id": 925,
+      "name": "Infrared Thermography Temperature",
+      "batch": 2,
+      "raw_rows_selected": 2029,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 2029,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 2029,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 1026,
+      "input_field_count": 34,
+      "examples_with_null_input": 5,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_925_infrared_temperature/part-00001.jsonl.gz",
+          "records": 2029,
+          "sha256": "5bf9693faf51817dc93e39e0cec610439c748eb31efb48f4162e20e4160e61a8",
+          "bytes": 679139
+        }
+      ],
+      "uncompressed_sha256": "96db79263b25ebba0e56095f28177adfe782de5116ebfcf4ae21f967d77621a1"
+    }
+  ],
+  "dataset_count": 29,
+  "task_count": 33,
+  "total_selected_source_rows": 1036122,
+  "total_examples": 1067479,
+  "collapsed_duplicate_examples": 3210,
+  "invalid_label_examples": 8744,
+  "training_performed": false,
+  "splits_assigned": false,
+  "prompt_language": "English",
+  "local_only": true,
+  "updated_date": "2026-11-13",
+  "excluded_source_rows": 65,
+  "record_schema_version": "1.0.0",
+  "batches": [
+    {
+      "batch": 1,
+      "datasets": 18,
+      "tasks": 21,
+      "examples": 126220
+    },
+    {
+      "batch": 2,
+      "datasets": 11,
+      "tasks": 12,
+      "examples": 941259
+    }
+  ],
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard",
+  "source_release": "2.1.0",
+  "distribution_version": "2.1.0-github.1"
+}

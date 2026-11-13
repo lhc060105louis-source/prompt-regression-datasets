@@ -1,0 +1,240 @@
+{
+  "rows": 517,
+  "columns": 13,
+  "exact_duplicate_rows": 4,
+  "column_profiles": {
+    "X": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 9,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 3,
+        "0.5": 4,
+        "0.75": 7,
+        "0.99": 9,
+        "1.0": 9
+      }
+    },
+    "Y": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2,
+        "0.01": 2,
+        "0.25": 4,
+        "0.5": 4,
+        "0.75": 5,
+        "0.99": 8.839999999999975,
+        "1.0": 9
+      }
+    },
+    "month": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 12,
+      "top_values": {
+        "aug": 184,
+        "sep": 172,
+        "mar": 54,
+        "jul": 32,
+        "feb": 20,
+        "jun": 17,
+        "oct": 15,
+        "apr": 9,
+        "dec": 9,
+        "jan": 2,
+        "may": 2,
+        "nov": 1
+      }
+    },
+    "day": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "top_values": {
+        "sun": 95,
+        "fri": 85,
+        "sat": 84,
+        "mon": 74,
+        "tue": 64,
+        "thu": 61,
+        "wed": 54
+      }
+    },
+    "FFMC": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 106,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 18.7,
+        "0.01": 68.328,
+        "0.25": 90.2,
+        "0.5": 91.6,
+        "0.75": 92.9,
+        "0.99": 96.1,
+        "1.0": 96.2
+      }
+    },
+    "DMC": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 215,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1.1,
+        "0.01": 3.616,
+        "0.25": 68.6,
+        "0.5": 108.3,
+        "0.75": 142.4,
+        "0.99": 286.83199999999994,
+        "1.0": 291.3
+      }
+    },
+    "DC": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 219,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 7.9,
+        "0.01": 16.2,
+        "0.25": 437.7,
+        "0.5": 664.2,
+        "0.75": 713.9,
+        "0.99": 848.4519999999999,
+        "1.0": 860.6
+      }
+    },
+    "ISI": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 119,
+      "nonfinite_count": 0,
+      "zero_count": 1,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0.8,
+        "0.25": 6.5,
+        "0.5": 8.4,
+        "0.75": 10.8,
+        "0.99": 20.3,
+        "1.0": 56.1
+      }
+    },
+    "temp": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 192,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.2,
+        "0.01": 4.6,
+        "0.25": 15.5,
+        "0.5": 19.3,
+        "0.75": 22.8,
+        "0.99": 32.09199999999996,
+        "1.0": 33.3
+      }
+    },
+    "RH": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 75,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 15,
+        "0.01": 19,
+        "0.25": 33,
+        "0.5": 42,
+        "0.75": 53,
+        "0.99": 90,
+        "1.0": 100
+      }
+    },
+    "wind": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 21,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.4,
+        "0.01": 0.9,
+        "0.25": 2.7,
+        "0.5": 4,
+        "0.75": 4.9,
+        "0.99": 8.5,
+        "1.0": 9.4
+      }
+    },
+    "rain": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "nonfinite_count": 0,
+      "zero_count": 509,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 0,
+        "0.99": 0.367999999999995,
+        "1.0": 6.4
+      }
+    },
+    "area": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 251,
+      "nonfinite_count": 0,
+      "zero_count": 247,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0.52,
+        "0.75": 6.57,
+        "0.99": 194.76479999999972,
+        "1.0": 1090.84
+      }
+    }
+  }
+}

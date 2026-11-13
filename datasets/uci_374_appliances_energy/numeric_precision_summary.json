@@ -1,0 +1,62 @@
+{
+  "uci_id": 374,
+  "path": "datasets/uci_374_appliances_energy/data.jsonl",
+  "changed_records": 19718,
+  "changed_fields": {
+    "input.RH_1": 6530,
+    "input.RH_4": 5760,
+    "input.T5": 4241,
+    "input.T6": 9220,
+    "input.RH_6": 10413,
+    "input.RH_7": 7229,
+    "input.T9": 2859,
+    "input.RH_8": 8452,
+    "input.T_out": 9182,
+    "input.Windspeed": 7168,
+    "input.Visibility": 5652,
+    "input.RH_2": 6974,
+    "input.RH_3": 5375,
+    "input.T4": 3882,
+    "input.T7": 3895,
+    "input.Press_mm_hg": 10592,
+    "input.RH_5": 8168,
+    "input.T1": 3623,
+    "input.RH_out": 8644,
+    "input.Tdewpoint": 9274,
+    "input.T2": 5074,
+    "input.T8": 4975,
+    "input.RH_9": 6492,
+    "input.T3": 3922
+  },
+  "max_absolute_change": 4.761204763781279e-10,
+  "max_relative_change": 4.4370181287976594e-12,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "input.RH_1",
+      47.59666666666671,
+      47.5966666667
+    ],
+    [
+      "input.RH_4",
+      45.5666666666667,
+      45.5666666667
+    ],
+    [
+      "input.T5",
+      17.1666666666667,
+      17.1666666667
+    ],
+    [
+      "input.T6",
+      7.02666666666667,
+      7.02666666667
+    ],
+    [
+      "input.RH_6",
+      84.2566666666667,
+      84.2566666667
+    ]
+  ]
+}

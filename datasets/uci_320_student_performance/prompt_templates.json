@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate a student final grade in the specified secondary-school subject from background and study information, without previous-period grades.",
+  "context": "subject identifies Mathematics or Portuguese. school is the original school code. age is in years. Other demographic, family and study fields are decoded where their category meaning is documented. G1, G2 and cumulative absences are not supplied. This is a background-only estimation task; exact survey collection time is not established. Medu/Fedu: mother/father education; Mjob/Fjob: mother/father job; Pstatus: parental cohabitation; famsize: family size; reason: school-choice reason; guardian: primary guardian; traveltime: commute duration; studytime: weekly study time; failures: recorded past class failures; schoolsup/famsup: school/family educational support; paid: extra paid classes; activities: extracurricular activities; nursery: nursery attendance; higher: intention for higher education; internet: home internet; romantic: relationship status. famrel is family-relationship quality (1 worst, 5 best); freetime and goout are 1-5 frequencies; Dalc/Walc are workday/weekend alcohol-use levels (1 low, 5 high); health is self-rated health (1 poor, 5 good).",
+  "targets": [
+    {
+      "column": "G3",
+      "name": "final_grade",
+      "unit": "grade points on a 0-20 scale",
+      "type": "ordinal"
+    }
+  ]
+}

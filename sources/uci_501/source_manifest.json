@@ -1,0 +1,23 @@
+{
+  "uci_id": "501",
+  "priority": "B",
+  "name": "Beijing Multi-Site Air Quality",
+  "domain": "环境与气象",
+  "reported_size": "420768，12个站点",
+  "target": "PM2.5；可扩展至其他污染物",
+  "input_description": "气象、时间、站点；历史窗口需单独定义",
+  "missingness": "NA缺失",
+  "proposed_split": "时间外推与站点留出分别评估",
+  "screening_notes": "删除当前目标；同期其他污染物是否可用取决于任务；与其他北京空气数据核查时空重叠；不将大行数等同多领域",
+  "source_url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/501/beijing+multi+site+air+quality+data.zip",
+  "downloaded_at_utc": "2026-11-09T20:14:00Z",
+  "archive_sha256": "b04da438b2f331ac0ffd45aebdfec0d20d2367feb5f6948c4b1f7ce1191e33c4",
+  "archive_bytes": 8192212,
+  "metadata_status": "ok",
+  "batch": 2
+}

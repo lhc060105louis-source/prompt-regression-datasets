@@ -1,0 +1,400 @@
+{
+  "rows": 205,
+  "columns": 24,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "make": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 22,
+      "top_values": {
+        "toyota": 32,
+        "nissan": 18,
+        "mazda": 17,
+        "honda": 13,
+        "mitsubishi": 13,
+        "subaru": 12,
+        "volkswagen": 12,
+        "peugot": 11,
+        "volvo": 11,
+        "dodge": 9,
+        "bmw": 8,
+        "mercedes-benz": 8
+      }
+    },
+    "fuel_type": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "gas": 185,
+        "diesel": 20
+      }
+    },
+    "aspiration": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "std": 168,
+        "turbo": 37
+      }
+    },
+    "num_doors": {
+      "dtype": "float64",
+      "missing_count": 2,
+      "missing_rate": 0.00975609756097561,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2,
+        "0.01": 2,
+        "0.25": 2,
+        "0.5": 4,
+        "0.75": 4,
+        "0.99": 4,
+        "1.0": 4
+      }
+    },
+    "body_style": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "top_values": {
+        "sedan": 96,
+        "hatchback": 70,
+        "wagon": 25,
+        "hardtop": 8,
+        "convertible": 6
+      }
+    },
+    "drive_wheels": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "top_values": {
+        "fwd": 120,
+        "rwd": 76,
+        "4wd": 9
+      }
+    },
+    "engine_location": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "front": 202,
+        "rear": 3
+      }
+    },
+    "wheel_base": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 53,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 86.6,
+        "0.01": 88.408,
+        "0.25": 94.5,
+        "0.5": 97,
+        "0.75": 102.4,
+        "0.99": 115.54400000000001,
+        "1.0": 120.9
+      }
+    },
+    "length": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 75,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 141.1,
+        "0.01": 144.816,
+        "0.25": 166.3,
+        "0.5": 173.2,
+        "0.75": 183.1,
+        "0.99": 202.48000000000002,
+        "1.0": 208.1
+      }
+    },
+    "width": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 44,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 60.3,
+        "0.01": 62.536,
+        "0.25": 64.1,
+        "0.5": 65.5,
+        "0.75": 66.9,
+        "0.99": 71.7,
+        "1.0": 72.3
+      }
+    },
+    "height": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 49,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 47.8,
+        "0.01": 48.824,
+        "0.25": 52,
+        "0.5": 54.1,
+        "0.75": 55.5,
+        "0.99": 59.1,
+        "1.0": 59.8
+      }
+    },
+    "curb_weight": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 171,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1488,
+        "0.01": 1819.72,
+        "0.25": 2145,
+        "0.5": 2414,
+        "0.75": 2935,
+        "0.99": 3948.0000000000005,
+        "1.0": 4066
+      }
+    },
+    "engine_type": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "top_values": {
+        "ohc": 148,
+        "ohcf": 15,
+        "ohcv": 13,
+        "dohc": 12,
+        "l": 12,
+        "rotor": 4,
+        "dohcv": 1
+      }
+    },
+    "num_cylinders": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2,
+        "0.01": 2,
+        "0.25": 4,
+        "0.5": 4,
+        "0.75": 4,
+        "0.99": 8,
+        "1.0": 12
+      }
+    },
+    "engine_size": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 44,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 61,
+        "0.01": 70,
+        "0.25": 97,
+        "0.5": 120,
+        "0.75": 141,
+        "0.99": 302.16000000000037,
+        "1.0": 326
+      }
+    },
+    "fuel_system": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 8,
+      "top_values": {
+        "mpfi": 94,
+        "2bbl": 66,
+        "idi": 20,
+        "1bbl": 11,
+        "spdi": 9,
+        "4bbl": 3,
+        "mfi": 1,
+        "spfi": 1
+      }
+    },
+    "bore": {
+      "dtype": "float64",
+      "missing_count": 4,
+      "missing_rate": 0.01951219512195122,
+      "distinct_nonmissing": 38,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.54,
+        "0.01": 2.91,
+        "0.25": 3.15,
+        "0.5": 3.31,
+        "0.75": 3.59,
+        "0.99": 3.8,
+        "1.0": 3.94
+      }
+    },
+    "stroke": {
+      "dtype": "float64",
+      "missing_count": 4,
+      "missing_rate": 0.01951219512195122,
+      "distinct_nonmissing": 36,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.07,
+        "0.01": 2.19,
+        "0.25": 3.11,
+        "0.5": 3.29,
+        "0.75": 3.41,
+        "0.99": 3.9,
+        "1.0": 4.17
+      }
+    },
+    "compression_ratio": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 32,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 7,
+        "0.01": 7,
+        "0.25": 8.6,
+        "0.5": 9,
+        "0.75": 9.4,
+        "0.99": 23,
+        "1.0": 23
+      }
+    },
+    "horsepower": {
+      "dtype": "float64",
+      "missing_count": 2,
+      "missing_rate": 0.00975609756097561,
+      "distinct_nonmissing": 59,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 48,
+        "0.01": 52.06,
+        "0.25": 70,
+        "0.5": 95,
+        "0.75": 116,
+        "0.99": 207,
+        "1.0": 288
+      }
+    },
+    "peak_rpm": {
+      "dtype": "float64",
+      "missing_count": 2,
+      "missing_rate": 0.00975609756097561,
+      "distinct_nonmissing": 23,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 4150,
+        "0.01": 4150,
+        "0.25": 4800,
+        "0.5": 5200,
+        "0.75": 5500,
+        "0.99": 6000,
+        "1.0": 6600
+      }
+    },
+    "city_mpg": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 29,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 13,
+        "0.01": 14.04,
+        "0.25": 19,
+        "0.5": 24,
+        "0.75": 30,
+        "0.99": 44.720000000000056,
+        "1.0": 49
+      }
+    },
+    "highway_mpg": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 30,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 16,
+        "0.01": 17.04,
+        "0.25": 25,
+        "0.5": 30,
+        "0.75": 34,
+        "0.99": 49.880000000000024,
+        "1.0": 54
+      }
+    },
+    "price": {
+      "dtype": "float64",
+      "missing_count": 4,
+      "missing_rate": 0.01951219512195122,
+      "distinct_nonmissing": 186,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 5118,
+        "0.01": 5195,
+        "0.25": 7775,
+        "0.5": 10295,
+        "0.75": 16500,
+        "0.99": 40960,
+        "1.0": 45400
+      }
+    }
+  }
+}

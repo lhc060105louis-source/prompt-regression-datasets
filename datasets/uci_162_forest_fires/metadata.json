@@ -1,0 +1,152 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 162,
+    "name": "Forest Fires",
+    "batch": 2,
+    "raw_rows_selected": 517,
+    "raw_exact_duplicate_rows": 4,
+    "candidate_task_examples": 517,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 513,
+    "collapsed_duplicate_examples": 4,
+    "task_count": 1,
+    "split_groups": 36,
+    "input_field_count": 12,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 8,
+    "source_url": "https://archive.ics.uci.edu/dataset/162/forest+fires",
+    "files": [
+      {
+        "path": "datasets/uci_162_forest_fires/part-00001.jsonl.gz",
+        "records": 513,
+        "sha256": "e3f7e09d7755c09a9315eed1756dc5f6cf56e917d1da2d97145b0af9c704b3f7",
+        "bytes": 61979
+      }
+    ],
+    "uncompressed_sha256": "bcf2ac91d43309d2430189c51f3a7a34d9f374715c56a84b4f1eace63197f0dc"
+  },
+  "contract": {
+    "key": "forest_fires",
+    "targets": [
+      [
+        "area",
+        "burned_forest_area",
+        "hectares",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate burned forest area in the Montesinho park from recorded weather and fire-index conditions.",
+    "context": "X/Y: park map grid coordinates; month/day: calendar categories without full event date; FFMC/DMC/DC/ISI: fire-weather indices; temp: Celsius; RH: percent; wind: km/h; rain: mm/m^2 as described in the source. The target is untransformed hectares, including zero. Event timing is incomplete, so this is retrospective conditional estimation.",
+    "split": "spatial_grid_groups; event identities/full dates unavailable"
+  },
+  "input_fields": [
+    "X",
+    "Y",
+    "month",
+    "day",
+    "FFMC",
+    "DMC",
+    "DC",
+    "ISI",
+    "temp",
+    "RH",
+    "wind",
+    "rain"
+  ],
+  "excluded_input_columns": [
+    "area"
+  ],
+  "grouping_columns": [
+    "X",
+    "Y"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/162/forest+fires"
+  },
+  "source_archive_sha256": "abd40d6142b5e30fea73ff7292f91dcdd8b64bf3b3f36e20f96c37f5d14f06fb",
+  "dataset_doi": "10.24432/C5D88D",
+  "creators": [
+    "Paulo Cortez",
+    "Anbal Morais"
+  ],
+  "citation_paper": {
+    "ID": 368,
+    "type": "NATIVE",
+    "title": "A data mining approach to predict forest fires using meteorological data",
+    "authors": "P. Cortez, Aníbal de Jesus Raimundo Morais",
+    "venue": "New Trends in Artificial Intelligence, Proceedings of the 13th EPIA 2007 - Portuguese Conference on Artificial Intelligence",
+    "year": 2007,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/A-data-mining-approach-to-predict-forest-fires-data-Cortez-Morais/0f529dc2b2b2bad22394454d4cba79e2c319f0b0",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_162/burned_forest_area": {
+      "examples": 513,
+      "label_quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.5": 0.54,
+        "0.99": 195.19359999999995,
+        "1.0": 1090.84
+      },
+      "zero_labels": 244,
+      "prompt_characters": {
+        "min": 802,
+        "median": 808,
+        "max": 812
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "zero_and_skewed_target",
+      "count": 247,
+      "action": "retain_original_hectares",
+      "detail": "Zero burned areas retained. No log1p is applied, and large legitimate fires are not removed as outliers."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 8,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 4,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

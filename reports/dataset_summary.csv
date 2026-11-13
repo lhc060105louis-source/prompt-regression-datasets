@@ -1,0 +1,30 @@
+﻿uci_id,name,raw_rows_selected,raw_exact_duplicate_rows,candidate_task_examples,invalid_label_examples,output_examples,collapsed_duplicate_examples,task_count,split_groups,input_field_count,examples_with_null_input,flagged_examples,identical_input_different_label_groups,source_url,path,batch,excluded_source_rows
+165,Concrete Compressive Strength,1030,25,1030,0,1005,25,1,428,8,0,0,9,https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength,datasets/uci_165_concrete_strength/data.jsonl,1,0
+242,Energy Efficiency,768,0,1536,0,1536,0,2,12,8,0,0,0,https://archive.ics.uci.edu/dataset/242/energy+efficiency,datasets/uci_242_energy_efficiency/data.jsonl,1,0
+294,Combined Cycle Power Plant,9568,41,9568,0,9527,41,1,9527,4,0,55,0,https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant,datasets/uci_294_combined_cycle_power/data.jsonl,1,0
+291,Airfoil Self-Noise,1503,0,1503,0,1503,0,1,106,5,0,0,0,https://archive.ics.uci.edu/dataset/291/airfoil+self+noise,datasets/uci_291_airfoil_noise/data.jsonl,1,0
+243,Yacht Hydrodynamics,308,0,308,0,308,0,1,22,6,0,0,0,https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics,datasets/uci_243_yacht_resistance/data.jsonl,1,0
+1,Abalone,4177,0,4177,0,4177,0,1,4177,8,2,3,0,https://archive.ics.uci.edu/dataset/1/abalone,datasets/uci_1_abalone_rings/data.jsonl,1,0
+9,Auto MPG,398,0,398,0,398,0,1,305,7,6,0,0,https://archive.ics.uci.edu/dataset/9/auto+mpg,datasets/uci_9_auto_mpg/data.jsonl,1,0
+477,Real Estate Valuation,414,0,414,0,414,0,1,369,6,0,0,20,https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set,datasets/uci_477_real_estate/data.jsonl,1,0
+29,Computer Hardware,209,0,209,0,209,0,1,190,6,0,0,15,https://archive.ics.uci.edu/dataset/29/computer+hardware,datasets/uci_29_computer_hardware/data.jsonl,1,0
+87,Servo,167,0,167,0,167,0,1,167,4,0,0,0,https://archive.ics.uci.edu/dataset/87/servo,datasets/uci_87_servo_response/data.jsonl,1,0
+464,Superconductivty Data,21263,66,21263,0,21193,70,1,15164,81,0,0,2375,https://archive.ics.uci.edu/dataset/464/superconductivty+data,datasets/uci_464_superconductivity/data.jsonl,1,0
+504,QSAR fish toxicity,908,1,908,0,907,1,1,775,6,0,0,84,https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity,datasets/uci_504_fish_toxicity/data.jsonl,1,0
+186,Wine Quality,6497,1177,6497,0,5320,1177,1,5320,12,0,0,0,https://archive.ics.uci.edu/dataset/186/wine+quality,datasets/uci_186_wine_quality/data.jsonl,1,0
+320,Student Performance,1044,0,1044,0,1043,1,2,662,30,0,0,1,https://archive.ics.uci.edu/dataset/320/student+performance,datasets/uci_320_student_performance/data.jsonl,1,0
+189,Parkinsons Telemonitoring,5875,0,11750,0,11750,0,2,42,16,0,0,0,https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring,datasets/uci_189_parkinsons/data.jsonl,1,0
+597,Productivity Prediction of Garment Employees,1197,0,1197,0,1197,0,1,59,11,506,37,0,https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees,datasets/uci_597_garment_productivity/data.jsonl,1,0
+275,Bike Sharing,17379,0,17379,0,17379,0,1,731,10,0,0,0,https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset,datasets/uci_275_bike_sharing/data.jsonl,1,0
+492,Metro Interstate Traffic Volume,48204,17,48204,0,48187,17,1,40575,8,10,11,0,https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume,datasets/uci_492_metro_traffic/data.jsonl,1,0
+10,Automobile,205,0,201,4,201,0,1,138,23,8,0,8,https://archive.ics.uci.edu/dataset/10/automobile,datasets/uci_10_automobile_price/data.jsonl,2,0
+265,Physicochemical Properties of Protein Tertiary Structure,45730,1711,45730,0,44019,1711,1,43974,9,0,0,38,https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure,datasets/uci_265_protein_structure/data.jsonl,2,0
+560,Seoul Bike Sharing Demand,8760,0,8760,0,8760,0,1,365,13,0,0,0,https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand,datasets/uci_560_seoul_bike/data.jsonl,2,0
+374,Appliances Energy Prediction,19735,0,19735,0,19735,0,1,138,26,0,0,0,https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction,datasets/uci_374_appliances_energy/data.jsonl,2,0
+501,Beijing Multi-Site Air Quality,420768,0,412029,8739,412029,0,1,34983,8,1885,0,0,https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data,datasets/uci_501_beijing_pm25/data.jsonl,2,0
+551,Gas Turbine CO and NOx Emission Data Set,36733,7,73466,0,73452,14,2,36726,9,0,956,0,https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set,datasets/uci_551_gas_turbine_emissions/data.jsonl,2,0
+440,SGEMM GPU kernel performance,241600,0,241600,0,241600,0,1,241600,14,0,0,0,https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance,datasets/uci_440_sgemm_runtime/data.jsonl,2,0
+332,Online News Popularity,39644,0,39644,0,39644,0,1,39644,42,1,1,0,https://archive.ics.uci.edu/dataset/332/online+news+popularity,datasets/uci_332_news_popularity/data.jsonl,2,0
+555,Apartment for Rent Classified,99492,84,99426,1,99277,149,1,61375,11,68994,0,186,https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified,datasets/uci_555_apartment_rent/data.jsonl,2,65
+162,Forest Fires,517,4,517,0,513,4,1,36,12,0,0,8,https://archive.ics.uci.edu/dataset/162/forest+fires,datasets/uci_162_forest_fires/data.jsonl,2,0
+925,Infrared Thermography Temperature,2029,0,2029,0,2029,0,1,1026,34,5,0,0,https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset,datasets/uci_925_infrared_temperature/data.jsonl,2,0

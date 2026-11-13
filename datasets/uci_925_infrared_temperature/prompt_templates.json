@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate oral temperature measured in monitor mode from facial infrared measurements and environment information.",
+  "context": "device identifies FLIR or ICI. Facial fields ending _mean are means across available image rounds, in Celsius: right/left canthus maxima and averages; RC/LC eye-corner regions; RCC/LCC small eye-corner regions; canthi extended eye region; FH forehead regions; T_Max face maximum; OR mouth-region infrared readings. T_offset_mean is the blackbody correction offset. Gender/Age/Ethnicity are categories; T_atm: Celsius; Humidity: percent; Distance: metres. Both oral-thermometer fields are excluded from input; infrared mouth-region readings are distinct from oral thermometer labels.",
+  "targets": [
+    {
+      "column": "aveOralM",
+      "name": "oral_monitor_temperature",
+      "unit": "degrees Celsius",
+      "type": "continuous"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the actual productivity ratio of a garment-production team using the supplied production-context measurements.",
+  "context": "date: calendar date; quarter: source within-month segment, not a calendar quarter; department: production department; team: categorical team number; targeted_productivity: management target ratio; smv: standard minutes allocated to a task; wip: unfinished-item count; over_time: team overtime minutes; no_of_style_change: style-change count; no_of_workers: recorded staffing quantity, which may be fractional. This is a retrospective conditional estimate, not a guaranteed pre-shift forecast. The target can exceed 1 in the observed source records.",
+  "targets": [
+    {
+      "column": "actual_productivity",
+      "name": "actual_productivity",
+      "unit": "source productivity ratio",
+      "type": "continuous"
+    }
+  ]
+}

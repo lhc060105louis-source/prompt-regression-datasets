@@ -1,0 +1,22 @@
+{
+  "uci_id": "294",
+  "priority": "A",
+  "name": "Combined Cycle Power Plant",
+  "domain": "发电工程",
+  "reported_size": "9568",
+  "target": "净电功率，MW",
+  "input_description": "温度、压力、湿度、排气真空度",
+  "missingness": "官网无缺失",
+  "proposed_split": "唯一记录去重后划分",
+  "screening_notes": "原包含五次打乱排列，不能拼接为五倍样本；与551来自同一电厂，应视为同来源家族",
+  "source_url": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/294/combined+cycle+power+plant.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:59Z",
+  "archive_sha256": "cc7b2a4977c0a44e8221c91d9a7e5746b3c68186cff7e5c61c70af6432b98c7a",
+  "archive_bytes": 3674852,
+  "metadata_status": "ok"
+}

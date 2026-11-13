@@ -1,0 +1,228 @@
+{
+  "rows": 99492,
+  "columns": 12,
+  "exact_duplicate_rows": 149,
+  "column_profiles": {
+    "title": {
+      "dtype": "str",
+      "missing_count": 2828,
+      "missing_rate": 0.028424395931331163,
+      "distinct_nonmissing": 41185,
+      "top_values": {
+        "nan": 2828,
+        "Apartment in great location": 1064,
+        "You Can Stop Looking Now!": 1034,
+        "Apartment in prime location": 1028,
+        "Apartment in quiet area, spacious with big kitchen": 1023,
+        "MUST SEE!": 1022,
+        "Super Cute! Apartment for Rent!": 1018,
+        "Great Central Location [number removed] BR, [number removed] BA": 1006,
+        "This Apartment is a must see!": 1002,
+        "Amazing [number removed] BR, [number removed] BA for rent": 992,
+        "Spacious [number removed] BR, [number removed] BA": 949,
+        "Attractive [number removed] BR, [number removed] BA": 949
+      }
+    },
+    "body": {
+      "dtype": "str",
+      "missing_count": 6456,
+      "missing_rate": 0.06488963936798939,
+      "distinct_nonmissing": 78674,
+      "top_values": {
+        "nan": 6456,
+        "This unit is located at [number removed] S.": 177,
+        "This unit is located at [number removed] N.": 174,
+        "This unit is located at [number removed] E.": 138,
+        "This unit is located at [number removed] W.": 114,
+        "[number removed] Bd / [number removed] Bedrooms [number removed] sq.": 96,
+        "Westdale Hills is a neighborhood of beautifully landscaped apartment communities surrounding the Westdale Hills Golf Course. Uniquely similar in amenities and appeal, Westdale Hills is conveniently located in a part of the Metroplex that provides easy access to freeways and all that both Dallas and Ft. Worth have to offer. Isn't it time for a new.": 81,
+        "You'll also enjoy our convenient on-site laundry facilities and free grab-and-go breakfast every morning. Housekeeping services are also Additional charges may apply. Booking restrictions and taxes apply.": 72,
+        "Close to dining and shops, bright, gas stove, trash included.": 67,
+        "[number removed] Bd / [number removed] Bedrooms [number removed] sq. [number removed] Bd / [number removed] Bedrooms [number removed] sq.": 60,
+        "When searching for a pet-friendly [number removed] and [number removed] Beds apartment homes in Randallstown, look no further than Northwest Crossing. Northwest Crossing's convenient suburban. and Liberty provides you with immediate access to shopping, entertainment, transportation and is directly across from Northwest Hospital. Commuters enjoy easy access to Baltimore's Inner, Baltimore Washington International Airport BWI, Owings Mills, Pikesville, and Catonsville. The Crossing enjoy the comforts of an apartment they are truly proud to with wall-to-wall carpeting, fully-equipped kitchens with dishwashers, over-sized closets and expansive balconies. Outside your home, Northwest Crossing boasts a fitness facilities, basketball and professionally landscaped grounds with picnic areas. Take pleasure in knowing that our professional management team is here to assist you with any need great or small. We are excited to meet you and welcome you home!": 43,
+        "More units available: [number removed] Bd / [number removed] Bedrooms [number removed] sq. [number removed] Bd / [number removed] Bedrooms [number removed] sq.": 40
+      }
+    },
+    "amenities": {
+      "dtype": "str",
+      "missing_count": 16044,
+      "missing_rate": 0.16125919671933422,
+      "distinct_nonmissing": 9827,
+      "top_values": {
+        "nan": 16044,
+        "Parking": 6188,
+        "Parking,Storage": 2116,
+        "Gym,Pool": 1871,
+        "Pool": 1485,
+        "Gym,Parking,Pool": 1187,
+        "Parking,Pool": 886,
+        "Washer Dryer": 842,
+        "Patio/Deck": 775,
+        "Clubhouse,Gym,Pool": 760,
+        "Gym": 735,
+        "Parking,Patio/Deck,Storage": 664
+      }
+    },
+    "bathrooms": {
+      "dtype": "float64",
+      "missing_count": 63,
+      "missing_rate": 0.0006332167410445061,
+      "distinct_nonmissing": 16,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 1,
+        "0.75": 2,
+        "0.99": 3,
+        "1.0": 9
+      }
+    },
+    "bedrooms": {
+      "dtype": "float64",
+      "missing_count": 124,
+      "missing_rate": 0.0012463313633256944,
+      "distinct_nonmissing": 10,
+      "nonfinite_count": 0,
+      "zero_count": 662,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 2,
+        "0.99": 4,
+        "1.0": 9
+      }
+    },
+    "pets_allowed": {
+      "dtype": "str",
+      "missing_count": 60424,
+      "missing_rate": 0.6073252120773529,
+      "distinct_nonmissing": 4,
+      "top_values": {
+        "nan": 60424,
+        "Cats,Dogs": 37097,
+        "Cats": 1843,
+        "Dogs": 127,
+        "Cats,Dogs,None": 1
+      }
+    },
+    "square_feet": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2538,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 101,
+        "0.01": 396.90999999999997,
+        "0.25": 729,
+        "0.5": 900,
+        "0.75": 1115,
+        "0.99": 2260,
+        "1.0": 50000
+      }
+    },
+    "cityname": {
+      "dtype": "str",
+      "missing_count": 302,
+      "missing_rate": 0.0030354199332609656,
+      "distinct_nonmissing": 2979,
+      "top_values": {
+        "Dallas": 2858,
+        "Denver": 2755,
+        "Los Angeles": 2433,
+        "Las Vegas": 1848,
+        "Arlington": 1577,
+        "Atlanta": 1506,
+        "Charlotte": 1125,
+        "Alexandria": 914,
+        "Richmond": 914,
+        "San Antonio": 873,
+        "Raleigh": 865,
+        "Cincinnati": 798
+      }
+    },
+    "state": {
+      "dtype": "str",
+      "missing_count": 302,
+      "missing_rate": 0.0030354199332609656,
+      "distinct_nonmissing": 51,
+      "top_values": {
+        "TX": 11257,
+        "CA": 10311,
+        "VA": 8284,
+        "NC": 6300,
+        "CO": 6290,
+        "FL": 5775,
+        "MD": 5280,
+        "MA": 5030,
+        "OH": 4905,
+        "GA": 4752,
+        "NJ": 4445,
+        "NV": 2815
+      }
+    },
+    "latitude": {
+      "dtype": "float64",
+      "missing_count": 25,
+      "missing_rate": 0.0002512764845414707,
+      "distinct_nonmissing": 7212,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 19.5738,
+        "0.01": 26.3635,
+        "0.25": 33.7465,
+        "0.5": 37.2282,
+        "0.75": 39.953,
+        "0.99": 47.7179,
+        "1.0": 64.8332
+      }
+    },
+    "longitude": {
+      "dtype": "float64",
+      "missing_count": 25,
+      "missing_rate": 0.0002512764845414707,
+      "distinct_nonmissing": 7270,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 99467,
+      "quantiles": {
+        "0.0": -159.3698,
+        "0.01": -122.3139,
+        "0.25": -104.7919,
+        "0.5": -84.5623,
+        "0.75": -77.60820000000001,
+        "0.99": -70.9751,
+        "1.0": -68.7788
+      }
+    },
+    "price": {
+      "dtype": "float64",
+      "missing_count": 1,
+      "missing_rate": 1.0051059381658827e-05,
+      "distinct_nonmissing": 3687,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 100,
+        "0.01": 545,
+        "0.25": 1013,
+        "0.5": 1350,
+        "0.75": 1795,
+        "0.99": 4250,
+        "1.0": 52500
+      }
+    }
+  }
+}

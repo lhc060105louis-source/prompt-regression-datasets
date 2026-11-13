@@ -1,0 +1,132 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 29,
+    "name": "Computer Hardware",
+    "raw_rows_selected": 209,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 209,
+    "invalid_label_examples": 0,
+    "output_examples": 209,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 190,
+    "input_field_count": 6,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 15,
+    "source_url": "https://archive.ics.uci.edu/dataset/29/computer+hardware",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_29_computer_hardware/part-00001.jsonl.gz",
+        "records": 209,
+        "sha256": "30f20396e4c512a8e1256350f57b89b3e02e26673b39519fed3b850a35649f3d",
+        "bytes": 19179
+      }
+    ],
+    "uncompressed_sha256": "55835c64fb0f0647b484e767c6edeb0c0e9880f93bd33638e3923f8b959fc880"
+  },
+  "contract": {
+    "key": "computer_hardware",
+    "targets": [
+      [
+        "PRP",
+        "published_relative_performance",
+        "relative performance score",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the published relative performance of a computer from its hardware configuration.",
+    "context": "cycle_time_ns: cycle time in nanoseconds; memory_min_kb and memory_max_kb: main memory in kilobytes; cache_kb: cache in kilobytes; channels_min and channels_max: channel counts.",
+    "exclude": [
+      "vendor",
+      "model",
+      "ERP"
+    ],
+    "group": [],
+    "group_note": "Identical core hardware configurations. Vendor and model retained only in source provenance.",
+    "split": "group_by_identical_configuration",
+    "source_file": "machine.data"
+  },
+  "input_fields": [
+    "cycle_time_ns",
+    "memory_min_kb",
+    "memory_max_kb",
+    "cache_kb",
+    "channels_min",
+    "channels_max"
+  ],
+  "excluded_input_columns": [
+    "PRP",
+    "vendor",
+    "model",
+    "ERP"
+  ],
+  "grouping_rule": "Identical core hardware configurations. Vendor and model retained only in source provenance. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/29/computer+hardware",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "5043f19d06e6dbfd4b9640596c92eb26d6fdecabeefab98437fb07a27d748b70",
+  "dataset_doi": "10.24432/C5830D",
+  "creators": [
+    "Jacob Feldmesser"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_29/published_relative_performance": {
+      "examples": 209,
+      "label_quantiles": {
+        "0.0": 6,
+        "0.01": 7.08,
+        "0.5": 50,
+        "0.99": 892.6799999999965,
+        "1.0": 1150
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 650,
+        "median": 655,
+        "max": 659
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 15,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

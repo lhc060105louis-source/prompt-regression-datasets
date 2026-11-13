@@ -1,0 +1,128 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 504,
+    "name": "QSAR fish toxicity",
+    "raw_rows_selected": 908,
+    "raw_exact_duplicate_rows": 1,
+    "candidate_task_examples": 908,
+    "invalid_label_examples": 0,
+    "output_examples": 907,
+    "collapsed_duplicate_examples": 1,
+    "task_count": 1,
+    "split_groups": 775,
+    "input_field_count": 6,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 84,
+    "source_url": "https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_504_fish_toxicity/part-00001.jsonl.gz",
+        "records": 907,
+        "sha256": "f6129de5395ac939e4660b83ec48242b2022cd42950921a25b1a7686d505958a",
+        "bytes": 97670
+      }
+    ],
+    "uncompressed_sha256": "bd7b5dc8aed59f8810c3baa3ce3e78b9ad3b6c7c31692c2da0ff8261b41669fe"
+  },
+  "contract": {
+    "key": "fish_toxicity",
+    "targets": [
+      [
+        "LC50",
+        "acute_fish_toxicity",
+        "negative log of LC50 in mol/L, as supplied",
+        "continuous"
+      ]
+    ],
+    "task": "Predict acute toxicity to Pimephales promelas over 96 hours.",
+    "context": "CIC0 is an information-index descriptor; SM1_Dz_Z is a matrix-based descriptor; GATS1i is a 2D autocorrelation descriptor; NdsCH and NdssC are atom-type counts; MLOGP is a molecular lipophilicity descriptor. The target is already negative-log transformed in the source; do not output an untransformed concentration.",
+    "exclude": [],
+    "group": [],
+    "group_note": "Identical molecular descriptors; no molecular identity or scaffold mapping supplied.",
+    "split": "group_by_identical_descriptors; not scaffold holdout",
+    "source_file": "qsar_fish_toxicity.csv"
+  },
+  "input_fields": [
+    "CIC0",
+    "SM1_Dz_Z",
+    "GATS1i",
+    "NdsCH",
+    "NdssC",
+    "MLOGP"
+  ],
+  "excluded_input_columns": [
+    "LC50"
+  ],
+  "grouping_rule": "Identical molecular descriptors; no molecular identity or scaffold mapping supplied. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "d8047cb6cf5b690c0c4d6f495a29dc07df6347d45741b3441f545bf67785680c",
+  "dataset_doi": "10.24432/C5JG7B",
+  "creators": [
+    "Davide Ballabio",
+    "Matteo Cassotti",
+    "Viviana Consonni",
+    "Roberto Todeschini"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_504/acute_fish_toxicity": {
+      "examples": 907,
+      "label_quantiles": {
+        "0.0": 0.053,
+        "0.01": 0.78178,
+        "0.5": 3.991,
+        "0.99": 8.166779999999997,
+        "1.0": 9.612
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 729,
+        "median": 738,
+        "max": 739
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 84,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 1,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

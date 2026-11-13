@@ -1,0 +1,39 @@
+{
+  "uci_id": 186,
+  "path": "datasets/uci_186_wine_quality/data.jsonl",
+  "changed_records": 32,
+  "changed_fields": {
+    "input.alcohol": 32
+  },
+  "max_absolute_change": 3.3301361668236495e-11,
+  "max_relative_change": 3.3188955459864326e-12,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "input.alcohol",
+      10.0333333333333,
+      10.0333333333
+    ],
+    [
+      "input.alcohol",
+      11.0666666666667,
+      11.0666666667
+    ],
+    [
+      "input.alcohol",
+      9.56666666666667,
+      9.56666666667
+    ],
+    [
+      "input.alcohol",
+      13.5666666666667,
+      13.5666666667
+    ],
+    [
+      "input.alcohol",
+      9.23333333333333,
+      9.23333333333
+    ]
+  ]
+}

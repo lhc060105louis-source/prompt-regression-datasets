@@ -1,0 +1,23 @@
+{
+  "uci_id": "10",
+  "priority": "B",
+  "name": "Automobile",
+  "domain": "汽车价格",
+  "reported_size": "205，含标签缺失",
+  "target": "price，自定义为回归目标",
+  "input_description": "车型、发动机、尺寸、配置",
+  "missingness": "官网有缺失",
+  "proposed_split": "去重及车型族分组",
+  "screening_notes": "需显式选标签并移出输入；删除无价格行；symboling说明涉及价格，应优先排除价格派生信息",
+  "source_url": "https://archive.ics.uci.edu/dataset/10/automobile",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/10/automobile",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/10/automobile.zip",
+  "downloaded_at_utc": "2026-11-09T20:13:58Z",
+  "archive_sha256": "0360d2379d2d505540f0c43bfe0ada96244ad2662faf9dada1629824948294ec",
+  "archive_bytes": 8531,
+  "metadata_status": "ok",
+  "batch": 2
+}

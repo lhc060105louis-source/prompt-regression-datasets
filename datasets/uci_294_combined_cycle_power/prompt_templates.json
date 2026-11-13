@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the hourly average net electrical power output of a combined-cycle power plant at full load.",
+  "context": "AT: ambient temperature in degrees Celsius; V: exhaust vacuum in cm Hg; AP: ambient pressure in millibar; RH: relative humidity in percent. Inputs are contemporaneous operating measurements.",
+  "targets": [
+    {
+      "column": "PE",
+      "name": "net_electrical_power",
+      "unit": "MW",
+      "type": "continuous"
+    }
+  ]
+}

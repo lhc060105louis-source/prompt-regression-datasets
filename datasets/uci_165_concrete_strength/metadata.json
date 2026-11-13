@@ -1,0 +1,158 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 165,
+    "name": "Concrete Compressive Strength",
+    "raw_rows_selected": 1030,
+    "raw_exact_duplicate_rows": 25,
+    "candidate_task_examples": 1030,
+    "invalid_label_examples": 0,
+    "output_examples": 1005,
+    "collapsed_duplicate_examples": 25,
+    "task_count": 1,
+    "split_groups": 428,
+    "input_field_count": 8,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 9,
+    "source_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_165_concrete_strength/part-00001.jsonl.gz",
+        "records": 1005,
+        "sha256": "904d69b2bc4251d3181ecad15967678d3d57ca121feb8486906efdf3e7a6d39a",
+        "bytes": 101363
+      }
+    ],
+    "uncompressed_sha256": "6f9a9cf76c1f30beac89d9e11bece8b6b0c79dca1029c8a21caefcb8cb87457c"
+  },
+  "contract": {
+    "key": "concrete_strength",
+    "targets": [
+      [
+        "strength_mpa",
+        "compressive_strength",
+        "MPa",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the compressive strength of a concrete mixture at the specified age.",
+    "context": "Mixture ingredient quantities are in kg/m^3; age_days is in days.",
+    "exclude": [],
+    "group": [
+      "cement",
+      "blast_furnace_slag",
+      "fly_ash",
+      "water",
+      "superplasticizer",
+      "coarse_aggregate",
+      "fine_aggregate"
+    ],
+    "group_note": "Identical recorded mixture composition, ignoring age.",
+    "split": "group_by_mixture",
+    "source_file": "Concrete_Data.xls"
+  },
+  "input_fields": [
+    "cement",
+    "blast_furnace_slag",
+    "fly_ash",
+    "water",
+    "superplasticizer",
+    "coarse_aggregate",
+    "fine_aggregate",
+    "age_days"
+  ],
+  "excluded_input_columns": [
+    "strength_mpa"
+  ],
+  "grouping_rule": "Identical recorded mixture composition, ignoring age. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7",
+  "dataset_doi": "10.24432/C5PK67",
+  "creators": [
+    "I-Cheng Yeh"
+  ],
+  "citation_paper": {
+    "ID": 383,
+    "type": "NATIVE",
+    "title": "Modeling of strength of high-performance concrete using artificial neural networks",
+    "authors": "I. Yeh",
+    "venue": "Cement and Concrete Research, Vol. 28, No. 12",
+    "year": 1998,
+    "journal": null,
+    "DOI": "10.1016/S0008-8846(98)00165-3",
+    "URL": "https://www.semanticscholar.org/paper/9310cae70452ea11465f338483e79cc36a68881c",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_165/compressive_strength": {
+      "examples": 1005,
+      "label_quantiles": {
+        "0.0": 2.331807832,
+        "0.01": 6.88447301808,
+        "0.5": 33.79811352,
+        "0.99": 75.4772135104,
+        "1.0": 82.5992248
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 525,
+        "median": 535,
+        "max": 552
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 9,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 25,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 249,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate hourly Seoul public bicycle rentals given contemporaneous weather and operating status.",
+  "context": "date is ISO YYYY-MM-DD; hour is 0-23. temperature_c/dewpoint_c: Celsius; humidity_percent: percent; wind_speed_m_s: m/s; visibility_10m: units of 10 metres; solar_radiation_mj_m2: MJ/m^2; rainfall_mm: mm; snowfall_cm: cm. season, holiday and functioning_day are categories. This is conditional estimation, not a future-weather forecast.",
+  "targets": [
+    {
+      "column": "rented_bike_count",
+      "name": "hourly_seoul_bike_rentals",
+      "unit": "rentals per hour",
+      "type": "count"
+    }
+  ]
+}

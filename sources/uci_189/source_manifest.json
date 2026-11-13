@@ -1,0 +1,22 @@
+{
+  "uci_id": "189",
+  "priority": "A",
+  "name": "Parkinsons Telemonitoring",
+  "domain": "医疗",
+  "reported_size": "5875次记录，42位患者",
+  "target": "motor_UPDRS或total_UPDRS",
+  "input_description": "16项声学特征，可加入年龄、性别、时间",
+  "missingness": "官网无缺失",
+  "proposed_split": "按subject分组，禁止患者跨split",
+  "screening_notes": "删除患者ID以及另一UPDRS目标；有效独立个体数远小于行数；标签产生方式需随原论文进一步核对",
+  "source_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/189/parkinsons+telemonitoring.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "2f82bb0ef96fa7d8d7edf4d97b89173e07c2cca7723440a64bc38918a83345df",
+  "archive_bytes": 292221,
+  "metadata_status": "ok"
+}

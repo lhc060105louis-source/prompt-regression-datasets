@@ -1,0 +1,23 @@
+{
+  "uci_id": "265",
+  "priority": "B",
+  "name": "Physicochemical Properties of Protein Tertiary Structure",
+  "domain": "蛋白质结构",
+  "reported_size": "45730",
+  "target": "RMSD",
+  "input_description": "F1—F9理化与结构描述符",
+  "missingness": "官网无缺失",
+  "proposed_split": "理想为按蛋白质目标分组",
+  "screening_notes": "官网分组标识不充分；未恢复蛋白质ID前，不能宣称新蛋白泛化；字段解释和单位需补查",
+  "source_url": "https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/265/physicochemical+properties+of+protein+tertiary+structure.zip",
+  "downloaded_at_utc": "2026-11-09T20:13:58Z",
+  "archive_sha256": "ee6536c8cc415dc50d66bd247af7c9bc95c187ab8a4ea0f1f546b127206c1100",
+  "archive_bytes": 3528824,
+  "metadata_status": "ok",
+  "batch": 2
+}

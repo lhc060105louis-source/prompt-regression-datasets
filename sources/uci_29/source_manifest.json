@@ -1,0 +1,22 @@
+{
+  "uci_id": "29",
+  "priority": "A",
+  "name": "Computer Hardware",
+  "domain": "计算机硬件",
+  "reported_size": "209",
+  "target": "PRP，公开相对性能",
+  "input_description": "核心6项硬件参数，可另设厂商字段",
+  "missingness": "官网无缺失",
+  "proposed_split": "去重后划分；厂商留出作补充",
+  "screening_notes": "ERP是原作者估计的性能，应从输入删除；PRP需手动设为标签，不能盲信官网Feature角色",
+  "source_url": "https://archive.ics.uci.edu/dataset/29/computer+hardware",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/29/computer+hardware",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/29/computer+hardware.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "5043f19d06e6dbfd4b9640596c92eb26d6fdecabeefab98437fb07a27d748b70",
+  "archive_bytes": 4482,
+  "metadata_status": "ok"
+}

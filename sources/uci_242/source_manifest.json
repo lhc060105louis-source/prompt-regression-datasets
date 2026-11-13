@@ -1,0 +1,22 @@
+{
+  "uci_id": "242",
+  "priority": "A",
+  "name": "Energy Efficiency",
+  "domain": "建筑节能",
+  "reported_size": "768",
+  "target": "供暖负荷或制冷负荷",
+  "input_description": "8项建筑几何、朝向和玻璃参数",
+  "missingness": "官网无缺失",
+  "proposed_split": "按基础建筑形状分组",
+  "screening_notes": "模拟数据；两个目标分别建任务，同一原始样本必须在同一split；另一目标不能作为输入",
+  "source_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/242/energy+efficiency.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "499441eee27929a4b00417f58fd8c63c9cc14b8a71520cd0dd27fcb626738351",
+  "archive_bytes": 76321,
+  "metadata_status": "ok"
+}

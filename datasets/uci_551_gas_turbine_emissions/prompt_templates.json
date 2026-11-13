@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the specified flue-gas emission concentration of a gas turbine from operating and ambient measurements.",
+  "context": "AT: ambient Celsius; AP: ambient mbar; AH: percent humidity; AFDP: filter differential pressure mbar; GTEP: exhaust pressure mbar; TIT/TAT: inlet/after-turbine Celsius; CDP: compressor discharge pressure mbar; TEY: source hourly energy yield in MWh. Both pollutant target columns are excluded from input. Measurements are contemporaneous.",
+  "targets": [
+    {
+      "column": "CO",
+      "name": "carbon_monoxide",
+      "unit": "mg/m^3",
+      "type": "continuous"
+    },
+    {
+      "column": "NOX",
+      "name": "nitrogen_oxides",
+      "unit": "mg/m^3",
+      "type": "continuous"
+    }
+  ]
+}

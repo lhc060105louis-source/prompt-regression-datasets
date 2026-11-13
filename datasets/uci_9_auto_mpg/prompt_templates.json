@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict city-cycle fuel economy from automobile specifications.",
+  "context": "cylinders: cylinder count; displacement: source engine-displacement measurement; horsepower: engine power; weight: source vehicle-weight measurement; acceleration: source acceleration measurement; model_year: two-digit model year; origin: original categorical origin code. Numeric source scales are retained.",
+  "targets": [
+    {
+      "column": "mpg",
+      "name": "city_cycle_fuel_economy",
+      "unit": "miles per gallon",
+      "type": "continuous"
+    }
+  ]
+}

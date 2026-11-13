@@ -1,0 +1,174 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 242,
+    "name": "Energy Efficiency",
+    "raw_rows_selected": 768,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 1536,
+    "invalid_label_examples": 0,
+    "output_examples": 1536,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 2,
+    "split_groups": 12,
+    "input_field_count": 8,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_242_energy_efficiency/part-00001.jsonl.gz",
+        "records": 1536,
+        "sha256": "5cbc5be78422c74282c070c14f2b2c608b72a17e70f1566fa9aee1b8d83574ae",
+        "bytes": 94017
+      }
+    ],
+    "uncompressed_sha256": "57469df967c389fedf02c1bacbd8fcad33ab6abaae604c96bf5e64b3d9d27fa2"
+  },
+  "contract": {
+    "key": "energy_efficiency",
+    "targets": [
+      [
+        "heating_load",
+        "heating_load",
+        "source load unit (not specified in UCI metadata)",
+        "continuous"
+      ],
+      [
+        "cooling_load",
+        "cooling_load",
+        "source load unit (not specified in UCI metadata)",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the specified energy load of a simulated residential building.",
+    "context": "Fields describe building geometry, orientation and glazing. orientation and glazing_distribution retain the original category codes. Values retain their original UCI scales.",
+    "exclude": [],
+    "group": [
+      "relative_compactness",
+      "surface_area",
+      "wall_area",
+      "roof_area",
+      "overall_height"
+    ],
+    "group_note": "Base building geometry, ignoring orientation and glazing.",
+    "split": "group_by_building_geometry",
+    "source_file": "ENB2012_data.xlsx"
+  },
+  "input_fields": [
+    "relative_compactness",
+    "surface_area",
+    "wall_area",
+    "roof_area",
+    "overall_height",
+    "orientation",
+    "glazing_area",
+    "glazing_distribution"
+  ],
+  "excluded_input_columns": [
+    "heating_load",
+    "cooling_load"
+  ],
+  "grouping_rule": "Base building geometry, ignoring orientation and glazing. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "499441eee27929a4b00417f58fd8c63c9cc14b8a71520cd0dd27fcb626738351",
+  "dataset_doi": "10.24432/C51307",
+  "creators": [
+    "Athanasios Tsanas",
+    "Angeliki Xifara"
+  ],
+  "citation_paper": {
+    "ID": 379,
+    "type": "NATIVE",
+    "title": "Accurate quantitative estimation of energy performance of residential buildings using statistical machine learning tools",
+    "authors": "A. Tsanas, Angeliki Xifara",
+    "venue": "Energy and Buildings, vol. 49",
+    "year": 2012,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/Accurate-quantitative-estimation-of-energy-of-using-Tsanas-Xifara/719e65379c5959141180a45f540f707d583b8ce2",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_242/cooling_load": {
+      "examples": 768,
+      "label_quantiles": {
+        "0.0": 10.9,
+        "0.01": 11.726700000000001,
+        "0.5": 22.08,
+        "0.99": 45.5431,
+        "1.0": 48.03
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 683,
+        "median": 690,
+        "max": 694
+      }
+    },
+    "uci_242/heating_load": {
+      "examples": 768,
+      "label_quantiles": {
+        "0.0": 6.01,
+        "0.01": 6.6479,
+        "0.5": 18.95,
+        "0.99": 42.0899,
+        "1.0": 43.1
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 683,
+        "median": 690,
+        "max": 694
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

@@ -1,0 +1,230 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 464,
+    "name": "Superconductivty Data",
+    "raw_rows_selected": 21263,
+    "raw_exact_duplicate_rows": 66,
+    "candidate_task_examples": 21263,
+    "invalid_label_examples": 0,
+    "output_examples": 21193,
+    "collapsed_duplicate_examples": 70,
+    "task_count": 1,
+    "split_groups": 15164,
+    "input_field_count": 81,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 2375,
+    "source_url": "https://archive.ics.uci.edu/dataset/464/superconductivty+data",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_464_superconductivity/part-00001.jsonl.gz",
+        "records": 21193,
+        "sha256": "c0f961d38d9c3a214de145fe05459be0f4580d23466be3b73d3a7e7c845bc3c7",
+        "bytes": 17193540
+      }
+    ],
+    "uncompressed_sha256": "762dda6dd6acec429b28718d6caecb7d8ef5774bce379144cc14ce3c8393ef7a"
+  },
+  "contract": {
+    "key": "superconductivity",
+    "targets": [
+      [
+        "critical_temp",
+        "critical_temperature",
+        "K",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the superconducting critical temperature of a material known to be a superconductor.",
+    "context": "Descriptors summarize atomic mass, first ionization energy (fie), atomic radius, density, electron affinity, fusion heat, thermal conductivity and valence of constituent elements. mean/gmean/std/range/entropy are source summary statistics; wtd denotes source composition weighting. Input descriptor values retain their original source scales.",
+    "exclude": [],
+    "group": [],
+    "group_note": "Normalized elemental composition from unique_m.csv; equal-input groups are also linked.",
+    "split": "group_by_composition",
+    "source_file": "train.csv"
+  },
+  "input_fields": [
+    "number_of_elements",
+    "mean_atomic_mass",
+    "wtd_mean_atomic_mass",
+    "gmean_atomic_mass",
+    "wtd_gmean_atomic_mass",
+    "entropy_atomic_mass",
+    "wtd_entropy_atomic_mass",
+    "range_atomic_mass",
+    "wtd_range_atomic_mass",
+    "std_atomic_mass",
+    "wtd_std_atomic_mass",
+    "mean_fie",
+    "wtd_mean_fie",
+    "gmean_fie",
+    "wtd_gmean_fie",
+    "entropy_fie",
+    "wtd_entropy_fie",
+    "range_fie",
+    "wtd_range_fie",
+    "std_fie",
+    "wtd_std_fie",
+    "mean_atomic_radius",
+    "wtd_mean_atomic_radius",
+    "gmean_atomic_radius",
+    "wtd_gmean_atomic_radius",
+    "entropy_atomic_radius",
+    "wtd_entropy_atomic_radius",
+    "range_atomic_radius",
+    "wtd_range_atomic_radius",
+    "std_atomic_radius",
+    "wtd_std_atomic_radius",
+    "mean_Density",
+    "wtd_mean_Density",
+    "gmean_Density",
+    "wtd_gmean_Density",
+    "entropy_Density",
+    "wtd_entropy_Density",
+    "range_Density",
+    "wtd_range_Density",
+    "std_Density",
+    "wtd_std_Density",
+    "mean_ElectronAffinity",
+    "wtd_mean_ElectronAffinity",
+    "gmean_ElectronAffinity",
+    "wtd_gmean_ElectronAffinity",
+    "entropy_ElectronAffinity",
+    "wtd_entropy_ElectronAffinity",
+    "range_ElectronAffinity",
+    "wtd_range_ElectronAffinity",
+    "std_ElectronAffinity",
+    "wtd_std_ElectronAffinity",
+    "mean_FusionHeat",
+    "wtd_mean_FusionHeat",
+    "gmean_FusionHeat",
+    "wtd_gmean_FusionHeat",
+    "entropy_FusionHeat",
+    "wtd_entropy_FusionHeat",
+    "range_FusionHeat",
+    "wtd_range_FusionHeat",
+    "std_FusionHeat",
+    "wtd_std_FusionHeat",
+    "mean_ThermalConductivity",
+    "wtd_mean_ThermalConductivity",
+    "gmean_ThermalConductivity",
+    "wtd_gmean_ThermalConductivity",
+    "entropy_ThermalConductivity",
+    "wtd_entropy_ThermalConductivity",
+    "range_ThermalConductivity",
+    "wtd_range_ThermalConductivity",
+    "std_ThermalConductivity",
+    "wtd_std_ThermalConductivity",
+    "mean_Valence",
+    "wtd_mean_Valence",
+    "gmean_Valence",
+    "wtd_gmean_Valence",
+    "entropy_Valence",
+    "wtd_entropy_Valence",
+    "range_Valence",
+    "wtd_range_Valence",
+    "std_Valence",
+    "wtd_std_Valence"
+  ],
+  "excluded_input_columns": [
+    "critical_temp"
+  ],
+  "grouping_rule": "Normalized elemental composition from unique_m.csv; equal-input groups are also linked. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/464/superconductivty+data",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "87f4490d73390ff94ee01dbf0d7d32abc80b22f2c803d471765cfc46a9f6371e",
+  "dataset_doi": "10.24432/C53P47",
+  "creators": [
+    "Kam Hamidieh"
+  ],
+  "citation_paper": {
+    "ID": 452,
+    "type": "NATIVE",
+    "title": "A data-driven statistical model for predicting the critical temperature of a superconductor",
+    "authors": "K. Hamidieh",
+    "venue": "Computational materials science",
+    "year": 2018,
+    "journal": null,
+    "DOI": null,
+    "URL": "https://www.semanticscholar.org/paper/A-data-driven-statistical-model-for-predicting-the-Hamidieh/b3bea0ac481f0869cb746f3b44d5689bf1a9b924",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_464/critical_temperature": {
+      "examples": 21193,
+      "label_quantiles": {
+        "0.0": 0.00021,
+        "0.01": 0.11484,
+        "0.5": 20,
+        "0.99": 120.224,
+        "1.0": 185
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 2645,
+        "median": 3408,
+        "max": 3494
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "aligned_composition_table",
+      "count": 21263,
+      "action": "use_for_grouping_only",
+      "detail": "Verified exact rowwise target alignment; unique_m.csv is not appended as independent samples. Composition fractions rounded to 12 decimals for grouping.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 2375,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 70,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 20916,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

@@ -1,0 +1,178 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 374,
+    "name": "Appliances Energy Prediction",
+    "batch": 2,
+    "raw_rows_selected": 19735,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 19735,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 19735,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 138,
+    "input_field_count": 26,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction",
+    "files": [
+      {
+        "path": "datasets/uci_374_appliances_energy/part-00001.jsonl.gz",
+        "records": 19735,
+        "sha256": "17e83050a31572e4489dc60beae5c6ac9875b8b84c789f9ee580d11945f9faaf",
+        "bytes": 4104747
+      }
+    ],
+    "uncompressed_sha256": "4dde7a1e40dcd956b0aee0529f8adda1bdb876fdc71422168b79c116a24284f4"
+  },
+  "contract": {
+    "key": "appliances_energy",
+    "targets": [
+      [
+        "Appliances",
+        "appliance_energy",
+        "Wh per 10-minute observation",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate appliance energy use during a ten-minute observation in a monitored house from contemporaneous measurements.",
+    "context": "T1..T9 are Celsius temperatures and RH_1..RH_9 percent humidities: kitchen, living room, laundry, office, bathroom, outside north wall, ironing room, teenager room, parents room. lights: lighting energy in Wh; T_out/Tdewpoint: outdoor/dewpoint Celsius; Press_mm_hg: pressure in mm Hg; RH_out: percent; Windspeed: m/s; Visibility: km; date: timestamp. Source weather is hourly/interpolated; no real-time forecasting claim is made.",
+    "split": "chronological_by_date; one house only"
+  },
+  "input_fields": [
+    "date",
+    "lights",
+    "T1",
+    "RH_1",
+    "T2",
+    "RH_2",
+    "T3",
+    "RH_3",
+    "T4",
+    "RH_4",
+    "T5",
+    "RH_5",
+    "T6",
+    "RH_6",
+    "T7",
+    "RH_7",
+    "T8",
+    "RH_8",
+    "T9",
+    "RH_9",
+    "T_out",
+    "Press_mm_hg",
+    "RH_out",
+    "Windspeed",
+    "Visibility",
+    "Tdewpoint"
+  ],
+  "excluded_input_columns": [
+    "Appliances",
+    "rv1",
+    "rv2"
+  ],
+  "grouping_columns": [
+    "_day"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction"
+  },
+  "source_archive_sha256": "2fccf354445d886e7917620b0195db1f3e3e34d5a067a93b844694a4c561255a",
+  "dataset_doi": "10.24432/C5VC8G",
+  "creators": [
+    "Luis Candanedo"
+  ],
+  "citation_paper": {
+    "ID": 398,
+    "type": "NATIVE",
+    "title": "Data driven prediction models of energy use of appliances in a low-energy house",
+    "authors": "L. Candanedo, V. Feldheim, Dominique Deramaix",
+    "venue": "Energy and Buildings, Volume 140",
+    "year": 2017,
+    "journal": null,
+    "DOI": "10.1016/j.enbuild.2017.01.083",
+    "URL": "https://www.semanticscholar.org/paper/28025ec6f4d5ab121bd91b36c754c0f0831d2433",
+    "sha": null,
+    "corpus": null,
+    "arxiv": null,
+    "mag": null,
+    "acl": null,
+    "pmid": null,
+    "pmcid": null
+  },
+  "task_statistics": {
+    "uci_374/appliance_energy": {
+      "examples": 19735,
+      "label_quantiles": {
+        "0.0": 10,
+        "0.01": 20,
+        "0.5": 60,
+        "0.99": 576.6,
+        "1.0": 1080
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 1141,
+        "median": 1220,
+        "max": 1356
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "random_columns",
+      "count": 2,
+      "action": "remove",
+      "detail": "rv1 and rv2 are exactly equal random controls, not domain predictors."
+    },
+    {
+      "code": "single_house",
+      "count": 1,
+      "action": "limit_claim",
+      "detail": "No claim of generalization to new houses; source weather interpolation prevents an unqualified online-forecast claim."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    },
+    {
+      "code": "numeric_precision_12_significant_digits",
+      "count": 19718,
+      "action": "round_prepared_numbers_rebuild_prompt_rehash_and_merge_exact_duplicates",
+      "detail": "Conservative decimal precision cap; original source files unchanged. All changes and old/new IDs retained in numeric_precision_changes.jsonl.gz."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform. Prepared numeric values now follow significant_digits_12_v1; exact originals remain in raw and the versioned history.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Final normalized, eligible, deduplicated output records. Raw profile retains the original source-table scope.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

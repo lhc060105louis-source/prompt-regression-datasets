@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+preprocessing/构造general数据集/
+preprocessing/work/vendor/
+preprocessing/work/precision_scan.json
+preprocessing/work/precision_v2_1_stage/
+preprocessing/outputs/general_dataset_*
+.DS_Store
+Thumbs.db

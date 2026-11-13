@@ -1,0 +1,23 @@
+{
+  "uci_id": "555",
+  "priority": "B",
+  "name": "Apartment for Rent Classified",
+  "domain": "房地产与文本",
+  "reported_size": "10K和100K两个版本",
+  "target": "price，租金，自定义目标",
+  "input_description": "房源文字、设施、面积、位置与房型",
+  "missingness": "官网称无缺失，但说明只保证price与square_feet非空",
+  "proposed_split": "房源去重分组；城市或时间留出",
+  "screening_notes": "优先检查文字路线；删除price_display并清除标题正文中的租金答案；统一币种和计费周期；10K与100K核查重叠",
+  "source_url": "https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/555/apartment+for+rent+classified.zip",
+  "downloaded_at_utc": "2026-11-09T20:14:02Z",
+  "archive_sha256": "32c34f1cbcb2a9b39670577fab1d1cb8cafa6e61f9914301b7a8b229a8a8f754",
+  "archive_bytes": 10252449,
+  "metadata_status": "ok",
+  "batch": 2
+}

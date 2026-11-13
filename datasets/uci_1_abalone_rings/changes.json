@@ -1,0 +1,18 @@
+[
+  {
+    "source_row": 1258,
+    "source_file": "abalone.data",
+    "field": "height_scaled",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_shell_height_to_null"
+  },
+  {
+    "source_row": 3997,
+    "source_file": "abalone.data",
+    "field": "height_scaled",
+    "original": 0,
+    "replacement": null,
+    "reason": "nonpositive_shell_height_to_null"
+  }
+]

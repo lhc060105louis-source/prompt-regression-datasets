@@ -1,0 +1,138 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 9,
+    "name": "Auto MPG",
+    "raw_rows_selected": 398,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 398,
+    "invalid_label_examples": 0,
+    "output_examples": 398,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 305,
+    "input_field_count": 7,
+    "examples_with_null_input": 6,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/9/auto+mpg",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_9_auto_mpg/part-00001.jsonl.gz",
+        "records": 398,
+        "sha256": "e3a50096decaf5278ab596f516fdb9922bee0c0397857f76c45a135f953453db",
+        "bytes": 41014
+      }
+    ],
+    "uncompressed_sha256": "ce85884d92c6b4ca952d551b5ffa19c40af2dfe93e83b90169c62f9d662aca1c"
+  },
+  "contract": {
+    "key": "auto_mpg",
+    "targets": [
+      [
+        "mpg",
+        "city_cycle_fuel_economy",
+        "miles per gallon",
+        "continuous"
+      ]
+    ],
+    "task": "Predict city-cycle fuel economy from automobile specifications.",
+    "context": "cylinders: cylinder count; displacement: source engine-displacement measurement; horsepower: engine power; weight: source vehicle-weight measurement; acceleration: source acceleration measurement; model_year: two-digit model year; origin: original categorical origin code. Numeric source scales are retained.",
+    "exclude": [
+      "car_name"
+    ],
+    "group": [
+      "car_name"
+    ],
+    "group_note": "Exact car name, without heuristic spelling/trim matching.",
+    "split": "group_by_exact_car_name; model-family matches not guaranteed",
+    "source_file": "auto-mpg.data"
+  },
+  "input_fields": [
+    "cylinders",
+    "displacement",
+    "horsepower",
+    "weight",
+    "acceleration",
+    "model_year",
+    "origin"
+  ],
+  "excluded_input_columns": [
+    "mpg",
+    "car_name"
+  ],
+  "grouping_rule": "Exact car name, without heuristic spelling/trim matching. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/9/auto+mpg",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "5fc1507522b73b8050d3aa45df51eefe1b666ae5f428a5f1347b6483339f1003",
+  "dataset_doi": "10.24432/C5859H",
+  "creators": [
+    "R. Quinlan"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_9/city_cycle_fuel_economy": {
+      "examples": 398,
+      "label_quantiles": {
+        "0.0": 9,
+        "0.01": 11,
+        "0.5": 23,
+        "0.99": 43.417999999999985,
+        "1.0": 46.6
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 740,
+        "median": 743,
+        "max": 745
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "missing_horsepower",
+      "count": 6,
+      "action": "retain_as_null",
+      "detail": "Six missing horsepower values; no all-data mean imputation.",
+      "severity": "medium"
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

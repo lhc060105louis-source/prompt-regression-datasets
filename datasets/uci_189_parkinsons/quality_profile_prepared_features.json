@@ -1,0 +1,331 @@
+{
+  "rows": 5875,
+  "columns": 18,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "Jitter(%)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1305,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00083,
+        "0.01": 0.00174,
+        "0.25": 0.00358,
+        "0.5": 0.0049,
+        "0.75": 0.0068,
+        "0.99": 0.03204200000000004,
+        "1.0": 0.09999
+      }
+    },
+    "Jitter(Abs)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4105,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2.25e-06,
+        "0.01": 7.6148e-06,
+        "0.25": 2.2434999999999998e-05,
+        "0.5": 3.453e-05,
+        "0.75": 5.3335000000000003e-05,
+        "0.99": 0.00018933260000000021,
+        "1.0": 0.00044559
+      }
+    },
+    "Jitter:RAP": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 853,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00033,
+        "0.01": 0.00069,
+        "0.25": 0.00158,
+        "0.5": 0.00225,
+        "0.75": 0.00329,
+        "0.99": 0.01671380000000003,
+        "1.0": 0.05754
+      }
+    },
+    "Jitter:PPQ5": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 840,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00043,
+        "0.01": 0.0008474,
+        "0.25": 0.00182,
+        "0.5": 0.00249,
+        "0.75": 0.00346,
+        "0.99": 0.021600600000000067,
+        "1.0": 0.06956
+      }
+    },
+    "Jitter:DDP": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1703,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00098,
+        "0.01": 0.0020748,
+        "0.25": 0.00473,
+        "0.5": 0.00675,
+        "0.75": 0.00987,
+        "0.99": 0.050141400000000086,
+        "1.0": 0.17263
+      }
+    },
+    "Shimmer": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3581,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00306,
+        "0.01": 0.008534400000000001,
+        "0.25": 0.019119999999999998,
+        "0.5": 0.02751,
+        "0.75": 0.039749999999999994,
+        "0.99": 0.1580044000000002,
+        "1.0": 0.26863
+      }
+    },
+    "Shimmer(dB)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 852,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.026,
+        "0.01": 0.077,
+        "0.25": 0.175,
+        "0.5": 0.253,
+        "0.75": 0.365,
+        "0.99": 1.4255200000000006,
+        "1.0": 2.107
+      }
+    },
+    "Shimmer:APQ3": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2664,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00161,
+        "0.01": 0.00348,
+        "0.25": 0.00928,
+        "0.5": 0.0137,
+        "0.75": 0.020575000000000003,
+        "0.99": 0.07663160000000004,
+        "1.0": 0.16267
+      }
+    },
+    "Shimmer:APQ5": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2850,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00194,
+        "0.01": 0.004307399999999999,
+        "0.25": 0.01079,
+        "0.5": 0.01594,
+        "0.75": 0.023755,
+        "0.99": 0.10222680000000015,
+        "1.0": 0.16702
+      }
+    },
+    "Shimmer:APQ11": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3283,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00249,
+        "0.01": 0.0067444,
+        "0.25": 0.015665,
+        "0.5": 0.02271,
+        "0.75": 0.032715,
+        "0.99": 0.11439160000000002,
+        "1.0": 0.27546
+      }
+    },
+    "Shimmer:DDA": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4223,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.00484,
+        "0.01": 0.010447399999999999,
+        "0.25": 0.02783,
+        "0.5": 0.04111,
+        "0.75": 0.061735,
+        "0.99": 0.2299048000000001,
+        "1.0": 0.48802
+      }
+    },
+    "NHR": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5532,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.000286,
+        "0.01": 0.00204302,
+        "0.25": 0.010955,
+        "0.5": 0.018448,
+        "0.75": 0.031463,
+        "0.99": 0.35343000000000163,
+        "1.0": 0.74826
+      }
+    },
+    "HNR": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4780,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1.659,
+        "0.01": 6.29254,
+        "0.25": 19.406,
+        "0.5": 21.92,
+        "0.75": 24.444000000000003,
+        "0.99": 30.762380000000004,
+        "1.0": 37.875
+      }
+    },
+    "RPDE": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5430,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.15102,
+        "0.01": 0.30833879999999997,
+        "0.25": 0.469785,
+        "0.5": 0.54225,
+        "0.75": 0.614045,
+        "0.99": 0.7550238000000006,
+        "1.0": 0.96608
+      }
+    },
+    "DFA": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5282,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.51404,
+        "0.01": 0.5296318,
+        "0.25": 0.59618,
+        "0.5": 0.6436,
+        "0.75": 0.711335,
+        "0.99": 0.8049798,
+        "1.0": 0.8656
+      }
+    },
+    "PPE": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4777,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.021983,
+        "0.01": 0.06197528,
+        "0.25": 0.15634,
+        "0.5": 0.2055,
+        "0.75": 0.26449,
+        "0.99": 0.5103576000000002,
+        "1.0": 0.73173
+      }
+    },
+    "motor_UPDRS": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1080,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 5.0377,
+        "0.01": 6,
+        "0.25": 15,
+        "0.5": 20.871,
+        "0.75": 27.5965,
+        "0.99": 36.9369,
+        "1.0": 39.511
+      }
+    },
+    "total_UPDRS": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1129,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 7,
+        "0.01": 7.0883,
+        "0.25": 21.371,
+        "0.5": 27.576,
+        "0.75": 36.399,
+        "0.99": 54.55,
+        "1.0": 54.992
+      }
+    }
+  }
+}

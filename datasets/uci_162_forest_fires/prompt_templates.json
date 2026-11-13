@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate burned forest area in the Montesinho park from recorded weather and fire-index conditions.",
+  "context": "X/Y: park map grid coordinates; month/day: calendar categories without full event date; FFMC/DMC/DC/ISI: fire-weather indices; temp: Celsius; RH: percent; wind: km/h; rain: mm/m^2 as described in the source. The target is untransformed hectares, including zero. Event timing is incomplete, so this is retrospective conditional estimation.",
+  "targets": [
+    {
+      "column": "area",
+      "name": "burned_forest_area",
+      "unit": "hectares",
+      "type": "continuous"
+    }
+  ]
+}

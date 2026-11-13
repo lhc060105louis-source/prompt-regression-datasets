@@ -1,0 +1,38 @@
+{
+  "format": "UTF-8 JSON Lines",
+  "required": [
+    "sample_id",
+    "dataset_id",
+    "dataset_family",
+    "task_id",
+    "prompt",
+    "label",
+    "input",
+    "source_refs",
+    "group_id",
+    "split"
+  ],
+  "label": "finite JSON number, never string; scalar target",
+  "prompt": "English task-specific context + input JSON; excludes labels and provenance",
+  "input": "original-scale typed feature object; null allowed; no statistical imputation",
+  "source_refs": "one or more original file/1-based data row references; excludes header row",
+  "duplicate_count": "number of identical task/input/label source occurrences collapsed",
+  "group_id": "known-dependence grouping key, dataset-scoped; does not replace chronological splitting",
+  "split": "unassigned in this release",
+  "quality_flags": "review flags for preserved source anomalies or explicitly replaced measurements; no flag is not a guarantee of clean data",
+  "target_transform": "none_applied except SGEMM arithmetic_mean_of_four_source_runs; QSAR source labels already transformed",
+  "entity_id": "optional known subject/station ID for grouping; never included in prompt unless explicitly a domain feature",
+  "target_observations": "optional SGEMM four original runtime measurements; outcomes only, never input",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  }
+}

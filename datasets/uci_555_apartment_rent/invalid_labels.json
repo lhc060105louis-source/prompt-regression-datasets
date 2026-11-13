@@ -1,0 +1,9 @@
+[
+  {
+    "source_index": 6864,
+    "file": "apartments_for_rent_classified_100K.csv",
+    "row": 6865,
+    "target": "price",
+    "reason": "missing_nonfinite_or_negative_label"
+  }
+]

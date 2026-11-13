@@ -1,0 +1,22 @@
+{
+  "uci_id": "492",
+  "priority": "A",
+  "name": "Metro Interstate Traffic Volume",
+  "domain": "道路交通",
+  "reported_size": "48204",
+  "target": "每小时车流量",
+  "input_description": "时间、节日、气象数值与天气文字",
+  "missingness": "官网无缺失",
+  "proposed_split": "按时间划分，同时间记录归同split",
+  "screening_notes": "明确是已知当小时天气的条件估计；若做未来预测，只能用预测时刻已知的天气信息",
+  "source_url": "https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/492/metro+interstate+traffic+volume.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "b99aeabcbd6cc86f642da3a79d90883425798f58abd3b3302da2fa19dda73768",
+  "archive_bytes": 405547,
+  "metadata_status": "ok"
+}

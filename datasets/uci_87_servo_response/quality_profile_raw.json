@@ -1,0 +1,87 @@
+{
+  "rows": 167,
+  "columns": 5,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "motor": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "top_values": {
+        "C": 40,
+        "B": 36,
+        "A": 36,
+        "E": 33,
+        "D": 22
+      }
+    },
+    "screw": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "top_values": {
+        "A": 42,
+        "B": 35,
+        "C": 31,
+        "D": 30,
+        "E": 29
+      }
+    },
+    "pgain": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 3,
+        "0.01": 3,
+        "0.25": 3,
+        "0.5": 4,
+        "0.75": 5,
+        "0.99": 6,
+        "1.0": 6
+      }
+    },
+    "vgain": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 4,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "response": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 51,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.13124992,
+        "0.01": 0.20625044,
+        "0.25": 0.5031264,
+        "0.5": 0.7312541,
+        "0.75": 1.2593687500000001,
+        "0.99": 6.108061274000004,
+        "1.0": 7.1001077
+      }
+    }
+  }
+}

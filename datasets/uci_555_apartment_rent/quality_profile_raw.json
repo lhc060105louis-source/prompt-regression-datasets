@@ -1,0 +1,380 @@
+{
+  "rows": 99492,
+  "columns": 22,
+  "exact_duplicate_rows": 84,
+  "column_profiles": {
+    "id": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 99408,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 5121046168,
+        "0.01": 5121241527.06,
+        "0.25": 5197949712.25,
+        "0.5": 5508672978.5,
+        "0.75": 5509007173.25,
+        "0.99": 5668634939.45,
+        "1.0": 5669438542
+      }
+    },
+    "category": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 7,
+      "top_values": {
+        "housing/rent/apartment": 99431,
+        "housing/rent/commercial/retail": 42,
+        "housing/rent": 7,
+        "housing/rent/home": 4,
+        "housing/rent/short_term": 4,
+        "housing/rent/condo": 3,
+        "housing/rent/other": 1
+      }
+    },
+    "title": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 58503,
+      "top_values": {
+        "Apartment in great location": 1064,
+        "Apartment in prime location": 1028,
+        "Apartment in quiet area, spacious with big kitchen": 1023,
+        "Super Cute! Apartment for Rent!": 1018,
+        "This Apartment is a must see!": 1002,
+        "Two BR Apartment - Large & Bright": 464,
+        "Prominence Apartments Two BR Luxury Apartment Homes": 448,
+        "Great Central Location One BR, One BA": 442,
+        "Amazing One BR, One BA for rent": 400,
+        "Prominence Apartments One BR Luxury Apartment Homes": 391,
+        "Convenient location One BR One BA for rent": 391,
+        "Move-in condition, One BR One BA": 387
+      }
+    },
+    "body": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 94503,
+      "top_values": {
+        "When searching for a pet-friendly One-, Two- and 3 Beds apartment homes in Randallstown, look no further than Northwest Crossing. Northwest Crossing's convenient suburban. and Liberty provides you with immediate access to shopping, entertainment, transportation and is directly across from Northwest Hospital. Commuters enjoy easy access to Baltimore's Inner, Baltimore Washington International Airport BWI, Owings Mills, Pikesville, and Catonsville. The Crossing enjoy the comforts of an apartment they are truly proud to with wall-to-wall carpeting, fully-equipped kitchens with dishwashers, over-sized closets and expansive balconies. Outside your home, Northwest Crossing boasts a fitness facilities, basketball and professionally landscaped grounds with picnic areas. Take pleasure in knowing that our professional management team is here to assist you with any need great or small. We are excited to meet you and welcome you home!": 43,
+        "Welcome Apartment Homes, where quality apartment living awaits you! These gorgeous apartments are located in Jacksonville, North Carolina, conveniently surrounded by a variety of restaurants, schools, shopping centers, and recreational areas. Our lovely community is the perfect to enjoy a relaxed, comfortable lifestyle. With an array of floorplans that are all accompanied by unbeatable amenities and community features, theres guaranteed to be something for everyone! We offer everything you could need in one, and our staff is happily available to assist our residents with any situation that may arise. Our friendly community encourages turning those strangers next door into neighbors because, Apartment Homes, all residents are considered family! Apartments home today, and see how our outstanding management and staff will exceed your expectations. Income Requirement: Must have 2. 5x the rent in total household income before taxes, include income from all adults. Utilities included: Sewer, Water.": 37,
+        "If you re looking to lease your new home, you want to rest assured that all the essentials are taken care of. That s where we come in. The is a professionally managed apartment community in Belleville, NJ, where you will have everything you need to live your life right. Whether you prefer nights in or love to be out on the town, The is your gateway to the good life. We are only 25 minutes from Midtown tan, nestled in a green, park-like neighborhood, so our location is 1 of our best amenities. Ditch the late-night or weekend laundromat runs, we have laundry facilities onsite for your convenience. Enjoy the essential appliances, and take advantage of our available cable and satellite. Everything you need to do apartment living right is Woodlands. today ! Income Requirement: Must have 3. 0x the rent in total household income before taxes, include income from all adults. Utilities: Renter responsible for all utilities.": 20,
+        "Welcome home to The Estara Apartments in Dallas, Texas! If youre looking for charming apartments for rent in Vickery Meadow, youve come to the right. Our community provides 1 beds apartments in East Dallas and an ideal location. With easy access to I-635 and Northwest, you have a quick and convenient commute to anywhere in the area. These apartments near Medical City in Dallas are central to many shopping, dining, and entertainment options including Dallas Athletic Club, Firewheel Town Center, Cinemark Movie Theater, Town East Mall, Market East, Centerville Park, and Celebration Station, and our apartments are near the Dallas Arboretum. Amazing employment opportunities are around the corner because our apartments are near Texas Instruments. Several area schools are close by, including Shands Elementary, Charles A. Gill Elementary, Dallas Christian School, Remington College-Dallas Campus, and Eastfield College, and our apartments are also near Richland College.": 19,
+        "Do you desire beautiful brownstone-style apartment living near gorgeous waterways in Norfolk Welcome to The urban design meets spacious floorplans, luxurious social spaces and everyday convenience. With plenty of walkable upscale shops and eateries nearby, plus easy access to popular watersport activities, our community is perfect for those that crave both an urban lifestyle and the great outdoors. Our Studio, 1, 2 & three beds apartment community offers a variety of living spaces for families, working professionals and students with close proximity to Norfolk Navel Base and Old Dominion University. Start and end your days in your cozy, yet roomy apartment with state of the art touches like 9 or ten-foot ceilings with crown molding, large kitchen islands and walk-in closets for your, it's easy to live your dream lifestyle by the sea. Utilities: Renter responsible for all utilities. Additional Charges: Trash: $15/month. Pet restrictions: Aggressive breeds.": 16,
+        "The Olive Tree represents the best in luxurious apartments in. State of the art style infuses every apartment home, the property and our community features. Our apartments offer an array of signature interior features, as well as many ways to relax and enjoy our community amenities. A stroll around our property will give you so many ideas for how you can relax and enjoy life here. We invite you to tour our apartment community. Our attentive and friendly staff is here to show you all of the ways that Olive Tree is your ideal apartment home. Get in touch with us today, and well show you why we think our apartments for rent in are the best in town. Income Requirement: Must have 3. 0x the rent in total household income before taxes, include income from all adults. Utilities: Renter responsible for all utilities. Pet restrictions: Breed restrictions apply. Parking Info: Open lot: included in lease.": 14,
+        "For more properties like this visit GoSection8.com.": 13,
+        "Welcome Apartments in Newport News, VA. We know when it comes to selecting the perfect apartment you have a choice, which is why we strive every day to create a comfortable and inviting atmosphere that you will want tohome. From our beautifully landscaped grounds to the attention to detail placed in every design choice we make, we have your best 's Landing has many price you can afford! You will love the convenience of having so many shopping centers right around the corner from your home. Apartments are located on Adams and Antrim right off of Harpersville in the heart of Mid-town Newport News. Patrick Henry Mall, the City Point, and the brand new Peninsula Town Center are just minutes away! We are also close to Colonial Williamsburg, Virginia Living and Mariner's Museums, golf courses, several beaches, and other areas of interest. Choose from a variety of floor plans, which have been designed with you in mind.": 13,
+        "Think storybook living belongs only in fairy tales Think again, and think inster Towers. Charming and well situated, inster Towers is like a wish granted. Located in Elizabeth, NJ, our location is 2nd to none. We are convenient to many major highways such as the Garden State, NJ Turnpike, Routes 22 and 21, US one and I-78. Trinitas Hospital and Devry and Kean Universities are all nearby, as well as NJ Transit and great shopping and dining. Enjoy or Mattano Park, Gardens Mall, or get Sports Complex or NJ Performing Arts Center! All team members of Morgan Properties are committed to providing exceptional service to our residents. We are committed to providing our residents with prompt assistance and personalized attention. Every team member takes pride in demonstrating respect, politeness and service with a smile. We're sure you'll be happy with your new apartment home because we check, inspect and perfect 101 areas of your home before you move-in.": 13,
+        "Experience all that the southeast has to Crossing Apartments in Dallas, Texas. We live up to our name that exudes a bit of royalty and luxurious, but enough affordability for all walks of life to cross paths in our gorgeous community. We provide residents with premium amenities they will not find anywhere else in the city. Unwind in our beautiful resident clubroom, wrap up some work over the weekend in our professional bus. ctr., or practice your butterfly stroke in 1 of our 2 junior Olympic swimming pools. If you prefer to enjoy the comfort of your own home, take advantage of our large walk-in closets, private patios or balconies, and gourmet kitchens with state of the art finishes. With a continuous rhythm of energy and style, Apartments is the perfect choice in Dallas apartment living. d schedule your personal tour today! Income Requirement: Must have 2. 5x the rent in total household income before taxes, include income from all adults. Utilities: Renter responsible for all utilities.": 13,
+        "NOTICE: You can now easily reserve our lowest rates available on-line! To unlock these rates, click \"Visit the property's management \" under the Helpful Info section below, and reserve today!Welcome to Extended Stay America, your solution for short term housing. Enjoy a furnished terrific price with free utilities, free cable, free Wi-Fi, no lease to sign, and no credit check! means you won't have to pay extra monthly bills for electric, gas, water, cable, or internet, that could mean a savings of several hundred dollars each month!Each of our furnished, ok for pets studios comes equipped with a refrigerator, stove top, microwave, toaster, and coffee maker. You'll also enjoy our convenient on-site laundry facilities and free grab-and-go breakfast every morning. Housekeeping services are also Additional charges may apply. Booking restrictions and taxes apply.": 13,
+        "Small town vibes, big city energy and an eclectic mix of historic homes and brand-new apartment communities are only part of the charm of Hyattsville. The Edition is an LEED Silver Design building and 1 of the newest apartment communities in our charming city. It encapsulates not only the small-town vibe but also the rich and colorful cultural landscape of Hyattsville. more Offering a host of studio, one, two, and 3 beds floor plans, The Edition is perfect for anyone looking to rent an apartment in Hyattsville, MD. It doesn t matter if you re an established professional looking for a comfortable home in the outskirts of DC metro, a graduate student, or a professor looking to be close to the University of Maryland. All you have to do is choose the apartment style you like the most and start living the good Edition. The open concept of our homes makes it easy for you to organize and decorate your home however you see fit.": 13
+      }
+    },
+    "amenities": {
+      "dtype": "str",
+      "missing_count": 16044,
+      "missing_rate": 0.16125919671933422,
+      "distinct_nonmissing": 9827,
+      "top_values": {
+        "nan": 16044,
+        "Parking": 6188,
+        "Parking,Storage": 2116,
+        "Gym,Pool": 1871,
+        "Pool": 1485,
+        "Gym,Parking,Pool": 1187,
+        "Parking,Pool": 886,
+        "Washer Dryer": 842,
+        "Patio/Deck": 775,
+        "Clubhouse,Gym,Pool": 760,
+        "Gym": 735,
+        "Parking,Patio/Deck,Storage": 664
+      }
+    },
+    "bathrooms": {
+      "dtype": "float64",
+      "missing_count": 63,
+      "missing_rate": 0.0006332167410445061,
+      "distinct_nonmissing": 16,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 1,
+        "0.75": 2,
+        "0.99": 3,
+        "1.0": 9
+      }
+    },
+    "bedrooms": {
+      "dtype": "float64",
+      "missing_count": 124,
+      "missing_rate": 0.0012463313633256944,
+      "distinct_nonmissing": 10,
+      "nonfinite_count": 0,
+      "zero_count": 662,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 2,
+        "0.99": 4,
+        "1.0": 9
+      }
+    },
+    "currency": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1,
+      "top_values": {
+        "USD": 99492
+      }
+    },
+    "fee": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "No": 99291,
+        "Yes": 201
+      }
+    },
+    "has_photo": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "top_values": {
+        "Yes": 55974,
+        "Thumbnail": 34303,
+        "No": 9215
+      }
+    },
+    "pets_allowed": {
+      "dtype": "str",
+      "missing_count": 60424,
+      "missing_rate": 0.6073252120773529,
+      "distinct_nonmissing": 4,
+      "top_values": {
+        "nan": 60424,
+        "Cats,Dogs": 37097,
+        "Cats": 1843,
+        "Dogs": 127,
+        "Cats,Dogs,None": 1
+      }
+    },
+    "price": {
+      "dtype": "float64",
+      "missing_count": 1,
+      "missing_rate": 1.0051059381658827e-05,
+      "distinct_nonmissing": 3687,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 100,
+        "0.01": 545,
+        "0.25": 1013,
+        "0.5": 1350,
+        "0.75": 1795,
+        "0.99": 4250,
+        "1.0": 52500
+      }
+    },
+    "price_display": {
+      "dtype": "str",
+      "missing_count": 1,
+      "missing_rate": 1.0051059381658827e-05,
+      "distinct_nonmissing": 3718,
+      "top_values": {
+        "$1,350": 574,
+        "$850": 547,
+        "$1,200": 538,
+        "$950": 528,
+        "$1,100": 522,
+        "$1,500": 514,
+        "$1,250": 512,
+        "$1,450": 498,
+        "$1,400": 489,
+        "$995": 464,
+        "$1,300": 463,
+        "$1,000": 447
+      }
+    },
+    "price_type": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "top_values": {
+        "Monthly": 99488,
+        "Weekly": 3,
+        "Monthly|Weekly": 1
+      }
+    },
+    "square_feet": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2538,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 101,
+        "0.01": 396.90999999999997,
+        "0.25": 729,
+        "0.5": 900,
+        "0.75": 1115,
+        "0.99": 2260,
+        "1.0": 50000
+      }
+    },
+    "address": {
+      "dtype": "str",
+      "missing_count": 91549,
+      "missing_rate": 0.920164435331484,
+      "distinct_nonmissing": 7771,
+      "top_values": {
+        "nan": 91549,
+        "8215 S.W 72nd Avenue": 19,
+        "2647 Eastgate Road": 8,
+        "901 Valley View Circle": 7,
+        "5903 Danny Kaye Drive": 6,
+        "700 Watkins Ave": 6,
+        "2011 Bandera Road": 5,
+        "400 Cape Cod Loop": 4,
+        "7301 Ederville Road": 4,
+        "143 Newark Ave": 4,
+        "208 South Market St": 4,
+        "908 8th SW St": 3
+      }
+    },
+    "cityname": {
+      "dtype": "str",
+      "missing_count": 302,
+      "missing_rate": 0.0030354199332609656,
+      "distinct_nonmissing": 2979,
+      "top_values": {
+        "Dallas": 2858,
+        "Denver": 2755,
+        "Los Angeles": 2433,
+        "Las Vegas": 1848,
+        "Arlington": 1577,
+        "Atlanta": 1506,
+        "Charlotte": 1125,
+        "Alexandria": 914,
+        "Richmond": 914,
+        "San Antonio": 873,
+        "Raleigh": 865,
+        "Cincinnati": 798
+      }
+    },
+    "state": {
+      "dtype": "str",
+      "missing_count": 302,
+      "missing_rate": 0.0030354199332609656,
+      "distinct_nonmissing": 51,
+      "top_values": {
+        "TX": 11257,
+        "CA": 10311,
+        "VA": 8284,
+        "NC": 6300,
+        "CO": 6290,
+        "FL": 5775,
+        "MD": 5280,
+        "MA": 5030,
+        "OH": 4905,
+        "GA": 4752,
+        "NJ": 4445,
+        "NV": 2815
+      }
+    },
+    "latitude": {
+      "dtype": "float64",
+      "missing_count": 25,
+      "missing_rate": 0.0002512764845414707,
+      "distinct_nonmissing": 7212,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 19.5738,
+        "0.01": 26.3635,
+        "0.25": 33.7465,
+        "0.5": 37.2282,
+        "0.75": 39.953,
+        "0.99": 47.7179,
+        "1.0": 64.8332
+      }
+    },
+    "longitude": {
+      "dtype": "float64",
+      "missing_count": 25,
+      "missing_rate": 0.0002512764845414707,
+      "distinct_nonmissing": 7270,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 99467,
+      "quantiles": {
+        "0.0": -159.3698,
+        "0.01": -122.3139,
+        "0.25": -104.7919,
+        "0.5": -84.5623,
+        "0.75": -77.60820000000001,
+        "0.99": -70.9751,
+        "1.0": -68.7788
+      }
+    },
+    "source": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 25,
+      "top_values": {
+        "RentDigs.com": 90912,
+        "RentLingo": 6924,
+        "ListedBuy": 571,
+        "GoSection8": 437,
+        "RealRentals": 268,
+        "tenantcloud": 124,
+        "BostonApartments": 94,
+        "RENTCafé": 41,
+        "Listanza": 29,
+        "SpreadMyAd": 22,
+        "RENTOCULAR": 18,
+        "RentFeeder": 12
+      }
+    },
+    "time": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 75360,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1544174418,
+        "0.01": 1544187083.11,
+        "0.25": 1550831677.75,
+        "0.5": 1568745020.5,
+        "0.75": 1568766998.25,
+        "0.99": 1577360016,
+        "1.0": 1577391425
+      }
+    }
+  }
+}

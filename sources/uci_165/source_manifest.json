@@ -1,0 +1,22 @@
+{
+  "uci_id": "165",
+  "priority": "A",
+  "name": "Concrete Compressive Strength",
+  "domain": "土木材料",
+  "reported_size": "1030",
+  "target": "混凝土抗压强度，MPa",
+  "input_description": "8项配方与龄期变量",
+  "missingness": "官网无缺失",
+  "proposed_split": "重复配方分组，再划分",
+  "screening_notes": "适合短prompt；同配方不同龄期应检查分组，不能把目标强度写入输入",
+  "source_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/165/concrete+compressive+strength.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "dad85d14de8aee4e07479daa774e6b569a313715b71a3b92c95a07cf91c2c9a7",
+  "archive_bytes": 34444,
+  "metadata_status": "ok"
+}

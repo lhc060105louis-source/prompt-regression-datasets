@@ -1,0 +1,22 @@
+{
+  "uci_id": "243",
+  "priority": "A",
+  "name": "Yacht Hydrodynamics",
+  "domain": "船舶工程",
+  "reported_size": "308",
+  "target": "单位排水重量的剩余阻力，无量纲",
+  "input_description": "6项船体参数与弗劳德数",
+  "missingness": "官网无缺失",
+  "proposed_split": "按船型分组",
+  "screening_notes": "22种船型的试验；规模小，用于领域覆盖，不能大幅重复采样",
+  "source_url": "https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/243/yacht+hydrodynamics.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:58Z",
+  "archive_sha256": "aa52b68f88c4bb552187a53ef4c5753fa178f6a36035a3771c5bc04e078487ac",
+  "archive_bytes": 11633,
+  "metadata_status": "ok"
+}

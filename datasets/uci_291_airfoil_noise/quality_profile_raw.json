@@ -1,0 +1,115 @@
+{
+  "rows": 1503,
+  "columns": 6,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "frequency_hz": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 21,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 200,
+        "0.01": 200,
+        "0.25": 800,
+        "0.5": 1600,
+        "0.75": 4000,
+        "0.99": 16000,
+        "1.0": 20000
+      }
+    },
+    "attack_angle_deg": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 27,
+      "nonfinite_count": 0,
+      "zero_count": 329,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 2,
+        "0.5": 5.4,
+        "0.75": 9.9,
+        "0.99": 22.2,
+        "1.0": 22.2
+      }
+    },
+    "chord_length_m": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 6,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.0254,
+        "0.01": 0.0254,
+        "0.25": 0.0508,
+        "0.5": 0.1016,
+        "0.75": 0.2286,
+        "0.99": 0.3048,
+        "1.0": 0.3048
+      }
+    },
+    "free_stream_velocity_m_s": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 31.7,
+        "0.01": 31.7,
+        "0.25": 39.6,
+        "0.5": 39.6,
+        "0.75": 71.3,
+        "0.99": 71.3,
+        "1.0": 71.3
+      }
+    },
+    "displacement_thickness_m": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 105,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0.000400682,
+        "0.01": 0.00041229,
+        "0.25": 0.00253511,
+        "0.5": 0.00495741,
+        "0.75": 0.0155759,
+        "0.99": 0.0583000480000001,
+        "1.0": 0.0584113
+      }
+    },
+    "sound_pressure_db": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 1456,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 103.38,
+        "0.01": 108.034,
+        "0.25": 120.191,
+        "0.5": 125.721,
+        "0.75": 129.9955,
+        "0.99": 137.8099,
+        "1.0": 140.987
+      }
+    }
+  }
+}

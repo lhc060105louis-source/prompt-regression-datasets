@@ -1,0 +1,23 @@
+{
+  "uci_id": "440",
+  "priority": "B",
+  "name": "SGEMM GPU kernel performance",
+  "domain": "计算性能",
+  "reported_size": "241600组配置，每组4次运行",
+  "target": "运行耗时，ms",
+  "input_description": "14项计算内核配置",
+  "missingness": "官网无缺失",
+  "proposed_split": "按配置或配置组合分组",
+  "screening_notes": "四次运行不能作为输入；可先定义均值/中位数目标，也可保留重复观测研究噪声；4次不足以精确估计尾部分位数",
+  "source_url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/440/sgemm+gpu+kernel+performance.zip",
+  "downloaded_at_utc": "2026-11-09T20:14:00Z",
+  "archive_sha256": "8d3ee0d82708df11b54debc6a4fbade77c604a047f019fa7940413032eb7b096",
+  "archive_bytes": 3186088,
+  "metadata_status": "ok",
+  "batch": 2
+}

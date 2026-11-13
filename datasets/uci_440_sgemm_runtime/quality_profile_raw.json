@@ -1,0 +1,331 @@
+{
+  "rows": 241600,
+  "columns": 18,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "MWG": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 16,
+        "0.01": 16,
+        "0.25": 32,
+        "0.5": 64,
+        "0.75": 128,
+        "0.99": 128,
+        "1.0": 128
+      }
+    },
+    "NWG": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 16,
+        "0.01": 16,
+        "0.25": 32,
+        "0.5": 64,
+        "0.75": 128,
+        "0.99": 128,
+        "1.0": 128
+      }
+    },
+    "KWG": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 16,
+        "0.01": 16,
+        "0.25": 16,
+        "0.5": 32,
+        "0.75": 32,
+        "0.99": 32,
+        "1.0": 32
+      }
+    },
+    "MDIMC": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 8,
+        "0.01": 8,
+        "0.25": 8,
+        "0.5": 8,
+        "0.75": 16,
+        "0.99": 32,
+        "1.0": 32
+      }
+    },
+    "NDIMC": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 8,
+        "0.01": 8,
+        "0.25": 8,
+        "0.5": 8,
+        "0.75": 16,
+        "0.99": 32,
+        "1.0": 32
+      }
+    },
+    "MDIMA": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 8,
+        "0.01": 8,
+        "0.25": 8,
+        "0.5": 16,
+        "0.75": 32,
+        "0.99": 32,
+        "1.0": 32
+      }
+    },
+    "NDIMB": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 8,
+        "0.01": 8,
+        "0.25": 8,
+        "0.5": 16,
+        "0.75": 32,
+        "0.99": 32,
+        "1.0": 32
+      }
+    },
+    "KWI": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 2,
+        "0.01": 2,
+        "0.25": 2,
+        "0.5": 5,
+        "0.75": 8,
+        "0.99": 8,
+        "1.0": 8
+      }
+    },
+    "VWM": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 4,
+        "0.99": 8,
+        "1.0": 8
+      }
+    },
+    "VWN": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 4,
+        "0.99": 8,
+        "1.0": 8
+      }
+    },
+    "STRM": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 120800,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0.5,
+        "0.75": 1,
+        "0.99": 1,
+        "1.0": 1
+      }
+    },
+    "STRN": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 120800,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0.5,
+        "0.75": 1,
+        "0.99": 1,
+        "1.0": 1
+      }
+    },
+    "SA": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 120800,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0.5,
+        "0.75": 1,
+        "0.99": 1,
+        "1.0": 1
+      }
+    },
+    "SB": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "nonfinite_count": 0,
+      "zero_count": 120800,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0.5,
+        "0.75": 1,
+        "0.99": 1,
+        "1.0": 1
+      }
+    },
+    "Run1 (ms)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 58161,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 13.29,
+        "0.01": 20.85,
+        "0.25": 40.66,
+        "0.5": 69.82499999999999,
+        "0.75": 228.53,
+        "0.99": 2210.513200000003,
+        "1.0": 3339.63
+      }
+    },
+    "Run2 (ms)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 58269,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 13.25,
+        "0.01": 20.88,
+        "0.25": 40.71,
+        "0.5": 69.93,
+        "0.75": 228.31,
+        "0.99": 2203.3902000000003,
+        "1.0": 3375.42
+      }
+    },
+    "Run3 (ms)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 58264,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 13.36,
+        "0.01": 20.87,
+        "0.25": 40.66,
+        "0.5": 69.79,
+        "0.75": 228.32,
+        "0.99": 2202.8616000000015,
+        "1.0": 3397.08
+      }
+    },
+    "Run4 (ms)": {
+      "dtype": "float64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 58154,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 13.37,
+        "0.01": 20.889900000000004,
+        "0.25": 40.64,
+        "0.5": 69.82,
+        "0.75": 228.32,
+        "0.99": 2203.213000000003,
+        "1.0": 3361.71
+      }
+    }
+  }
+}

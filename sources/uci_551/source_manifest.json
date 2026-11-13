@@ -1,0 +1,23 @@
+{
+  "uci_id": "551",
+  "priority": "B",
+  "name": "Gas Turbine CO and NOx Emission Data Set",
+  "domain": "工业排放",
+  "reported_size": "36733",
+  "target": "CO或NOx",
+  "input_description": "气象与燃机传感器变量",
+  "missingness": "官网无缺失",
+  "proposed_split": "按年份：先三年训练/开发，后两年测试",
+  "screening_notes": "官方推荐时间协议；删除两个排放标签；与294同一电厂，数据家族留出时必须同组",
+  "source_url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/551/gas+turbine+co+and+nox+emission+data+set.zip",
+  "downloaded_at_utc": "2026-11-09T20:13:59Z",
+  "archive_sha256": "55fdb1acc25f05bd9c77aac285c424e9154ffb0dbf1bbadb56b69a1142231295",
+  "archive_bytes": 1090294,
+  "metadata_status": "ok",
+  "batch": 2
+}

@@ -1,0 +1,131 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 291,
+    "name": "Airfoil Self-Noise",
+    "raw_rows_selected": 1503,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 1503,
+    "invalid_label_examples": 0,
+    "output_examples": 1503,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 106,
+    "input_field_count": 5,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_291_airfoil_noise/part-00001.jsonl.gz",
+        "records": 1503,
+        "sha256": "2fc98e6ea44a0b960d149c10c6c0a3226ec5a9837ca80d04c093572add60ef77",
+        "bytes": 125262
+      }
+    ],
+    "uncompressed_sha256": "46dc18d9fa4bcfcd700a2dd449905ae52d3f6e9a87bde5212c186f0e4cd20fb0"
+  },
+  "contract": {
+    "key": "airfoil_noise",
+    "targets": [
+      [
+        "sound_pressure_db",
+        "sound_pressure_level",
+        "dB",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the scaled sound pressure level produced by an airfoil in a wind-tunnel experiment.",
+    "context": "frequency_hz: frequency in Hz; attack_angle_deg: attack angle in degrees; chord_length_m: chord length in metres; free_stream_velocity_m_s: air speed in m/s; displacement_thickness_m: suction-side displacement thickness in metres.",
+    "exclude": [],
+    "group": [
+      "attack_angle_deg",
+      "chord_length_m",
+      "free_stream_velocity_m_s",
+      "displacement_thickness_m"
+    ],
+    "group_note": "Recorded airfoil and flow condition, excluding frequency.",
+    "split": "group_by_experiment_condition",
+    "source_file": "airfoil_self_noise.dat"
+  },
+  "input_fields": [
+    "frequency_hz",
+    "attack_angle_deg",
+    "chord_length_m",
+    "free_stream_velocity_m_s",
+    "displacement_thickness_m"
+  ],
+  "excluded_input_columns": [
+    "sound_pressure_db"
+  ],
+  "grouping_rule": "Recorded airfoil and flow condition, excluding frequency. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "5c7767ba53ad827d3f48ba1eb9434117f4892df8f10bc4c99e118a9e8a7ae07c",
+  "dataset_doi": "10.24432/C5VW2C",
+  "creators": [
+    "Thomas Brooks",
+    "D. Pope",
+    "Michael Marcolini"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_291/sound_pressure_level": {
+      "examples": 1503,
+      "label_quantiles": {
+        "0.0": 103.38,
+        "0.01": 108.034,
+        "0.5": 125.721,
+        "0.99": 137.8099,
+        "1.0": 140.987
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 699,
+        "median": 702,
+        "max": 705
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

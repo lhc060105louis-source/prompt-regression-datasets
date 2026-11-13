@@ -1,0 +1,119 @@
+{
+  "version": "2.1.0",
+  "status": "passed",
+  "examples_verified": 941259,
+  "source_label_links_verified": 943137,
+  "numeric_policy": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "datasets": [
+    {
+      "uci_id": 10,
+      "status": "passed",
+      "examples_verified": 201,
+      "changed_records": 0,
+      "data_sha256": "ffc2687e92b2f2be5434b5573c683f96bfb751c157cc4ccdfc2b092ff875f305"
+    },
+    {
+      "uci_id": 265,
+      "status": "passed",
+      "examples_verified": 44019,
+      "changed_records": 0,
+      "data_sha256": "34778c35ecd1dd80506d2387b0b065b6c4cbd947bb55f341b4a05f5b5e1f2971"
+    },
+    {
+      "uci_id": 560,
+      "status": "passed",
+      "examples_verified": 8760,
+      "changed_records": 0,
+      "data_sha256": "d42acf005d6e4b39caa9e89f5fc783cb4146c6023dfdf3664966f8f5052be821"
+    },
+    {
+      "uci_id": 374,
+      "status": "passed",
+      "examples_verified": 19735,
+      "changed_records": 19718,
+      "source_label_links_verified": 19735,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "4dde7a1e40dcd956b0aee0529f8adda1bdb876fdc71422168b79c116a24284f4"
+    },
+    {
+      "uci_id": 501,
+      "status": "passed",
+      "examples_verified": 412029,
+      "changed_records": 758,
+      "source_label_links_verified": 412029,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "39a7bd09aad812077bf66e7fc7d144b8cf280447edd2aad317d1ccb63f313c2b"
+    },
+    {
+      "uci_id": 551,
+      "status": "passed",
+      "examples_verified": 73452,
+      "changed_records": 0,
+      "data_sha256": "8a951fdf66474d5432b572d55bf96ac21c7e00948c78a41ecc778db7f409593a"
+    },
+    {
+      "uci_id": 440,
+      "status": "passed",
+      "examples_verified": 241600,
+      "changed_records": 67399,
+      "source_label_links_verified": 241600,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "509fcbd7bf9f12fdf82521f68a1ef2665f4563668a8159ae78676c25e0661788"
+    },
+    {
+      "uci_id": 332,
+      "status": "passed",
+      "examples_verified": 39644,
+      "changed_records": 4,
+      "source_label_links_verified": 39644,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "35a83067bad432ff112c2de960a1155d5d5824790db5a1e4a0a9fd6d5f896968"
+    },
+    {
+      "uci_id": 555,
+      "status": "passed",
+      "examples_verified": 99277,
+      "changed_records": 0,
+      "data_sha256": "36f5d2a5cf6b57812294e7b6df23522b6265ffbbcf27913c2fdaecf3b393eaa7"
+    },
+    {
+      "uci_id": 162,
+      "status": "passed",
+      "examples_verified": 513,
+      "changed_records": 0,
+      "data_sha256": "bcf2ac91d43309d2430189c51f3a7a34d9f374715c56a84b4f1eace63197f0dc"
+    },
+    {
+      "uci_id": 925,
+      "status": "passed",
+      "examples_verified": 2029,
+      "changed_records": 2019,
+      "source_label_links_verified": 2029,
+      "additional_duplicates_merged": 0,
+      "data_sha256": "96db79263b25ebba0e56095f28177adfe782de5116ebfcf4ae21f967d77621a1"
+    }
+  ],
+  "training_executed": false,
+  "checks": [
+    "Every old record mapped to its normalized record; merged duplicates retain all source_refs and multiplicity",
+    "Every changed number independently checked within 5.01e-12 relative error using Decimal; nonzero values never rounded to zero",
+    "At most 12 significant digits for nonintegral prepared numbers",
+    "All prompts contain exactly the corresponding input JSON",
+    "Input hashes and content-derived sample IDs regenerated; uniqueness checked",
+    "Known groups, exclusions, text, units and unassigned splits preserved",
+    "Every combined gzip line equals its per-dataset source",
+    "Raw source files retain baseline SHA256 values"
+  ],
+  "source_validation_basis": "Original release fully source-validated; v2.1.0 verified exhaustively against that release with the declared precision transformation. Exact equality to unrounded floating source values is no longer claimed."
+}

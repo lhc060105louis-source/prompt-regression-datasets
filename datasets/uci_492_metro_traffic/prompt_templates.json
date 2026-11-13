@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Estimate the hourly westbound I-94 traffic volume at the Minneapolis-St Paul monitoring station from recorded weather and calendar information.",
+  "context": "date_time: source local timestamp; holiday: holiday name or no holiday; temp: temperature in Kelvin; rain_1h and snow_1h: precipitation in millimetres; clouds_all: cloud cover percent; weather_main and weather_description: observed weather labels. Multiple source weather descriptions can refer to the same traffic hour. This is a contemporaneous estimate, not a future-weather forecast.",
+  "targets": [
+    {
+      "column": "traffic_volume",
+      "name": "hourly_traffic_volume",
+      "unit": "vehicles per hour",
+      "type": "count"
+    }
+  ]
+}

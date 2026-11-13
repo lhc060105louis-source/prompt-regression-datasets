@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the arithmetic mean runtime over four runs of a GPU SGEMM kernel multiplying two 2048 x 2048 matrices on the source workstation.",
+  "context": "MWG/NWG: workgroup tile dimensions; KWG: inner tile dimension; MDIMC/NDIMC: local workgroup sizes; MDIMA/NDIMB: local memory shape; KWI: loop unrolling; VWM/VWN: vector widths; STRM/STRN: memory stride flags; SA/SB: manual-cache flags. Hardware is the fixed NVIDIA GTX 680 setup in the source. Measured runtimes are outcomes and are not inputs.",
+  "targets": [
+    {
+      "column": "mean_runtime_ms",
+      "name": "mean_kernel_runtime",
+      "unit": "milliseconds",
+      "type": "continuous"
+    }
+  ]
+}

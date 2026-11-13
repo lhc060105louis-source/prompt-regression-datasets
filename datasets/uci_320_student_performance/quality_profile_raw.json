@@ -1,0 +1,484 @@
+{
+  "rows": 1044,
+  "columns": 34,
+  "exact_duplicate_rows": 0,
+  "column_profiles": {
+    "school": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "GP": 772,
+        "MS": 272
+      }
+    },
+    "sex": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "F": 591,
+        "M": 453
+      }
+    },
+    "age": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 8,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 15,
+        "0.01": 15,
+        "0.25": 16,
+        "0.5": 17,
+        "0.75": 18,
+        "0.99": 20,
+        "1.0": 22
+      }
+    },
+    "address": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "U": 759,
+        "R": 285
+      }
+    },
+    "famsize": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "GT3": 738,
+        "LE3": 306
+      }
+    },
+    "Pstatus": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "T": 923,
+        "A": 121
+      }
+    },
+    "Medu": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 9,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 1,
+        "0.25": 2,
+        "0.5": 3,
+        "0.75": 4,
+        "0.99": 4,
+        "1.0": 4
+      }
+    },
+    "Fedu": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 9,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 3,
+        "0.99": 4,
+        "1.0": 4
+      }
+    },
+    "Mjob": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "top_values": {
+        "other": 399,
+        "services": 239,
+        "at_home": 194,
+        "teacher": 130,
+        "health": 82
+      }
+    },
+    "Fjob": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "top_values": {
+        "other": 584,
+        "services": 292,
+        "teacher": 65,
+        "at_home": 62,
+        "health": 41
+      }
+    },
+    "reason": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "top_values": {
+        "course": 430,
+        "home": 258,
+        "reputation": 248,
+        "other": 108
+      }
+    },
+    "guardian": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 3,
+      "top_values": {
+        "mother": 728,
+        "father": 243,
+        "other": 73
+      }
+    },
+    "traveltime": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 1,
+        "0.75": 2,
+        "0.99": 4,
+        "1.0": 4
+      }
+    },
+    "studytime": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 2,
+        "0.99": 4,
+        "1.0": 4
+      }
+    },
+    "failures": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 4,
+      "nonfinite_count": 0,
+      "zero_count": 861,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 0,
+        "0.75": 0,
+        "0.99": 3,
+        "1.0": 3
+      }
+    },
+    "schoolsup": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "no": 925,
+        "yes": 119
+      }
+    },
+    "famsup": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "yes": 640,
+        "no": 404
+      }
+    },
+    "paid": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "no": 824,
+        "yes": 220
+      }
+    },
+    "activities": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "no": 528,
+        "yes": 516
+      }
+    },
+    "nursery": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "yes": 835,
+        "no": 209
+      }
+    },
+    "higher": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "yes": 955,
+        "no": 89
+      }
+    },
+    "internet": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "yes": 827,
+        "no": 217
+      }
+    },
+    "romantic": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "no": 673,
+        "yes": 371
+      }
+    },
+    "famrel": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 4,
+        "0.5": 4,
+        "0.75": 5,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "freetime": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 3,
+        "0.5": 3,
+        "0.75": 4,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "goout": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 2,
+        "0.5": 3,
+        "0.75": 4,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "Dalc": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 1,
+        "0.75": 2,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "Walc": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 1,
+        "0.5": 2,
+        "0.75": 3,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "health": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 5,
+      "nonfinite_count": 0,
+      "zero_count": 0,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 1,
+        "0.01": 1,
+        "0.25": 3,
+        "0.5": 4,
+        "0.75": 5,
+        "0.99": 5,
+        "1.0": 5
+      }
+    },
+    "absences": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 35,
+      "nonfinite_count": 0,
+      "zero_count": 359,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 0,
+        "0.5": 2,
+        "0.75": 6,
+        "0.99": 25.569999999999936,
+        "1.0": 75
+      }
+    },
+    "G1": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 18,
+      "nonfinite_count": 0,
+      "zero_count": 1,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 5,
+        "0.25": 9,
+        "0.5": 11,
+        "0.75": 13,
+        "0.99": 18,
+        "1.0": 19
+      }
+    },
+    "G2": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 17,
+      "nonfinite_count": 0,
+      "zero_count": 20,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 9,
+        "0.5": 11,
+        "0.75": 13,
+        "0.99": 18,
+        "1.0": 19
+      }
+    },
+    "G3": {
+      "dtype": "int64",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 19,
+      "nonfinite_count": 0,
+      "zero_count": 53,
+      "negative_count": 0,
+      "quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.25": 10,
+        "0.5": 11,
+        "0.75": 14,
+        "0.99": 18,
+        "1.0": 20
+      }
+    },
+    "subject": {
+      "dtype": "str",
+      "missing_count": 0,
+      "missing_rate": 0,
+      "distinct_nonmissing": 2,
+      "top_values": {
+        "por": 649,
+        "mat": 395
+      }
+    }
+  }
+}

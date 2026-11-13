@@ -1,0 +1,15 @@
+{
+  "version": "1.0.0",
+  "language": "English",
+  "template": "Task: {task}\nTarget: {target_name}\nTarget unit: {target_unit}\nInput format: a JSON object. null means missing or an invalid measurement replaced with missing.\nField definitions and context: {context}\nInput JSON: {input_json}\nReturn only one numeric prediction for the target.",
+  "task": "Predict the response value of a simulated servo system.",
+  "context": "motor and screw are categorical mechanical choices; pgain and vgain are gain settings. The original description interprets the response as a rise time but does not establish its unit; retain the source response scale.",
+  "targets": [
+    {
+      "column": "response",
+      "name": "servo_response",
+      "unit": "source response unit (not specified)",
+      "type": "continuous"
+    }
+  ]
+}

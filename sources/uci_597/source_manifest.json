@@ -1,0 +1,22 @@
+{
+  "uci_id": "597",
+  "priority": "A",
+  "name": "Productivity Prediction of Garment Employees",
+  "domain": "制造与运营",
+  "reported_size": "1197",
+  "target": "actual_productivity",
+  "input_description": "日期、团队、工时、在制品和生产安排",
+  "missingness": "wip有缺失",
+  "proposed_split": "时间划分；团队留出作补充",
+  "screening_notes": "明确班前预测还是班后估计；incentive、idle_time等字段须检查当时是否已知；0—1范围应由文件复核",
+  "source_url": "https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees",
+  "license_observed": "UCI页面标注CC BY 4.0",
+  "license_source_url": "https://archive.ics.uci.edu/dataset/597/productivity",
+  "verification_level": "官方说明与许可页面初筛；未逐文件审计",
+  "checked_date": "2026-11-09",
+  "download_url": "https://archive.ics.uci.edu/static/public/597/productivity+prediction+of+garment+employees.zip",
+  "downloaded_at_utc": "2026-11-09T19:39:59Z",
+  "archive_sha256": "446026846b37d73800d1fd01b852ceaf95f086f15a626802d784154f63885bc2",
+  "archive_bytes": 95095,
+  "metadata_status": "ok"
+}

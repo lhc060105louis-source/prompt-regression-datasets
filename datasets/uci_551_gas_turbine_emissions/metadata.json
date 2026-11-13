@@ -1,0 +1,155 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 551,
+    "name": "Gas Turbine CO and NOx Emission Data Set",
+    "batch": 2,
+    "raw_rows_selected": 36733,
+    "raw_exact_duplicate_rows": 7,
+    "candidate_task_examples": 73466,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 73452,
+    "collapsed_duplicate_examples": 14,
+    "task_count": 2,
+    "split_groups": 36726,
+    "input_field_count": 9,
+    "examples_with_null_input": 0,
+    "flagged_examples": 956,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+    "files": [
+      {
+        "path": "datasets/uci_551_gas_turbine_emissions/part-00001.jsonl.gz",
+        "records": 73452,
+        "sha256": "31fafd52f8f7f1936f3d59d107341e1a3cd9e898ccae5e137e978ce44df92354",
+        "bytes": 10810738
+      }
+    ],
+    "uncompressed_sha256": "8a951fdf66474d5432b572d55bf96ac21c7e00948c78a41ecc778db7f409593a"
+  },
+  "contract": {
+    "key": "gas_turbine_emissions",
+    "targets": [
+      [
+        "CO",
+        "carbon_monoxide",
+        "mg/m^3",
+        "continuous"
+      ],
+      [
+        "NOX",
+        "nitrogen_oxides",
+        "mg/m^3",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the specified flue-gas emission concentration of a gas turbine from operating and ambient measurements.",
+    "context": "AT: ambient Celsius; AP: ambient mbar; AH: percent humidity; AFDP: filter differential pressure mbar; GTEP: exhaust pressure mbar; TIT/TAT: inlet/after-turbine Celsius; CDP: compressor discharge pressure mbar; TEY: source hourly energy yield in MWh. Both pollutant target columns are excluded from input. Measurements are contemporaneous.",
+    "split": "years 2011-2013 train/development, 2014-2015 test; use source order within year; same family as UCI294"
+  },
+  "input_fields": [
+    "AT",
+    "AP",
+    "AH",
+    "AFDP",
+    "GTEP",
+    "TIT",
+    "TAT",
+    "TEY",
+    "CDP"
+  ],
+  "excluded_input_columns": [
+    "CO",
+    "NOX"
+  ],
+  "grouping_columns": [],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set"
+  },
+  "source_archive_sha256": "55fdb1acc25f05bd9c77aac285c424e9154ffb0dbf1bbadb56b69a1142231295",
+  "dataset_doi": "10.24432/C5WC95",
+  "creators": [],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_551/carbon_monoxide": {
+      "examples": 36726,
+      "label_quantiles": {
+        "0.0": 0.00038751,
+        "0.01": 0.197295,
+        "0.5": 1.7137,
+        "0.99": 11.01225,
+        "1.0": 44.103
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 800,
+        "median": 809,
+        "max": 812
+      }
+    },
+    "uci_551/nitrogen_oxides": {
+      "examples": 36726,
+      "label_quantiles": {
+        "0.0": 25.905,
+        "0.01": 45.192,
+        "0.5": 63.851,
+        "0.99": 105.17500000000001,
+        "1.0": 119.91
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 800,
+        "median": 809,
+        "max": 812
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "source_family_overlap",
+      "count": 1,
+      "action": "same_family_as_uci294",
+      "detail": "Same power plant as first-batch CCPP; both datasets share dataset_family=turkish_power_plant. No exact cross-source timestamps available."
+    },
+    {
+      "code": "emissions_units",
+      "count": 2,
+      "action": "use_mg_per_m3",
+      "detail": "Official variable table lists both CO and NOx in mg/m^3, not ppm."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 14,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

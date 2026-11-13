@@ -1,0 +1,720 @@
+{
+  "version": "2.1.0",
+  "date": "2026-11-13",
+  "policy": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "before_examples": 1067483,
+  "after_examples": 1067479,
+  "changed_records_before_merge": 111166,
+  "affected_datasets": 9,
+  "additional_duplicate_records_merged": 4,
+  "datasets": [
+    {
+      "uci_id": 165,
+      "path": "datasets/uci_165_concrete_strength/data.jsonl",
+      "changed_records": 249,
+      "changed_fields": {
+        "label": 249
+      },
+      "max_absolute_change": 4.136779807595303e-11,
+      "max_relative_change": 2.7444581102591947e-12,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "label",
+          61.887365759999994,
+          61.88736576
+        ],
+        [
+          "label",
+          40.269535256000005,
+          40.269535256
+        ],
+        [
+          "label",
+          47.029847436000004,
+          47.029847436
+        ],
+        [
+          "label",
+          38.074243671999994,
+          38.074243672
+        ],
+        [
+          "label",
+          52.908319811999995,
+          52.908319812
+        ]
+      ]
+    },
+    {
+      "uci_id": 242,
+      "path": "datasets/uci_242_energy_efficiency/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 294,
+      "path": "datasets/uci_294_combined_cycle_power/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 291,
+      "path": "datasets/uci_291_airfoil_noise/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 243,
+      "path": "datasets/uci_243_yacht_resistance/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 1,
+      "path": "datasets/uci_1_abalone_rings/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 9,
+      "path": "datasets/uci_9_auto_mpg/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 477,
+      "path": "datasets/uci_477_real_estate/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 29,
+      "path": "datasets/uci_29_computer_hardware/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 87,
+      "path": "datasets/uci_87_servo_response/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 464,
+      "path": "datasets/uci_464_superconductivity/data.jsonl",
+      "changed_records": 20916,
+      "changed_fields": {
+        "input.wtd_mean_atomic_mass": 12196,
+        "input.gmean_atomic_mass": 20890,
+        "input.wtd_gmean_atomic_mass": 20879,
+        "input.entropy_atomic_mass": 20903,
+        "input.wtd_entropy_atomic_mass": 20899,
+        "input.wtd_range_atomic_mass": 12536,
+        "input.std_atomic_mass": 17866,
+        "input.wtd_std_atomic_mass": 20319,
+        "input.wtd_mean_fie": 12501,
+        "input.gmean_fie": 20898,
+        "input.wtd_gmean_fie": 20889,
+        "input.entropy_fie": 20901,
+        "input.wtd_entropy_fie": 20897,
+        "input.wtd_range_fie": 12279,
+        "input.std_fie": 17948,
+        "input.wtd_std_fie": 20370,
+        "input.wtd_mean_atomic_radius": 12386,
+        "input.gmean_atomic_radius": 20877,
+        "input.wtd_gmean_atomic_radius": 20878,
+        "input.entropy_atomic_radius": 20906,
+        "input.wtd_entropy_atomic_radius": 20895,
+        "input.wtd_range_atomic_radius": 12304,
+        "input.std_atomic_radius": 17648,
+        "input.wtd_std_atomic_radius": 20235,
+        "input.wtd_mean_Density": 12287,
+        "input.gmean_Density": 20893,
+        "input.wtd_gmean_Density": 20879,
+        "input.entropy_Density": 20906,
+        "input.wtd_entropy_Density": 20883,
+        "input.wtd_range_Density": 12735,
+        "input.std_Density": 17659,
+        "input.wtd_std_Density": 20236,
+        "input.wtd_mean_ElectronAffinity": 12420,
+        "input.gmean_ElectronAffinity": 20882,
+        "input.wtd_gmean_ElectronAffinity": 20874,
+        "input.entropy_ElectronAffinity": 20905,
+        "input.wtd_entropy_ElectronAffinity": 20905,
+        "input.wtd_range_ElectronAffinity": 11485,
+        "input.std_ElectronAffinity": 17709,
+        "input.wtd_std_ElectronAffinity": 20236,
+        "input.wtd_mean_FusionHeat": 12327,
+        "input.gmean_FusionHeat": 20886,
+        "input.wtd_gmean_FusionHeat": 20887,
+        "input.entropy_FusionHeat": 20911,
+        "input.wtd_entropy_FusionHeat": 20888,
+        "input.wtd_range_FusionHeat": 12486,
+        "input.std_FusionHeat": 17699,
+        "input.wtd_std_FusionHeat": 20273,
+        "input.wtd_mean_ThermalConductivity": 12015,
+        "input.gmean_ThermalConductivity": 20797,
+        "input.wtd_gmean_ThermalConductivity": 20876,
+        "input.entropy_ThermalConductivity": 20829,
+        "input.wtd_entropy_ThermalConductivity": 20888,
+        "input.wtd_range_ThermalConductivity": 12103,
+        "input.std_ThermalConductivity": 17647,
+        "input.wtd_std_ThermalConductivity": 20174,
+        "input.wtd_mean_Valence": 12294,
+        "input.gmean_Valence": 19609,
+        "input.wtd_gmean_Valence": 19783,
+        "input.entropy_Valence": 20911,
+        "input.wtd_entropy_Valence": 20905,
+        "input.wtd_range_Valence": 12208,
+        "input.std_Valence": 13775,
+        "input.wtd_std_Valence": 18835,
+        "input.mean_atomic_mass": 5049,
+        "input.mean_atomic_radius": 5012,
+        "input.mean_Density": 4804,
+        "input.mean_FusionHeat": 5156,
+        "input.mean_ThermalConductivity": 4594,
+        "input.mean_Valence": 4895,
+        "input.mean_ElectronAffinity": 4846,
+        "input.mean_fie": 4975,
+        "input.range_fie": 640,
+        "input.range_atomic_mass": 270,
+        "input.range_FusionHeat": 164,
+        "input.range_ElectronAffinity": 53
+      },
+      "max_absolute_change": 5.00003807246685e-08,
+      "max_relative_change": 4.995777257402209e-12,
+      "new_duplicate_records": 4,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.wtd_mean_atomic_mass",
+          57.8626922857143,
+          57.8626922857
+        ],
+        [
+          "input.gmean_atomic_mass",
+          66.3615924315719,
+          66.3615924316
+        ],
+        [
+          "input.wtd_gmean_atomic_mass",
+          36.1166119053847,
+          36.1166119054
+        ],
+        [
+          "input.entropy_atomic_mass",
+          1.1817952393305,
+          1.18179523933
+        ],
+        [
+          "input.wtd_entropy_atomic_mass",
+          1.06239554519617,
+          1.0623955452
+        ]
+      ]
+    },
+    {
+      "uci_id": 504,
+      "path": "datasets/uci_504_fish_toxicity/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 186,
+      "path": "datasets/uci_186_wine_quality/data.jsonl",
+      "changed_records": 32,
+      "changed_fields": {
+        "input.alcohol": 32
+      },
+      "max_absolute_change": 3.3301361668236495e-11,
+      "max_relative_change": 3.3188955459864326e-12,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.alcohol",
+          10.0333333333333,
+          10.0333333333
+        ],
+        [
+          "input.alcohol",
+          11.0666666666667,
+          11.0666666667
+        ],
+        [
+          "input.alcohol",
+          9.56666666666667,
+          9.56666666667
+        ],
+        [
+          "input.alcohol",
+          13.5666666666667,
+          13.5666666667
+        ],
+        [
+          "input.alcohol",
+          9.23333333333333,
+          9.23333333333
+        ]
+      ]
+    },
+    {
+      "uci_id": 320,
+      "path": "datasets/uci_320_student_performance/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 189,
+      "path": "datasets/uci_189_parkinsons/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 597,
+      "path": "datasets/uci_597_garment_productivity/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 275,
+      "path": "datasets/uci_275_bike_sharing/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 492,
+      "path": "datasets/uci_492_metro_traffic/data.jsonl",
+      "changed_records": 71,
+      "changed_fields": {
+        "input.temp": 71
+      },
+      "max_absolute_change": 1.1368683772161603e-13,
+      "max_relative_change": 4.0307477679983264e-16,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.temp",
+          272.11400000000003,
+          272.114
+        ],
+        [
+          "input.temp",
+          286.9240000000001,
+          286.924
+        ],
+        [
+          "input.temp",
+          286.9240000000001,
+          286.924
+        ],
+        [
+          "input.temp",
+          286.9240000000001,
+          286.924
+        ],
+        [
+          "input.temp",
+          276.54200000000003,
+          276.542
+        ]
+      ]
+    },
+    {
+      "uci_id": 10,
+      "path": "datasets/uci_10_automobile_price/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 265,
+      "path": "datasets/uci_265_protein_structure/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 560,
+      "path": "datasets/uci_560_seoul_bike/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 374,
+      "path": "datasets/uci_374_appliances_energy/data.jsonl",
+      "changed_records": 19718,
+      "changed_fields": {
+        "input.RH_1": 6530,
+        "input.RH_4": 5760,
+        "input.T5": 4241,
+        "input.T6": 9220,
+        "input.RH_6": 10413,
+        "input.RH_7": 7229,
+        "input.T9": 2859,
+        "input.RH_8": 8452,
+        "input.T_out": 9182,
+        "input.Windspeed": 7168,
+        "input.Visibility": 5652,
+        "input.RH_2": 6974,
+        "input.RH_3": 5375,
+        "input.T4": 3882,
+        "input.T7": 3895,
+        "input.Press_mm_hg": 10592,
+        "input.RH_5": 8168,
+        "input.T1": 3623,
+        "input.RH_out": 8644,
+        "input.Tdewpoint": 9274,
+        "input.T2": 5074,
+        "input.T8": 4975,
+        "input.RH_9": 6492,
+        "input.T3": 3922
+      },
+      "max_absolute_change": 4.761204763781279e-10,
+      "max_relative_change": 4.4370181287976594e-12,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.RH_1",
+          47.59666666666671,
+          47.5966666667
+        ],
+        [
+          "input.RH_4",
+          45.5666666666667,
+          45.5666666667
+        ],
+        [
+          "input.T5",
+          17.1666666666667,
+          17.1666666667
+        ],
+        [
+          "input.T6",
+          7.02666666666667,
+          7.02666666667
+        ],
+        [
+          "input.RH_6",
+          84.2566666666667,
+          84.2566666667
+        ]
+      ]
+    },
+    {
+      "uci_id": 501,
+      "path": "datasets/uci_501_beijing_pm25/data.jsonl",
+      "changed_records": 758,
+      "changed_fields": {
+        "input.TEMP": 691,
+        "input.PRES": 249
+      },
+      "max_absolute_change": 3.3301148505415767e-09,
+      "max_relative_change": 3.3188955459864326e-12,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.TEMP",
+          4.66666666666667,
+          4.66666666667
+        ],
+        [
+          "input.TEMP",
+          9.33333333333333,
+          9.33333333333
+        ],
+        [
+          "input.PRES",
+          1015.66666666667,
+          1015.66666667
+        ],
+        [
+          "input.TEMP",
+          3.85714285714286,
+          3.85714285714
+        ],
+        [
+          "input.TEMP",
+          21.0571428571429,
+          21.0571428571
+        ]
+      ]
+    },
+    {
+      "uci_id": 551,
+      "path": "datasets/uci_551_gas_turbine_emissions/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 440,
+      "path": "datasets/uci_440_sgemm_runtime/data.jsonl",
+      "changed_records": 67399,
+      "changed_fields": {
+        "label": 67399
+      },
+      "max_absolute_change": 4.547473508864641e-13,
+      "max_relative_change": 3.328751141089099e-16,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "label",
+          118.66250000000001,
+          118.6625
+        ],
+        [
+          "label",
+          83.16499999999999,
+          83.165
+        ],
+        [
+          "label",
+          86.16749999999999,
+          86.1675
+        ],
+        [
+          "label",
+          65.11749999999999,
+          65.1175
+        ],
+        [
+          "label",
+          63.182500000000005,
+          63.1825
+        ]
+      ]
+    },
+    {
+      "uci_id": 332,
+      "path": "datasets/uci_332_news_popularity/data.jsonl",
+      "changed_records": 4,
+      "changed_fields": {
+        "input.title_sentiment_polarity": 4,
+        "input.abs_title_sentiment_polarity": 4
+      },
+      "max_absolute_change": 1.232595164407831e-32,
+      "max_relative_change": 2.220446049248626e-16,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.title_sentiment_polarity",
+          5.551115123130001e-17,
+          5.55111512313e-17
+        ],
+        [
+          "input.abs_title_sentiment_polarity",
+          5.551115123130001e-17,
+          5.55111512313e-17
+        ],
+        [
+          "input.title_sentiment_polarity",
+          1.8503717077100002e-17,
+          1.85037170771e-17
+        ],
+        [
+          "input.abs_title_sentiment_polarity",
+          1.8503717077100002e-17,
+          1.85037170771e-17
+        ],
+        [
+          "input.title_sentiment_polarity",
+          5.551115123130001e-17,
+          5.55111512313e-17
+        ]
+      ]
+    },
+    {
+      "uci_id": 555,
+      "path": "datasets/uci_555_apartment_rent/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 162,
+      "path": "datasets/uci_162_forest_fires/data.jsonl",
+      "changed_records": 0,
+      "changed_fields": {},
+      "max_absolute_change": 0,
+      "max_relative_change": 0,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": []
+    },
+    {
+      "uci_id": 925,
+      "path": "datasets/uci_925_infrared_temperature/data.jsonl",
+      "changed_records": 2019,
+      "changed_fields": {
+        "input.aveAllR13_mean": 650,
+        "input.aveAllL13_mean": 656,
+        "input.T_Max_mean": 667,
+        "input.T_RC_Dry_mean": 648,
+        "input.T_LC_Dry_mean": 668,
+        "input.RCC_mean": 644,
+        "input.LCC_mean": 640,
+        "input.canthi4Max_mean": 632,
+        "input.T_FHLC_mean": 633,
+        "input.T_FHTC_mean": 648,
+        "input.T_offset_mean": 755,
+        "input.T_RC_mean": 668,
+        "input.T_RC_Max_mean": 684,
+        "input.T_FHBC_mean": 630,
+        "input.T_FH_Max_mean": 657,
+        "input.T_RC_Wet_mean": 620,
+        "input.T_LC_mean": 650,
+        "input.T_FHC_Max_mean": 625,
+        "input.T_OR_Max_mean": 634,
+        "input.T_OR_mean": 674,
+        "input.Max1R13_mean": 618,
+        "input.T_FHCC_mean": 656,
+        "input.T_FHRC_mean": 662,
+        "input.Max1L13_mean": 627,
+        "input.T_LC_Wet_mean": 611,
+        "input.T_LC_Max_mean": 633,
+        "input.canthiMax_mean": 635
+      },
+      "max_absolute_change": 3.33457705892215e-11,
+      "max_relative_change": 3.2259141594551925e-12,
+      "new_duplicate_records": 0,
+      "new_cross_group_equal_inputs": 0,
+      "examples": [
+        [
+          "input.aveAllR13_mean",
+          34.400000000000006,
+          34.4
+        ],
+        [
+          "input.aveAllL13_mean",
+          34.917500000000004,
+          34.9175
+        ],
+        [
+          "input.T_Max_mean",
+          35.692499999999995,
+          35.6925
+        ],
+        [
+          "input.T_RC_Dry_mean",
+          34.63249999999999,
+          34.6325
+        ],
+        [
+          "input.T_LC_Dry_mean",
+          34.537499999999994,
+          34.5375
+        ]
+      ]
+    }
+  ]
+}

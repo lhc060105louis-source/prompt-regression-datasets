@@ -1,0 +1,133 @@
+{
+  "version": "2.1.0",
+  "stats": {
+    "uci_id": 243,
+    "name": "Yacht Hydrodynamics",
+    "raw_rows_selected": 308,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 308,
+    "invalid_label_examples": 0,
+    "output_examples": 308,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 22,
+    "input_field_count": 6,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics",
+    "batch": 1,
+    "excluded_source_rows": 0,
+    "files": [
+      {
+        "path": "datasets/uci_243_yacht_resistance/part-00001.jsonl.gz",
+        "records": 308,
+        "sha256": "98e44c9c406b0fc6aca2d74591f8fb09b7e91fe5f6066acbe8407d62a37abdde",
+        "bytes": 25676
+      }
+    ],
+    "uncompressed_sha256": "30d1d38803614b67f1a51694d3abd5361cae89155e2ce2085a9ab55c16ac0f73"
+  },
+  "contract": {
+    "key": "yacht_resistance",
+    "targets": [
+      [
+        "residuary_resistance",
+        "residuary_resistance_per_displacement_weight",
+        "dimensionless source scale",
+        "continuous"
+      ]
+    ],
+    "task": "Predict the residuary resistance per unit displacement weight of a sailing yacht.",
+    "context": "Inputs are the longitudinal buoyancy-centre position, prismatic coefficient, length/displacement ratio, beam/draught ratio, length/beam ratio and Froude number. All are dimensionless source values.",
+    "exclude": [],
+    "group": [
+      "buoyancy_position",
+      "prismatic_coefficient",
+      "length_displacement_ratio",
+      "beam_draught_ratio",
+      "length_beam_ratio"
+    ],
+    "group_note": "Hull geometry, excluding Froude number.",
+    "split": "group_by_hull",
+    "source_file": "yacht_hydrodynamics.data"
+  },
+  "input_fields": [
+    "buoyancy_position",
+    "prismatic_coefficient",
+    "length_displacement_ratio",
+    "beam_draught_ratio",
+    "length_beam_ratio",
+    "froude_number"
+  ],
+  "excluded_input_columns": [
+    "residuary_resistance"
+  ],
+  "grouping_rule": "Hull geometry, excluding Froude number. Identical prepared inputs are additionally unioned to prevent duplicate-input leakage.",
+  "deduplication_policy": "One example per identical task/input/label; source_refs and duplicate_count preserve multiplicity. Different labels retained.",
+  "missing_policy": "null; no statistical imputation; two nonpositive Abalone heights and ten nonpositive Metro Kelvin temperatures are converted to null in their respective sources.",
+  "split_policy": "UNASSIGNED: choose dataset-family holdouts and appropriate grouped/chronological splits before training. group_id prevents known overlap but does not prove independence.",
+  "license": {
+    "name": "CC BY 4.0, as stated by the UCI dataset page",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_url": "https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics",
+    "verified_date": "2026-11-09"
+  },
+  "source_archive_sha256": "aa52b68f88c4bb552187a53ef4c5753fa178f6a36035a3771c5bc04e078487ac",
+  "dataset_doi": "10.24432/C5XG7R",
+  "creators": [
+    "J. Gerritsma",
+    "R. Onnink",
+    "A. Versluis"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_243/residuary_resistance_per_displacement_weight": {
+      "examples": 308,
+      "label_quantiles": {
+        "0.0": 0.01,
+        "0.01": 0.04070000000000001,
+        "0.5": 3.065,
+        "0.99": 55.8399,
+        "1.0": 62.42
+      },
+      "zero_labels": 0,
+      "prompt_characters": {
+        "min": 725,
+        "median": 730,
+        "max": 732
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_labels_and_group",
+      "detail": "Different targets for the same input can represent noise or unobserved variables; they are not averaged or deleted.",
+      "severity": "medium"
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Identical task/input/label examples are stored once with duplicate_count. This is a deduplication policy, not proof that all originals are erroneous.",
+      "severity": "medium"
+    }
+  ],
+  "source_values_policy": "No learned feature scaling, target normalization, truncation, oversampling or label clipping; unknown physical units explicitly identified.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

@@ -1,0 +1,39 @@
+{
+  "uci_id": 440,
+  "path": "datasets/uci_440_sgemm_runtime/data.jsonl",
+  "changed_records": 67399,
+  "changed_fields": {
+    "label": 67399
+  },
+  "max_absolute_change": 4.547473508864641e-13,
+  "max_relative_change": 3.328751141089099e-16,
+  "new_duplicate_records": 0,
+  "new_cross_group_equal_inputs": 0,
+  "examples": [
+    [
+      "label",
+      118.66250000000001,
+      118.6625
+    ],
+    [
+      "label",
+      83.16499999999999,
+      83.165
+    ],
+    [
+      "label",
+      86.16749999999999,
+      86.1675
+    ],
+    [
+      "label",
+      65.11749999999999,
+      65.1175
+    ],
+    [
+      "label",
+      63.182500000000005,
+      63.1825
+    ]
+  ]
+}

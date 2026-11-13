@@ -1,0 +1,128 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 265,
+    "name": "Physicochemical Properties of Protein Tertiary Structure",
+    "batch": 2,
+    "raw_rows_selected": 45730,
+    "raw_exact_duplicate_rows": 1711,
+    "candidate_task_examples": 45730,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 44019,
+    "collapsed_duplicate_examples": 1711,
+    "task_count": 1,
+    "split_groups": 43974,
+    "input_field_count": 9,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 38,
+    "source_url": "https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure",
+    "files": [
+      {
+        "path": "datasets/uci_265_protein_structure/part-00001.jsonl.gz",
+        "records": 44019,
+        "sha256": "0375244e592995c37ce6c21394ab5fafed1f55886b1f43b4745734fd2face057",
+        "bytes": 7377888
+      }
+    ],
+    "uncompressed_sha256": "34778c35ecd1dd80506d2387b0b065b6c4cbd947bb55f341b4a05f5b5e1f2971"
+  },
+  "contract": {
+    "key": "protein_structure",
+    "targets": [
+      [
+        "RMSD",
+        "protein_structure_rmsd",
+        "source RMSD units",
+        "continuous"
+      ]
+    ],
+    "task": "Estimate the RMSD score of a candidate protein structure from supplied structural descriptors.",
+    "context": "F1: total surface area; F2: nonpolar exposed area; F3/F4: source exposed-area descriptors; F5: mass-weighted exposed area; F6: deviation from standard exposed area; F7: Euclidean-distance descriptor; F8: secondary-structure penalty; F9: spatial-distribution constraints. Original descriptor scales are retained.",
+    "split": "identical_descriptor_groups_only; protein identity unavailable; do not claim unseen-protein generalization"
+  },
+  "input_fields": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9"
+  ],
+  "excluded_input_columns": [
+    "RMSD"
+  ],
+  "grouping_columns": [],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure"
+  },
+  "source_archive_sha256": "ee6536c8cc415dc50d66bd247af7c9bc95c187ab8a4ea0f1f546b127206c1100",
+  "dataset_doi": "10.24432/C5QW3H",
+  "creators": [
+    "Prashant Rana"
+  ],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_265/protein_structure_rmsd": {
+      "examples": 44019,
+      "label_quantiles": {
+        "0.0": 0,
+        "0.01": 0.5711799999999999,
+        "0.5": 5.087,
+        "0.99": 20.432,
+        "1.0": 20.999
+      },
+      "zero_labels": 272,
+      "prompt_characters": {
+        "min": 774,
+        "median": 783,
+        "max": 787
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "protein_identity_unavailable",
+      "count": 45730,
+      "action": "limit_claim",
+      "detail": "CASP.csv only has RMSD and F1-F9. No protein IDs can be recovered from these supplied files; exact-input grouping does not establish new-protein generalization."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 38,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 1711,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}

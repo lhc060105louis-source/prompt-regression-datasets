@@ -1,0 +1,138 @@
+{
+  "version": "2.1.0",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "uci_id": 560,
+    "name": "Seoul Bike Sharing Demand",
+    "batch": 2,
+    "raw_rows_selected": 8760,
+    "raw_exact_duplicate_rows": 0,
+    "candidate_task_examples": 8760,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "output_examples": 8760,
+    "collapsed_duplicate_examples": 0,
+    "task_count": 1,
+    "split_groups": 365,
+    "input_field_count": 13,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "source_url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
+    "files": [
+      {
+        "path": "datasets/uci_560_seoul_bike/part-00001.jsonl.gz",
+        "records": 8760,
+        "sha256": "469672785da005fc76dcb75a27ada3bd7e3eb6a521524880cbcbd51afde40dfa",
+        "bytes": 1044303
+      }
+    ],
+    "uncompressed_sha256": "d42acf005d6e4b39caa9e89f5fc783cb4146c6023dfdf3664966f8f5052be821"
+  },
+  "contract": {
+    "key": "seoul_bike",
+    "targets": [
+      [
+        "rented_bike_count",
+        "hourly_seoul_bike_rentals",
+        "rentals per hour",
+        "count"
+      ]
+    ],
+    "task": "Estimate hourly Seoul public bicycle rentals given contemporaneous weather and operating status.",
+    "context": "date is ISO YYYY-MM-DD; hour is 0-23. temperature_c/dewpoint_c: Celsius; humidity_percent: percent; wind_speed_m_s: m/s; visibility_10m: units of 10 metres; solar_radiation_mj_m2: MJ/m^2; rainfall_mm: mm; snowfall_cm: cm. season, holiday and functioning_day are categories. This is conditional estimation, not a future-weather forecast.",
+    "split": "chronological_by_date; whole days grouped"
+  },
+  "input_fields": [
+    "date",
+    "hour",
+    "temperature_c",
+    "humidity_percent",
+    "wind_speed_m_s",
+    "visibility_10m",
+    "dewpoint_c",
+    "solar_radiation_mj_m2",
+    "rainfall_mm",
+    "snowfall_cm",
+    "season",
+    "holiday",
+    "functioning_day"
+  ],
+  "excluded_input_columns": [
+    "rented_bike_count"
+  ],
+  "grouping_columns": [
+    "date"
+  ],
+  "extra_grouping_columns": [],
+  "grouping_rule": "Known semantic groups unioned with identical prepared inputs; group_id does not prove independence.",
+  "missing_policy": "No target imputation; invalid/missing targets excluded. Missing features remain null. Explicit invalid-ratio repairs audited.",
+  "split_policy": "unassigned; use contract split guidance; dataset-family holdouts decided before training",
+  "license": {
+    "name": "CC BY 4.0 as recorded on UCI",
+    "source_url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand"
+  },
+  "source_archive_sha256": "139e9908f0a3544bb222386855c9ce107e96467306bb8e4ce936aab59e7baac4",
+  "dataset_doi": "10.24432/C5F62R",
+  "creators": [],
+  "citation_paper": null,
+  "task_statistics": {
+    "uci_560/hourly_seoul_bike_rentals": {
+      "examples": 8760,
+      "label_quantiles": {
+        "0.0": 0,
+        "0.01": 0,
+        "0.5": 504.5,
+        "0.99": 2526.2299999999996,
+        "1.0": 3556
+      },
+      "zero_labels": 295,
+      "prompt_characters": {
+        "min": 942,
+        "median": 953,
+        "max": 960
+      }
+    }
+  },
+  "quality_findings": [
+    {
+      "code": "closed_hours_zero_demand",
+      "count": 295,
+      "action": "retain_operating_status",
+      "detail": "Closed hours are not missing labels; keep functioning_day to distinguish them."
+    },
+    {
+      "code": "source_date_format",
+      "count": 8760,
+      "action": "parse_day_first",
+      "detail": "Actual CSV is DD/MM/YYYY, contrary to generic web wording. Converted to ISO date."
+    },
+    {
+      "code": "identical_input_different_labels",
+      "count": 0,
+      "action": "retain_and_group",
+      "detail": "Different labels for identical prepared inputs are retained, not averaged (except the explicitly defined SGEMM mean target)."
+    },
+    {
+      "code": "duplicate_task_examples",
+      "count": 0,
+      "action": "collapse_preserve_source_refs",
+      "detail": "Store one identical task/input/label and retain every source occurrence in source_refs/duplicate_count."
+    }
+  ],
+  "source_values_policy": "Original numeric labels except documented arithmetic mean for SGEMM; no learned scaling, clipping or target log transform.",
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "prepared_profile_scope": "Original prepared table before task deduplication/label exclusions, retained from v2.0.0.",
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard"
+}
