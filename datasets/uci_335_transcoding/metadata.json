@@ -1,0 +1,177 @@
+{
+  "dataset_id": "uci_335",
+  "name": "Online Video Transcoding Time",
+  "candidate_id": "O2",
+  "source_url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+  "version": "2.2.0",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "path": "raw/transcoding/source_page.html",
+      "url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+      "sha256": "d95a7c524c8d7721468d516584fb715e84aa620e5164a6dbc0fabe862fd3fdb1",
+      "bytes": 83600
+    }
+  },
+  "source_files": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/335/online+video+characteristics+and+transcoding+time+dataset.zip",
+      "sha256": "ad44644b8aca29ad06e29dfe03700e53ff95de007faf7b79eacb77f322629ee9",
+      "bytes": 15604305,
+      "relativepath": "raw/transcoding/source.zip"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+      "sha256": "d95a7c524c8d7721468d516584fb715e84aa620e5164a6dbc0fabe862fd3fdb1",
+      "bytes": 83600,
+      "relativepath": "raw/transcoding/source_page.html"
+    }
+  ],
+  "source_citation": {
+    "doi": "10.24432/C58C9K",
+    "authors": [
+      "Tewodros Deneke"
+    ]
+  },
+  "raw_rows_selected": 68784,
+  "excluded_source_rows": 0,
+  "invalid_label_examples": 0,
+  "candidate_task_examples": 68784,
+  "grouping_rule": "source video id",
+  "split_policy": "unassigned; whole groups must remain together",
+  "excluded_input_columns": [
+    "id",
+    "umem",
+    "utime"
+  ],
+  "quality_findings": [
+    "Only the 68,784-row labeled transcoding measurement table is used. The companion unlabeled YouTube metadata table and video media are not republished.",
+    "umem is an execution outcome and is excluded; id is provenance/grouping only.",
+    "b_size is retained from the original source even when constant, unlike some OpenML projections.",
+    "Same-video configurations share a group. Fixed-hardware timings do not establish cross-hardware performance."
+  ],
+  "source_profile": {
+    "fields": [
+      "id",
+      "duration",
+      "codec",
+      "width",
+      "height",
+      "bitrate",
+      "framerate",
+      "i",
+      "p",
+      "b",
+      "frames",
+      "i_size",
+      "p_size",
+      "b_size",
+      "size",
+      "o_codec",
+      "o_bitrate",
+      "o_framerate",
+      "o_width",
+      "o_height",
+      "umem",
+      "utime"
+    ],
+    "groups": 1099,
+    "flags": {
+      "source_size_component_mismatch": 859
+    }
+  },
+  "target_transform": "none_applied",
+  "tasks": {
+    "transcoding_time": {
+      "instruction": "Estimate the recorded transcoding runtime on the source Intel i7-3720QM execution setup from input-video characteristics and the requested output encoding settings.",
+      "target_name": "transcoding_time",
+      "unit": "s",
+      "type": "continuous",
+      "field_description": "duration: original video duration in seconds; codec/o_codec: input/requested output codec; width,height,o_width,o_height: input/output pixel dimensions; bitrate,o_bitrate: source-recorded input/output bitrate values, unscaled; framerate,o_framerate: frames per second; i,p,b: source counts of I/P/B frames; frames: total frames; i_size,p_size,b_size,size: source-recorded component and total byte sizes. The source experiment transcodes short segments; full original duration is metadata, not a claim of processing every original frame. Output memory consumption is excluded."
+    }
+  },
+  "source_version": "UCI public archive snapshot 2026-11-15",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_335",
+    "name": "Online Video Transcoding Time",
+    "batch": 3,
+    "candidate_id": "O2",
+    "raw_rows_selected": 68784,
+    "candidate_task_examples": 68784,
+    "output_examples": 68784,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 1099,
+    "examples_with_null_input": 0,
+    "flagged_examples": 1019,
+    "identical_input_different_label_groups": 81,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 68784
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+    "files": [
+      {
+        "path": "datasets/uci_335_transcoding/part-00001.jsonl.gz",
+        "records": 15269,
+        "sha256": "800a2c7e0237c3e8584119278851ccf015f3d96769422a3d41ad6d563b5f9985",
+        "bytes": 1273313
+      },
+      {
+        "path": "datasets/uci_335_transcoding/part-00002.jsonl.gz",
+        "records": 15292,
+        "sha256": "8be3f0c0edc7450cfb87a6e449d6d10f8bafb1dac6ebd56ff4c788f735277861",
+        "bytes": 1275978
+      },
+      {
+        "path": "datasets/uci_335_transcoding/part-00003.jsonl.gz",
+        "records": 15278,
+        "sha256": "2c42baf67366cccd0c2bd3509690f39fab740784cd667e01b4d60077bd735360",
+        "bytes": 1274353
+      },
+      {
+        "path": "datasets/uci_335_transcoding/part-00004.jsonl.gz",
+        "records": 15294,
+        "sha256": "92320774ce912e832d39a75e4ef64a659779309aee9e8cb5d0e1d88a74e6223b",
+        "bytes": 1273733
+      },
+      {
+        "path": "datasets/uci_335_transcoding/part-00005.jsonl.gz",
+        "records": 7651,
+        "sha256": "c88957dac2d7ab1039f06d8c48cfef145c01967276d6f1a16424177fa9b79886",
+        "bytes": 780457
+      }
+    ],
+    "uncompressed_sha256": "238a4ac1e4eb67a1651f0daa887467dc2e18b4db88d3edec253cdd405ad9f0f5",
+    "uci_id": 335
+  },
+  "task_statistics": {
+    "transcoding_time": {
+      "prompt_chars_min": 1189,
+      "prompt_chars_max": 1224,
+      "records": 68784,
+      "label_min": 0.184,
+      "label_max": 224.574,
+      "label_mean": 9.99635482089,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "identical_input_multiple_labels": 162,
+    "source_size_component_mismatch": 859
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "unit_evidence": {
+    "transcoding_seconds": "https://www.doria.fi/bitstream/handle/10024/134552/deneke_tewodros.pdf?sequence=2 (source author thesis, p46 displays Transcoding Time [sec]; p45 describes 20-second segments)"
+  }
+}

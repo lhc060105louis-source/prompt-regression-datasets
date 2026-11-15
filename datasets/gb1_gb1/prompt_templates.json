@@ -1,0 +1,9 @@
+{
+  "relative_igg_fc_binding_fitness": {
+    "instruction": "Predict the relative IgG-Fc binding fitness in the Wu et al. GB1 four-site assay. The remaining GB1 background is fixed to the assay reference; the reference residues at positions 39, 40, 41, and 54 are V, D, G, and V. Fitness is normalized relative to this reference.",
+    "target_name": "relative_igg_fc_binding_fitness",
+    "unit": "dimensionless",
+    "type": "continuous",
+    "field_description": "residues_at_positions_39_40_41_54: Four standard amino-acid one-letter codes in that position order."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "next_day_specific_discharge": {
+    "instruction": "Predict the river specific discharge for target_date in millimetres per day. The forecast origin is the end of forecast_origin_date. Use the seven supplied daily archive records, which end one day before the origin to allow for daily aggregation timing.",
+    "target_name": "next_day_specific_discharge",
+    "unit": "mm/day",
+    "type": "continuous",
+    "field_description": "history_columns defines seven chronological daily records. precipitation and potential_evapotranspiration use mm/day; temperature uses degrees Celsius; discharge uses mm/day. The last history date is one day before forecast_origin_date, providing a conservative availability lag for water-day/calendar-day conventions. target_date is the following date after the forecast origin. Static inputs are catchment area (km^2), gauge elevation (m above sea level), latitude/longitude (degrees); null means an unavailable static attribute. No catchment identifier, full-period hydrological statistic, or target-day weather is an input."
+  }
+}

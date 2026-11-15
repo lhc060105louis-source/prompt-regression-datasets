@@ -1,0 +1,217 @@
+{
+  "reviews": [
+    {
+      "reviewer": "build_text (independent of root implementation)",
+      "scope": [
+        "build_operations.py",
+        "standardize.py",
+        "validate_extension.py"
+      ],
+      "status": "passed_with_documentation_and_validation_notes",
+      "checks": {
+        "auction": {
+          "status": "passed",
+          "raw_to_candidate_input_label_group_rows": 2043,
+          "unit": "ms"
+        },
+        "transcoding": {
+          "status": "passed",
+          "raw_to_candidate_input_label_group_rows": 68784,
+          "unit": "s"
+        },
+        "complex": {
+          "status": "passed",
+          "candidate_to_release_rows": 10800,
+          "source_groups_preserved": 3814
+        },
+        "empathy": {
+          "status": "passed",
+          "candidate_to_release_rows": 3720,
+          "source_groups_preserved": 372
+        },
+        "asap2": {
+          "status": "passed",
+          "candidate_to_release_rows": 24728,
+          "source_groups_preserved": 24728
+        }
+      },
+      "reviewed_file_sha256": {
+        "build_operations.py": "5b9351e25d31b5251e591780d3650d49b88326230047e8a5a9c4822f609a0fdd",
+        "standardize.py": "9312a566c6c05cf70070274da7648b34af3e6a5ab75010363eccdb6fd703c561",
+        "validate_extension.py": "2bad78d58b113982c74677174ee09bcf4db8068a4a713af83d6e56a1096347ca"
+      },
+      "findings": [
+        {
+          "priority": "P2",
+          "file": "publish/schema.json",
+          "issue": "Baseline schema still describes all splits as unassigned and only SGEMM target-transform exception. Current prepared records contain official train/validation/test partitions, ordinal ASAP scores and source-mean/derived targets.",
+          "fix": "Update schema prose during final packaging before checksums; preserve old record bytes.",
+          "publication_blocker_if_unfixed": true
+        },
+        {
+          "priority": "P2",
+          "file": "build_operations.py",
+          "issue": "The final source-validation loop asserts label equality and excluded-column absence, but its comment/report suggests included input fields were compared. It does not compare projected feature values.",
+          "fix": "Compare each candidate input with an explicit projection of its referenced source row, and group key with capacities/video id. The independent review has now performed this check on all 70,827 operation rows, which passed.",
+          "publication_blocker_if_unfixed": false
+        }
+      ],
+      "units_evidence": {
+        "auction_ms": "https://github.com/Jakob-Bach/Analyzing-Auction-Verification/blob/5a320b1b2049050e651a40e4dbda9c9d87a63c38/run_evaluation.py (raw verification.time / 1000 before seconds plots; explicit ms summaries)",
+        "auction_aggregation": "https://github.com/Jakob-Bach/Analyzing-Auction-Verification/blob/5a320b1b2049050e651a40e4dbda9c9d87a63c38/prepare_dataset.py (create_deduplicated_dataset averages over seven feature fields)",
+        "transcoding_seconds": "https://www.doria.fi/bitstream/handle/10024/134552/deneke_tewodros.pdf?sequence=2 (source author thesis, p46 displays Transcoding Time [sec]; p45 describes 20-second segments)"
+      },
+      "no_label_leakage_found": true,
+      "dedup_and_split_semantics": "Same task/input/label/split occurrences collapse only within split; source refs retained; same-input dependence unioned across groups; conflicting labels retained. Correct for reviewed sources.",
+      "training_executed": false
+    },
+    {
+      "reviewer": "build_science independent integration review",
+      "reviewed_files": [
+        "package_extension.py",
+        "standardize.py",
+        "validate_extension.py",
+        "build_text.py",
+        "build_science.py",
+        "build_temporal.py",
+        "build_operations.py",
+        "publish/scripts/read_dataset.py",
+        "publish/scripts/verify_release.py"
+      ],
+      "status": "passed_with_resolved_findings",
+      "remaining_blockers": [],
+      "resolved_findings": [
+        {
+          "issue": "RDKit dependency pin did not match the canonicalization build",
+          "original": "2025.9.3",
+          "required_actual": "2026.09.2",
+          "resolution_observed": "Packaging now generates the requirement from FreeSolv rdkit_version metadata."
+        },
+        {
+          "issue": "Science reproduction command omitted original JARVIS source download and independent readback validation",
+          "resolution_observed": "Documented command now includes --download --extra-sources --build --validate."
+        },
+        {
+          "issue": "Temporal reproduction command used unsupported --build flag",
+          "evidence": "Running build_temporal.py --build returned argparse unrecognized-arguments error before any data changes.",
+          "resolution_observed": "Documented command is now build_temporal.py --download; the builder prepares and validates by default."
+        },
+        {
+          "issue": "Legacy Chinese README paragraph retained old release counts and unassigned-only split claims",
+          "resolution_observed": "Packaging regenerates the paragraph with current manifest counts and mixed official/unassigned split policy."
+        },
+        {
+          "issue": "Legacy rebuild command was presented as rebuilding all current sources",
+          "resolution_observed": "Section is labelled legacy v2.1.0 and links separate batch 3 reproduction instructions."
+        },
+        {
+          "issue": "License introduction could incorrectly imply all new sources use CC BY 4.0",
+          "resolution_observed": "Opening qualification now explicitly applies to legacy UCI sources. CAMELS-GB OGL attribution is retained separately."
+        }
+      ],
+      "checks_passed": [
+        "Integration script parses successfully after corrections.",
+        "Reader replacement matches the original selector and compiles.",
+        "Patched reader selector handles all datasets, a legacy UCI ID, a new scientific ID, a new UCI ID, and an unknown ID.",
+        "Legacy dataset/source files are verified against baseline checksums before integration.",
+        "Old source shards and metadata are preserved rather than regenerated.",
+        "New record schemas remain compatible with the standard-library reader and aggregate release verifier.",
+        "Science license and attribution metadata retains primary links, source versions and FreeSolv third-party caveat.",
+        "CAMELS-GB builder includes OGL v3 license, complete author citation and UKCEH/Bristol/Environment Agency/BGS attribution.",
+        "ASAP2 third-party reading materials are excluded by the source download allowlist.",
+        "Packager copies source evidence documents but excludes RDKit vendor binaries and audit-only upstream GB1 preprocessing code.",
+        "New task definitions sum to eleven when the pending CAMELS-GB single task is added, giving forty-four total tasks with the legacy thirty-three."
+      ],
+      "release_followup": [
+        "Finish CAMELS-GB preparation and all-record validation before invoking packaging.",
+        "Generate final quality reports, then call package_extension.checksums() before running scripts/verify_release.py; main() alone intentionally does not regenerate checksums.",
+        "Recheck actual packaged documentation counts and links after the final integration run."
+      ],
+      "nonblocking_documentation_note": "The reproduction README says the ASAP test password is read from the source README; the builder actually embeds the publicly documented password. It can be described as verified from the frozen README for exact wording.",
+      "review_scope_limits": "This review checked integration and reproducibility interfaces. It did not rerun root's already-passing full validations or train models. Final CAMELS-GB counts and release checksum verification remain root integration steps.",
+      "training_executed": false
+    },
+    {
+      "reviewer": "build_text (independent of temporal implementation)",
+      "status": "passed",
+      "scope": "H2 code, candidate metadata, source rights documents, five independently sampled source-backed candidate records; no full raw-population rerun",
+      "reviewed_file_sha256": {
+        "build_temporal.py": "8a8b8a452ffac3706194a3305462ccee20c907a06c763b3ee2cb27aa809fe7ef",
+        "candidates/camels_gb.meta.json": "6c574045fc1dee8fb050e97fb9b5ea7203a2259ea085b7d582719b28953ec4d0"
+      },
+      "findings": [],
+      "publication_blockers": [],
+      "checks": {
+        "temporal_indexing": "Calendar month-end d, histories d-7 through d-1 inclusive, target d+1; source row references are correct 1-based data rows.",
+        "availability_lag": "Latest daily record is d-1, so a 09:00-to-09:00 daily aggregation ends during day d and before origin end of d. No d/d+1 hydrometeorological measurements enter input.",
+        "label_units": "Raw discharge_spec used without conversion. Official supporting RTF Table 1 identifies catchment specific discharge in mm day^-1.",
+        "input_leakage": "Only four topographic/location static fields and past precipitation, PET, temperature, discharge; no q_mean, runoff ratio, flow quantiles or full-period climate summaries.",
+        "sampling_accounting": {
+          "possible_month_end_origins": 362340,
+          "retained": 324656,
+          "excluded": 37684,
+          "exclusion_counts": {
+            "missing_or_nonfinite_label": 36040,
+            "incomplete_history": 973,
+            "target_date_outside_published_period": 671
+          }
+        },
+        "rights": "Official catalogue explicitly specifies OGL; required UKCEH attribution, all four listed copyright statements and dataset DOI/author citation are present in metadata.",
+        "groups": "One catchment per group; no claim of spatial independence. Dates and future time/spatial holdout instructions present.",
+        "small_raw_sample_records": [
+          {
+            "gauge": "10002",
+            "origin": "1971-02-28",
+            "history_start": "1971-02-21",
+            "history_end": "1971-02-27",
+            "target_time": "1971-03-01",
+            "label": 1.23
+          },
+          {
+            "gauge": "28081",
+            "origin": "2008-03-31",
+            "history_start": "2008-03-24",
+            "history_end": "2008-03-30",
+            "target_time": "2008-04-01",
+            "label": 1.07
+          },
+          {
+            "gauge": "40033",
+            "origin": "1994-12-31",
+            "history_start": "1994-12-24",
+            "history_end": "1994-12-30",
+            "target_time": "1995-01-01",
+            "label": 1.06
+          },
+          {
+            "gauge": "58006",
+            "origin": "2005-08-31",
+            "history_start": "2005-08-24",
+            "history_end": "2005-08-30",
+            "target_time": "2005-09-01",
+            "label": 0.81
+          },
+          {
+            "gauge": "97002",
+            "origin": "2015-08-31",
+            "history_start": "2015-08-24",
+            "history_end": "2015-08-30",
+            "target_time": "2015-09-01",
+            "label": 1.68
+          }
+        ]
+      },
+      "limitations_already_disclosed": [
+        "Monthly first-day targets cannot estimate unbiased daily or flood-event performance.",
+        "Retrospective revised archive values do not establish real-time operational data availability.",
+        "Nearby or nested catchments may remain correlated; hold out basins/spatial regions for spatial generalization."
+      ],
+      "training_executed": false
+    }
+  ],
+  "integration_resolutions": {
+    "schema_prose": "Updated split, target transformation and sample ID descriptions for mixed data release.",
+    "operations_input_validation": "Full source projection assertions added and source builders rerun.",
+    "packaging_findings": "RDKit version, reproduction CLI, current counts and license scope corrected; independent follow-up review found no blockers."
+  }
+}

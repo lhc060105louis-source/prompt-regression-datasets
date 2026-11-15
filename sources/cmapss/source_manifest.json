@@ -1,0 +1,28 @@
+{
+  "candidate_id": "H1",
+  "source_url": "https://zenodo.org/records/15346912",
+  "source_version": "Zenodo record 15346912, version 1",
+  "files": [
+    {
+      "relativepath": "raw/cmapss/CMAPSSData.zip",
+      "url": "https://zenodo.org/records/15346912/files/CMAPSSData.zip?download=1",
+      "sha256": "74bef434a34db25c7bf72e668ea4cd52afe5f2cf8e44367c55a82bfd91a5a34f",
+      "bytes": 12425978
+    },
+    {
+      "relativepath": "raw/cmapss/zenodo_metadata.json",
+      "url": "https://zenodo.org/api/records/15346912",
+      "sha256": "eb428b16753c57fc6e1711e98eb371f1caa4dcb20d34cce6e6e26f522f2aba11",
+      "bytes": 3918
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "zenodo_metadata.json metadata.license.id=cc-by-4.0",
+    "attribution": "NASA Ames Prognostics Center of Excellence; A. Saxena, K. Goebel, D. Simon and N. Eklund (2008)."
+  },
+  "citation": "A. Saxena, K. Goebel, D. Simon and N. Eklund (2008). Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation. PHM08. Dataset DOI: 10.5281/zenodo.15346912.",
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}

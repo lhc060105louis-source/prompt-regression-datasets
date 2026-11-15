@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "candidates": 642,
+  "records": 642,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {
+    "acyclic_scaffold_group": 320,
+    "experimental_label": 642,
+    "source_uncertainty_default": 583
+  },
+  "training_executed": false
+}

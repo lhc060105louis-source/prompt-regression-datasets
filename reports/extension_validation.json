@@ -1,0 +1,200 @@
+{
+  "status": "passed",
+  "version": "2.2.0",
+  "records_added": 600997,
+  "old_source_files_preserved": 326,
+  "old_manifest_version": "2.1.0",
+  "datasets": [
+    {
+      "status": "passed",
+      "dataset_id": "complex",
+      "records": 10800,
+      "source_candidate_occurrences": 10800,
+      "raw_inventory_files_checked": 7,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "empathy",
+      "records": 3720,
+      "source_candidate_occurrences": 3720,
+      "raw_inventory_files_checked": 2,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "asap2",
+      "records": 24728,
+      "source_candidate_occurrences": 24728,
+      "raw_inventory_files_checked": 3,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "freesolv",
+      "records": 642,
+      "source_candidate_occurrences": 642,
+      "raw_inventory_files_checked": 4,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "gb1",
+      "records": 149361,
+      "source_candidate_occurrences": 149361,
+      "raw_inventory_files_checked": 7,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "jdft2d",
+      "records": 636,
+      "source_candidate_occurrences": 636,
+      "raw_inventory_files_checked": 3,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "cmapss",
+      "records": 15627,
+      "source_candidate_occurrences": 15627,
+      "raw_inventory_files_checked": 2,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "camels_gb",
+      "records": 324656,
+      "source_candidate_occurrences": 324656,
+      "raw_inventory_files_checked": 4,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "uci_713",
+      "records": 2043,
+      "source_candidate_occurrences": 2043,
+      "raw_inventory_files_checked": 2,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    },
+    {
+      "status": "passed",
+      "dataset_id": "uci_335",
+      "records": 68784,
+      "source_candidate_occurrences": 68784,
+      "raw_inventory_files_checked": 2,
+      "checks": [
+        "finite scalar labels",
+        "input/prompt equality",
+        "numeric precision",
+        "source-candidate label and input equality under declared rounding",
+        "all source references retained",
+        "official split occurrence preservation",
+        "same-input group closure",
+        "unique sample IDs",
+        "raw source checksums"
+      ],
+      "training_executed": false
+    }
+  ],
+  "training_executed": false
+}

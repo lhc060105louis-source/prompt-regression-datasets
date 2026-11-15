@@ -1,0 +1,9 @@
+{
+  "holistic_essay_score": {
+    "instruction": "Predict the human holistic quality score for this persuasive essay on the ordered scale from 1 (lowest quality) to 6 (highest quality). Use the assignment topic and instructions when supplied. Source reading materials are not supplied.",
+    "target_name": "holistic_essay_score",
+    "unit": "ordinal score (1-6)",
+    "type": "ordinal",
+    "field_description": "prompt_name: Original assignment topic/title, not an essay or student identifier.; assignment: Original short assignment instructions if available; null means the source literal NA/empty, never inferred.; essay: Original student essay. Third-party source reading materials are excluded."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "transcoding_time": {
+    "instruction": "Estimate the recorded transcoding runtime on the source Intel i7-3720QM execution setup from input-video characteristics and the requested output encoding settings.",
+    "target_name": "transcoding_time",
+    "unit": "s",
+    "type": "continuous",
+    "field_description": "duration: original video duration in seconds; codec/o_codec: input/requested output codec; width,height,o_width,o_height: input/output pixel dimensions; bitrate,o_bitrate: source-recorded input/output bitrate values, unscaled; framerate,o_framerate: frames per second; i,p,b: source counts of I/P/B frames; frames: total frames; i_size,p_size,b_size,size: source-recorded component and total byte sizes. The source experiment transcodes short segments; full original duration is metadata, not a claim of processing every original frame. Output memory consumption is excluded."
+  }
+}

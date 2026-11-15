@@ -1,0 +1,140 @@
+{
+  "dataset_id": "uci_713",
+  "name": "Auction Verification",
+  "candidate_id": "O1",
+  "source_url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+  "version": "2.2.0",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "path": "raw/auction/source_page.html",
+      "url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+      "sha256": "bc94a3d65a21e5b8e9e8ae4d25e218f23dc204d8c00e8af66ea715453eed0abf",
+      "bytes": 93965
+    }
+  },
+  "source_files": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/713/auction+verification.zip",
+      "sha256": "d641e585dd6f26eb32e5d83792f828c51fb0e434e66cba998505a93a47e61041",
+      "bytes": 76568,
+      "relativepath": "raw/auction/source.zip"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+      "sha256": "bc94a3d65a21e5b8e9e8ae4d25e218f23dc204d8c00e8af66ea715453eed0abf",
+      "bytes": 93965,
+      "relativepath": "raw/auction/source_page.html"
+    }
+  ],
+  "source_citation": {
+    "doi": "10.24432/C52K6N",
+    "authors": [
+      "Elaheh Ordoni",
+      "Jakob Bach",
+      "Ann-Katrin Fleck"
+    ]
+  },
+  "raw_rows_selected": 2043,
+  "excluded_source_rows": 0,
+  "invalid_label_examples": 0,
+  "candidate_task_examples": 2043,
+  "grouping_rule": "ordered bidder capacity configuration",
+  "split_policy": "unassigned; whole groups must remain together",
+  "excluded_input_columns": [
+    "verification.result",
+    "verification.time"
+  ],
+  "quality_findings": [
+    "The source table aggregates repeated seven-feature configurations into mean runtimes. Original replicate counts and run-level uncertainty cannot be reconstructed.",
+    "verification.result excluded as another measured outcome.",
+    "Group by ordered bidder-capacity configuration; unassigned splits require whole-group holdouts."
+  ],
+  "source_profile": {
+    "fields": [
+      "process.b1.capacity",
+      "process.b2.capacity",
+      "process.b3.capacity",
+      "process.b4.capacity",
+      "property.price",
+      "property.product",
+      "property.winner",
+      "verification.result",
+      "verification.time"
+    ],
+    "groups": 24,
+    "flags": {
+      "source_aggregated_mean": 2043
+    }
+  },
+  "target_transform": "source_mean_no_additional_transform",
+  "tasks": {
+    "mean_verification_time": {
+      "instruction": "Estimate the mean verification runtime for the published four-bidder, six-product simultaneous multi-round auction model on its source execution setup.",
+      "target_name": "mean_verification_time",
+      "unit": "ms",
+      "type": "continuous",
+      "field_description": "bidder_capacities: ordered capacities of bidders 1 through 4, each the maximum number of products the bidder may win; property_price: queried price in source auction price units; property_product: queried product identifier; property_winner: queried bidder, with 0 indicating a price-only property. Verification outcome is not available as input."
+    }
+  },
+  "source_version": "UCI public archive snapshot 2026-11-15",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_713",
+    "name": "Auction Verification",
+    "batch": 3,
+    "candidate_id": "O1",
+    "raw_rows_selected": 2043,
+    "candidate_task_examples": 2043,
+    "output_examples": 2043,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 24,
+    "examples_with_null_input": 0,
+    "flagged_examples": 2043,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 2043
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+    "files": [
+      {
+        "path": "datasets/uci_713_auction/part-00001.jsonl.gz",
+        "records": 2043,
+        "sha256": "217f4a33a2368072633b137485c1d68a8f5710f306c49209aec0fbc3b17fb478",
+        "bytes": 166216
+      }
+    ],
+    "uncompressed_sha256": "f34ff20eecfe5d1886e3f4e4e725bb67c1cab96b3ee94fa7e5fb3542be367ab8",
+    "uci_id": 713
+  },
+  "task_statistics": {
+    "mean_verification_time": {
+      "prompt_chars_min": 787,
+      "prompt_chars_max": 787,
+      "records": 2043,
+      "label_min": 77.9166666667,
+      "label_max": 44130.5208333,
+      "label_mean": 7336.94457439,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "source_aggregated_mean": 2043
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "unit_evidence": {
+    "auction_ms": "https://github.com/Jakob-Bach/Analyzing-Auction-Verification/blob/5a320b1b2049050e651a40e4dbda9c9d87a63c38/run_evaluation.py (raw verification.time / 1000 before seconds plots; explicit ms summaries)",
+    "auction_aggregation": "https://github.com/Jakob-Bach/Analyzing-Auction-Verification/blob/5a320b1b2049050e651a40e4dbda9c9d87a63c38/prepare_dataset.py (create_deduplicated_dataset averages over seven feature fields)"
+  }
+}

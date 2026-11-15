@@ -1,0 +1,108 @@
+{
+  "status": "passed",
+  "dataset_id": "cmapss",
+  "records_checked": 15627,
+  "history_numeric_cells_checked": 11720250,
+  "split_counts": {
+    "train": 14937,
+    "test": 690
+  },
+  "candidate_sha256": "7af783f5309370aa466fa67a75877e5da58d523a4a306aa89fa542b777c0dda4",
+  "raw_train_engines": 709,
+  "raw_test_engines": 707,
+  "eligible_test_engines": 690,
+  "excluded_short_test_engines": [
+    [
+      "test_FD002.txt",
+      28,
+      23
+    ],
+    [
+      "test_FD002.txt",
+      59,
+      22
+    ],
+    [
+      "test_FD002.txt",
+      83,
+      21
+    ],
+    [
+      "test_FD002.txt",
+      122,
+      29
+    ],
+    [
+      "test_FD002.txt",
+      201,
+      25
+    ],
+    [
+      "test_FD002.txt",
+      223,
+      29
+    ],
+    [
+      "test_FD004.txt",
+      10,
+      23
+    ],
+    [
+      "test_FD004.txt",
+      19,
+      24
+    ],
+    [
+      "test_FD004.txt",
+      28,
+      20
+    ],
+    [
+      "test_FD004.txt",
+      125,
+      21
+    ],
+    [
+      "test_FD004.txt",
+      141,
+      19
+    ],
+    [
+      "test_FD004.txt",
+      156,
+      28
+    ],
+    [
+      "test_FD004.txt",
+      164,
+      29
+    ],
+    [
+      "test_FD004.txt",
+      204,
+      19
+    ],
+    [
+      "test_FD004.txt",
+      229,
+      20
+    ],
+    [
+      "test_FD004.txt",
+      239,
+      28
+    ],
+    [
+      "test_FD004.txt",
+      246,
+      29
+    ]
+  ],
+  "checks": [
+    "all input sensor/settings/cycle cells equal raw array slices",
+    "every label equals source-derived train RUL or official test RUL",
+    "every required stride/final/test endpoint exactly once",
+    "group and official split match source engine",
+    "all 17 short test engine exclusions independently reconstructed"
+  ]
+}

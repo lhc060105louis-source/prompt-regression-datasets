@@ -1,0 +1,9 @@
+{
+  "mean_verification_time": {
+    "instruction": "Estimate the mean verification runtime for the published four-bidder, six-product simultaneous multi-round auction model on its source execution setup.",
+    "target_name": "mean_verification_time",
+    "unit": "ms",
+    "type": "continuous",
+    "field_description": "bidder_capacities: ordered capacities of bidders 1 through 4, each the maximum number of products the bidder may win; property_price: queried price in source auction price units; property_product: queried product identifier; property_winner: queried bidder, with 0 indicating a price-only property. Verification outcome is not available as input."
+  }
+}

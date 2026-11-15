@@ -1,0 +1,61 @@
+{
+  "candidate_id": "S2",
+  "source_url": "https://github.com/wchnicholas/ProteinGFourMutants",
+  "source_version": "dbdd7639187e0b8f22359f404ce4d1d950fcc8a9",
+  "files": [
+    {
+      "relativepath": "raw/gb1/commit.json",
+      "url": "https://api.github.com/repos/wchnicholas/ProteinGFourMutants/commits/master",
+      "sha256": "c855c51dc3a43fc92744257eaa44b330ed93c73a3f4dc8b2dced56b36d87a512",
+      "bytes": 4314
+    },
+    {
+      "relativepath": "raw/gb1/result/Mutfit",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/result/Mutfit",
+      "sha256": "fef5c2267d72a2a4520a444aa68ce358492b49fcbeaf222f42a9a3f2a21a4552",
+      "bytes": 13837211
+    },
+    {
+      "relativepath": "raw/gb1/README.md",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/README.md",
+      "sha256": "4a225a76291129e48850c941ddf53fce501aa81ab4791ea86ea36edaf0ff4093",
+      "bytes": 13814
+    },
+    {
+      "relativepath": "raw/gb1/script/Mapper5_NW.py",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/script/Mapper5_NW.py",
+      "sha256": "7823ecff912d835bbee02648ca10451f4c742bbb4ed44bd8ffe684e4cb3dfc4a",
+      "bytes": 3569
+    },
+    {
+      "relativepath": "raw/gb1/Fasta/SeqInfo.fa",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/Fasta/SeqInfo.fa",
+      "sha256": "aef8464c3a2c51cf5fca0b6f87fae76d1b4c1fa0457ef255267a98c59cbf9ca8",
+      "bytes": 145
+    },
+    {
+      "relativepath": "raw/gb1/FLIP_commit.json",
+      "url": "https://api.github.com/repos/J-SNACKKB/FLIP/commits/main",
+      "sha256": "1db9208512950690ec73d361ade8b123890a4cdbe01090dadfabddfd4dcaf938",
+      "bytes": 25433
+    },
+    {
+      "relativepath": "raw/gb1/FLIP_README_license.md",
+      "url": "https://raw.githubusercontent.com/J-SNACKKB/FLIP/e74069fe09490c6a44a8d7ff8c2811b61f24ec82/splits/gb1/README.md",
+      "sha256": "a458c5f106b18d4d7e8ce5461c817e34c3c96e907c23d56e43550f02d6a7adf9",
+      "bytes": 3993
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "Original eLife article copyright and license; FLIP README Data licensing confirms original eLife raw data CC BY 4.0. Only original author Mutfit records, not FLIP derivative records, are used.",
+    "evidence_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985287/",
+      "https://doi.org/10.7554/eLife.16965.024"
+    ]
+  },
+  "citation": "Wu NC, Dai L, Olson CA, Lloyd-Smith JO, Sun R. Adaptation in protein fitness landscapes is facilitated by indirect paths. eLife 2016;5:e16965. https://doi.org/10.7554/eLife.16965",
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}

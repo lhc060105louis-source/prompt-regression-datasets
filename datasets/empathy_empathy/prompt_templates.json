@@ -1,0 +1,16 @@
+{
+  "empathy": {
+    "instruction": "Estimate the reaction writer's self-reported empathic concern on the published scale from 1 (low) to 7 (high).",
+    "target_name": "empathy",
+    "unit": "self-report scale (1-7)",
+    "type": "continuous",
+    "field_description": "essay: Original English reaction essay written after reading a news story; the news article itself is not included."
+  },
+  "distress": {
+    "instruction": "Estimate the reaction writer's self-reported personal distress on the published scale from 1 (low) to 7 (high).",
+    "target_name": "distress",
+    "unit": "self-report scale (1-7)",
+    "type": "continuous",
+    "field_description": "essay: Original English reaction essay written after reading a news story; the news article itself is not included."
+  }
+}

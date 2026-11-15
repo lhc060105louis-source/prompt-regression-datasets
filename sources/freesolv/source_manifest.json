@@ -1,0 +1,40 @@
+{
+  "candidate_id": "S1",
+  "source_url": "https://github.com/MobleyLab/FreeSolv",
+  "source_version": "6c7d19b4b565537365ffd22006aa2cd4643200c6",
+  "files": [
+    {
+      "relativepath": "raw/freesolv/commit.json",
+      "url": "https://api.github.com/repos/MobleyLab/FreeSolv/commits/master",
+      "sha256": "14dac9644322dce7c82028b646c3b0474ad3dc0dbdeec50453c90e32ad81c9f7",
+      "bytes": 29784
+    },
+    {
+      "relativepath": "raw/freesolv/database.txt",
+      "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/database.txt",
+      "sha256": "2d13f095713bc39b85f85dd7b4e5483fbb12fc694bf253bb1d92a4c4d484f260",
+      "bytes": 144897
+    },
+    {
+      "relativepath": "raw/freesolv/README.md",
+      "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/README.md",
+      "sha256": "ec5c1cb5f47391ac9ddfc81f0e981d526992ed2e20937e9cfdab7394b80bc1b2",
+      "bytes": 26421
+    },
+    {
+      "relativepath": "raw/freesolv/LICENSE",
+      "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/LICENSE",
+      "sha256": "cce5d01fa4a83b794271bd2c28cffdf99afd43c803e6ddefddae39b591ea7448",
+      "bytes": 18652
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "README.md License section and LICENSE at the frozen source commit.",
+    "caveat": "Upstream authors license their rights under CC BY 4.0; any original third-party licensing restrictions remain applicable."
+  },
+  "citation": "Mobley DL and Guthrie JP. FreeSolv: a database of experimental and calculated hydration free energies, with input files. J Comput Aided Mol Des (2014). https://doi.org/10.1007/s10822-014-9747-x",
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}

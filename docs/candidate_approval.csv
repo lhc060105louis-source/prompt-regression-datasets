@@ -1,0 +1,27 @@
+﻿candidate_id,priority,name_input,target_unit,source_size,training_redistribution,source_url,approval
+T1,P1,CompLex2：句子+目标词,人类词汇复杂度0–1,"10,800 source rows; 10,800 prepared records",数据CC BY4；可 / 署名可,https://github.com/MMU-TDMLab/CompLex,approved_and_prepared
+T2,P1,Empathic Reactions：新闻反应短文,empathy、distress，1–7；两任务同源,"1,860 source rows; 3,720 prepared records",数据CC BY4；反应文本可 / 可；不扩张到新闻正文,https://github.com/wwbp/empathic_reactions,approved_and_prepared
+T3,P1,ASAP2：作文+获授权题目/rubric,人工整体评分1–6（有序离散）,"24,728 source rows; 24,728 prepared records",作文/评分CC BY4可；第三方阅读材料有保留全部权利声明，首轮排除全文,https://github.com/scrosseye/ASAP_2.0,approved_and_prepared_without_reading_materials
+T4,P2,MLQE-PE：原文+机器译文,raw DA mean，0–100分,7语言对，各7k训练+1k开发+1k test20；另有test21,仓库CC0但原文权利混合；条件 / 暂缓统一放行,https://github.com/sheffieldnlp/mlqe-pe,pending
+T5,P2,SICK：英语句对,relatedness，1–5,约1万，版本计数待核,CC BY-NC-SA3；仅合规非商业 / NC+SA分区,https://zenodo.org/records/2787612,pending
+T6,P2,CLEAR：段落阅读难度,BT_easiness，无量纲，非年级,"4,724",数据/逐篇许可冲突；条件 / 暂缓,https://github.com/scrosseye/CLEAR-Corpus,pending
+T7,P3,MINT：多语言社交文本,亲密度均分1–5,"13,372，10语言",明确数据授权未核实 / 暂缓,https://sites.google.com/umich.edu/semeval-2023-tweet-intimacy/home,pending
+S1,P1,FreeSolv：分子SMILES,实验水合自由能，kcal/mol,642 source rows; 642 prepared records,CC BY4；可 / 归因可，保留原数据权利例外,https://github.com/MobleyLab/FreeSolv,approved_and_prepared
+S2,P1,Wu GB1：氨基酸变体,实验派生相对结合fitness，无量纲,"191,157 source rows; 149,361 prepared records",原源CC BY4；可 / 可；FLIP包装AFL3另记,https://github.com/wchnicholas/ProteinGFourMutants,approved_and_prepared
+S3,P2,QM9：SMILES/坐标,DFT HOMO–LUMO gap，原始Hartree,"133,885；3,054问题条目有清单",QM9发布CC0，但GDB-17上游结构条款需核；研究条件可 / 再发布待核,https://doi.org/10.6084/m9.figshare.c.978904.v5,pending
+S4,P1,JARVIS2D / Matbench jdft2d：晶格/原子JSON,DFT剥离能，meV/atom,636 source rows; 636 prepared records,上游CC BY4；可 / 保留两层来源归因,https://figshare.com/articles/dataset/jdft_2d-7-7-2018_json/6815705/1,approved_and_prepared
+S5,P2,ESOL：SMILES,实验log10溶解度，log10(mol/L),"常用1,128；论文总建模集不是此数",原SI CC BY-NC4；非商业 / 宽松发布暂缓,https://acs.figshare.com/articles/dataset/ESOL_Estimating_Aqueous_Solubility_Directly_from_Molecular_Structure/7944677,pending
+S6,P2,Zhuo / Matbench expt_gap：化学式,带隙eV；实验+DFT零值混合,"4,604",上游NC与下游MIT冲突；条件 / 暂缓,https://api.figshare.com/v2/articles/6002156,pending
+S7,P2,Buchwald–Hartwig HTE：多角色反应SMILES,实测产率，%,"常用3,955反应",技术可行，数据授权未明确 / 暂缓,https://github.com/doylelab/rxnpredict,pending
+S8,P3,PCQM4Mv2：分子图/SMILES,DFT HOMO–LUMO gap，eV,"总3,746,619；test不公开标签",数据CC BY4；有标签部分可 / 署名可；规模成本高,https://ogb.stanford.edu/docs/lsc/pcqm4mv2/,pending
+H1,P1,NASA C-MAPSS：发动机多传感器序列,派生RUL，cycles,"265,256 source rows; 15,627 prepared records",固定NASA发布CC BY4；可 / 可；模拟数据,https://zenodo.org/records/15346912,approved_and_prepared
+H2,P1,CAMELS-GB v1：流域属性+日历史,次日流量，mm/day,"11,028,556 source rows; 324,656 prepared records",数据OGLv3；可 / 完整归因可,https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9,approved_and_prepared
+H3,P2,NOAA GHCNd：站点天气序列,次日TMAX，°C,>10万站；具体美国子集量待定,优先NOAA自产子集；可研究 / 按来源条款核定,https://www.ncei.noaa.gov/products/land-based-station/global-historical-climatology-network-daily,pending
+H4,P2,NYC Yellow Taxi2024：时间+OD事件JSON,由起止时间派生实际时长，s,约41.2M行,可研究 / NYC条款链需确认，未标标准许可证,https://data.cityofnewyork.us/Transportation/2024-Yellow-Taxi-Trip-Data/rwwi-khbc,pending
+H5,P2,Oxford Battery1：嵌套充放电曲线,下次表征容量，mAh；定义待核q字段,8电池；253.8MB主MAT,ODbL+DbCL；可 / 共享相同许可独立分区,https://ora.ox.ac.uk/objects/uuid:03ba4b01-cfed-46d3-9b1a-7d4a7bdf6fac,pending
+H6,P2,Tourism Monthly：异长月序列,下一月数值，原序列单位未核实,366月序列,Zenodo CC BY4与research-purpose措辞并存；研究可 / 澄清后,https://zenodo.org/records/4656096,pending
+H7,P3,USGS ComCat：不规则事件GeoJSON,已发生事件震级；固定magType如mb，无量纲,2024 M≥4.5查询6397条，边界含两端,USGS自产公有领域；多机构需核 / 条件可,https://earthquake.usgs.gov/fdsnws/event/1/,pending
+O1,P1,Auction Verification：验证属性JSON,源聚合平均验证时间，ms,"2,043 source rows; 2,043 prepared records",数据CC BY4；可 / 可,https://archive.ics.uci.edu/dataset/713/auction+verification,approved_and_prepared
+O2,P1,Video Transcoding：视频/编码配置JSON,utime，s,"68,784 source rows; 68,784 prepared records",数据CC BY4；可 / 元信息与标签可,https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset,approved_and_prepared
+O3,P2,Wave Energy：16点空间布局,模拟总功率；具体单位待核,"原源288,000；OpenML72,000子集",数据CC BY4；可 / 可，但先核单位/删泄漏字段,https://archive.ics.uci.edu/dataset/494/wave+energy+converters,pending
+O4,P2,FPS Benchmark：硬件+游戏配置JSON,帧率，frames/s,"24,624",CC BY版本和抓取上游权利不清；条件 / 暂缓,https://www.openml.org/d/44992,pending

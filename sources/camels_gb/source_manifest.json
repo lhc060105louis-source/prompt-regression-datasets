@@ -1,0 +1,48 @@
+{
+  "candidate_id": "H2",
+  "source_url": "https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9",
+  "source_version": "CAMELS-GB v1, published 2020-02-20; source members SHA-256 checked against EIDC RO-Crate",
+  "files": [
+    {
+      "relativepath": "raw/camels_gb/CAMELS_GB_v1.zip",
+      "url": "https://data-package.ceh.ac.uk/data/8344e4f3-d2ea-44f5-8afa-86d2987543a9.zip",
+      "sha256": "3c1066567aecd2d405c2e7dae4bc6bbd8024b8132784043bdb91aaf12b6bbf86",
+      "bytes": 256355300
+    },
+    {
+      "relativepath": "raw/camels_gb/supporting_documents.zip",
+      "url": "https://data-package.ceh.ac.uk/sd/8344e4f3-d2ea-44f5-8afa-86d2987543a9.zip",
+      "sha256": "f79a3b8458fa90b300b4e4ddf5f7fe6f8aeaeeccf33e5aaba74a7e7907ec01db",
+      "bytes": 365184
+    },
+    {
+      "relativepath": "raw/camels_gb/catalogue_metadata.json",
+      "url": "https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9?format=json",
+      "sha256": "c24ae692357ba16873cc04e1e64ea61d606112bdefd1c948bc6a61fb129b55b7",
+      "bytes": 26232
+    },
+    {
+      "relativepath": "raw/camels_gb/ogl_eidc_license.html",
+      "url": "https://eidc.ac.uk/licences/ogl/plain",
+      "sha256": "7dcd5e776e95c56671cc79198304e59dae1e09ea6a14425e565b76056a9f4aba",
+      "bytes": 1109
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "id": "OGL-UK-3.0",
+    "url": "https://eidc.ac.uk/licences/ogl/plain",
+    "canonical_url": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "evidence": "catalogue_metadata.json licences; ogl_eidc_license.html",
+    "attribution": [
+      "Contains data supplied by UK Centre for Ecology & Hydrology.",
+      "Copyright UK Centre for Ecology & Hydrology.",
+      "Copyright University of Bristol.",
+      "Contains Environment Agency information, copyright Environment Agency and/or database right.",
+      "Derived from UK bedrock hydrogeological mapping and UK superficial productivity mapping, BGS copyright UKRI.",
+      "Coxon et al. (2020), DOI 10.5285/8344e4f3-d2ea-44f5-8afa-86d2987543a9."
+    ]
+  },
+  "citation": "Coxon, G.; Addor, N.; Bloomfield, J.P.; Freer, J.; Fry, M.; Hannaford, J.; Howden, N.J.K.; Lane, R.; Lewis, M.; Robinson, E.L.; Wagener, T.; Woods, R. (2020). Catchment attributes and hydro-meteorological timeseries for 671 catchments across Great Britain (CAMELS-GB). NERC Environmental Information Data Centre. https://doi.org/10.5285/8344e4f3-d2ea-44f5-8afa-86d2987543a9",
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}

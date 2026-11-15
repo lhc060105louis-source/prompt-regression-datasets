@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "candidates": 149361,
+  "records": 149361,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {
+    "experimental_enrichment_derived_label": 149361,
+    "low_fitness_detection_limit_sensitive": 114816,
+    "single_protein_background": 149361,
+    "zero_fitness_observed": 29477,
+    "author_calibrated_prior_experiment": 76
+  },
+  "training_executed": false
+}

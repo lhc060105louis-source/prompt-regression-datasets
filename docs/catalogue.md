@@ -31,3 +31,18 @@
 | 555 | [Apartment for Rent Classified](https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified) | 99,277 | 1 | [Files](../datasets/uci_555_apartment_rent) |
 | 162 | [Forest Fires](https://archive.ics.uci.edu/dataset/162/forest+fires) | 513 | 1 | [Files](../datasets/uci_162_forest_fires) |
 | 925 | [Infrared Thermography Temperature](https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset) | 2,029 | 1 | [Files](../datasets/uci_925_infrared_temperature) |
+
+## Approved structured and text expansion
+
+| Approval | Dataset ID | Source | Examples | Tasks | Data |
+|---|---|---|---:|---:|---|
+| T1 | complex | [CompLex 2.0 / SemEval 2021 Task 1](https://github.com/MMU-TDMLab/CompLex) | 10,800 | 1 | [Files](../datasets/complex_complex) |
+| T2 | empathy | [Empathic Reactions (EMNLP 2018)](https://github.com/wwbp/empathic_reactions) | 3,720 | 2 | [Files](../datasets/empathy_empathy) |
+| T3 | asap2 | [ASAP 2.0 (essay and assignment only)](https://github.com/scrosseye/ASAP_2.0) | 24,728 | 1 | [Files](../datasets/asap2_asap2) |
+| S1 | freesolv | [FreeSolv experimental hydration free energy](https://github.com/MobleyLab/FreeSolv) | 642 | 1 | [Files](../datasets/freesolv_freesolv) |
+| S2 | gb1 | [Wu 2016 GB1 four-site observed binding fitness](https://github.com/wchnicholas/ProteinGFourMutants) | 149,361 | 1 | [Files](../datasets/gb1_gb1) |
+| S4 | jdft2d | [JARVIS 2D / Matbench jdft2d](https://figshare.com/articles/dataset/jdft_2d-7-7-2018_json/6815705/1) | 636 | 1 | [Files](../datasets/jdft2d_jdft2d) |
+| H1 | cmapss | [NASA C-MAPSS turbofan degradation](https://zenodo.org/records/15346912) | 15,627 | 1 | [Files](../datasets/cmapss_cmapss) |
+| H2 | camels_gb | [CAMELS-GB v1 next-day specific discharge](https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9) | 324,656 | 1 | [Files](../datasets/camels_gb_camels_gb) |
+| O1 | uci_713 | [Auction Verification](https://archive.ics.uci.edu/dataset/713/auction+verification) | 2,043 | 1 | [Files](../datasets/uci_713_auction) |
+| O2 | uci_335 | [Online Video Transcoding Time](https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset) | 68,784 | 1 | [Files](../datasets/uci_335_transcoding) |

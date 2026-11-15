@@ -1,0 +1,9 @@
+{
+  "remaining_useful_life": {
+    "instruction": "Estimate the remaining useful life of this simulated turbofan engine at the end of the observed history. Predict the number of operating cycles remaining until failure; the target is not capped.",
+    "target_name": "remaining_useful_life",
+    "unit": "cycles",
+    "type": "continuous",
+    "field_description": "history_columns defines each of the 30 chronological history rows: cycle (operating cycles), three operational settings, and sensor_1 through sensor_21. Sensor and setting values retain original published scales; individual physical units are unspecified in the source readme. subset identifies the published operating-condition/fault scenario. No engine ID is an input feature."
+  }
+}

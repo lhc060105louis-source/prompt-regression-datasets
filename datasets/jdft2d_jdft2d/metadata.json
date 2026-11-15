@@ -1,0 +1,160 @@
+{
+  "dataset_id": "jdft2d",
+  "name": "JARVIS 2D / Matbench jdft2d",
+  "source_url": "https://figshare.com/articles/dataset/jdft_2d-7-7-2018_json/6815705/1",
+  "version": "2.2.0",
+  "source_files": [
+    {
+      "relativepath": "raw/jdft2d/matbench_jdft2d.json.gz",
+      "url": "https://ml.materialsproject.org/projects/matbench_jdft2d.json.gz",
+      "sha256": "26057dc4524e193e32abffb296ce819b58b6e11d1278cae329a2f97817a4eddf",
+      "bytes": 267131
+    },
+    {
+      "relativepath": "raw/jdft2d/figshare_v1.json",
+      "url": "https://api.figshare.com/v2/articles/6815705/versions/1",
+      "sha256": "697fc2c50c5c02162145782dfa01a3b669bd805bd81614f82b14b0a4ba7c4953",
+      "bytes": 3349
+    },
+    {
+      "relativepath": "raw/jdft2d/jdft_2d-7-7-2018.json",
+      "url": "https://ndownloader.figshare.com/files/12394556",
+      "sha256": "eb0c39185a49ce15ff3bf4ceace6c8d3f4dcf72e055247319c7308d5754c6d82",
+      "bytes": 3065422
+    }
+  ],
+  "tasks": {
+    "dft_exfoliation_energy": {
+      "instruction": "Predict the DFT-calculated exfoliation energy per atom for this periodic two-dimensional crystal structure.",
+      "target_name": "dft_exfoliation_energy",
+      "unit": "meV/atom",
+      "type": "continuous",
+      "field_description": "lattice_vectors_angstrom: Three lattice vectors as a 3x3 row matrix in angstrom.; sites: Ordered atomic sites with element symbols and fractional coordinates relative to the lattice. Coordinates outside [0,1) are valid periodic representations.; periodic: Periodic boundary conditions along all three lattice directions; the slab cell includes vacuum."
+    }
+  },
+  "field_descriptions": {
+    "lattice_vectors_angstrom": "Three lattice vectors as a 3x3 row matrix in angstrom.",
+    "sites": "Ordered atomic sites with element symbols and fractional coordinates relative to the lattice. Coordinates outside [0,1) are valid periodic representations.",
+    "periodic": "Periodic boundary conditions along all three lattice directions; the slab cell includes vacuum."
+  },
+  "invalid_label_examples": 0,
+  "excluded_source_rows": 0,
+  "split_policy": "Unassigned. Use reduced-composition groups for family holdout. These are not official Matbench fivefold assignments and no official benchmark result is claimed.",
+  "missing_policy": "No labels are imputed. Only complete supported structures and finite observed source labels are emitted.",
+  "precision_policy": "Candidate keeps parsed source numbers. Release formatter caps all numeric values at 12 significant digits.",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "Original Figshare article 6815705 version 1 API license field.",
+    "evidence_url": "https://api.figshare.com/v2/articles/6815705/versions/1"
+  },
+  "quality_findings": [
+    "All 636 labels, lattice matrices, species and fractional coordinates match the original licensed Figshare snapshot row by row.",
+    "Only lattice, full-occupancy species, fractional coordinates and periodic boundary flags are input; DFT energies used to generate the target are excluded.",
+    "Coordinates outside the unit interval are valid periodic representations and are retained; no artificial clipping/wrapping is applied.",
+    "Composition groups conservatively prevent polymorph/alternative-cell separation; structure equivalence is not separately claimed.",
+    "Labels are calculated DFT values and inputs are relaxed source geometries; this is not an experimental or raw pre-DFT-geometry benchmark."
+  ],
+  "source_citation": "Choudhary K et al. (2017), https://doi.org/10.1038/s41598-017-05402-0. JARVIS 2D snapshot jdft_2d-7-7-2018.json v1, https://doi.org/10.6084/m9.figshare.6815705.v1. Matbench structure/exfoliation_en packaging by the Matbench/matminer authors.",
+  "target_origin": "DFT calculation (not experimental measurement)",
+  "grouping_rule": "Reduced exact elemental composition, computed from full-occupancy sites. Equivalent crystals with alternative cells/site orders share composition group; this intentionally also groups distinct polymorphs.",
+  "excluded_input_columns": [
+    "exfoliation_en",
+    "fin_en",
+    "form_enp",
+    "all_other_energies",
+    "band_gaps",
+    "magnetic_and_dielectric_properties",
+    "material_ids",
+    "Cartesian_xyz",
+    "redundant_lattice_parameters",
+    "site_velocities"
+  ],
+  "raw_rows_selected": 636,
+  "source_geometry_and_target_matches": 636,
+  "periodic_coordinates_outside_unit_cell": 77,
+  "site_count_range": [
+    1,
+    35
+  ],
+  "output_candidate_records": 636,
+  "validation": {
+    "status": "passed",
+    "all_source_labels_checked": true,
+    "finite_labels": 636,
+    "input_label_duplicate_records": 0,
+    "group_count": 568,
+    "largest_group": 6,
+    "label_min": 0.026500000000151402,
+    "label_max": 1604.0382857142856,
+    "zero_labels": 0,
+    "quality_flag_counts": {
+      "dft_calculated_label": 636,
+      "relaxed_crystal_geometry": 636,
+      "periodic_fractional_coordinates_outside_unit_cell": 77
+    },
+    "candidate_sha256": "92b4090db4d05e38792cfdd9b4e81a245de0ee0c01b1c76d475dca35d11cfc59",
+    "no_training_executed": true,
+    "independent_readback_source_fidelity": {
+      "source_rows_checked": 636,
+      "status": "passed"
+    }
+  },
+  "source_version": "JARVIS 2D 2018-07-07 v1 / Matbench cached gzip SHA256",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "jdft2d",
+    "name": "JARVIS 2D / Matbench jdft2d",
+    "batch": 3,
+    "candidate_id": "S4",
+    "raw_rows_selected": 636,
+    "candidate_task_examples": 636,
+    "output_examples": 636,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 568,
+    "examples_with_null_input": 0,
+    "flagged_examples": 636,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 636
+    },
+    "source_url": "https://figshare.com/articles/dataset/jdft_2d-7-7-2018_json/6815705/1",
+    "files": [
+      {
+        "path": "datasets/jdft2d_jdft2d/part-00001.jsonl.gz",
+        "records": 636,
+        "sha256": "3dc7c685d5242f8e6072febb27169019f1396e09475b0c6340e255dda5780045",
+        "bytes": 209004
+      }
+    ],
+    "uncompressed_sha256": "509ac4e9bf118f2417969ef572bca56bc3fd808a4f7921738a231035da092a65"
+  },
+  "task_statistics": {
+    "dft_exfoliation_energy": {
+      "prompt_chars_min": 883,
+      "prompt_chars_max": 3810,
+      "records": 636,
+      "label_min": 0.0265000000002,
+      "label_max": 1604.03828571,
+      "label_mean": 112.698308575,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "dft_calculated_label": 636,
+    "relaxed_crystal_geometry": 636,
+    "periodic_fractional_coordinates_outside_unit_cell": 77
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "candidate_id": "S4"
+}

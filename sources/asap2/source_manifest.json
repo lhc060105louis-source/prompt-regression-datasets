@@ -1,0 +1,35 @@
+{
+  "candidate_id": "T3",
+  "source_url": "https://github.com/scrosseye/ASAP_2.0",
+  "source_version": "060ab225ca0984c0bf43ff222bf6bb2bc6195b6f",
+  "files": [
+    {
+      "relativepath": "raw/asap2/ASAP_2_Final_github_test.zip",
+      "url": "https://raw.githubusercontent.com/scrosseye/ASAP_2.0/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/ASAP_2_Final_github_test.zip",
+      "sha256": "1a88bebe7a0777eca6f8243eae6457e72a9270cfca1da0cd35131e03043ec285",
+      "bytes": 4377278
+    },
+    {
+      "relativepath": "raw/asap2/ASAP_2_Final_github_train.zip",
+      "url": "https://raw.githubusercontent.com/scrosseye/ASAP_2.0/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/ASAP_2_Final_github_train.zip",
+      "sha256": "aec01e98eb16cc3bc3828010ca053a09daecc2821dd2105f8a7333089271beb4",
+      "bytes": 11240696
+    },
+    {
+      "relativepath": "raw/asap2/README.md",
+      "url": "https://raw.githubusercontent.com/scrosseye/ASAP_2.0/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/README.md",
+      "sha256": "9cd8c75bb2424050509899ff9c4e90950a50296396cdd1e5e2af13dab2f03ac1",
+      "bytes": 1845
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://github.com/scrosseye/ASAP_2.0/blob/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/README.md",
+    "evidence_file": "README.md",
+    "scope": "Dataset text and numeric ratings; excludes third-party article/reading-material full texts."
+  },
+  "citation": "Crossley et al., ASAP 2.0 corpus; repository https://github.com/scrosseye/ASAP_2.0 ; paper https://zenodo.org/records/14781349",
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}

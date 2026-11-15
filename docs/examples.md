@@ -57,3 +57,16 @@ Return only one numeric prediction for the target.
 ```json
 {"label": 36.59}
 ```
+
+## Added source previews
+
+- T1 [CompLex 2.0 / SemEval 2021 Task 1](../datasets/complex_complex/preview.jsonl), 10,800 records.
+- T2 [Empathic Reactions (EMNLP 2018)](../datasets/empathy_empathy/preview.jsonl), 3,720 records.
+- T3 [ASAP 2.0 (essay and assignment only)](../datasets/asap2_asap2/preview.jsonl), 24,728 records.
+- S1 [FreeSolv experimental hydration free energy](../datasets/freesolv_freesolv/preview.jsonl), 642 records.
+- S2 [Wu 2016 GB1 four-site observed binding fitness](../datasets/gb1_gb1/preview.jsonl), 149,361 records.
+- S4 [JARVIS 2D / Matbench jdft2d](../datasets/jdft2d_jdft2d/preview.jsonl), 636 records.
+- H1 [NASA C-MAPSS turbofan degradation](../datasets/cmapss_cmapss/preview.jsonl), 15,627 records.
+- H2 [CAMELS-GB v1 next-day specific discharge](../datasets/camels_gb_camels_gb/preview.jsonl), 324,656 records.
+- O1 [Auction Verification](../datasets/uci_713_auction/preview.jsonl), 2,043 records.
+- O2 [Online Video Transcoding Time](../datasets/uci_335_transcoding/preview.jsonl), 68,784 records.

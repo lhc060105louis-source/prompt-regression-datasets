@@ -1,0 +1,528 @@
+{
+  "dataset_id": "cmapss",
+  "name": "NASA C-MAPSS turbofan degradation",
+  "candidate_id": "H1",
+  "source_url": "https://zenodo.org/records/15346912",
+  "version": "2.2.0",
+  "license": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "zenodo_metadata.json metadata.license.id=cc-by-4.0",
+    "attribution": "NASA Ames Prognostics Center of Excellence; A. Saxena, K. Goebel, D. Simon and N. Eklund (2008)."
+  },
+  "source_citation": "A. Saxena, K. Goebel, D. Simon and N. Eklund (2008). Damage Propagation Modeling for Aircraft Engine Run-to-Failure Simulation. PHM08. Dataset DOI: 10.5281/zenodo.15346912.",
+  "source_files": [
+    {
+      "relativepath": "raw/cmapss/CMAPSSData.zip",
+      "url": "https://zenodo.org/records/15346912/files/CMAPSSData.zip?download=1",
+      "sha256": "74bef434a34db25c7bf72e668ea4cd52afe5f2cf8e44367c55a82bfd91a5a34f",
+      "bytes": 12425978
+    },
+    {
+      "relativepath": "raw/cmapss/zenodo_metadata.json",
+      "url": "https://zenodo.org/api/records/15346912",
+      "sha256": "eb428b16753c57fc6e1711e98eb371f1caa4dcb20d34cce6e6e26f522f2aba11",
+      "bytes": 3918
+    }
+  ],
+  "archive_members": [
+    {
+      "file": "train_FD001.txt",
+      "sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "rows": 20631,
+      "columns": 26
+    },
+    {
+      "file": "test_FD001.txt",
+      "sha256": "3cda7109ce17bafb5443f2ac926cfcf88154b941b8c4cf95eb55d1ddd6f52851",
+      "rows": 13096,
+      "columns": 26
+    },
+    {
+      "file": "RUL_FD001.txt",
+      "sha256": "a19c8ec94931949d0485bdc35118206e9c81c4547b422efb9cf86f4ceddbceca",
+      "rows": 100,
+      "columns": 1
+    },
+    {
+      "file": "train_FD002.txt",
+      "sha256": "dac6c4dbc4e7c1bdeb5747da3d313d05c395bb99801b44a002b26a2ba13d788f",
+      "rows": 53759,
+      "columns": 26
+    },
+    {
+      "file": "test_FD002.txt",
+      "sha256": "de7b5bf7e998a985c378488480528b7c02cff1406a46740def362dda8d9b4e02",
+      "rows": 33991,
+      "columns": 26
+    },
+    {
+      "file": "RUL_FD002.txt",
+      "sha256": "c851dd96a6ea6998d3c4a8f834d3c8013aa90e93a6ed950dc826ad0655b2906b",
+      "rows": 259,
+      "columns": 1
+    },
+    {
+      "file": "train_FD003.txt",
+      "sha256": "2abbe9968cc5e8eb091980f51b20f62bb4127336d3482cb52071d53bf23329e2",
+      "rows": 24720,
+      "columns": 26
+    },
+    {
+      "file": "test_FD003.txt",
+      "sha256": "299babd63c8d987cef079c4a425429f33b3a34797d803bbe2ad48c29dbd0d790",
+      "rows": 16596,
+      "columns": 26
+    },
+    {
+      "file": "RUL_FD003.txt",
+      "sha256": "df1e0566306b174a2de41c67a3e7a51877889598b78643fc3e5685259091b7cb",
+      "rows": 100,
+      "columns": 1
+    },
+    {
+      "file": "train_FD004.txt",
+      "sha256": "27ef6160b6a1dcb2613a88de9c239f763b223f02cdc41dc5cdedc5dc189b6218",
+      "rows": 61249,
+      "columns": 26
+    },
+    {
+      "file": "test_FD004.txt",
+      "sha256": "1dc675fff0624bac10786927c6715b37d1297657137400d2b1a3138d777a3ba5",
+      "rows": 41214,
+      "columns": 26
+    },
+    {
+      "file": "RUL_FD004.txt",
+      "sha256": "196b836b85a95ac7fdbbf29c5fdf1657382eafa445644d114ffaaf50dc2975e1",
+      "rows": 248,
+      "columns": 1
+    }
+  ],
+  "raw_rows_selected": 265256,
+  "candidate_task_examples": 15627,
+  "output_examples": 15627,
+  "invalid_label_examples": 0,
+  "excluded_source_rows": 0,
+  "exclusion_unit": "test_engine_trajectories",
+  "exclusions": [
+    {
+      "file": "test_FD002.txt",
+      "engine": 28,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 23
+    },
+    {
+      "file": "test_FD002.txt",
+      "engine": 59,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 22
+    },
+    {
+      "file": "test_FD002.txt",
+      "engine": 83,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 21
+    },
+    {
+      "file": "test_FD002.txt",
+      "engine": 122,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 29
+    },
+    {
+      "file": "test_FD002.txt",
+      "engine": 201,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 25
+    },
+    {
+      "file": "test_FD002.txt",
+      "engine": 223,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 29
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 10,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 23
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 19,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 24
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 28,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 20
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 125,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 21
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 141,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 19
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 156,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 28
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 164,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 29
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 204,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 19
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 229,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 20
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 239,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 28
+    },
+    {
+      "file": "test_FD004.txt",
+      "engine": 246,
+      "reason": "fewer_than_30_observed_cycles",
+      "observed_cycles": 29
+    }
+  ],
+  "tasks": {
+    "remaining_useful_life": {
+      "instruction": "Estimate the remaining useful life of this simulated turbofan engine at the end of the observed history. Predict the number of operating cycles remaining until failure; the target is not capped.",
+      "target_name": "remaining_useful_life",
+      "unit": "cycles",
+      "type": "continuous",
+      "field_description": "history_columns defines each of the 30 chronological history rows: cycle (operating cycles), three operational settings, and sensor_1 through sensor_21. Sensor and setting values retain original published scales; individual physical units are unspecified in the source readme. subset identifies the published operating-condition/fault scenario. No engine ID is an input feature."
+    }
+  },
+  "field_descriptions": "history_columns defines each of the 30 chronological history rows: cycle (operating cycles), three operational settings, and sensor_1 through sensor_21. Sensor and setting values retain original published scales; individual physical units are unspecified in the source readme. subset identifies the published operating-condition/fault scenario. No engine ID is an input feature.",
+  "grouping_rule": "One group per published subset, official split and engine; overlapping windows from one engine remain together. Train and test unit numbers are separate engines.",
+  "split_policy": "Original train/test membership is preserved. No validation split is fitted or assigned. Future validation must reserve whole training engines; never randomly split overlapping windows. Official test engines with fewer than 30 cycles are excluded and enumerated.",
+  "sampling": {
+    "history_cycles": 30,
+    "train_stride_cycles": 10,
+    "train_endpoint_rule": "30,40,... plus each engine final cycle exactly once",
+    "test_endpoint_rule": "one official endpoint per eligible engine",
+    "short_histories": "excluded without padding"
+  },
+  "counts": {
+    "raw_sensor_rows": 265256,
+    "train_engines": 709,
+    "short_history_origin_cycles_not_selected": 40571,
+    "valid_history_origins_not_selected_by_stride": 124861,
+    "train_examples": 14937,
+    "excluded_short_test_engines": 17,
+    "test_engines": 707,
+    "test_examples": 690
+  },
+  "by_subset": {
+    "FD001": {
+      "train": {
+        "raw_rows": 20631,
+        "engines": 100,
+        "examples": 1906,
+        "engines_excluded_short_history": 0
+      },
+      "test": {
+        "raw_rows": 13096,
+        "engines": 100,
+        "examples": 100,
+        "engines_excluded_short_history": 0
+      }
+    },
+    "FD002": {
+      "train": {
+        "raw_rows": 53759,
+        "engines": 260,
+        "examples": 4971,
+        "engines_excluded_short_history": 0
+      },
+      "test": {
+        "raw_rows": 33991,
+        "engines": 259,
+        "examples": 253,
+        "engines_excluded_short_history": 6
+      }
+    },
+    "FD003": {
+      "train": {
+        "raw_rows": 24720,
+        "engines": 100,
+        "examples": 2322,
+        "engines_excluded_short_history": 0
+      },
+      "test": {
+        "raw_rows": 16596,
+        "engines": 100,
+        "examples": 100,
+        "engines_excluded_short_history": 0
+      }
+    },
+    "FD004": {
+      "train": {
+        "raw_rows": 61249,
+        "engines": 249,
+        "examples": 5738,
+        "engines_excluded_short_history": 0
+      },
+      "test": {
+        "raw_rows": 41214,
+        "engines": 248,
+        "examples": 237,
+        "engines_excluded_short_history": 11
+      }
+    }
+  },
+  "quality_findings": [
+    "Synthetic simulation with sensor noise; no real-engine generalization is established.",
+    "RUL is derived from train failure time and read directly from official endpoint labels for test.",
+    "Training histories overlap; all windows of an engine share a group.",
+    "The source readme final-column sensor26 typo is resolved from the 26-column schema: 2 identifiers + 3 settings + 21 sensors.",
+    "The source readme FD004 train/test engine counts are reversed: full-file counts are 249 train and 248 test; actual aggregate counts are 709 train and 707 test.",
+    "No scaling, missing-value imputation, RUL cap, or training was performed."
+  ],
+  "label_summary": {
+    "min": 0,
+    "max": 513,
+    "zero_count": 709
+  },
+  "validation": {
+    "status": "passed",
+    "checks": [
+      "published ZIP MD5 matches",
+      "all raw arrays finite and 26 columns",
+      "actual 709 train and 707 test engines; official RUL lengths match test engines",
+      "cycles contiguous starting at 1",
+      "every candidate has precisely 30 past cycles",
+      "all labels nonnegative and source-aligned",
+      "no cross-engine history",
+      "official split preserved"
+    ]
+  },
+  "source_version": "Zenodo record 15346912, version 1",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "cmapss",
+    "name": "NASA C-MAPSS turbofan degradation",
+    "batch": 3,
+    "candidate_id": "H1",
+    "raw_rows_selected": 265256,
+    "candidate_task_examples": 15627,
+    "output_examples": 15627,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 1399,
+    "examples_with_null_input": 0,
+    "flagged_examples": 15627,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "train": 14937,
+      "test": 690
+    },
+    "source_url": "https://zenodo.org/records/15346912",
+    "files": [
+      {
+        "path": "datasets/cmapss_cmapss/part-00001.jsonl.gz",
+        "records": 2790,
+        "sha256": "d9f685a90486067f15a536040996a2d7bb5f92600aed2e765c984bd952fe8edd",
+        "bytes": 1951056
+      },
+      {
+        "path": "datasets/cmapss_cmapss/part-00002.jsonl.gz",
+        "records": 2818,
+        "sha256": "60f655e399ba8274d794afcaf50849efbea280e6e7b50a6299cf40b79d08ccdb",
+        "bytes": 2089892
+      },
+      {
+        "path": "datasets/cmapss_cmapss/part-00003.jsonl.gz",
+        "records": 2801,
+        "sha256": "e5b65a193bed8f3ba7980fd45ae6ef44ceab42e2fea414a4b5d070765a2da11a",
+        "bytes": 2199329
+      },
+      {
+        "path": "datasets/cmapss_cmapss/part-00004.jsonl.gz",
+        "records": 2799,
+        "sha256": "f4dc4ff757f78e4611c8ae4a8b95f1501d4ba8d47919db1b3b7e8f65f323bdbd",
+        "bytes": 2028337
+      },
+      {
+        "path": "datasets/cmapss_cmapss/part-00005.jsonl.gz",
+        "records": 2816,
+        "sha256": "52e10876cb5ef0d002a89e7d6a75cdabda3ce85c1717bc6389143d4cfe89b2c4",
+        "bytes": 2082052
+      },
+      {
+        "path": "datasets/cmapss_cmapss/part-00006.jsonl.gz",
+        "records": 1603,
+        "sha256": "0bcbf05528257cdc524f4c657cc8a252479c6f229673bb026276f1f100d6a55c",
+        "bytes": 1418267
+      }
+    ],
+    "uncompressed_sha256": "7fb81852fd727548b7ba3dc086afa84fd1f5e2d215c19b0813d2da6b7ced305b"
+  },
+  "task_statistics": {
+    "remaining_useful_life": {
+      "prompt_chars_min": 5747,
+      "prompt_chars_max": 5999,
+      "records": 15627,
+      "label_min": 0,
+      "label_max": 513,
+      "label_mean": 105.30773661,
+      "zero_labels": 709
+    }
+  },
+  "quality_flag_counts": {
+    "overlapping_history_windows": 14937,
+    "simulated_measurements": 15627,
+    "official_test_endpoint": 690
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "source_validation": {
+    "status": "passed",
+    "dataset_id": "cmapss",
+    "records_checked": 15627,
+    "history_numeric_cells_checked": 11720250,
+    "split_counts": {
+      "train": 14937,
+      "test": 690
+    },
+    "candidate_sha256": "7af783f5309370aa466fa67a75877e5da58d523a4a306aa89fa542b777c0dda4",
+    "raw_train_engines": 709,
+    "raw_test_engines": 707,
+    "eligible_test_engines": 690,
+    "excluded_short_test_engines": [
+      [
+        "test_FD002.txt",
+        28,
+        23
+      ],
+      [
+        "test_FD002.txt",
+        59,
+        22
+      ],
+      [
+        "test_FD002.txt",
+        83,
+        21
+      ],
+      [
+        "test_FD002.txt",
+        122,
+        29
+      ],
+      [
+        "test_FD002.txt",
+        201,
+        25
+      ],
+      [
+        "test_FD002.txt",
+        223,
+        29
+      ],
+      [
+        "test_FD004.txt",
+        10,
+        23
+      ],
+      [
+        "test_FD004.txt",
+        19,
+        24
+      ],
+      [
+        "test_FD004.txt",
+        28,
+        20
+      ],
+      [
+        "test_FD004.txt",
+        125,
+        21
+      ],
+      [
+        "test_FD004.txt",
+        141,
+        19
+      ],
+      [
+        "test_FD004.txt",
+        156,
+        28
+      ],
+      [
+        "test_FD004.txt",
+        164,
+        29
+      ],
+      [
+        "test_FD004.txt",
+        204,
+        19
+      ],
+      [
+        "test_FD004.txt",
+        229,
+        20
+      ],
+      [
+        "test_FD004.txt",
+        239,
+        28
+      ],
+      [
+        "test_FD004.txt",
+        246,
+        29
+      ]
+    ],
+    "checks": [
+      "all input sensor/settings/cycle cells equal raw array slices",
+      "every label equals source-derived train RUL or official test RUL",
+      "every required stride/final/test endpoint exactly once",
+      "group and official split match source engine",
+      "all 17 short test engine exclusions independently reconstructed"
+    ]
+  },
+  "excluded_engines": 17,
+  "source_row_policy": "No original sensor rows or RUL labels are edited/deleted; 265256 sensor rows are read. Candidate selection excludes 17 short test trajectories and unsampled training origins. Those counts are engines/origins, not raw rows.",
+  "raw_record_counts": {
+    "sensor_rows": 265256,
+    "official_test_RUL_rows": 707,
+    "train_engines": 709,
+    "test_engines": 707
+  }
+}

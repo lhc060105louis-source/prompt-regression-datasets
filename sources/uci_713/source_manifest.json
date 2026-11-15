@@ -1,0 +1,39 @@
+{
+  "candidate_id": "O1",
+  "source_url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+  "source_version": "UCI public archive snapshot 2026-11-15",
+  "files": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/713/auction+verification.zip",
+      "sha256": "d641e585dd6f26eb32e5d83792f828c51fb0e434e66cba998505a93a47e61041",
+      "bytes": 76568,
+      "relativepath": "raw/auction/source.zip"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+      "sha256": "bc94a3d65a21e5b8e9e8ae4d25e218f23dc204d8c00e8af66ea715453eed0abf",
+      "bytes": 93965,
+      "relativepath": "raw/auction/source_page.html"
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "path": "raw/auction/source_page.html",
+      "url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+      "sha256": "bc94a3d65a21e5b8e9e8ae4d25e218f23dc204d8c00e8af66ea715453eed0abf",
+      "bytes": 93965
+    }
+  },
+  "citation": {
+    "doi": "10.24432/C52K6N",
+    "authors": [
+      "Elaheh Ordoni",
+      "Jakob Bach",
+      "Ann-Katrin Fleck"
+    ]
+  },
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}

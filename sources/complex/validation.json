@@ -1,0 +1,66 @@
+{
+  "dataset_id": "complex",
+  "status": "passed",
+  "raw_rows": 10800,
+  "candidate_rows": 10800,
+  "candidate_sha256": "1ffced7252a609623b57294ab1756bfff753992173cfa0c2e3960d4d960fc828",
+  "source_files": [
+    {
+      "relativepath": "Readme.md",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/Readme.md",
+      "sha256": "5a98f0922e228651dac5cdc04741dd4bd7fe0be4422d2c91ceb60308cc38f8b7",
+      "bytes": 3328
+    },
+    {
+      "relativepath": "test-labels/lcp_multi_test.tsv",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/test-labels/lcp_multi_test.tsv",
+      "sha256": "59669b0a546f2bd4cb7b23271e4c8d555e24c862948aae76aaa7b957db736372",
+      "bytes": 43653
+    },
+    {
+      "relativepath": "test-labels/lcp_single_test.tsv",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/test-labels/lcp_single_test.tsv",
+      "sha256": "846ef133c72cfa0547a285dc9060e74e87a8e9ad3a0de149e2cf680c12f611ed",
+      "bytes": 211859
+    },
+    {
+      "relativepath": "train/lcp_multi_train.tsv",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/train/lcp_multi_train.tsv",
+      "sha256": "8bd1e51343ac36e975deed6ee45926d0fd91a3fe2dd0f94cc37272b69441b2df",
+      "bytes": 372040
+    },
+    {
+      "relativepath": "train/lcp_single_train.tsv",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/train/lcp_single_train.tsv",
+      "sha256": "12142b2653edfbedf27452e9b0e9d14d2808a90950319a013b91245d567379e0",
+      "bytes": 1746491
+    },
+    {
+      "relativepath": "trial/lcp_multi_trial.tsv",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/trial/lcp_multi_trial.tsv",
+      "sha256": "7ebaa82428381458c7e0abcd4c712099ccd435b1c4393c623e7b02bc308810a8",
+      "bytes": 25041
+    },
+    {
+      "relativepath": "trial/lcp_single_trial.tsv",
+      "url": "https://raw.githubusercontent.com/MMU-TDMLab/CompLex/4b31c2bd34da4c1265f9db3d727d95ee23099f14/trial/lcp_single_trial.tsv",
+      "sha256": "67bb6ef05cb1a690eb78a948592ef8693fbf8f5db451762522ecb02e8e47d9ab",
+      "bytes": 97214
+    }
+  ],
+  "checks": [
+    "All retained labels finite and within documented rating scale",
+    "Every retained input and label compared with its original decoded CSV/TSV row",
+    "Every source row accounted for; invalid/missing labels never imputed",
+    "Explicit input allowlists exclude source IDs, other scores, bins, demographics and article full texts",
+    "Official splits retained; cross-split identical inputs and connected groups counted and flagged",
+    "Source version, downloaded bytes and SHA256 recorded"
+  ],
+  "exact_duplicate_candidate_rows": 0,
+  "groups_crossing_official_splits": 176,
+  "quality_flag_counts": {
+    "group_crosses_official_splits": 3908,
+    "identical_input_has_different_labels": 10
+  },
+  "training_executed": false
+}

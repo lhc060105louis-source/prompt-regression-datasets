@@ -1,0 +1,159 @@
+{
+  "dataset_id": "freesolv",
+  "name": "FreeSolv experimental hydration free energy",
+  "source_url": "https://github.com/MobleyLab/FreeSolv",
+  "version": "2.2.0",
+  "source_files": [
+    {
+      "relativepath": "raw/freesolv/commit.json",
+      "url": "https://api.github.com/repos/MobleyLab/FreeSolv/commits/master",
+      "sha256": "14dac9644322dce7c82028b646c3b0474ad3dc0dbdeec50453c90e32ad81c9f7",
+      "bytes": 29784
+    },
+    {
+      "relativepath": "raw/freesolv/database.txt",
+      "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/database.txt",
+      "sha256": "2d13f095713bc39b85f85dd7b4e5483fbb12fc694bf253bb1d92a4c4d484f260",
+      "bytes": 144897
+    },
+    {
+      "relativepath": "raw/freesolv/README.md",
+      "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/README.md",
+      "sha256": "ec5c1cb5f47391ac9ddfc81f0e981d526992ed2e20937e9cfdab7394b80bc1b2",
+      "bytes": 26421
+    },
+    {
+      "relativepath": "raw/freesolv/LICENSE",
+      "url": "https://raw.githubusercontent.com/MobleyLab/FreeSolv/6c7d19b4b565537365ffd22006aa2cd4643200c6/LICENSE",
+      "sha256": "cce5d01fa4a83b794271bd2c28cffdf99afd43c803e6ddefddae39b591ea7448",
+      "bytes": 18652
+    }
+  ],
+  "tasks": {
+    "experimental_hydration_free_energy": {
+      "instruction": "Predict the experimental hydration free energy in water for the molecule represented by the SMILES.",
+      "target_name": "experimental_hydration_free_energy",
+      "unit": "kcal/mol",
+      "type": "continuous",
+      "field_description": "smiles: RDKit canonical isomeric SMILES; no target-derived properties or experimental uncertainty are input."
+    }
+  },
+  "field_descriptions": {
+    "smiles": "RDKit canonical isomeric SMILES; no target-derived properties or experimental uncertainty are input."
+  },
+  "invalid_label_examples": 0,
+  "excluded_source_rows": 0,
+  "split_policy": "Unassigned. Use scaffold groups for held-out chemical families; the 320-member acyclic group makes folds highly imbalanced. Do not claim a balanced scaffold benchmark.",
+  "missing_policy": "No labels are imputed. Only complete supported structures and finite observed source labels are emitted.",
+  "precision_policy": "Candidate keeps parsed source numbers. Release formatter caps all numeric values at 12 significant digits.",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "README.md License section and LICENSE at the frozen source commit.",
+    "caveat": "Upstream authors license their rights under CC BY 4.0; any original third-party licensing restrictions remain applicable."
+  },
+  "quality_findings": [
+    "642 finite experimental labels; no molecular identity duplicates after RDKit canonicalization.",
+    "Calculated free energy and all uncertainty/reference fields are excluded from input.",
+    "Uncertainty values are preserved only as provenance; source defaults are explicitly flagged.",
+    "Scaffold grouping is conservative: all acyclic compounds form one large group, and chirality is ignored for grouping."
+  ],
+  "source_citation": "Mobley DL and Guthrie JP. FreeSolv: a database of experimental and calculated hydration free energies, with input files. J Comput Aided Mol Des (2014). https://doi.org/10.1007/s10822-014-9747-x",
+  "target_origin": "experimental measurement collected by FreeSolv",
+  "grouping_rule": "RDKit Bemis-Murcko scaffold without chirality; all acyclic molecules share the empty-scaffold group. Canonical isomeric SMILES identify molecules.",
+  "excluded_input_columns": [
+    "compound_id",
+    "iupac_name",
+    "experimental_value",
+    "experimental_uncertainty",
+    "calculated_value",
+    "calculated_uncertainty",
+    "experimental_reference",
+    "calculated_reference",
+    "text_notes"
+  ],
+  "rdkit_version": "2026.09.2",
+  "raw_rows_selected": 642,
+  "canonical_smiles_changed": 346,
+  "source_default_uncertainties": 583,
+  "output_candidate_records": 642,
+  "validation": {
+    "status": "passed",
+    "all_source_labels_checked": true,
+    "finite_labels": 642,
+    "input_label_duplicate_records": 0,
+    "group_count": 63,
+    "largest_group": 320,
+    "label_min": -25.47,
+    "label_max": 3.43,
+    "zero_labels": 2,
+    "quality_flag_counts": {
+      "experimental_label": 642,
+      "source_uncertainty_default": 583,
+      "acyclic_scaffold_group": 320
+    },
+    "candidate_sha256": "3438e304feb6873a264b32f9869f3b4e35893ae9a7ec063fad486854a6fbf24b",
+    "no_training_executed": true,
+    "independent_readback_source_fidelity": {
+      "source_rows_checked": 642,
+      "status": "passed"
+    }
+  },
+  "source_version": "6c7d19b4b565537365ffd22006aa2cd4643200c6",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "freesolv",
+    "name": "FreeSolv experimental hydration free energy",
+    "batch": 3,
+    "candidate_id": "S1",
+    "raw_rows_selected": 642,
+    "candidate_task_examples": 642,
+    "output_examples": 642,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 63,
+    "examples_with_null_input": 0,
+    "flagged_examples": 642,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 642
+    },
+    "source_url": "https://github.com/MobleyLab/FreeSolv",
+    "files": [
+      {
+        "path": "datasets/freesolv_freesolv/part-00001.jsonl.gz",
+        "records": 642,
+        "sha256": "648e490518ac25b48d94cbac888562bfaff743707a6864ff593b597d35605bd3",
+        "bytes": 70431
+      }
+    ],
+    "uncompressed_sha256": "a206fc32f2eae54bfd8ce7745fa7baff6d3dd7213443e3d0db8c7e4bc5d4be6e"
+  },
+  "task_statistics": {
+    "experimental_hydration_free_energy": {
+      "prompt_chars_min": 437,
+      "prompt_chars_max": 514,
+      "records": 642,
+      "label_min": -25.47,
+      "label_max": 3.43,
+      "label_mean": -3.80300623053,
+      "zero_labels": 2
+    }
+  },
+  "quality_flag_counts": {
+    "acyclic_scaffold_group": 320,
+    "experimental_label": 642,
+    "source_uncertainty_default": 583
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "candidate_id": "S1"
+}

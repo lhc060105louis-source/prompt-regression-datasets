@@ -1,0 +1,36 @@
+{
+  "dataset_id": "empathy",
+  "status": "passed",
+  "raw_rows": 1860,
+  "candidate_rows": 3720,
+  "candidate_sha256": "14b64a3a2504243c7032a0175d96dbe124941f7ce89cf634d836877c52029611",
+  "source_files": [
+    {
+      "relativepath": "data/responses/data/messages.csv",
+      "url": "https://raw.githubusercontent.com/wwbp/empathic_reactions/3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e/data/responses/data/messages.csv",
+      "sha256": "380d2670254565629f81616df57cc0729de96ac87c056d05e39c370624ae8f64",
+      "bytes": 977090
+    },
+    {
+      "relativepath": "README.md",
+      "url": "https://raw.githubusercontent.com/wwbp/empathic_reactions/3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e/README.md",
+      "sha256": "9bd633f9dcb393f1a21a885d2ba27e29acd9ad38637949d362869fb6ce3f0b24",
+      "bytes": 2261
+    }
+  ],
+  "checks": [
+    "All retained labels finite and within documented rating scale",
+    "Every retained input and label compared with its original decoded CSV/TSV row",
+    "Every source row accounted for; invalid/missing labels never imputed",
+    "Explicit input allowlists exclude source IDs, other scores, bins, demographics and article full texts",
+    "Official splits retained; cross-split identical inputs and connected groups counted and flagged",
+    "Source version, downloaded bytes and SHA256 recorded"
+  ],
+  "exact_duplicate_candidate_rows": 0,
+  "groups_crossing_official_splits": 0,
+  "quality_flag_counts": {
+    "self_reported_state": 3720,
+    "identical_input_has_different_labels": 4
+  },
+  "training_executed": false
+}

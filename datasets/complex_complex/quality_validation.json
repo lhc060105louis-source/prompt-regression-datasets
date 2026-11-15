@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "candidates": 10800,
+  "records": 10800,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {
+    "group_cross_official_splits": 3908,
+    "group_crosses_official_splits": 3908,
+    "identical_input_has_different_labels": 10,
+    "identical_input_multiple_labels": 10
+  },
+  "training_executed": false
+}

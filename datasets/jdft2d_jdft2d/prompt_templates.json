@@ -1,0 +1,9 @@
+{
+  "dft_exfoliation_energy": {
+    "instruction": "Predict the DFT-calculated exfoliation energy per atom for this periodic two-dimensional crystal structure.",
+    "target_name": "dft_exfoliation_energy",
+    "unit": "meV/atom",
+    "type": "continuous",
+    "field_description": "lattice_vectors_angstrom: Three lattice vectors as a 3x3 row matrix in angstrom.; sites: Ordered atomic sites with element symbols and fractional coordinates relative to the lattice. Coordinates outside [0,1) are valid periodic representations.; periodic: Periodic boundary conditions along all three lattice directions; the slab cell includes vacuum."
+  }
+}

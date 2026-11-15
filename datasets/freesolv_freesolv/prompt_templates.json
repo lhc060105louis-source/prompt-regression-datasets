@@ -1,0 +1,9 @@
+{
+  "experimental_hydration_free_energy": {
+    "instruction": "Predict the experimental hydration free energy in water for the molecule represented by the SMILES.",
+    "target_name": "experimental_hydration_free_energy",
+    "unit": "kcal/mol",
+    "type": "continuous",
+    "field_description": "smiles: RDKit canonical isomeric SMILES; no target-derived properties or experimental uncertainty are input."
+  }
+}

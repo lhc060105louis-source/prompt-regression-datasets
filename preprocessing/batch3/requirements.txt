@@ -1,0 +1,4 @@
+pandas==3.0.1
+numpy==2.4.3
+requests==2.33.1
+rdkit==2026.09.2

@@ -1,0 +1,223 @@
+{
+  "dataset_id": "asap2",
+  "name": "ASAP 2.0 (essay and assignment only)",
+  "source_url": "https://github.com/scrosseye/ASAP_2.0",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://github.com/scrosseye/ASAP_2.0/blob/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/README.md",
+    "evidence_file": "README.md",
+    "scope": "Dataset text and numeric ratings; excludes third-party article/reading-material full texts."
+  },
+  "version": "2.2.0",
+  "commit": "060ab225ca0984c0bf43ff222bf6bb2bc6195b6f",
+  "source_files": [
+    {
+      "relativepath": "raw/asap2/ASAP_2_Final_github_test.zip",
+      "url": "https://raw.githubusercontent.com/scrosseye/ASAP_2.0/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/ASAP_2_Final_github_test.zip",
+      "sha256": "1a88bebe7a0777eca6f8243eae6457e72a9270cfca1da0cd35131e03043ec285",
+      "bytes": 4377278
+    },
+    {
+      "relativepath": "raw/asap2/ASAP_2_Final_github_train.zip",
+      "url": "https://raw.githubusercontent.com/scrosseye/ASAP_2.0/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/ASAP_2_Final_github_train.zip",
+      "sha256": "aec01e98eb16cc3bc3828010ca053a09daecc2821dd2105f8a7333089271beb4",
+      "bytes": 11240696
+    },
+    {
+      "relativepath": "raw/asap2/README.md",
+      "url": "https://raw.githubusercontent.com/scrosseye/ASAP_2.0/060ab225ca0984c0bf43ff222bf6bb2bc6195b6f/README.md",
+      "sha256": "9cd8c75bb2424050509899ff9c4e90950a50296396cdd1e5e2af13dab2f03ac1",
+      "bytes": 1845
+    }
+  ],
+  "tasks": {
+    "holistic_essay_score": {
+      "instruction": "Predict the human holistic quality score for this persuasive essay on the ordered scale from 1 (lowest quality) to 6 (highest quality). Use the assignment topic and instructions when supplied. Source reading materials are not supplied.",
+      "target_name": "holistic_essay_score",
+      "unit": "ordinal score (1-6)",
+      "type": "ordinal",
+      "field_description": "prompt_name: Original assignment topic/title, not an essay or student identifier.; assignment: Original short assignment instructions if available; null means the source literal NA/empty, never inferred.; essay: Original student essay. Third-party source reading materials are excluded."
+    }
+  },
+  "field_descriptions": {
+    "prompt_name": "Original assignment topic/title, not an essay or student identifier.",
+    "assignment": "Original short assignment instructions if available; null means the source literal NA/empty, never inferred.",
+    "essay": "Original student essay. Third-party source reading materials are excluded."
+  },
+  "downloaded_at": "2026-11-15",
+  "training_executed": false,
+  "text_policy": "Original selected text and capitalization preserved byte-for-byte after UTF-8/CSV decoding; grouping uses a separate whitespace-normalized casefolded hash. No spelling correction, truncation, label imputation, or score transformation.",
+  "raw_archives_included_in_distribution": false,
+  "grouping_rule": "Whitespace-normalized casefolded essay text hashes. Source essay IDs are unique but are not student IDs; student-disjointness cannot be established. For prompt transfer, hold out whole prompt_name topics in a separate evaluation.",
+  "split_policy": "Official train/test assignments preserved exactly. No official validation partition is provided; derive any validation split within train only, retaining connected groups. Exact/normalized duplicates across official splits are flagged, not silently reassigned.",
+  "source_citation": "Crossley et al., ASAP 2.0 corpus; repository https://github.com/scrosseye/ASAP_2.0 ; paper https://zenodo.org/records/14781349",
+  "archive_members": [
+    {
+      "archive": "ASAP_2_Final_github_train.zip",
+      "member": "ASAP_2_Final_github_train.csv",
+      "sha256": "ff4e86d460c7a5309317d57b9463cc9d532d613866f9c250ba3df03aeddf1cb4",
+      "records": 17307
+    },
+    {
+      "archive": "ASAP_2_Final_github_test.zip",
+      "member": "ASAP_2_Final_github_test.csv",
+      "sha256": "24b301ce0102b94637008866c2f678857d90cf5f96aa35964de79ac049004060",
+      "records": 7421
+    }
+  ],
+  "prompt_counts": {
+    "\"A Cowboy Who Rode the Waves\"": 2175,
+    "The Face on Mars": 3015,
+    "Does the electoral college work?": 2046,
+    "Exploring Venus": 4480,
+    "Facial action coding system": 4883,
+    "Driverless cars": 6170,
+    "Car-free cities": 1959
+  },
+  "unique_source_essay_ids": 24728,
+  "assignment_available_prompts": 7,
+  "assignment_total_prompts": 7,
+  "missing_assignment_rows_by_prompt": {
+    "Exploring Venus": 4,
+    "Facial action coding system": 6,
+    "The Face on Mars": 10,
+    "Driverless cars": 4,
+    "Car-free cities": 4
+  },
+  "excluded_input_columns": [
+    "essay_id",
+    "score",
+    "set",
+    "pubpriv",
+    "economically_disadvantaged",
+    "student_disability_status",
+    "ell_status",
+    "race_ethnicity",
+    "gender",
+    "grade_level",
+    "essay_word_count",
+    "task"
+  ],
+  "known_cross_dataset_overlap": "Publisher states that a substantial subset comes from PERSUADE 2.0. Do not treat PERSUADE and ASAP2 as independent sources in future joint splits; compare original essay identity/text first.",
+  "quality_findings": [
+    "The pinned archives contain 24,728 rows (17,307 train and 7,421 test); README states 24,278 and component counts sum to 24,700. File counts take precedence in this release.",
+    "Labels are six ordered integer scores, not genuinely continuous measurements.",
+    "All seven prompts have short assignment instructions in some rows; 28 individual rows across five prompts have literal NA, preserved as null without filling from another essay.",
+    "No third-party reading-material ZIP was downloaded or published. This is an essay/assignment-only score prediction variant; source-evidence faithfulness cannot be fully evaluated without reading materials.",
+    "No student IDs are exposed by the source schema; essay IDs cannot prove student-disjointness."
+  ],
+  "raw_rows_selected": 24728,
+  "candidate_task_examples": 24728,
+  "excluded_source_rows": 0,
+  "invalid_label_examples": 0,
+  "excluded_rows": [],
+  "invalid_labels": [],
+  "split_counts": {
+    "train": 17307,
+    "test": 7421
+  },
+  "task_counts": {
+    "holistic_essay_score": 24728
+  },
+  "groups": 24728,
+  "groups_crossing_official_splits": 0,
+  "exact_duplicate_candidate_rows": 0,
+  "identical_input_different_label_groups": 0,
+  "identical_input_cross_split_groups": 0,
+  "quality_flag_counts": {
+    "ordinal_human_score": 24728,
+    "student_identity_unavailable": 24728,
+    "third_party_reading_material_omitted": 24728,
+    "assignment_missing_in_source": 28
+  },
+  "validation": {
+    "status": "passed",
+    "checks": [
+      "All retained labels finite and within documented rating scale",
+      "Every retained input and label compared with its original decoded CSV/TSV row",
+      "Every source row accounted for; invalid/missing labels never imputed",
+      "Explicit input allowlists exclude source IDs, other scores, bins, demographics and article full texts",
+      "Official splits retained; cross-split identical inputs and connected groups counted and flagged",
+      "Source version, downloaded bytes and SHA256 recorded"
+    ],
+    "training_executed": false
+  },
+  "source_version": "060ab225ca0984c0bf43ff222bf6bb2bc6195b6f",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "asap2",
+    "name": "ASAP 2.0 (essay and assignment only)",
+    "batch": 3,
+    "candidate_id": "T3",
+    "raw_rows_selected": 24728,
+    "candidate_task_examples": 24728,
+    "output_examples": 24728,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 24728,
+    "examples_with_null_input": 28,
+    "flagged_examples": 24728,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "train": 17307,
+      "test": 7421
+    },
+    "source_url": "https://github.com/scrosseye/ASAP_2.0",
+    "files": [
+      {
+        "path": "datasets/asap2_asap2/part-00001.jsonl.gz",
+        "records": 5124,
+        "sha256": "664e6577f08118f342aa470039b22a8bfdf7b7f870fd61f8164659d5a8533a71",
+        "bytes": 4172492
+      },
+      {
+        "path": "datasets/asap2_asap2/part-00002.jsonl.gz",
+        "records": 4933,
+        "sha256": "64401f87d68fa248d6d1289597fadd9f33ca31814dcd024dd4ec433b47303bfa",
+        "bytes": 4235441
+      },
+      {
+        "path": "datasets/asap2_asap2/part-00003.jsonl.gz",
+        "records": 4936,
+        "sha256": "d34b6f73dc2e89ae8a2ae6ce2b24a78c780b06ad7e6ce6d0eb6b163cf1548e5b",
+        "bytes": 4593234
+      },
+      {
+        "path": "datasets/asap2_asap2/part-00004.jsonl.gz",
+        "records": 4869,
+        "sha256": "0a32db81005e549290704cadbb7df18672b390a3217faeb294577da5d2d4b036",
+        "bytes": 4503562
+      },
+      {
+        "path": "datasets/asap2_asap2/part-00005.jsonl.gz",
+        "records": 4866,
+        "sha256": "ce768c75deb488a3e70c537795284582a928eef276f9a2afd5668dc1ade80334",
+        "bytes": 4472804
+      }
+    ],
+    "uncompressed_sha256": "d40b26b22ceb95f9b0cff59aab61ad0199e18512984ea2119a234848c11a0caa"
+  },
+  "task_statistics": {
+    "holistic_essay_score": {
+      "prompt_chars_min": 1770,
+      "prompt_chars_max": 21265,
+      "records": 24728,
+      "label_min": 1,
+      "label_max": 6,
+      "label_mean": 2.9399870592,
+      "zero_labels": 0
+    }
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "candidate_id": "T3"
+}

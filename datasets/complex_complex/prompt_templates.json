@@ -1,0 +1,9 @@
+{
+  "lexical_complexity": {
+    "instruction": "Predict the lexical complexity of the target word or expression in its English sentence. Scores range from 0 (least complex) to 1 (most complex).",
+    "target_name": "lexical_complexity",
+    "unit": "dimensionless (0-1)",
+    "type": "continuous",
+    "field_description": "sentence: Original English sentence providing context.; target_token: Word or multiword expression to assess.; corpus: Source domain: bible, biomed or europarl.; expression_type: single for a single word, multi for a multiword expression."
+  }
+}

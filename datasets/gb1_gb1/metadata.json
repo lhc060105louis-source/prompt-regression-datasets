@@ -1,0 +1,240 @@
+{
+  "dataset_id": "gb1",
+  "name": "Wu 2016 GB1 four-site observed binding fitness",
+  "source_url": "https://github.com/wchnicholas/ProteinGFourMutants",
+  "version": "2.2.0",
+  "source_files": [
+    {
+      "relativepath": "raw/gb1/commit.json",
+      "url": "https://api.github.com/repos/wchnicholas/ProteinGFourMutants/commits/master",
+      "sha256": "c855c51dc3a43fc92744257eaa44b330ed93c73a3f4dc8b2dced56b36d87a512",
+      "bytes": 4314
+    },
+    {
+      "relativepath": "raw/gb1/result/Mutfit",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/result/Mutfit",
+      "sha256": "fef5c2267d72a2a4520a444aa68ce358492b49fcbeaf222f42a9a3f2a21a4552",
+      "bytes": 13837211
+    },
+    {
+      "relativepath": "raw/gb1/README.md",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/README.md",
+      "sha256": "4a225a76291129e48850c941ddf53fce501aa81ab4791ea86ea36edaf0ff4093",
+      "bytes": 13814
+    },
+    {
+      "relativepath": "raw/gb1/script/Mapper5_NW.py",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/script/Mapper5_NW.py",
+      "sha256": "7823ecff912d835bbee02648ca10451f4c742bbb4ed44bd8ffe684e4cb3dfc4a",
+      "bytes": 3569
+    },
+    {
+      "relativepath": "raw/gb1/Fasta/SeqInfo.fa",
+      "url": "https://raw.githubusercontent.com/wchnicholas/ProteinGFourMutants/dbdd7639187e0b8f22359f404ce4d1d950fcc8a9/Fasta/SeqInfo.fa",
+      "sha256": "aef8464c3a2c51cf5fca0b6f87fae76d1b4c1fa0457ef255267a98c59cbf9ca8",
+      "bytes": 145
+    },
+    {
+      "relativepath": "raw/gb1/FLIP_commit.json",
+      "url": "https://api.github.com/repos/J-SNACKKB/FLIP/commits/main",
+      "sha256": "1db9208512950690ec73d361ade8b123890a4cdbe01090dadfabddfd4dcaf938",
+      "bytes": 25433
+    },
+    {
+      "relativepath": "raw/gb1/FLIP_README_license.md",
+      "url": "https://raw.githubusercontent.com/J-SNACKKB/FLIP/e74069fe09490c6a44a8d7ff8c2811b61f24ec82/splits/gb1/README.md",
+      "sha256": "a458c5f106b18d4d7e8ce5461c817e34c3c96e907c23d56e43550f02d6a7adf9",
+      "bytes": 3993
+    }
+  ],
+  "tasks": {
+    "relative_igg_fc_binding_fitness": {
+      "instruction": "Predict the relative IgG-Fc binding fitness in the Wu et al. GB1 four-site assay. The remaining GB1 background is fixed to the assay reference; the reference residues at positions 39, 40, 41, and 54 are V, D, G, and V. Fitness is normalized relative to this reference.",
+      "target_name": "relative_igg_fc_binding_fitness",
+      "unit": "dimensionless",
+      "type": "continuous",
+      "field_description": "residues_at_positions_39_40_41_54: Four standard amino-acid one-letter codes in that position order."
+    }
+  },
+  "field_descriptions": {
+    "residues_at_positions_39_40_41_54": "Four standard amino-acid one-letter codes in that position order."
+  },
+  "invalid_label_examples": 9209,
+  "excluded_source_rows": 41796,
+  "split_policy": "Unassigned. Recommended mutation-depth evaluation: train on Hamming distance <= k from VDGV and test > k (k=1,2,3), deriving depth from input only. These recipes are not official assigned FLIP folds.",
+  "missing_policy": "No labels are imputed. Only complete supported structures and finite observed source labels are emitted.",
+  "precision_policy": "Candidate keeps parsed source numbers. Release formatter caps all numeric values at 12 significant digits.",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "Original eLife article copyright and license; FLIP README Data licensing confirms original eLife raw data CC BY 4.0. Only original author Mutfit records, not FLIP derivative records, are used.",
+    "evidence_urls": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4985287/",
+      "https://doi.org/10.7554/eLife.16965.024"
+    ]
+  },
+  "quality_findings": [
+    "Exactly 149361 standard four-amino-acid variants have finite observed I20fit and at least 10 input reads.",
+    "Missing standard variants are not fabricated or filled from result/regression_missing; that file was not downloaded.",
+    "Observed zero fitness is retained. Values below 0.01 are flagged as detection-limit sensitive, without replacing or censoring their numeric labels.",
+    "The source uses calibrated earlier experimental single-mutant fitness values; they are measured-derived, not modeled imputations.",
+    "Raw counts, alternative fitness values and Hamming distance are excluded from input."
+  ],
+  "source_citation": "Wu NC, Dai L, Olson CA, Lloyd-Smith JO, Sun R. Adaptation in protein fitness landscapes is facilitated by indirect paths. eLife 2016;5:e16965. https://doi.org/10.7554/eLife.16965",
+  "target_origin": "experimental enrichment-derived relative fitness; single substitutions use author-calibrated prior experimental values",
+  "grouping_rule": "Exact four-residue variant identity. All samples share one GB1 assay background; identity grouping does not make random splits a cross-protein evaluation.",
+  "excluded_input_columns": [
+    "HD",
+    "Input",
+    "IGG10",
+    "IGG20",
+    "IGG90",
+    "I10fit",
+    "I20fitRaw",
+    "I90fit",
+    "AOfit",
+    "I20fit"
+  ],
+  "raw_rows_selected": 191157,
+  "exclusion_reasons": {
+    "nonstandard_four_residue_variant": 32587,
+    "missing_observed_I20fit": 9209
+  },
+  "mutation_depth_counts": {
+    "3": 26019,
+    "4": 121174,
+    "2": 2091,
+    "1": 76,
+    "0": 1
+  },
+  "low_fitness_count": 114816,
+  "author_calibrated_single_mutants": 76,
+  "possible_standard_variants": 160000,
+  "unobserved_standard_variants_not_imputed": 10639,
+  "output_candidate_records": 149361,
+  "validation": {
+    "status": "passed",
+    "all_source_labels_checked": true,
+    "finite_labels": 149361,
+    "input_label_duplicate_records": 0,
+    "group_count": 149361,
+    "largest_group": 1,
+    "label_min": 0.0,
+    "label_max": 8.76196565571,
+    "zero_labels": 29477,
+    "quality_flag_counts": {
+      "experimental_enrichment_derived_label": 149361,
+      "single_protein_background": 149361,
+      "low_fitness_detection_limit_sensitive": 114816,
+      "zero_fitness_observed": 29477,
+      "author_calibrated_prior_experiment": 76
+    },
+    "candidate_sha256": "c00779209d99f5a9eb3fe5b39750e80b919bef5327d2591a1a3b7e6045b3b8a4",
+    "no_training_executed": true,
+    "independent_readback_source_fidelity": {
+      "source_rows_checked": 149361,
+      "status": "passed"
+    }
+  },
+  "source_version": "dbdd7639187e0b8f22359f404ce4d1d950fcc8a9",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "gb1",
+    "name": "Wu 2016 GB1 four-site observed binding fitness",
+    "batch": 3,
+    "candidate_id": "S2",
+    "raw_rows_selected": 191157,
+    "candidate_task_examples": 149361,
+    "output_examples": 149361,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 9209,
+    "excluded_source_rows": 41796,
+    "task_count": 1,
+    "split_groups": 149361,
+    "examples_with_null_input": 0,
+    "flagged_examples": 149361,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 149361
+    },
+    "source_url": "https://github.com/wchnicholas/ProteinGFourMutants",
+    "files": [
+      {
+        "path": "datasets/gb1_gb1/part-00001.jsonl.gz",
+        "records": 20000,
+        "sha256": "00832e7763e7114d95e9cf0dca5f9e2afa8bd69c66fe409b7c38f415b894aa5a",
+        "bytes": 2172241
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00002.jsonl.gz",
+        "records": 20000,
+        "sha256": "99f098615271f16d554c310ad419d083cc3a0a50532e1c38bfb906b12e90d412",
+        "bytes": 2175343
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00003.jsonl.gz",
+        "records": 20000,
+        "sha256": "52be67571492687b6530ceb275a9371315957d972b8da921a882a686a1998b06",
+        "bytes": 2177968
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00004.jsonl.gz",
+        "records": 20000,
+        "sha256": "784b7bd6d6ad49fa0fd35ff73294ab3af0b021b2b044517843d482937b5d31d6",
+        "bytes": 2179334
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00005.jsonl.gz",
+        "records": 20000,
+        "sha256": "cb8d6a3cb5554c0d6a1a6bbfc3f8d9b1de465f7af6d5b8cf57d9a06669b7e791",
+        "bytes": 2174744
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00006.jsonl.gz",
+        "records": 20000,
+        "sha256": "398b79db0d3d588c49209562cdc66db91242b451a297f2433f8c180c17c58cdf",
+        "bytes": 2175436
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00007.jsonl.gz",
+        "records": 20000,
+        "sha256": "778490273d0e7ba7a8f80f4fd1f9ea72a3f2a0976981a1230e2c70fbd0dc2145",
+        "bytes": 2179011
+      },
+      {
+        "path": "datasets/gb1_gb1/part-00008.jsonl.gz",
+        "records": 9361,
+        "sha256": "3d1d2c821176c55159f07a00ee324db22b957da84890323364ff694a32f35461",
+        "bytes": 1022127
+      }
+    ],
+    "uncompressed_sha256": "f45fe8773f51936949ce0c102a70cb9744a3fa86569b4e91c4a494aaed53156e"
+  },
+  "task_statistics": {
+    "relative_igg_fc_binding_fitness": {
+      "prompt_chars_min": 630,
+      "prompt_chars_max": 630,
+      "records": 149361,
+      "label_min": 0,
+      "label_max": 8.76196565571,
+      "label_mean": 0.0805096851738,
+      "zero_labels": 29477
+    }
+  },
+  "quality_flag_counts": {
+    "experimental_enrichment_derived_label": 149361,
+    "low_fitness_detection_limit_sensitive": 114816,
+    "single_protein_background": 149361,
+    "zero_fitness_observed": 29477,
+    "author_calibrated_prior_experiment": 76
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "candidate_id": "S2"
+}

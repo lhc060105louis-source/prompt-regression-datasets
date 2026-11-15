@@ -1,0 +1,157 @@
+{
+  "dataset_id": "empathy",
+  "name": "Empathic Reactions (EMNLP 2018)",
+  "source_url": "https://github.com/wwbp/empathic_reactions",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://github.com/wwbp/empathic_reactions/blob/3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e/README.md",
+    "evidence_file": "README.md",
+    "scope": "Dataset text and numeric ratings; excludes third-party article/reading-material full texts."
+  },
+  "version": "2.2.0",
+  "commit": "3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e",
+  "source_files": [
+    {
+      "relativepath": "raw/empathy/data/responses/data/messages.csv",
+      "url": "https://raw.githubusercontent.com/wwbp/empathic_reactions/3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e/data/responses/data/messages.csv",
+      "sha256": "380d2670254565629f81616df57cc0729de96ac87c056d05e39c370624ae8f64",
+      "bytes": 977090
+    },
+    {
+      "relativepath": "raw/empathy/README.md",
+      "url": "https://raw.githubusercontent.com/wwbp/empathic_reactions/3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e/README.md",
+      "sha256": "9bd633f9dcb393f1a21a885d2ba27e29acd9ad38637949d362869fb6ce3f0b24",
+      "bytes": 2261
+    }
+  ],
+  "tasks": {
+    "empathy": {
+      "instruction": "Estimate the reaction writer's self-reported empathic concern on the published scale from 1 (low) to 7 (high).",
+      "target_name": "empathy",
+      "unit": "self-report scale (1-7)",
+      "type": "continuous",
+      "field_description": "essay: Original English reaction essay written after reading a news story; the news article itself is not included."
+    },
+    "distress": {
+      "instruction": "Estimate the reaction writer's self-reported personal distress on the published scale from 1 (low) to 7 (high).",
+      "target_name": "distress",
+      "unit": "self-report scale (1-7)",
+      "type": "continuous",
+      "field_description": "essay: Original English reaction essay written after reading a news story; the news article itself is not included."
+    }
+  },
+  "field_descriptions": {
+    "essay": "Original English reaction essay written after reading a news story; the news article itself is not included."
+  },
+  "downloaded_at": "2026-11-15",
+  "training_executed": false,
+  "text_policy": "Original selected text and capitalization preserved byte-for-byte after UTF-8/CSV decoding; grouping uses a separate whitespace-normalized casefolded hash. No spelling correction, truncation, label imputation, or score transformation.",
+  "raw_archives_included_in_distribution": false,
+  "grouping_rule": "Connected components of source response_id and whitespace-normalized casefolded essay. response_id is a questionnaire response/session key, not a verified permanent participant identifier. Both targets share the same group.",
+  "split_policy": "No new fixed split imposed. Future splits must hold out entire groups jointly across both targets. Repeated article IDs are preserved in source_refs for a separate article-disjoint evaluation; response grouping alone does not enforce article independence.",
+  "source_citation": "Buechel, Buffone, Slaff, Ungar and Sedoc (2018), Modeling Empathy and Distress in Reaction to News Stories, https://aclanthology.org/D18-1507/",
+  "source_response_groups": 372,
+  "source_article_groups": 417,
+  "quality_findings": [
+    "Two separately supervised tasks are generated from each valid reaction; the other target and binary label fields are always excluded from input.",
+    "Labels measure the writer self-reported state and are not an objective external measure of empathy.",
+    "Only reaction essays are redistributed; no news articles fetched."
+  ],
+  "raw_rows_selected": 1860,
+  "candidate_task_examples": 3720,
+  "excluded_source_rows": 0,
+  "invalid_label_examples": 0,
+  "excluded_rows": [],
+  "invalid_labels": [],
+  "split_counts": {
+    "unassigned": 3720
+  },
+  "task_counts": {
+    "empathy": 1860,
+    "distress": 1860
+  },
+  "groups": 372,
+  "groups_crossing_official_splits": 0,
+  "exact_duplicate_candidate_rows": 0,
+  "identical_input_different_label_groups": 2,
+  "identical_input_cross_split_groups": 0,
+  "quality_flag_counts": {
+    "self_reported_state": 3720,
+    "identical_input_has_different_labels": 4,
+    "identical_input_multiple_labels": 4
+  },
+  "validation": {
+    "status": "passed",
+    "checks": [
+      "All retained labels finite and within documented rating scale",
+      "Every retained input and label compared with its original decoded CSV/TSV row",
+      "Every source row accounted for; invalid/missing labels never imputed",
+      "Explicit input allowlists exclude source IDs, other scores, bins, demographics and article full texts",
+      "Official splits retained; cross-split identical inputs and connected groups counted and flagged",
+      "Source version, downloaded bytes and SHA256 recorded"
+    ],
+    "training_executed": false
+  },
+  "source_version": "3ddbf6b35c789f99c930a349f3fc26b4b2d9ae2e",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "empathy",
+    "name": "Empathic Reactions (EMNLP 2018)",
+    "batch": 3,
+    "candidate_id": "T2",
+    "raw_rows_selected": 1860,
+    "candidate_task_examples": 3720,
+    "output_examples": 3720,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 2,
+    "split_groups": 372,
+    "examples_with_null_input": 0,
+    "flagged_examples": 3720,
+    "identical_input_different_label_groups": 2,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 3720
+    },
+    "source_url": "https://github.com/wwbp/empathic_reactions",
+    "files": [
+      {
+        "path": "datasets/empathy_empathy/part-00001.jsonl.gz",
+        "records": 3720,
+        "sha256": "fb29a7cf93e64193efe9d26b080f9e07e4c39efa7c4d8d39c1989ac5211c9ab7",
+        "bytes": 691417
+      }
+    ],
+    "uncompressed_sha256": "6f2096695c858c126b763d1f276c3f041440129d65044886f14f56540936c88e"
+  },
+  "task_statistics": {
+    "empathy": {
+      "prompt_chars_min": 721,
+      "prompt_chars_max": 1249,
+      "records": 1860,
+      "label_min": 1,
+      "label_max": 7,
+      "label_mean": 3.6999155914,
+      "zero_labels": 0
+    },
+    "distress": {
+      "prompt_chars_min": 723,
+      "prompt_chars_max": 1251,
+      "records": 1860,
+      "label_min": 1,
+      "label_max": 7,
+      "label_mean": 3.7311155914,
+      "zero_labels": 0
+    }
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences.",
+  "candidate_id": "T2"
+}

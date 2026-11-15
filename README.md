@@ -2,9 +2,9 @@
 
 Multi-domain regression data represented as **English prompts paired with numeric labels**.
 
-**Release 2.1.0 · 29 sources · 33 regression tasks · 1,067,479 examples**
+**Release 2.2.0 · 39 sources · 44 regression tasks · 1,668,476 examples**
 
-Domains include materials, energy, transport, housing, biology, environmental monitoring, computing, and social data. This is a data preparation release for general regression research. It does **not** demonstrate model generalization: no model has been trained or evaluated, and all splits remain `unassigned`.
+Domains include materials, energy, transport, housing, biology, environmental monitoring, computing, and social data. This is a data preparation release for general regression research. It does **not** demonstrate model generalization: no model has been trained or evaluated, and published official splits are retained where available; the remaining tasks have unassigned splits.
 
 ## Load the data
 
@@ -26,7 +26,7 @@ for example in iter_records(dataset_id="uci_440"):
     print(prompt, label)
     break
 
-# Omit dataset_id to stream all 29 datasets in manifest order.
+# Omit dataset_id to stream all 39 datasets in manifest order.
 ```
 
 Each dataset directory has `part-00001.jsonl.gz` (and further parts for larger datasets), metadata, a directly readable `preview.jsonl`, prompt templates, and quality/audit files. Each data shard contains at most 100,000 records. Decompressing and concatenating a dataset's shards reproduces its original prepared JSONL byte for byte.
@@ -41,12 +41,12 @@ The [manifest](manifest.json) lists every shard, count, and checksum. Browse the
 | `label` | One finite numeric regression target; never embedded as the answer in the prompt |
 | `input` | Typed feature object matching the JSON inside the prompt |
 | `task_id`, `dataset_id`, `dataset_family` | Task and source identity, including known related-source families |
-| `target_name`, `target_unit`, `target_transform` | Target definition and any documented transformation |
+| `target_name`, `unit`, `target_transform` | Target definition and any documented transformation |
 | `source_refs`, `duplicate_count` | Original file/row lineage and multiplicity of merged examples |
 | `group_id`, optional `entity_id`, `time_key` | Known dependencies for later group/time-aware splitting |
 | `quality_flags` | Preserved anomalies or documented repairs; absence is not proof of clean data |
 | `sample_id`, `input_hash` | Content-derived identifiers |
-| `split` | `unassigned` for this release |
+| `split` | Official `train`/`validation`/`test` where provided, otherwise `unassigned` |
 
 Some SGEMM records additionally contain `target_observations`, the four original runtime measurements. These are outcomes and must **not** be model inputs.
 
@@ -83,7 +83,9 @@ python scripts/verify_release.py
 
 Large audit JSON files are gzip-compressed; numeric precision audits contain old/new sample IDs and changed field values. Raw source archives and local historical copies are not duplicated in this Git repository. Download URLs and archive hashes are retained under `sources/`. Historical references in the detailed quality report describe the original build workspace, which can be regenerated below.
 
-## Rebuild from original sources
+## Rebuild the legacy v2.1.0 sources
+
+For the ten newly added sources, use [batch 3 reproduction instructions](preprocessing/batch3/README.md). The commands below rebuild only the legacy 29 sources.
 
 Using a separate Python environment is recommended. The recorded build used Python 3.13. Rebuilding downloads the official UCI/PhysioNet sources and needs several GB of local disk space; it performs no training.
 
@@ -98,4 +100,12 @@ The original working layout is preserved under `preprocessing/work/`. The rebuil
 
 Please cite the original dataset authors and source DOIs listed in [DATA_LICENSES.md](DATA_LICENSES.md), as well as the version/commit of this collection when used. Source data is attributed to its original creators. The repository provides preprocessing and repackaging; it is not an official UCI or PhysioNet release.
 
-中文说明：本仓库包含当前 v2.1.0 的完整处理后数据，共 29 个来源、33 个任务、1,067,479 条样本。数据已按来源分片压缩，格式为 prompt + 数值标签。尚未划分训练/验证集，也未训练模型。详见[质量报告](reports/quality_report_zh.md)。
+中文说明：当前 v2.2.0 共 39 个来源、44 个任务、1,668,476 条样本；旧 29 个来源文件保持不变。保留可用的官方划分，其他来源未分配划分。未训练。详见[质量报告](reports/quality_report_zh.md)。
+
+## Approved expansion 2.2.0
+
+Ten approved sources add lexical complexity, empathy/distress, essay quality, experimental hydration free energy, GB1 binding fitness, DFT exfoliation energy, engine remaining life, river flow, auction verification time and video transcoding time. All 29 original sources and their files remain byte-identical.
+
+ASAP2 excludes third-party source reading materials. C-MAPSS uses 30-cycle windows at stride 10 plus endpoints; 17 short test engines are excluded. CAMELS-GB uses month-end forecast origins, seven complete historical daily records ending one day before the origin, and next-day flow labels; this is a sampled archival forecast task. No training was run.
+
+See [batch 3 quality report](reports/quality_report_v2.2.0_zh.md), [source-level findings](reports/extension_metadata_summary.json), [full-record validation](reports/extension_validation.json), [approval ledger](docs/candidate_approval.csv), and [reproduction instructions](preprocessing/batch3/README.md). Official splits can still contain dependent groups; CompLex has such flagged groups. GB1 covers one protein background, and FreeSolv scaffold groups are imbalanced.

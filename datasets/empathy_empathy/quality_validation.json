@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "candidates": 3720,
+  "records": 3720,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {
+    "self_reported_state": 3720,
+    "identical_input_has_different_labels": 4,
+    "identical_input_multiple_labels": 4
+  },
+  "training_executed": false
+}

@@ -1,5 +1,5 @@
 {
-  "version": "2.1.0",
+  "version": "2.2.0",
   "created_date": "2026-11-09",
   "datasets": [
     {
@@ -849,20 +849,670 @@
         }
       ],
       "uncompressed_sha256": "96db79263b25ebba0e56095f28177adfe782de5116ebfcf4ae21f967d77621a1"
+    },
+    {
+      "dataset_id": "complex",
+      "name": "CompLex 2.0 / SemEval 2021 Task 1",
+      "batch": 3,
+      "candidate_id": "T1",
+      "raw_rows_selected": 10800,
+      "candidate_task_examples": 10800,
+      "output_examples": 10800,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 3814,
+      "examples_with_null_input": 0,
+      "flagged_examples": 3910,
+      "identical_input_different_label_groups": 5,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 176,
+      "split_counts": {
+        "train": 9179,
+        "validation": 520,
+        "test": 1101
+      },
+      "source_url": "https://github.com/MMU-TDMLab/CompLex",
+      "files": [
+        {
+          "path": "datasets/complex_complex/part-00001.jsonl.gz",
+          "records": 10800,
+          "sha256": "c8138b055b0df5dd0d31b96833897167a30bd71ff5a5d7b9f8af8f76bafbf9f0",
+          "bytes": 2311454
+        }
+      ],
+      "uncompressed_sha256": "9d402516a0017bc2048d58a3d71befd83d069c62e445043998b5f461e914d40f"
+    },
+    {
+      "dataset_id": "empathy",
+      "name": "Empathic Reactions (EMNLP 2018)",
+      "batch": 3,
+      "candidate_id": "T2",
+      "raw_rows_selected": 1860,
+      "candidate_task_examples": 3720,
+      "output_examples": 3720,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 2,
+      "split_groups": 372,
+      "examples_with_null_input": 0,
+      "flagged_examples": 3720,
+      "identical_input_different_label_groups": 2,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 3720
+      },
+      "source_url": "https://github.com/wwbp/empathic_reactions",
+      "files": [
+        {
+          "path": "datasets/empathy_empathy/part-00001.jsonl.gz",
+          "records": 3720,
+          "sha256": "fb29a7cf93e64193efe9d26b080f9e07e4c39efa7c4d8d39c1989ac5211c9ab7",
+          "bytes": 691417
+        }
+      ],
+      "uncompressed_sha256": "6f2096695c858c126b763d1f276c3f041440129d65044886f14f56540936c88e"
+    },
+    {
+      "dataset_id": "asap2",
+      "name": "ASAP 2.0 (essay and assignment only)",
+      "batch": 3,
+      "candidate_id": "T3",
+      "raw_rows_selected": 24728,
+      "candidate_task_examples": 24728,
+      "output_examples": 24728,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 24728,
+      "examples_with_null_input": 28,
+      "flagged_examples": 24728,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "train": 17307,
+        "test": 7421
+      },
+      "source_url": "https://github.com/scrosseye/ASAP_2.0",
+      "files": [
+        {
+          "path": "datasets/asap2_asap2/part-00001.jsonl.gz",
+          "records": 5124,
+          "sha256": "664e6577f08118f342aa470039b22a8bfdf7b7f870fd61f8164659d5a8533a71",
+          "bytes": 4172492
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00002.jsonl.gz",
+          "records": 4933,
+          "sha256": "64401f87d68fa248d6d1289597fadd9f33ca31814dcd024dd4ec433b47303bfa",
+          "bytes": 4235441
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00003.jsonl.gz",
+          "records": 4936,
+          "sha256": "d34b6f73dc2e89ae8a2ae6ce2b24a78c780b06ad7e6ce6d0eb6b163cf1548e5b",
+          "bytes": 4593234
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00004.jsonl.gz",
+          "records": 4869,
+          "sha256": "0a32db81005e549290704cadbb7df18672b390a3217faeb294577da5d2d4b036",
+          "bytes": 4503562
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00005.jsonl.gz",
+          "records": 4866,
+          "sha256": "ce768c75deb488a3e70c537795284582a928eef276f9a2afd5668dc1ade80334",
+          "bytes": 4472804
+        }
+      ],
+      "uncompressed_sha256": "d40b26b22ceb95f9b0cff59aab61ad0199e18512984ea2119a234848c11a0caa"
+    },
+    {
+      "dataset_id": "freesolv",
+      "name": "FreeSolv experimental hydration free energy",
+      "batch": 3,
+      "candidate_id": "S1",
+      "raw_rows_selected": 642,
+      "candidate_task_examples": 642,
+      "output_examples": 642,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 63,
+      "examples_with_null_input": 0,
+      "flagged_examples": 642,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 642
+      },
+      "source_url": "https://github.com/MobleyLab/FreeSolv",
+      "files": [
+        {
+          "path": "datasets/freesolv_freesolv/part-00001.jsonl.gz",
+          "records": 642,
+          "sha256": "648e490518ac25b48d94cbac888562bfaff743707a6864ff593b597d35605bd3",
+          "bytes": 70431
+        }
+      ],
+      "uncompressed_sha256": "a206fc32f2eae54bfd8ce7745fa7baff6d3dd7213443e3d0db8c7e4bc5d4be6e"
+    },
+    {
+      "dataset_id": "gb1",
+      "name": "Wu 2016 GB1 four-site observed binding fitness",
+      "batch": 3,
+      "candidate_id": "S2",
+      "raw_rows_selected": 191157,
+      "candidate_task_examples": 149361,
+      "output_examples": 149361,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 9209,
+      "excluded_source_rows": 41796,
+      "task_count": 1,
+      "split_groups": 149361,
+      "examples_with_null_input": 0,
+      "flagged_examples": 149361,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 149361
+      },
+      "source_url": "https://github.com/wchnicholas/ProteinGFourMutants",
+      "files": [
+        {
+          "path": "datasets/gb1_gb1/part-00001.jsonl.gz",
+          "records": 20000,
+          "sha256": "00832e7763e7114d95e9cf0dca5f9e2afa8bd69c66fe409b7c38f415b894aa5a",
+          "bytes": 2172241
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00002.jsonl.gz",
+          "records": 20000,
+          "sha256": "99f098615271f16d554c310ad419d083cc3a0a50532e1c38bfb906b12e90d412",
+          "bytes": 2175343
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00003.jsonl.gz",
+          "records": 20000,
+          "sha256": "52be67571492687b6530ceb275a9371315957d972b8da921a882a686a1998b06",
+          "bytes": 2177968
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00004.jsonl.gz",
+          "records": 20000,
+          "sha256": "784b7bd6d6ad49fa0fd35ff73294ab3af0b021b2b044517843d482937b5d31d6",
+          "bytes": 2179334
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00005.jsonl.gz",
+          "records": 20000,
+          "sha256": "cb8d6a3cb5554c0d6a1a6bbfc3f8d9b1de465f7af6d5b8cf57d9a06669b7e791",
+          "bytes": 2174744
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00006.jsonl.gz",
+          "records": 20000,
+          "sha256": "398b79db0d3d588c49209562cdc66db91242b451a297f2433f8c180c17c58cdf",
+          "bytes": 2175436
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00007.jsonl.gz",
+          "records": 20000,
+          "sha256": "778490273d0e7ba7a8f80f4fd1f9ea72a3f2a0976981a1230e2c70fbd0dc2145",
+          "bytes": 2179011
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00008.jsonl.gz",
+          "records": 9361,
+          "sha256": "3d1d2c821176c55159f07a00ee324db22b957da84890323364ff694a32f35461",
+          "bytes": 1022127
+        }
+      ],
+      "uncompressed_sha256": "f45fe8773f51936949ce0c102a70cb9744a3fa86569b4e91c4a494aaed53156e"
+    },
+    {
+      "dataset_id": "jdft2d",
+      "name": "JARVIS 2D / Matbench jdft2d",
+      "batch": 3,
+      "candidate_id": "S4",
+      "raw_rows_selected": 636,
+      "candidate_task_examples": 636,
+      "output_examples": 636,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 568,
+      "examples_with_null_input": 0,
+      "flagged_examples": 636,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 636
+      },
+      "source_url": "https://figshare.com/articles/dataset/jdft_2d-7-7-2018_json/6815705/1",
+      "files": [
+        {
+          "path": "datasets/jdft2d_jdft2d/part-00001.jsonl.gz",
+          "records": 636,
+          "sha256": "3dc7c685d5242f8e6072febb27169019f1396e09475b0c6340e255dda5780045",
+          "bytes": 209004
+        }
+      ],
+      "uncompressed_sha256": "509ac4e9bf118f2417969ef572bca56bc3fd808a4f7921738a231035da092a65"
+    },
+    {
+      "dataset_id": "cmapss",
+      "name": "NASA C-MAPSS turbofan degradation",
+      "batch": 3,
+      "candidate_id": "H1",
+      "raw_rows_selected": 265256,
+      "candidate_task_examples": 15627,
+      "output_examples": 15627,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 1399,
+      "examples_with_null_input": 0,
+      "flagged_examples": 15627,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "train": 14937,
+        "test": 690
+      },
+      "source_url": "https://zenodo.org/records/15346912",
+      "files": [
+        {
+          "path": "datasets/cmapss_cmapss/part-00001.jsonl.gz",
+          "records": 2790,
+          "sha256": "d9f685a90486067f15a536040996a2d7bb5f92600aed2e765c984bd952fe8edd",
+          "bytes": 1951056
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00002.jsonl.gz",
+          "records": 2818,
+          "sha256": "60f655e399ba8274d794afcaf50849efbea280e6e7b50a6299cf40b79d08ccdb",
+          "bytes": 2089892
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00003.jsonl.gz",
+          "records": 2801,
+          "sha256": "e5b65a193bed8f3ba7980fd45ae6ef44ceab42e2fea414a4b5d070765a2da11a",
+          "bytes": 2199329
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00004.jsonl.gz",
+          "records": 2799,
+          "sha256": "f4dc4ff757f78e4611c8ae4a8b95f1501d4ba8d47919db1b3b7e8f65f323bdbd",
+          "bytes": 2028337
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00005.jsonl.gz",
+          "records": 2816,
+          "sha256": "52e10876cb5ef0d002a89e7d6a75cdabda3ce85c1717bc6389143d4cfe89b2c4",
+          "bytes": 2082052
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00006.jsonl.gz",
+          "records": 1603,
+          "sha256": "0bcbf05528257cdc524f4c657cc8a252479c6f229673bb026276f1f100d6a55c",
+          "bytes": 1418267
+        }
+      ],
+      "uncompressed_sha256": "7fb81852fd727548b7ba3dc086afa84fd1f5e2d215c19b0813d2da6b7ced305b"
+    },
+    {
+      "dataset_id": "camels_gb",
+      "name": "CAMELS-GB v1 next-day specific discharge",
+      "batch": 3,
+      "candidate_id": "H2",
+      "raw_rows_selected": 11028556,
+      "candidate_task_examples": 324656,
+      "output_examples": 324656,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 36040,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 671,
+      "examples_with_null_input": 0,
+      "flagged_examples": 324656,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 324656
+      },
+      "source_url": "https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9",
+      "files": [
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00001.jsonl.gz",
+          "records": 9439,
+          "sha256": "871435d36e960a67c8c7b744c42755a8b816f0b9cf6b8c0d9f36530d7819e3c9",
+          "bytes": 2520915
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00002.jsonl.gz",
+          "records": 9437,
+          "sha256": "29debcaa7f78517213fed55b5247bbee3a6a411614ec7d81ae2e5c3628dfd3f6",
+          "bytes": 2534221
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00003.jsonl.gz",
+          "records": 9444,
+          "sha256": "e93608a361b876f287666c16ee43d7cc2b4a8bb27a05a6c6f637485b6ddb6eed",
+          "bytes": 2521227
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00004.jsonl.gz",
+          "records": 9441,
+          "sha256": "78e1a7ed65ead733495dc98e5a5db2d3abccfcce25d5dd33fda14d96233ace43",
+          "bytes": 2518558
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00005.jsonl.gz",
+          "records": 9442,
+          "sha256": "1b8f947834be6d7d23dde72e20ead0181e1f693d68009f6f4c5134ff4078b895",
+          "bytes": 2515502
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00006.jsonl.gz",
+          "records": 9444,
+          "sha256": "1ec3d5c37072b1d6eb72e3e25a13ec254399e5a36f461d2ceee6b74790eead24",
+          "bytes": 2496855
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00007.jsonl.gz",
+          "records": 9445,
+          "sha256": "b11d69ee6c5c4fea3a0045a58c0bc2aeb73027c247b0079a0a4884f8e2d38b56",
+          "bytes": 2513246
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00008.jsonl.gz",
+          "records": 9441,
+          "sha256": "26b82674f5b6cf1a7e2aa6c1ddec7a9e01a8a41e02b419d994bc70e7edcb918f",
+          "bytes": 2499084
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00009.jsonl.gz",
+          "records": 9450,
+          "sha256": "6a7df69b31a4a1cc5eb950b8c7f22a01554531d758dd5caa1bc35ff6c9f05ba3",
+          "bytes": 2483586
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00010.jsonl.gz",
+          "records": 9459,
+          "sha256": "3bae453b328b6d83a36a4292c71ed066cd72abac63eb0b4bd65028ab218d9b65",
+          "bytes": 2467195
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00011.jsonl.gz",
+          "records": 9454,
+          "sha256": "e11c397d604137d2fa6efcd3387071c02c9c6718517e1fd7b9b9e313a23a6e7f",
+          "bytes": 2455358
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00012.jsonl.gz",
+          "records": 9456,
+          "sha256": "20d9027bebcfdc1bbd8aa47d996e1dc3132cdd14a93be56110bd5d14b8dc3adf",
+          "bytes": 2460061
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00013.jsonl.gz",
+          "records": 9464,
+          "sha256": "7ec409cedb64d7bea2f0ca73ee7f0912ef51845ebf6bc9746e1529990e57ebc7",
+          "bytes": 2461137
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00014.jsonl.gz",
+          "records": 9455,
+          "sha256": "e49c06f203ce8c1e19285e21dd5d257655ef608011fc74a1cd8bfc81bc970107",
+          "bytes": 2456886
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00015.jsonl.gz",
+          "records": 9451,
+          "sha256": "7f1f71ae4574726eb4b44f75f2d793d10204855fb28ec82f457d0d1d55387fb4",
+          "bytes": 2467059
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00016.jsonl.gz",
+          "records": 9454,
+          "sha256": "35a54f7c191e53ce1f3dadddd66747432d63a42d5fd20331d3d8e3dc1fc0a983",
+          "bytes": 2467839
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00017.jsonl.gz",
+          "records": 9456,
+          "sha256": "d75590feef3ca4a79cc2523fec872514ba156c15a60db49f8efe622c4248c64b",
+          "bytes": 2468857
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00018.jsonl.gz",
+          "records": 9454,
+          "sha256": "2cb0a135a0116637e832d27ea46cdacc386bb1be1303456131c6b74088e0d7c2",
+          "bytes": 2495799
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00019.jsonl.gz",
+          "records": 9458,
+          "sha256": "eadd5a67c70e6c7c816631f237c8acf0f5efc1797718d01c288a2bb17dc46f39",
+          "bytes": 2473920
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00020.jsonl.gz",
+          "records": 9447,
+          "sha256": "0295160f9593a0c6a965e3bb5806f06c805b645ad5731fbc2853a2c33a23dfa7",
+          "bytes": 2497087
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00021.jsonl.gz",
+          "records": 9443,
+          "sha256": "0ea1a67b2205c9a0a1f36b4ce90de7a71efb29bb0c7e47f6ef86966931491ce5",
+          "bytes": 2529520
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00022.jsonl.gz",
+          "records": 9447,
+          "sha256": "f7e0f59c66ab8843c2a964b838f08298da9de666aa2bea46ce7f2a102264bd83",
+          "bytes": 2508083
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00023.jsonl.gz",
+          "records": 9442,
+          "sha256": "a0fa16537ce6938c9e848b7ff4b6fb4b4771c7e36aaef773806ae319ee40b951",
+          "bytes": 2493582
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00024.jsonl.gz",
+          "records": 9446,
+          "sha256": "28d2ab1af88314f251c2a945234e18d2699d555895fb73d1f6693c004f6411d4",
+          "bytes": 2493982
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00025.jsonl.gz",
+          "records": 9437,
+          "sha256": "9dc29ea4c679c79a7495237a8e3599b8cc638146fa032ebda657051e56656b25",
+          "bytes": 2511052
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00026.jsonl.gz",
+          "records": 9436,
+          "sha256": "dc392ab332f68bc828e108af89b12b6e9b108718613698bb652bc436ff3a9596",
+          "bytes": 2541071
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00027.jsonl.gz",
+          "records": 9436,
+          "sha256": "e59a9f33d23681629d901136426186998d9904f8da439710b9595987e2f800c3",
+          "bytes": 2544719
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00028.jsonl.gz",
+          "records": 9433,
+          "sha256": "9ea595bb740958e3d89d980da536ea7fc3f0ebcab0f00d69917cd7f4263ce268",
+          "bytes": 2530882
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00029.jsonl.gz",
+          "records": 9440,
+          "sha256": "4a82932b6ab8eca2d035c83bb85425da2e158a9954f0893426115867dec54fab",
+          "bytes": 2517393
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00030.jsonl.gz",
+          "records": 9433,
+          "sha256": "a997dec505fa8c0411fcd6f1c3b50557a991d7b83cfa5a39e6292133729b8301",
+          "bytes": 2541148
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00031.jsonl.gz",
+          "records": 9434,
+          "sha256": "b9c5f48718aaf30559c9953346ee484c46161f76dd2c7f701fd43ba829dff1bd",
+          "bytes": 2537347
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00032.jsonl.gz",
+          "records": 9434,
+          "sha256": "cc6afcb66316aa3bc4a486c3bcd415a62a0256d114c858c8ec653cd46d2ea56f",
+          "bytes": 2543729
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00033.jsonl.gz",
+          "records": 9436,
+          "sha256": "3d45d41d7ae8e1fdee17135e97cc08cbc896aee68ca93781f90e75e18f76ddff",
+          "bytes": 2533588
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00034.jsonl.gz",
+          "records": 9433,
+          "sha256": "78629a8ad33b35138cb3a9eed89fb90abbd82a554fc5a4fede22e7e410f46ac8",
+          "bytes": 2544326
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00035.jsonl.gz",
+          "records": 3535,
+          "sha256": "f6be5607e1770bfd1cc4db40973c2a928778d7edc2f604d9524ee14a5811c9b4",
+          "bytes": 959229
+        }
+      ],
+      "uncompressed_sha256": "4ecbfefc9dcee319383261e3b9f8b97cea2434df67fbb09cb9150b463d484995"
+    },
+    {
+      "dataset_id": "uci_713",
+      "name": "Auction Verification",
+      "batch": 3,
+      "candidate_id": "O1",
+      "raw_rows_selected": 2043,
+      "candidate_task_examples": 2043,
+      "output_examples": 2043,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 24,
+      "examples_with_null_input": 0,
+      "flagged_examples": 2043,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 2043
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+      "files": [
+        {
+          "path": "datasets/uci_713_auction/part-00001.jsonl.gz",
+          "records": 2043,
+          "sha256": "217f4a33a2368072633b137485c1d68a8f5710f306c49209aec0fbc3b17fb478",
+          "bytes": 166216
+        }
+      ],
+      "uncompressed_sha256": "f34ff20eecfe5d1886e3f4e4e725bb67c1cab96b3ee94fa7e5fb3542be367ab8",
+      "uci_id": 713
+    },
+    {
+      "dataset_id": "uci_335",
+      "name": "Online Video Transcoding Time",
+      "batch": 3,
+      "candidate_id": "O2",
+      "raw_rows_selected": 68784,
+      "candidate_task_examples": 68784,
+      "output_examples": 68784,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 1099,
+      "examples_with_null_input": 0,
+      "flagged_examples": 1019,
+      "identical_input_different_label_groups": 81,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 68784
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_335_transcoding/part-00001.jsonl.gz",
+          "records": 15269,
+          "sha256": "800a2c7e0237c3e8584119278851ccf015f3d96769422a3d41ad6d563b5f9985",
+          "bytes": 1273313
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00002.jsonl.gz",
+          "records": 15292,
+          "sha256": "8be3f0c0edc7450cfb87a6e449d6d10f8bafb1dac6ebd56ff4c788f735277861",
+          "bytes": 1275978
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00003.jsonl.gz",
+          "records": 15278,
+          "sha256": "2c42baf67366cccd0c2bd3509690f39fab740784cd667e01b4d60077bd735360",
+          "bytes": 1274353
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00004.jsonl.gz",
+          "records": 15294,
+          "sha256": "92320774ce912e832d39a75e4ef64a659779309aee9e8cb5d0e1d88a74e6223b",
+          "bytes": 1273733
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00005.jsonl.gz",
+          "records": 7651,
+          "sha256": "c88957dac2d7ab1039f06d8c48cfef145c01967276d6f1a16424177fa9b79886",
+          "bytes": 780457
+        }
+      ],
+      "uncompressed_sha256": "238a4ac1e4eb67a1651f0daa887467dc2e18b4db88d3edec253cdd405ad9f0f5",
+      "uci_id": 335
     }
   ],
-  "dataset_count": 29,
-  "task_count": 33,
-  "total_selected_source_rows": 1036122,
-  "total_examples": 1067479,
+  "dataset_count": 39,
+  "task_count": 44,
+  "total_selected_source_rows": 12630584,
+  "total_examples": 1668476,
   "collapsed_duplicate_examples": 3210,
-  "invalid_label_examples": 8744,
+  "invalid_label_examples": 53993,
   "training_performed": false,
-  "splits_assigned": false,
+  "splits_assigned": true,
   "prompt_language": "English",
-  "local_only": true,
-  "updated_date": "2026-11-13",
-  "excluded_source_rows": 65,
+  "local_only": false,
+  "updated_date": "2026-11-15",
+  "excluded_source_rows": 41861,
   "record_schema_version": "1.0.0",
   "batches": [
     {
@@ -876,6 +1526,24 @@
       "datasets": 11,
       "tasks": 12,
       "examples": 941259
+    },
+    {
+      "batch": 3,
+      "datasets": 10,
+      "tasks": 11,
+      "examples": 600997,
+      "approved_candidate_ids": [
+        "T1",
+        "T2",
+        "T3",
+        "S1",
+        "S2",
+        "S4",
+        "H1",
+        "H2",
+        "O1",
+        "O2"
+      ]
     }
   ],
   "numeric_precision": {
@@ -891,6 +1559,8 @@
     "raw_files_changed": false
   },
   "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard",
-  "source_release": "2.1.0",
-  "distribution_version": "2.1.0-github.1"
+  "source_release": "2.2.0",
+  "distribution_version": "2.2.0-github.1",
+  "split_policy": "Mixed: published official splits retained for CompLex, ASAP2, C-MAPSS; all other tasks unassigned. Cross-split dependent groups flagged. No new randomized split created.",
+  "exclusion_count_note": "Source row exclusions only. Excluded engines/windows and unsampled temporal origins have separate source-specific counts; do not add these different units."
 }

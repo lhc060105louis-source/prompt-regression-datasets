@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "dataset_id": "camels_gb",
+  "records_checked": 324656,
+  "history_numeric_cells_checked": 9090368,
+  "split_counts": {
+    "unassigned": 324656
+  },
+  "candidate_sha256": "40ec84e278893e2849c2c261502a09b5f150902cc79a18282e6f07456aaf4a0b",
+  "checks": [
+    "every candidate label equals raw discharge_spec cell",
+    "every historical date/meteorological/flow value equals source row",
+    "all static attributes equal original topographic table",
+    "month-end origins, next-day labels and conservative availability lag verified on every record",
+    "no duplicate source target rows",
+    "only allowlisted input fields are present"
+  ]
+}

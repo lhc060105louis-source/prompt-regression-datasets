@@ -1,0 +1,37 @@
+{
+  "candidate_id": "O2",
+  "source_url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+  "source_version": "UCI public archive snapshot 2026-11-15",
+  "files": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/335/online+video+characteristics+and+transcoding+time+dataset.zip",
+      "sha256": "ad44644b8aca29ad06e29dfe03700e53ff95de007faf7b79eacb77f322629ee9",
+      "bytes": 15604305,
+      "relativepath": "raw/transcoding/source.zip"
+    },
+    {
+      "url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+      "sha256": "d95a7c524c8d7721468d516584fb715e84aa620e5164a6dbc0fabe862fd3fdb1",
+      "bytes": 83600,
+      "relativepath": "raw/transcoding/source_page.html"
+    }
+  ],
+  "raw_archives_included": false,
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "path": "raw/transcoding/source_page.html",
+      "url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+      "sha256": "d95a7c524c8d7721468d516584fb715e84aa620e5164a6dbc0fabe862fd3fdb1",
+      "bytes": 83600
+    }
+  },
+  "citation": {
+    "doi": "10.24432/C58C9K",
+    "authors": [
+      "Tewodros Deneke"
+    ]
+  },
+  "preparation": "See preprocessing/batch3 and per-dataset metadata. Raw files remain unmodified locally; prepared records are adapted."
+}
