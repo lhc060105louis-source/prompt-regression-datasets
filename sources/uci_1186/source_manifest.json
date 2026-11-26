@@ -1,0 +1,28 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset",
+  "version": "UCI archive dated 2025-07-15, accessed 2026-11-26",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset"
+    }
+  },
+  "citation": {
+    "authors": [
+      "Muthukumaran Subramaniyan"
+    ],
+    "year": 2023,
+    "doi": "10.24432/C55W3J"
+  },
+  "files": [
+    {
+      "relativepath": "paddy.zip",
+      "url": "https://archive.ics.uci.edu/static/public/1186/paddy%2Bdataset.zip",
+      "bytes": 16617,
+      "sha256": "c37f626578443068558799d2ce2c8740ec0dcfa67f35516b7581a806904c4041"
+    }
+  ],
+  "preparation": "See preprocessing/batch4 and per-dataset metadata.",
+  "raw_archives_included": false
+}

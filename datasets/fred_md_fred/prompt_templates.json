@@ -1,0 +1,16 @@
+{
+  "cpiaucsl": {
+    "target_name": "US all-items consumer price index, seasonally adjusted",
+    "unit": "index (1982-1984 = 100)",
+    "type": "continuous",
+    "instruction": "Estimate the US all-items consumer price index, seasonally adjusted for the month following the history.",
+    "field_description": "The two arrays contain 24 consecutive US monthly observations, oldest to newest. CPIAUCSL is the seasonally adjusted all-items CPI (1982-1984=100). UNRATE is the seasonally adjusted civilian unemployment rate in percent. first_month dates the first observation. Data use the October 2026 vintage."
+  },
+  "unrate": {
+    "target_name": "US civilian unemployment rate, seasonally adjusted",
+    "unit": "percent",
+    "type": "continuous",
+    "instruction": "Estimate the US civilian unemployment rate, seasonally adjusted for the month following the history.",
+    "field_description": "The two arrays contain 24 consecutive US monthly observations, oldest to newest. CPIAUCSL is the seasonally adjusted all-items CPI (1982-1984=100). UNRATE is the seasonally adjusted civilian unemployment rate in percent. first_month dates the first observation. Data use the October 2026 vintage."
+  }
+}

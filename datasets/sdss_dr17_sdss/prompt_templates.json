@@ -1,0 +1,9 @@
+{
+  "galaxy_spectroscopic_redshift": {
+    "instruction": "Estimate the spectroscopic redshift of an SDSS galaxy from its broadband photometry.",
+    "target_name": "spectroscopic redshift",
+    "unit": "dimensionless",
+    "type": "continuous",
+    "field_description": "dereddened_model_magnitude gives extinction-corrected SDSS model magnitudes in the u, g, r, i, and z imaging filters. model_magnitude_error gives the reported model photometry error per filter, in magnitudes. The z filter is a photometric band."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "paddy_output_kg": {
+    "target_name": "paddy_output_kg",
+    "unit": "kg",
+    "type": "continuous",
+    "instruction": "Estimate total paddy output for this planting using the recorded inputs and observed growing-season conditions.",
+    "field_description": "Hectares is planting area. Agriblock, Variety, Soil Types and Nursery identify the region, crop variety, soil and nursery type. Seedrate, LP manure, nursery area, weed control, fertilizer and pest-control values are source-recorded inputs with source units where supplied. Rain and AI columns are source water variables in mm. Days in a field name identify its growing-season window. Temperature, wind speed in knots, wind direction and humidity give the reported weather summaries."
+  }
+}

@@ -241,3 +241,53 @@ License and evidence:
 Citation: {"doi": "10.24432/C58C9K", "authors": ["Tewodros Deneke"]}
 
 See [uci_335 metadata](datasets/uci_335_transcoding/metadata.json) for changes and limitations.
+
+## Release 2.3.0 attribution
+
+### Paddy Dataset
+
+[Source](https://archive.ics.uci.edu/dataset/1186/paddy+dataset) · [Credits and rights](sources/uci_1186/source_manifest.json) · [Adaptations](datasets/uci_1186_paddy/metadata.json)
+
+CC BY 4.0
+
+{"authors": ["Muthukumaran Subramaniyan"], "year": 2023, "doi": "10.24432/C55W3J"}
+
+### UJIIndoorLoc
+
+[Source](https://archive.ics.uci.edu/dataset/310/ujiindoorloc) · [Credits and rights](sources/uci_310/source_manifest.json) · [Adaptations](datasets/uci_310_uji/metadata.json)
+
+CC BY 4.0
+
+{"doi": "10.24432/C5MS59", "authors": ["Joaquín Torres-Sospedra", "Raúl Montoliu", "Adolfo Martínez-Usó", "Tomar Arnau", "Joan Avariento"]}
+
+### SDSS-IV DR17 Galaxy Spectroscopic Redshift
+
+[Source](https://www.sdss4.org/dr17/) · [Credits and rights](sources/sdss_dr17/source_manifest.json) · [Adaptations](datasets/sdss_dr17_sdss/metadata.json)
+
+Public domain (SDSS public data releases)
+
+{"authors": ["SDSS Collaboration", "Abdurro’uf et al."], "doi": "10.3847/1538-4365/ac4414", "acknowledgments": "https://www.sdss4.org/collaboration/citing-sdss/"}
+
+### FRED-MD archival next-month CPI and unemployment
+
+[Source](https://www.stlouisfed.org/research/economists/mccracken/fred-databases) · [Credits and rights](sources/fred_md/source_manifest.json) · [Adaptations](datasets/fred_md_fred/metadata.json)
+
+BLS public-domain series, citation requested. Scope limited to CPIAUCSL and UNRATE.
+
+US Bureau of Labor Statistics, CPIAUCSL and UNRATE, via FRED and FRED-MD, Federal Reserve Bank of St. Louis, October 2026 vintage.
+
+### FAOSTAT QCL cereal yields
+
+[Source](https://www.fao.org/faostat/en/#data/QCL) · [Credits and rights](sources/faostat_qcl/source_manifest.json) · [Adaptations](datasets/faostat_qcl_faostat/metadata.json)
+
+CC BY 4.0 with FAO Statistical Database Terms of Use
+
+{"authors": ["Food and Agriculture Organization of the United Nations"], "citation": "FAO. 2025. FAOSTAT: Production: Crops and livestock products. Accessed on 26 November 2026. https://www.fao.org/faostat/en/#data/QCL. Licence: CC-BY-4.0."}
+
+### Gas sensor array temperature modulation
+
+[Source](https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation) · [Credits and rights](sources/uci_487/source_manifest.json) · [Adaptations](datasets/uci_487_gas/metadata.json)
+
+CC BY 4.0
+
+{"doi": "10.24432/C5S302", "authors": ["Javier Burgués"], "requested_papers": ["Burgués, Jiménez-Soto & Marco (2018). Estimation of the limit of detection in semiconductor gas sensors through linearized calibration models. Analytica Chimica Acta 1013, 13–25.", "Burgués & Marco (2018). Multivariate estimation of the limit of detection by orthogonal partial least squares in temperature-modulated MOX sensors. Analytica Chimica Acta 1019, 49–64."]}

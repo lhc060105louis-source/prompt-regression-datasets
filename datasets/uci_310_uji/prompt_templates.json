@@ -1,0 +1,16 @@
+{
+  "map_x": {
+    "target_name": "map_x",
+    "unit": "m",
+    "type": "continuous",
+    "instruction": "Estimate the indoor map x coordinate of this WiFi scan at Universitat Jaume I.",
+    "field_description": "observed_ap_rssi_dbm maps detected WiFi access point identifiers to received signal strength in dBm. An omitted access point was not detected. Map coordinates are in the source campus reference system."
+  },
+  "map_y": {
+    "target_name": "map_y",
+    "unit": "m",
+    "type": "continuous",
+    "instruction": "Estimate the indoor map y coordinate of this WiFi scan at Universitat Jaume I.",
+    "field_description": "observed_ap_rssi_dbm maps detected WiFi access point identifiers to received signal strength in dBm. An omitted access point was not detected. Map coordinates are in the source campus reference system."
+  }
+}

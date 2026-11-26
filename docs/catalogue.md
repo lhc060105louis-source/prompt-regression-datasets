@@ -46,3 +46,14 @@
 | H2 | camels_gb | [CAMELS-GB v1 next-day specific discharge](https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9) | 324,656 | 1 | [Files](../datasets/camels_gb_camels_gb) |
 | O1 | uci_713 | [Auction Verification](https://archive.ics.uci.edu/dataset/713/auction+verification) | 2,043 | 1 | [Files](../datasets/uci_713_auction) |
 | O2 | uci_335 | [Online Video Transcoding Time](https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset) | 68,784 | 1 | [Files](../datasets/uci_335_transcoding) |
+
+## Release 2.3.0 additions
+
+| Source | Dataset ID | Examples | Tasks | Data |
+|---|---|---:|---:|---|
+| [Paddy Dataset](https://archive.ics.uci.edu/dataset/1186/paddy+dataset) | uci_1186 | 2,338 | 1 | [Files](../datasets/uci_1186_paddy) |
+| [UJIIndoorLoc](https://archive.ics.uci.edu/dataset/310/ujiindoorloc) | uci_310 | 40,522 | 2 | [Files](../datasets/uci_310_uji) |
+| [SDSS-IV DR17 Galaxy Spectroscopic Redshift](https://www.sdss4.org/dr17/) | sdss_dr17 | 52,068 | 1 | [Files](../datasets/sdss_dr17_sdss) |
+| [FRED-MD archival next-month CPI and unemployment](https://www.stlouisfed.org/research/economists/mccracken/fred-databases) | fred_md | 1,576 | 2 | [Files](../datasets/fred_md_fred) |
+| [FAOSTAT QCL cereal yields](https://www.fao.org/faostat/en/#data/QCL) | faostat_qcl | 21,311 | 1 | [Files](../datasets/faostat_qcl_faostat) |
+| [Gas sensor array temperature modulation](https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation) | uci_487 | 1,300 | 1 | [Files](../datasets/uci_487_gas) |

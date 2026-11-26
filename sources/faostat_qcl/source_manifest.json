@@ -1,0 +1,28 @@
+{
+  "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+  "version": "QCL bulk release dated 2025-12-31 in the FAOSTAT catalogue; observations through 2024",
+  "license": {
+    "name": "CC BY 4.0 with FAO Statistical Database Terms of Use",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://www.fao.org/contact-us/terms/db-terms-of-use/en/"
+    },
+    "notes": "Attribute FAO, identify adaptation, respect third-party exceptions and FAO conditions including non-endorsement and no use in promotion. Selected A and E flagged observations. X (external organization) is excluded from both targets and inputs."
+  },
+  "citation": {
+    "authors": [
+      "Food and Agriculture Organization of the United Nations"
+    ],
+    "citation": "FAO. 2025. FAOSTAT: Production: Crops and livestock products. Accessed on 26 November 2026. https://www.fao.org/faostat/en/#data/QCL. Licence: CC-BY-4.0."
+  },
+  "files": [
+    {
+      "relativepath": "faostat-qcl.zip",
+      "url": "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+      "bytes": 33921825,
+      "sha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853"
+    }
+  ],
+  "preparation": "See preprocessing/batch4 and per-dataset metadata.",
+  "raw_archives_included": false
+}

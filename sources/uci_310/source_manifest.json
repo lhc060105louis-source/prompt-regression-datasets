@@ -1,0 +1,31 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc",
+  "version": "UCI public archive snapshot 2026-11-26",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc"
+    }
+  },
+  "citation": {
+    "doi": "10.24432/C5MS59",
+    "authors": [
+      "Joaquín Torres-Sospedra",
+      "Raúl Montoliu",
+      "Adolfo Martínez-Usó",
+      "Tomar Arnau",
+      "Joan Avariento"
+    ]
+  },
+  "files": [
+    {
+      "relativepath": "uji.zip",
+      "bytes": 1463759,
+      "sha256": "893512b82dfd7a7c345d84195b1c8019fbca0fa0d7820ce491ce5aa45ec3782f",
+      "url": "https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip"
+    }
+  ],
+  "preparation": "See preprocessing/batch4 and per-dataset metadata.",
+  "raw_archives_included": false
+}

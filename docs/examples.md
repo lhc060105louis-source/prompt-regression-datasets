@@ -70,3 +70,12 @@ Return only one numeric prediction for the target.
 - H2 [CAMELS-GB v1 next-day specific discharge](../datasets/camels_gb_camels_gb/preview.jsonl), 324,656 records.
 - O1 [Auction Verification](../datasets/uci_713_auction/preview.jsonl), 2,043 records.
 - O2 [Online Video Transcoding Time](../datasets/uci_335_transcoding/preview.jsonl), 68,784 records.
+
+## Release 2.3.0 previews
+
+- [Paddy Dataset](../datasets/uci_1186_paddy/preview.jsonl)
+- [UJIIndoorLoc](../datasets/uci_310_uji/preview.jsonl)
+- [SDSS-IV DR17 Galaxy Spectroscopic Redshift](../datasets/sdss_dr17_sdss/preview.jsonl)
+- [FRED-MD archival next-month CPI and unemployment](../datasets/fred_md_fred/preview.jsonl)
+- [FAOSTAT QCL cereal yields](../datasets/faostat_qcl_faostat/preview.jsonl)
+- [Gas sensor array temperature modulation](../datasets/uci_487_gas/preview.jsonl)

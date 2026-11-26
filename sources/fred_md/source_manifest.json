@@ -1,0 +1,23 @@
+{
+  "source_url": "https://www.stlouisfed.org/research/economists/mccracken/fred-databases",
+  "version": "2026-10",
+  "license": {
+    "terms": "BLS public-domain series, citation requested. Scope limited to CPIAUCSL and UNRATE.",
+    "sources": [
+      "https://www.bls.gov/opub/copyright-information.htm",
+      "https://fred.stlouisfed.org/series/CPIAUCSL",
+      "https://fred.stlouisfed.org/series/UNRATE"
+    ]
+  },
+  "citation": "US Bureau of Labor Statistics, CPIAUCSL and UNRATE, via FRED and FRED-MD, Federal Reserve Bank of St. Louis, October 2026 vintage.",
+  "files": [
+    {
+      "relativepath": "2026-10-md.csv",
+      "url": "https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/research/fred-md/monthly/2026-10-md.csv",
+      "sha256": "56df9d964f9c846c076a924bad81c3a8ba85f865805c8a564b10c2ffeaaeebfe",
+      "bytes": 670470
+    }
+  ],
+  "preparation": "See preprocessing/batch4 and per-dataset metadata.",
+  "raw_archives_included": false
+}

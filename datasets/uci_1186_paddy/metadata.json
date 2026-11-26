@@ -1,0 +1,174 @@
+{
+  "dataset_id": "uci_1186",
+  "dataset_family": "uci_paddy_1186",
+  "name": "Paddy Dataset",
+  "candidate_id": "B4-PADDY",
+  "source_url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset",
+  "creators": [
+    "Muthukumaran Subramaniyan"
+  ],
+  "source_citation": {
+    "authors": [
+      "Muthukumaran Subramaniyan"
+    ],
+    "year": 2023,
+    "doi": "10.24432/C55W3J"
+  },
+  "version": "2.3.0",
+  "source_files": [
+    {
+      "relativepath": "paddy.zip",
+      "url": "https://archive.ics.uci.edu/static/public/1186/paddy%2Bdataset.zip",
+      "bytes": 16617,
+      "sha256": "c37f626578443068558799d2ce2c8740ec0dcfa67f35516b7581a806904c4041"
+    }
+  ],
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset"
+    }
+  },
+  "raw_rows_selected": 2789,
+  "candidate_task_examples": 2789,
+  "excluded_source_rows": 0,
+  "invalid_label_examples": 0,
+  "target_transform": "reported_total_kg_no_transformation",
+  "grouping_rule": "All rows of the same Agriblock share one group. The source provides no farm identifier or year.",
+  "split_policy": "Unassigned. Use whole Agriblock holdouts, for example four training blocks and one each for validation and test.",
+  "excluded_input_columns": [
+    "Paddy yield(in Kg)",
+    "Trash(in bundles)"
+  ],
+  "source_profile": {
+    "source_columns": [
+      "Hectares",
+      "Agriblock",
+      "Variety",
+      "Soil Types",
+      "Seedrate(in Kg)",
+      "LP_Mainfield(in Tonnes)",
+      "Nursery",
+      "Nursery area (Cents)",
+      "LP_nurseryarea(in Tonnes)",
+      "DAP_20days",
+      "Weed28D_thiobencarb",
+      "Urea_40Days",
+      "Potassh_50Days",
+      "Micronutrients_70Days",
+      "Pest_60Day(in ml)",
+      "30DRain( in mm)",
+      "30DAI(in mm)",
+      "30_50DRain( in mm)",
+      "30_50DAI(in mm)",
+      "51_70DRain(in mm)",
+      "51_70AI(in mm)",
+      "71_105DRain(in mm)",
+      "71_105DAI(in mm)",
+      "Min temp_D1_D30",
+      "Max temp_D1_D30",
+      "Min temp_D31_D60",
+      "Max temp_D31_D60",
+      "Min temp_D61_D90",
+      "Max temp_D61_D90",
+      "Min temp_D91_D120",
+      "Max temp_D91_D120",
+      "Inst Wind Speed_D1_D30(in Knots)",
+      "Inst Wind Speed_D31_D60(in Knots)",
+      "Inst Wind Speed_D61_D90(in Knots)",
+      "Inst Wind Speed_D91_D120(in Knots)",
+      "Wind Direction_D1_D30",
+      "Wind Direction_D31_D60",
+      "Wind Direction_D61_D90",
+      "Wind Direction_D91_D120",
+      "Relative Humidity_D1_D30",
+      "Relative Humidity_D31_D60",
+      "Relative Humidity_D61_D90",
+      "Relative Humidity_D91_D120",
+      "Trash(in bundles)",
+      "Paddy yield(in Kg)"
+    ],
+    "raw_region_counts": {
+      "Cuddalore": 450,
+      "Kurinjipadi": 486,
+      "Panruti": 425,
+      "Kallakurichi": 413,
+      "Sankarapuram": 605,
+      "Chinnasalem": 410
+    },
+    "distinct_inputs": 410,
+    "distinct_input_label_pairs": 2338,
+    "inputs_with_multiple_labels": 375
+  },
+  "quality_findings": [
+    "The release web page states 2790 rows. Its CSV contains 2789 data rows plus a header.",
+    "Input names and categorical strings were trimmed. Both total output and the potential harvest byproduct Trash(in bundles) were excluded from input.",
+    "Management inputs repeat across equal area values, and many weather features repeat by block. Different reported yields for identical input are retained.",
+    "Day-120 summaries define an end-of-season estimation task. Reported labels are total kilograms per record, without a per-hectare conversion."
+  ],
+  "tasks": {
+    "paddy_output_kg": {
+      "target_name": "paddy_output_kg",
+      "unit": "kg",
+      "type": "continuous",
+      "instruction": "Estimate total paddy output for this planting using the recorded inputs and observed growing-season conditions.",
+      "field_description": "Hectares is planting area. Agriblock, Variety, Soil Types and Nursery identify the region, crop variety, soil and nursery type. Seedrate, LP manure, nursery area, weed control, fertilizer and pest-control values are source-recorded inputs with source units where supplied. Rain and AI columns are source water variables in mm. Days in a field name identify its growing-season window. Temperature, wind speed in knots, wind direction and humidity give the reported weather summaries."
+    }
+  },
+  "source_version": "UCI archive dated 2025-07-15, accessed 2026-11-26",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_1186",
+    "name": "Paddy Dataset",
+    "batch": 4,
+    "candidate_id": "B4-PADDY",
+    "raw_rows_selected": 2789,
+    "candidate_task_examples": 2789,
+    "output_examples": 2338,
+    "collapsed_duplicate_examples": 451,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 6,
+    "examples_with_null_input": 0,
+    "flagged_examples": 2303,
+    "identical_input_different_label_groups": 375,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 2338
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset",
+    "files": [
+      {
+        "path": "datasets/uci_1186_paddy/part-00001.jsonl.gz",
+        "records": 2338,
+        "sha256": "54a51c623439109c98b88bb5a546b775638bf507bad7bb51bab5c2d8b9bfb677",
+        "bytes": 280215
+      }
+    ],
+    "uncompressed_sha256": "fd695a9ebbe87f78070eafd2d4e4e5c84319631f0a5d0d56edaa0058ffff97f4",
+    "uci_id": 1186
+  },
+  "task_statistics": {
+    "paddy_output_kg": {
+      "prompt_chars_min": 1881,
+      "prompt_chars_max": 1913,
+      "records": 2338,
+      "label_min": 5410,
+      "label_max": 38814,
+      "label_mean": 22610.1176219,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "identical_input_multiple_labels": 2303
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

@@ -2,9 +2,9 @@
 
 Multi-domain regression data represented as **English prompts paired with numeric labels**.
 
-**Release 2.2.0 · 39 sources · 44 regression tasks · 1,668,476 examples**
+**Release 2.3.0 · 45 sources · 52 regression tasks · 1,787,591 examples**
 
-Domains include materials, energy, transport, housing, biology, environmental monitoring, computing, and social data. This is a data preparation release for general regression research. It does **not** demonstrate model generalization: no model has been trained or evaluated, and published official splits are retained where available; the remaining tasks have unassigned splits.
+Domains include materials, energy, transport, housing, biology, environmental monitoring, computing, social data, agriculture, astronomy, wireless positioning and macroeconomics. This is a data preparation release for general regression research. It does **not** demonstrate model generalization: no model has been trained or evaluated, and published official splits are retained where available; the remaining tasks have unassigned splits.
 
 ## Load the data
 
@@ -26,12 +26,12 @@ for example in iter_records(dataset_id="uci_440"):
     print(prompt, label)
     break
 
-# Omit dataset_id to stream all 39 datasets in manifest order.
+# Omit dataset_id to stream all 45 datasets in manifest order.
 ```
 
 Each dataset directory has `part-00001.jsonl.gz` (and further parts for larger datasets), metadata, a directly readable `preview.jsonl`, prompt templates, and quality/audit files. Each data shard contains at most 100,000 records. Decompressing and concatenating a dataset's shards reproduces its original prepared JSONL byte for byte.
 
-The [manifest](manifest.json) lists every shard, count, and checksum. Browse the [dataset catalogue](docs/catalogue.md). Read [actual examples](docs/examples.md), [the Chinese quality report](reports/quality_report_zh.md), and [source attributions and data licenses](DATA_LICENSES.md).
+The [manifest](manifest.json) lists every shard, count, and checksum. Browse the [dataset catalogue](docs/catalogue.md). Read [actual examples](docs/examples.md), [the Chinese quality report](reports/quality_report_v2.3.0_zh.md), and [source attributions and data licenses](DATA_LICENSES.md).
 
 ## Record format
 
@@ -100,7 +100,7 @@ The original working layout is preserved under `preprocessing/work/`. The rebuil
 
 Please cite the original dataset authors and source DOIs listed in [DATA_LICENSES.md](DATA_LICENSES.md), as well as the version/commit of this collection when used. Source data is attributed to its original creators. The repository provides preprocessing and repackaging; it is not an official UCI or PhysioNet release.
 
-中文说明：当前 v2.2.0 共 39 个来源、44 个任务、1,668,476 条样本；旧 29 个来源文件保持不变。保留可用的官方划分，其他来源未分配划分。未训练。详见[质量报告](reports/quality_report_zh.md)。
+中文说明：v2.3.0 共 45 个来源、52 个任务、1,787,591 条样本。可用 Python 标准库直接读取。详见[本批质量报告](reports/quality_report_v2.3.0_zh.md)。
 
 ## Approved expansion 2.2.0
 
@@ -109,3 +109,7 @@ Ten approved sources add lexical complexity, empathy/distress, essay quality, ex
 ASAP2 excludes third-party source reading materials. C-MAPSS uses 30-cycle windows at stride 10 plus endpoints; 17 short test engines are excluded. CAMELS-GB uses month-end forecast origins, seven complete historical daily records ending one day before the origin, and next-day flow labels; this is a sampled archival forecast task. No training was run.
 
 See [batch 3 quality report](reports/quality_report_v2.2.0_zh.md), [source-level findings](reports/extension_metadata_summary.json), [full-record validation](reports/extension_validation.json), [approval ledger](docs/candidate_approval.csv), and [reproduction instructions](preprocessing/batch3/README.md). Official splits can still contain dependent groups; CompLex has such flagged groups. GB1 covers one protein background, and FreeSolv scaffold groups are imbalanced.
+
+## Release 2.3.0 additions
+
+Six sources add rice production, indoor map coordinates, spectroscopic redshift, US macroeconomic history, national crop yields and laboratory CO sensing. See the [source catalogue](docs/catalogue.md), [preparation instructions](preprocessing/batch4/README.md) and [batch quality report](reports/quality_report_v2.3.0_zh.md).

@@ -1,5 +1,5 @@
 {
-  "version": "2.2.0",
+  "version": "2.3.0",
   "created_date": "2026-11-09",
   "datasets": [
     {
@@ -1499,20 +1499,246 @@
       ],
       "uncompressed_sha256": "238a4ac1e4eb67a1651f0daa887467dc2e18b4db88d3edec253cdd405ad9f0f5",
       "uci_id": 335
+    },
+    {
+      "dataset_id": "uci_1186",
+      "name": "Paddy Dataset",
+      "batch": 4,
+      "candidate_id": "B4-PADDY",
+      "raw_rows_selected": 2789,
+      "candidate_task_examples": 2789,
+      "output_examples": 2338,
+      "collapsed_duplicate_examples": 451,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 2303,
+      "identical_input_different_label_groups": 375,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 2338
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_1186_paddy/part-00001.jsonl.gz",
+          "records": 2338,
+          "sha256": "54a51c623439109c98b88bb5a546b775638bf507bad7bb51bab5c2d8b9bfb677",
+          "bytes": 280215
+        }
+      ],
+      "uncompressed_sha256": "fd695a9ebbe87f78070eafd2d4e4e5c84319631f0a5d0d56edaa0058ffff97f4",
+      "uci_id": 1186
+    },
+    {
+      "dataset_id": "uci_310",
+      "name": "UJIIndoorLoc",
+      "batch": 4,
+      "candidate_id": "U1",
+      "raw_rows_selected": 21048,
+      "candidate_task_examples": 41944,
+      "output_examples": 40522,
+      "collapsed_duplicate_examples": 1422,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 76,
+      "task_count": 2,
+      "split_groups": 47,
+      "examples_with_null_input": 0,
+      "flagged_examples": 186,
+      "identical_input_different_label_groups": 44,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "train": 38300,
+        "test": 2222
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc",
+      "files": [
+        {
+          "path": "datasets/uci_310_uji/part-00001.jsonl.gz",
+          "records": 19824,
+          "sha256": "6a907e50fb663403397c7316721cc4736780d19f86423e80b60162175550c555",
+          "bytes": 2361586
+        },
+        {
+          "path": "datasets/uci_310_uji/part-00002.jsonl.gz",
+          "records": 19455,
+          "sha256": "c20656bb9ddd80a8dc6c93f30a73eef6c09fe14370967617ea50d59c40b5bc24",
+          "bytes": 2348630
+        },
+        {
+          "path": "datasets/uci_310_uji/part-00003.jsonl.gz",
+          "records": 1243,
+          "sha256": "b2fe7edf28d6050b26a8ba0710b1d33411a94ab82545fa6ed5566b8764e22522",
+          "bytes": 161262
+        }
+      ],
+      "uncompressed_sha256": "2a5fb5b19ab1013a107b227e4ec4db0f8477fac72dbc3f2d4a4eae4e9604ab08",
+      "uci_id": 310
+    },
+    {
+      "dataset_id": "sdss_dr17",
+      "name": "SDSS-IV DR17 Galaxy Spectroscopic Redshift",
+      "batch": 4,
+      "candidate_id": "SDSS",
+      "raw_rows_selected": 52079,
+      "candidate_task_examples": 52068,
+      "output_examples": 52068,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 11,
+      "task_count": 1,
+      "split_groups": 633,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 52068
+      },
+      "source_url": "https://www.sdss4.org/dr17/",
+      "files": [
+        {
+          "path": "datasets/sdss_dr17_sdss/part-00001.jsonl.gz",
+          "records": 18012,
+          "sha256": "ba4d8519c2dfef12d4c5bb7fdab65f01838c0d766314ddf5969bd06167c633e5",
+          "bytes": 3930525
+        },
+        {
+          "path": "datasets/sdss_dr17_sdss/part-00002.jsonl.gz",
+          "records": 18078,
+          "sha256": "ade8a78a28ac40f2d7ddb5e96e03c5947c8c6f90d634328ad8f59c885232abfa",
+          "bytes": 3921997
+        },
+        {
+          "path": "datasets/sdss_dr17_sdss/part-00003.jsonl.gz",
+          "records": 15978,
+          "sha256": "3f7b198b427c11884056d12c1baf908edf9ee7522cb037faaff5cfaaeade2ac2",
+          "bytes": 3480684
+        }
+      ],
+      "uncompressed_sha256": "50cf96b99304a2218ed8a3cae8bb53ce15019aa7a2b9207692ec719022adec25"
+    },
+    {
+      "dataset_id": "fred_md",
+      "name": "FRED-MD archival next-month CPI and unemployment",
+      "batch": 4,
+      "candidate_id": null,
+      "raw_rows_selected": 813,
+      "candidate_task_examples": 1576,
+      "output_examples": 1576,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 2,
+      "excluded_source_rows": 0,
+      "task_count": 2,
+      "split_groups": 788,
+      "examples_with_null_input": 22,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 1576
+      },
+      "source_url": "https://www.stlouisfed.org/research/economists/mccracken/fred-databases",
+      "files": [
+        {
+          "path": "datasets/fred_md_fred/part-00001.jsonl.gz",
+          "records": 1576,
+          "sha256": "621fba624f8aa4ba3adf7ec58d0ccda9aae875958f17d79a2f030106507e12f8",
+          "bytes": 139497
+        }
+      ],
+      "uncompressed_sha256": "d8d32d0b093a2197b311c7a916225d63473136d66cbab0db6b6a2f64954bcc93"
+    },
+    {
+      "dataset_id": "faostat_qcl",
+      "name": "FAOSTAT QCL cereal yields",
+      "batch": 4,
+      "candidate_id": "B4-FAOSTAT",
+      "raw_rows_selected": 23409,
+      "candidate_task_examples": 21311,
+      "output_examples": 21311,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 493,
+      "task_count": 1,
+      "split_groups": 418,
+      "examples_with_null_input": 0,
+      "flagged_examples": 5448,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 21311
+      },
+      "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+      "files": [
+        {
+          "path": "datasets/faostat_qcl_faostat/part-00001.jsonl.gz",
+          "records": 17314,
+          "sha256": "e6b96361afb30f8b360980894d5d0911d72ccf6a83ba3f5b612b49dac897fc2c",
+          "bytes": 2040545
+        },
+        {
+          "path": "datasets/faostat_qcl_faostat/part-00002.jsonl.gz",
+          "records": 3997,
+          "sha256": "df247fc3a2bc88b2c04606c30076481bf26c84e01939e796c8e328f3892c2ea6",
+          "bytes": 473680
+        }
+      ],
+      "uncompressed_sha256": "4bf40e7b48304ecef68a35d60470d96945eff0a0e36422f02ccde08edd202e4c"
+    },
+    {
+      "dataset_id": "uci_487",
+      "name": "Gas sensor array temperature modulation",
+      "batch": 4,
+      "candidate_id": "G1",
+      "raw_rows_selected": 3843160,
+      "candidate_task_examples": 1300,
+      "output_examples": 1300,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 2574897,
+      "task_count": 1,
+      "split_groups": 13,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 1300
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation",
+      "files": [
+        {
+          "path": "datasets/uci_487_gas/part-00001.jsonl.gz",
+          "records": 1300,
+          "sha256": "e5418d9794a0e6f60f05f8b01c301db523fc58c2e8aca4b97d4f5fc7fe90a861",
+          "bytes": 706528
+        }
+      ],
+      "uncompressed_sha256": "523177bc2d3dd3e2bf5dae4e34fccce6a3c569f7398bc32ddaa11cce1b3ed529",
+      "uci_id": 487
     }
   ],
-  "dataset_count": 39,
-  "task_count": 44,
-  "total_selected_source_rows": 12630584,
-  "total_examples": 1668476,
-  "collapsed_duplicate_examples": 3210,
-  "invalid_label_examples": 53993,
+  "dataset_count": 45,
+  "task_count": 52,
+  "total_selected_source_rows": 16573882,
+  "total_examples": 1787591,
+  "collapsed_duplicate_examples": 5083,
+  "invalid_label_examples": 53995,
   "training_performed": false,
   "splits_assigned": true,
   "prompt_language": "English",
   "local_only": false,
-  "updated_date": "2026-11-15",
-  "excluded_source_rows": 41861,
+  "updated_date": "2026-11-26",
+  "excluded_source_rows": 2617338,
   "record_schema_version": "1.0.0",
   "batches": [
     {
@@ -1544,6 +1770,20 @@
         "O1",
         "O2"
       ]
+    },
+    {
+      "batch": 4,
+      "datasets": 6,
+      "tasks": 8,
+      "examples": 119115,
+      "dataset_ids": [
+        "uci_1186",
+        "uci_310",
+        "sdss_dr17",
+        "fred_md",
+        "faostat_qcl",
+        "uci_487"
+      ]
     }
   ],
   "numeric_precision": {
@@ -1559,8 +1799,8 @@
     "raw_files_changed": false
   },
   "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard",
-  "source_release": "2.2.0",
-  "distribution_version": "2.2.0-github.1",
-  "split_policy": "Mixed: published official splits retained for CompLex, ASAP2, C-MAPSS; all other tasks unassigned. Cross-split dependent groups flagged. No new randomized split created.",
+  "source_release": "2.3.0",
+  "distribution_version": "2.3.0-github.1",
+  "split_policy": "Published partitions retained for CompLex, ASAP2, C-MAPSS and UJIIndoorLoc. Other sources use unassigned. Consult per-source metadata for dependencies and split guidance.",
   "exclusion_count_note": "Source row exclusions only. Excluded engines/windows and unsampled temporal origins have separate source-specific counts; do not add these different units."
 }

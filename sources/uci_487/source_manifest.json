@@ -1,0 +1,31 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation",
+  "version": "UCI public archive snapshot 2026-11-26",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation"
+    }
+  },
+  "citation": {
+    "doi": "10.24432/C5S302",
+    "authors": [
+      "Javier Burgués"
+    ],
+    "requested_papers": [
+      "Burgués, Jiménez-Soto & Marco (2018). Estimation of the limit of detection in semiconductor gas sensors through linearized calibration models. Analytica Chimica Acta 1013, 13–25.",
+      "Burgués & Marco (2018). Multivariate estimation of the limit of detection by orthogonal partial least squares in temperature-modulated MOX sensors. Analytica Chimica Acta 1019, 49–64."
+    ]
+  },
+  "files": [
+    {
+      "relativepath": "gas.zip",
+      "bytes": 183298753,
+      "sha256": "cb5ce4a6af1a51b933d1979952d7845f0e9baac54e15a81a1e3599e8b85905d4",
+      "url": "https://archive.ics.uci.edu/static/public/487/gas+sensor+array+temperature+modulation.zip"
+    }
+  ],
+  "preparation": "See preprocessing/batch4 and per-dataset metadata.",
+  "raw_archives_included": false
+}

@@ -1,0 +1,105 @@
+{
+  "name": "FRED-MD archival next-month CPI and unemployment",
+  "dataset_id": "fred_md",
+  "dataset_family": "us_bls_macro_history",
+  "version": "2.3.0",
+  "raw_rows_selected": 813,
+  "invalid_label_examples": 2,
+  "source_url": "https://www.stlouisfed.org/research/economists/mccracken/fred-databases",
+  "license": {
+    "terms": "BLS public-domain series, citation requested. Scope limited to CPIAUCSL and UNRATE.",
+    "sources": [
+      "https://www.bls.gov/opub/copyright-information.htm",
+      "https://fred.stlouisfed.org/series/CPIAUCSL",
+      "https://fred.stlouisfed.org/series/UNRATE"
+    ]
+  },
+  "source_citation": "US Bureau of Labor Statistics, CPIAUCSL and UNRATE, via FRED and FRED-MD, Federal Reserve Bank of St. Louis, October 2026 vintage.",
+  "source_files": [
+    {
+      "relativepath": "2026-10-md.csv",
+      "url": "https://www.stlouisfed.org/-/media/project/frbstl/stlouisfed/research/fred-md/monthly/2026-10-md.csv",
+      "sha256": "56df9d964f9c846c076a924bad81c3a8ba85f865805c8a564b10c2ffeaaeebfe",
+      "bytes": 670470
+    }
+  ],
+  "tasks": {
+    "cpiaucsl": {
+      "target_name": "US all-items consumer price index, seasonally adjusted",
+      "unit": "index (1982-1984 = 100)",
+      "type": "continuous",
+      "instruction": "Estimate the US all-items consumer price index, seasonally adjusted for the month following the history.",
+      "field_description": "The two arrays contain 24 consecutive US monthly observations, oldest to newest. CPIAUCSL is the seasonally adjusted all-items CPI (1982-1984=100). UNRATE is the seasonally adjusted civilian unemployment rate in percent. first_month dates the first observation. Data use the October 2026 vintage."
+    },
+    "unrate": {
+      "target_name": "US civilian unemployment rate, seasonally adjusted",
+      "unit": "percent",
+      "type": "continuous",
+      "instruction": "Estimate the US civilian unemployment rate, seasonally adjusted for the month following the history.",
+      "field_description": "The two arrays contain 24 consecutive US monthly observations, oldest to newest. CPIAUCSL is the seasonally adjusted all-items CPI (1982-1984=100). UNRATE is the seasonally adjusted civilian unemployment rate in percent. first_month dates the first observation. Data use the October 2026 vintage."
+    }
+  },
+  "preparation": "Revised-history task. Input ends one calendar month before target. The first 24 months provide history only. Missing input cells remain null. References count the Transform: line as CSV data row 1.",
+  "split_guidance": "Split both tasks by target month together. Account for overlapping windows. This snapshot contains later revisions and does not support real-time forecasting claims.",
+  "source_version": "2026-10",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "fred_md",
+    "name": "FRED-MD archival next-month CPI and unemployment",
+    "batch": 4,
+    "candidate_id": null,
+    "raw_rows_selected": 813,
+    "candidate_task_examples": 1576,
+    "output_examples": 1576,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 2,
+    "excluded_source_rows": 0,
+    "task_count": 2,
+    "split_groups": 788,
+    "examples_with_null_input": 22,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 1576
+    },
+    "source_url": "https://www.stlouisfed.org/research/economists/mccracken/fred-databases",
+    "files": [
+      {
+        "path": "datasets/fred_md_fred/part-00001.jsonl.gz",
+        "records": 1576,
+        "sha256": "621fba624f8aa4ba3adf7ec58d0ccda9aae875958f17d79a2f030106507e12f8",
+        "bytes": 139497
+      }
+    ],
+    "uncompressed_sha256": "d8d32d0b093a2197b311c7a916225d63473136d66cbab0db6b6a2f64954bcc93"
+  },
+  "task_statistics": {
+    "cpiaucsl": {
+      "prompt_chars_min": 894,
+      "prompt_chars_max": 987,
+      "records": 788,
+      "label_min": 29.81,
+      "label_max": 336.298,
+      "label_mean": 146.991310914,
+      "zero_labels": 0
+    },
+    "unrate": {
+      "prompt_chars_min": 870,
+      "prompt_chars_max": 963,
+      "records": 788,
+      "label_min": 3.4,
+      "label_max": 14.8,
+      "label_mean": 5.85139593909,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

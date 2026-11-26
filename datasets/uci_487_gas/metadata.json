@@ -1,0 +1,173 @@
+{
+  "dataset_id": "uci_487",
+  "candidate_id": "G1",
+  "name": "Gas sensor array temperature modulation",
+  "source_url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation",
+  "version": "2.3.0",
+  "source_citation": {
+    "doi": "10.24432/C5S302",
+    "authors": [
+      "Javier Burgués"
+    ],
+    "requested_papers": [
+      "Burgués, Jiménez-Soto & Marco (2018). Estimation of the limit of detection in semiconductor gas sensors through linearized calibration models. Analytica Chimica Acta 1013, 13–25.",
+      "Burgués & Marco (2018). Multivariate estimation of the limit of detection by orthogonal partial least squares in temperature-modulated MOX sensors. Analytica Chimica Acta 1019, 49–64."
+    ]
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation"
+    }
+  },
+  "source_files": [
+    {
+      "relativepath": "gas.zip",
+      "bytes": 183298753,
+      "sha256": "cb5ce4a6af1a51b933d1979952d7845f0e9baac54e15a81a1e3599e8b85905d4",
+      "url": "https://archive.ics.uci.edu/static/public/487/gas+sensor+array+temperature+modulation.zip"
+    }
+  ],
+  "invalid_label_examples": 0,
+  "raw_rows_selected": 3843160,
+  "excluded_source_rows": 2574897,
+  "candidate_task_examples": 1300,
+  "dataset_family": "uci_487",
+  "grouping_rule": "All exposure windows from the same experiment start file share a group.",
+  "split_policy": "Unassigned. For cross-date evaluation use entire files in chronological order, e.g. first 8 for train, next 2 for validation and last 3 for test.",
+  "excluded_input_columns": [
+    "Time (s)",
+    "CO (ppm)",
+    "Flow rate (mL/min)",
+    "Heater voltage (V)"
+  ],
+  "target_transform": "arithmetic_mean_of_source_co_in_fixed_window",
+  "source_profile": {
+    "raw_rows_by_file": {
+      "20160930_203718.csv": 295719,
+      "20161001_231809.csv": 295516,
+      "20161003_085624.csv": 295700,
+      "20161004_104124.csv": 295653,
+      "20161005_140846.csv": 295534,
+      "20161006_182224.csv": 295499,
+      "20161007_210049.csv": 295700,
+      "20161008_234508.csv": 295524,
+      "20161010_095046.csv": 295747,
+      "20161011_113032.csv": 295391,
+      "20161013_143355.csv": 295679,
+      "20161014_184659.csv": 295881,
+      "20161016_053656.csv": 295617
+    },
+    "source_rows_in_published_windows": 1268263,
+    "valid_windows_by_file": {
+      "20160930_203718.csv": 100,
+      "20161001_231809.csv": 100,
+      "20161003_085624.csv": 100,
+      "20161004_104124.csv": 100,
+      "20161005_140846.csv": 100,
+      "20161006_182224.csv": 100,
+      "20161007_210049.csv": 100,
+      "20161008_234508.csv": 100,
+      "20161010_095046.csv": 100,
+      "20161011_113032.csv": 100,
+      "20161013_143355.csv": 100,
+      "20161014_184659.csv": 100,
+      "20161016_053656.csv": 100
+    },
+    "incomplete_slots_by_file": {
+      "20160930_203718.csv": [],
+      "20161001_231809.csv": [],
+      "20161003_085624.csv": [],
+      "20161004_104124.csv": [],
+      "20161005_140846.csv": [],
+      "20161006_182224.csv": [],
+      "20161007_210049.csv": [],
+      "20161008_234508.csv": [],
+      "20161010_095046.csv": [],
+      "20161011_113032.csv": [],
+      "20161013_143355.csv": [],
+      "20161014_184659.csv": [],
+      "20161016_053656.csv": []
+    },
+    "within_window_flags": {},
+    "raw_time_reversals": [
+      {
+        "file": "20161003_085624.csv",
+        "row": 20414,
+        "previous_time_s": 6271.743,
+        "time_s": 6264.751
+      }
+    ]
+  },
+  "quality_findings": [
+    "The UCI landing-page count is nominal; the published source-row counts above are from reading all thirteen files.",
+    "Each nominal 15-minute exposure yields a fixed five-minute sensor window at offsets [450,750) seconds. Slot zero is the initial purge. Slot 1 starts at elapsed 900 seconds. Slot assignment and input selection use only elapsed time.",
+    "Both labels and inputs summarize exactly the same contiguous time window; this is a contemporaneous lab calibration task. The ppm label is the mean reference from the exposure protocol. Device uncertainty is not used as target variance.",
+    "Windows missing either edge by over 2 seconds, containing a reversal or acquisition gap over 2 seconds, or covering nonconsecutive source rows are omitted. Negative or zero resistance, where present, is retained and flagged.",
+    "The source protocol samples ten nominal CO levels between 0 and 20 ppm. The number of distinct prepared labels is limited by those levels.",
+    "The published rows from one laboratory and one sensor array do not cover new devices."
+  ],
+  "tasks": {
+    "mean_co_concentration": {
+      "instruction": "Estimate the mean carbon monoxide concentration in a laboratory gas chamber during this five-minute window.",
+      "target_name": "mean_co_concentration",
+      "type": "continuous",
+      "unit": "ppm",
+      "field_description": "sensor_resistance_megohm lists the arithmetic mean, minimum and maximum resistance in megaohms of each metal oxide sensor over a five-minute window. R1 through R7 are Figaro TGS 3870-A04 sensors and R8 through R14 are FIS SB-500-12 sensors. relative_humidity_pct_mean and temperature_c_mean give mean relative humidity in percent and mean chamber temperature in degrees Celsius over the same window."
+    }
+  },
+  "source_version": "UCI public archive snapshot 2026-11-26",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_487",
+    "name": "Gas sensor array temperature modulation",
+    "batch": 4,
+    "candidate_id": "G1",
+    "raw_rows_selected": 3843160,
+    "candidate_task_examples": 1300,
+    "output_examples": 1300,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 2574897,
+    "task_count": 1,
+    "split_groups": 13,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 1300
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation",
+    "files": [
+      {
+        "path": "datasets/uci_487_gas/part-00001.jsonl.gz",
+        "records": 1300,
+        "sha256": "e5418d9794a0e6f60f05f8b01c301db523fc58c2e8aca4b97d4f5fc7fe90a861",
+        "bytes": 706528
+      }
+    ],
+    "uncompressed_sha256": "523177bc2d3dd3e2bf5dae4e34fccce6a3c569f7398bc32ddaa11cce1b3ed529",
+    "uci_id": 487
+  },
+  "task_statistics": {
+    "mean_co_concentration": {
+      "prompt_chars_min": 1563,
+      "prompt_chars_max": 1593,
+      "records": 1300,
+      "label_min": 0,
+      "label_max": 20,
+      "label_mean": 10,
+      "zero_labels": 130
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

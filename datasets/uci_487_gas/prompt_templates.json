@@ -1,0 +1,9 @@
+{
+  "mean_co_concentration": {
+    "instruction": "Estimate the mean carbon monoxide concentration in a laboratory gas chamber during this five-minute window.",
+    "target_name": "mean_co_concentration",
+    "type": "continuous",
+    "unit": "ppm",
+    "field_description": "sensor_resistance_megohm lists the arithmetic mean, minimum and maximum resistance in megaohms of each metal oxide sensor over a five-minute window. R1 through R7 are Figaro TGS 3870-A04 sensors and R8 through R14 are FIS SB-500-12 sensors. relative_humidity_pct_mean and temperature_c_mean give mean relative humidity in percent and mean chamber temperature in degrees Celsius over the same window."
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "candidates": 21311,
+  "records": 21311,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {
+    "estimated_history": 5061,
+    "estimated_target": 4156
+  },
+  "training_executed": false
+}

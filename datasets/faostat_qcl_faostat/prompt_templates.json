@@ -1,0 +1,9 @@
+{
+  "next_annual_crop_yield": {
+    "instruction": "Estimate this reporting area’s next annual yield for the specified cereal crop, using its three preceding annual yields.",
+    "field_description": "reporting_area is the FAOSTAT country or territory name. crop is the cereal. target_year is the year of the requested yield. prior_annual_yields_kg_per_ha lists the three preceding annual observations, in chronological order, each measured in kilograms per harvested hectare.",
+    "target_name": "next_annual_crop_yield",
+    "unit": "kg/ha",
+    "type": "continuous"
+  }
+}

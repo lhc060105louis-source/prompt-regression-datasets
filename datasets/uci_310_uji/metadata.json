@@ -1,0 +1,157 @@
+{
+  "dataset_id": "uci_310",
+  "candidate_id": "U1",
+  "name": "UJIIndoorLoc",
+  "source_url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc",
+  "version": "2.3.0",
+  "source_citation": {
+    "doi": "10.24432/C5MS59",
+    "authors": [
+      "Joaquín Torres-Sospedra",
+      "Raúl Montoliu",
+      "Adolfo Martínez-Usó",
+      "Tomar Arnau",
+      "Joan Avariento"
+    ]
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc"
+    }
+  },
+  "source_files": [
+    {
+      "relativepath": "uji.zip",
+      "bytes": 1463759,
+      "sha256": "893512b82dfd7a7c345d84195b1c8019fbca0fa0d7820ce491ce5aa45ec3782f",
+      "url": "https://archive.ics.uci.edu/static/public/310/ujiindoorloc.zip"
+    }
+  ],
+  "invalid_label_examples": 0,
+  "tasks": {
+    "map_x": {
+      "target_name": "map_x",
+      "unit": "m",
+      "type": "continuous",
+      "instruction": "Estimate the indoor map x coordinate of this WiFi scan at Universitat Jaume I.",
+      "field_description": "observed_ap_rssi_dbm maps detected WiFi access point identifiers to received signal strength in dBm. An omitted access point was not detected. Map coordinates are in the source campus reference system."
+    },
+    "map_y": {
+      "target_name": "map_y",
+      "unit": "m",
+      "type": "continuous",
+      "instruction": "Estimate the indoor map y coordinate of this WiFi scan at Universitat Jaume I.",
+      "field_description": "observed_ap_rssi_dbm maps detected WiFi access point identifiers to received signal strength in dBm. An omitted access point was not detected. Map coordinates are in the source campus reference system."
+    }
+  },
+  "raw_rows_selected": 21048,
+  "excluded_source_rows": 76,
+  "candidate_task_examples": 41944,
+  "source_profile": {
+    "raw_rows_by_file": {
+      "trainingData.csv": 19937,
+      "validationData.csv": 1111
+    },
+    "all_undetected_rows_excluded": {
+      "trainingData.csv": 76
+    }
+  },
+  "grouping_rule": "User, phone and UTC day; overlaps in WiFi input are linked in standardization.",
+  "split_policy": "Official reference file as train and official validation/test file as test; original source filename retained.",
+  "excluded_input_columns": [
+    "LONGITUDE",
+    "LATITUDE",
+    "FLOOR",
+    "BUILDINGID",
+    "SPACEID",
+    "RELATIVEPOSITION",
+    "USERID",
+    "PHONEID",
+    "TIMESTAMP"
+  ],
+  "target_transform": "none_applied",
+  "quality_findings": [
+    "76 training rows have no detected access points. All source evaluation occurrences are retained, including multiplicity after deduplication.",
+    "Both coordinate components share the same input and group. Published coordinates in metres are copied without reprojection. Unit reference: https://doi.org/10.1109/IPIN.2014.7275492",
+    "No campus maps, real MAC addresses, floor or space identifiers, companion coordinate, user or phone attributes are included in model input."
+  ],
+  "source_version": "UCI public archive snapshot 2026-11-26",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_310",
+    "name": "UJIIndoorLoc",
+    "batch": 4,
+    "candidate_id": "U1",
+    "raw_rows_selected": 21048,
+    "candidate_task_examples": 41944,
+    "output_examples": 40522,
+    "collapsed_duplicate_examples": 1422,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 76,
+    "task_count": 2,
+    "split_groups": 47,
+    "examples_with_null_input": 0,
+    "flagged_examples": 186,
+    "identical_input_different_label_groups": 44,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "train": 38300,
+      "test": 2222
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc",
+    "files": [
+      {
+        "path": "datasets/uci_310_uji/part-00001.jsonl.gz",
+        "records": 19824,
+        "sha256": "6a907e50fb663403397c7316721cc4736780d19f86423e80b60162175550c555",
+        "bytes": 2361586
+      },
+      {
+        "path": "datasets/uci_310_uji/part-00002.jsonl.gz",
+        "records": 19455,
+        "sha256": "c20656bb9ddd80a8dc6c93f30a73eef6c09fe14370967617ea50d59c40b5bc24",
+        "bytes": 2348630
+      },
+      {
+        "path": "datasets/uci_310_uji/part-00003.jsonl.gz",
+        "records": 1243,
+        "sha256": "b2fe7edf28d6050b26a8ba0710b1d33411a94ab82545fa6ed5566b8764e22522",
+        "bytes": 161262
+      }
+    ],
+    "uncompressed_sha256": "2a5fb5b19ab1013a107b227e4ec4db0f8477fac72dbc3f2d4a4eae4e9604ab08",
+    "uci_id": 310
+  },
+  "task_statistics": {
+    "map_x": {
+      "prompt_chars_min": 498,
+      "prompt_chars_max": 1148,
+      "records": 20261,
+      "label_min": -7695.93875493,
+      "label_max": -7299.78651673,
+      "label_mean": -7469.51489585,
+      "zero_labels": 0
+    },
+    "map_y": {
+      "prompt_chars_min": 498,
+      "prompt_chars_max": 1148,
+      "records": 20261,
+      "label_min": 4864745.74502,
+      "label_max": 4865017.36468,
+      "label_mean": 4864872.97168,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "identical_input_multiple_labels": 186
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

@@ -1,0 +1,322 @@
+{
+  "dataset_id": "sdss_dr17",
+  "name": "SDSS-IV DR17 Galaxy Spectroscopic Redshift",
+  "candidate_id": "SDSS",
+  "source_url": "https://www.sdss4.org/dr17/",
+  "version": "2.3.0",
+  "license": {
+    "name": "Public domain (SDSS public data releases)",
+    "url": "https://www.sdss4.org/collaboration/image-use-policy/"
+  },
+  "source_citation": {
+    "authors": [
+      "SDSS Collaboration",
+      "Abdurro’uf et al."
+    ],
+    "doi": "10.3847/1538-4365/ac4414",
+    "acknowledgments": "https://www.sdss4.org/collaboration/citing-sdss/"
+  },
+  "source_files": [
+    {
+      "relativepath": "sdss/dr17-plates-00001-00500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+1+AND+500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 392833,
+      "sha256": "687e79533bb63bc67fc7056a1e6b1f785931af66c7d4b115210244d69d4090f2",
+      "rows": 1702
+    },
+    {
+      "relativepath": "sdss/dr17-plates-00501-01000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+501+AND+1000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 873519,
+      "sha256": "72ff2c4edc718e64db031662b474ac148472238fb955c737ae1bedec608afcd0",
+      "rows": 3798
+    },
+    {
+      "relativepath": "sdss/dr17-plates-01001-01500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+1001+AND+1500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 730733,
+      "sha256": "da5566229fc35432b1e8f983efd0dce87b365d05bb04b241721442c38cc535d9",
+      "rows": 3153
+    },
+    {
+      "relativepath": "sdss/dr17-plates-01501-02000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+1501+AND+2000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 806294,
+      "sha256": "ce1b2da653e3157cc728dc847a856987d202dd6857bc30d2aa0904ad7b62c5bb",
+      "rows": 3480
+    },
+    {
+      "relativepath": "sdss/dr17-plates-02001-02500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+2001+AND+2500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 588779,
+      "sha256": "e0604d197b65d8688714252a1e800da1c0db9a09872c44e805aa8a5d33cd0743",
+      "rows": 2539
+    },
+    {
+      "relativepath": "sdss/dr17-plates-02501-03000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+2501+AND+3000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 381646,
+      "sha256": "f0d5279e8568753e232ab374e0fcd1908492f3e89596a1a8aa9285d3f279b435",
+      "rows": 1646
+    },
+    {
+      "relativepath": "sdss/dr17-plates-03001-03500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+3001+AND+3500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 442,
+      "sha256": "4db82a8f6221f141473bbc6586310f2aceb9de7a143093c0da1d777d4311c2d2",
+      "rows": 1
+    },
+    {
+      "relativepath": "sdss/dr17-plates-03501-04000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+3501+AND+4000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 584991,
+      "sha256": "8df517e9d4fff8da5be5f7297c1988800361e849909a68ea62f5765a30180cd8",
+      "rows": 2573
+    },
+    {
+      "relativepath": "sdss/dr17-plates-04001-04500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+4001+AND+4500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 1077613,
+      "sha256": "0e491c15ac3fd185bcfc28c20e6f19e5d2efaf9253c03ecd1498d2d30e8f62ee",
+      "rows": 4732
+    },
+    {
+      "relativepath": "sdss/dr17-plates-04501-05000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+4501+AND+5000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 987962,
+      "sha256": "dc5bfdb46df0e03ab4e87f53048c98e9efb33bb5f8728bdc3bcf91e50127371d",
+      "rows": 4346
+    },
+    {
+      "relativepath": "sdss/dr17-plates-05001-05500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+5001+AND+5500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 1061926,
+      "sha256": "c8c22bc28fbac7ae93fc12d2c37349d865625f7bdf32815bbb3dd9d159d4f19e",
+      "rows": 4672
+    },
+    {
+      "relativepath": "sdss/dr17-plates-05501-06000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+5501+AND+6000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 582511,
+      "sha256": "aca0cfe176d9c579c027d20b112303bc11370c842294b8b40a6cf6e276ce2c12",
+      "rows": 2562
+    },
+    {
+      "relativepath": "sdss/dr17-plates-06001-06500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+6001+AND+6500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 1012815,
+      "sha256": "0dde7380182e6a3cce2adf3aacb4f816905c64c32348539bd76cb85d771ee603",
+      "rows": 4455
+    },
+    {
+      "relativepath": "sdss/dr17-plates-06501-07000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+6501+AND+7000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 752916,
+      "sha256": "1d4a8a4e0454820e87da1f31fcd743bb591ec4e67040c02a7654fd66ba25b917",
+      "rows": 3312
+    },
+    {
+      "relativepath": "sdss/dr17-plates-07001-07500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+7001+AND+7500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 528183,
+      "sha256": "37aa8428dd21a8ecd95c278e237b07f364333e7de9eb6c5e3da81261db7fa60b",
+      "rows": 2324
+    },
+    {
+      "relativepath": "sdss/dr17-plates-07501-08000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+7501+AND+8000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 254684,
+      "sha256": "0af028b5b4cb1855353982bde0c09cc1f8bdcdb2c41eebf4edae5473a4563c92",
+      "rows": 1120
+    },
+    {
+      "relativepath": "sdss/dr17-plates-08001-08500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+8001+AND+8500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 249754,
+      "sha256": "8ece29ae41b8c40bf2552833a0713e39259028a20513499b6b77fd24fac8b498",
+      "rows": 1100
+    },
+    {
+      "relativepath": "sdss/dr17-plates-08501-09000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+8501+AND+9000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 165358,
+      "sha256": "75052171738f2641d21ba00bab9ff4db2e7572bdad6df7ce9628672413c5f4e1",
+      "rows": 731
+    },
+    {
+      "relativepath": "sdss/dr17-plates-09001-09500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+9001+AND+9500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 364105,
+      "sha256": "c5907c6fb00514c2d889f9486976ebd71ff075367865bf9f5ab41fc71d1acad8",
+      "rows": 1600
+    },
+    {
+      "relativepath": "sdss/dr17-plates-09501-10000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+9501+AND+10000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 144487,
+      "sha256": "9a1506023759dfa86993fda62d3b5dcaede6345b4162b1f7543cd4c2e8e716ae",
+      "rows": 640
+    },
+    {
+      "relativepath": "sdss/dr17-plates-10001-10500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+10001+AND+10500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 141953,
+      "sha256": "e06e754d4ed8c1ebe9f7c1e112748d352e8118f35804ace37fb9c915d95a61be",
+      "rows": 624
+    },
+    {
+      "relativepath": "sdss/dr17-plates-10501-11000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+10501+AND+11000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 77438,
+      "sha256": "ab42d910decbe4e69a26965408198004296ec0953334496db6b42671d4d5451e",
+      "rows": 339
+    },
+    {
+      "relativepath": "sdss/dr17-plates-11001-11500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+11001+AND+11500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 120043,
+      "sha256": "974a6842791dd70f17274f20d81d74ecb9d50b6f911950bec7f8e6e33bce34a8",
+      "rows": 526
+    },
+    {
+      "relativepath": "sdss/dr17-plates-11501-12000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+11501+AND+12000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 16144,
+      "sha256": "c3e53c89348e75c76ec46243ed2ea2f2b20d42440131f70c1b02dbfdd1a069e6",
+      "rows": 70
+    },
+    {
+      "relativepath": "sdss/dr17-plates-12001-12500.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+12001+AND+12500+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 206,
+      "sha256": "5fbdac0c2697e35024eb65eb79bb276d494a4863414e269f9cedee1f59523a78",
+      "rows": 0
+    },
+    {
+      "relativepath": "sdss/dr17-plates-12501-13000.csv",
+      "url": "https://skyserver.sdss.org/dr17/SkyServerWS/SearchTools/SqlSearch?cmd=SELECT+p.objID%2Cp.ra%2Cp.dec%2Cp.dered_u%2Cp.dered_g%2Cp.dered_r%2Cp.dered_i%2Cp.dered_z%2Cp.modelMagErr_u%2Cp.modelMagErr_g%2Cp.modelMagErr_r%2Cp.modelMagErr_i%2Cp.modelMagErr_z%2Cs.specObjID%2Cs.z+AS+redshift%2Cs.zErr%2Cs.class%2Cs.zWarning%2Cs.plate%2Cs.mjd%2Cs.fiberID%2Cs.survey%2CCOUNT%28%2A%29+OVER+%28%29+AS+sliceCount+FROM+SpecObj+s+JOIN+PhotoObj+p+ON+s.bestObjID%3Dp.objID+WHERE+p.clean%3D1+AND+p.mode%3D1+AND+s.class%3D%27GALAXY%27+AND+s.zWarning%3D0+AND+s.zErr%3E0+AND+s.z%3E0+AND+s.fiberID%2543%3Ds.plate%2543+AND+s.plate+BETWEEN+12501+AND+13000+ORDER+BY+s.specObjID&format=csv",
+      "bytes": 7985,
+      "sha256": "e28e9d6273624ee29577244825493ca95af47e92c580b9719184963b53c983ca",
+      "rows": 34
+    }
+  ],
+  "raw_rows_selected": 52079,
+  "candidate_task_examples": 52068,
+  "excluded_source_rows": 11,
+  "invalid_label_examples": 0,
+  "grouping_rule": "5-degree RA/Dec rectangular sky cells after unique object selection",
+  "split_policy": "unassigned; reserve entire sky cells for regional generalization",
+  "excluded_input_columns": [
+    "classification",
+    "spectroscopic redshift",
+    "redshift error",
+    "quality flags",
+    "coordinates",
+    "survey",
+    "plate",
+    "mjd",
+    "fiberID",
+    "object and spectrum identifiers"
+  ],
+  "quality_findings": [
+    "Fixed systematic subsample of clean primary photometric objects matched to primary spectroscopic GALAXY observations with unflagged positive redshift and positive formal error. One fiber residue per plate (modulo 43), not a volume-complete or random sample of the sky.",
+    "Require all five corrected model magnitudes within (-10,40) mag and catalog model-magnitude errors within (0,5) mag. First passing source row in plate-block and ascending spectrum ID order per photometric object.",
+    "Parent DR17 optical catalog coverage and spectroscopic target selection determine representativeness. The label is measured spectroscopically; no spectroscopic quantities enter the model input.",
+    "Sky cells are rectangular coordinate bins, not equal-area. Adjacent cells can contain correlated objects."
+  ],
+  "source_profile": {
+    "excluded_by_reason": {
+      "photometry_outside_validity_cuts": 11
+    },
+    "surveys": {
+      "sdss": 16303,
+      "segue1": 11,
+      "segue2": 1,
+      "boss": 29025,
+      "eboss": 6728
+    },
+    "occupied_sky_cells": 633,
+    "redshift_range": [
+      1.799596e-06,
+      1.962445
+    ],
+    "query_plate_range": [
+      1,
+      13000
+    ]
+  },
+  "target_transform": "none_applied",
+  "tasks": {
+    "galaxy_spectroscopic_redshift": {
+      "instruction": "Estimate the spectroscopic redshift of an SDSS galaxy from its broadband photometry.",
+      "target_name": "spectroscopic redshift",
+      "unit": "dimensionless",
+      "type": "continuous",
+      "field_description": "dereddened_model_magnitude gives extinction-corrected SDSS model magnitudes in the u, g, r, i, and z imaging filters. model_magnitude_error gives the reported model photometry error per filter, in magnitudes. The z filter is a photometric band."
+    }
+  },
+  "source_version": "SDSS-IV DR17, SkyServer plate-fiber subsample v1",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "sdss_dr17",
+    "name": "SDSS-IV DR17 Galaxy Spectroscopic Redshift",
+    "batch": 4,
+    "candidate_id": "SDSS",
+    "raw_rows_selected": 52079,
+    "candidate_task_examples": 52068,
+    "output_examples": 52068,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 11,
+    "task_count": 1,
+    "split_groups": 633,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 52068
+    },
+    "source_url": "https://www.sdss4.org/dr17/",
+    "files": [
+      {
+        "path": "datasets/sdss_dr17_sdss/part-00001.jsonl.gz",
+        "records": 18012,
+        "sha256": "ba4d8519c2dfef12d4c5bb7fdab65f01838c0d766314ddf5969bd06167c633e5",
+        "bytes": 3930525
+      },
+      {
+        "path": "datasets/sdss_dr17_sdss/part-00002.jsonl.gz",
+        "records": 18078,
+        "sha256": "ade8a78a28ac40f2d7ddb5e96e03c5947c8c6f90d634328ad8f59c885232abfa",
+        "bytes": 3921997
+      },
+      {
+        "path": "datasets/sdss_dr17_sdss/part-00003.jsonl.gz",
+        "records": 15978,
+        "sha256": "3f7b198b427c11884056d12c1baf908edf9ee7522cb037faaff5cfaaeade2ac2",
+        "bytes": 3480684
+      }
+    ],
+    "uncompressed_sha256": "50cf96b99304a2218ed8a3cae8bb53ce15019aa7a2b9207692ec719022adec25"
+  },
+  "task_statistics": {
+    "galaxy_spectroscopic_redshift": {
+      "prompt_chars_min": 723,
+      "prompt_chars_max": 740,
+      "records": 52068,
+      "label_min": 1.799596e-06,
+      "label_max": 1.962445,
+      "label_mean": 0.405081083241,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

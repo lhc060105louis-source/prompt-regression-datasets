@@ -1,0 +1,158 @@
+{
+  "dataset_id": "faostat_qcl",
+  "dataset_family": "faostat_qcl",
+  "name": "FAOSTAT QCL cereal yields",
+  "candidate_id": "B4-FAOSTAT",
+  "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+  "creators": [
+    "Food and Agriculture Organization of the United Nations"
+  ],
+  "source_citation": {
+    "authors": [
+      "Food and Agriculture Organization of the United Nations"
+    ],
+    "citation": "FAO. 2025. FAOSTAT: Production: Crops and livestock products. Accessed on 26 November 2026. https://www.fao.org/faostat/en/#data/QCL. Licence: CC-BY-4.0."
+  },
+  "version": "2.3.0",
+  "source_files": [
+    {
+      "relativepath": "faostat-qcl.zip",
+      "url": "https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_All_Data_(Normalized).zip",
+      "bytes": 33921825,
+      "sha256": "c5835418c18f9322e7decbd6800f93a216eaae3cdfa31acb08f0518c0c6d6853"
+    }
+  ],
+  "catalogue_url": "https://bulks-faostat.fao.org/production/datasets_E.json",
+  "license": {
+    "name": "CC BY 4.0 with FAO Statistical Database Terms of Use",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://www.fao.org/contact-us/terms/db-terms-of-use/en/"
+    },
+    "notes": "Attribute FAO, identify adaptation, respect third-party exceptions and FAO conditions including non-endorsement and no use in promotion. Selected A and E flagged observations. X (external organization) is excluded from both targets and inputs."
+  },
+  "raw_rows_selected": 23409,
+  "candidate_task_examples": 21311,
+  "excluded_source_rows": 493,
+  "invalid_label_examples": 0,
+  "source_profile": {
+    "bulk_rows": 4209110,
+    "all_selected_crop_yield_rows": 30123,
+    "scoped_yield_rows": 23409,
+    "excluded_flag_or_note": 493,
+    "excluded_area_rows": 6714,
+    "insufficient_consecutive_history": 1605,
+    "candidate_counts_by_crop": {
+      "Wheat": 6218,
+      "Maize (corn)": 8501,
+      "Rice": 6592
+    },
+    "scoped_source_flags": {
+      "A": 18260,
+      "E": 4656,
+      "X": 493
+    },
+    "target_year_range": [
+      1964,
+      2024
+    ],
+    "history_length_years": 3,
+    "selected_area_series": 419,
+    "excluded_additional_fao_area_codes": [
+      15,
+      51,
+      62,
+      186,
+      206,
+      228,
+      248,
+      351
+    ]
+  },
+  "grouping_rule": "Reporting area code and FAO crop code define an annual series. Retain the target year and source rows for all prior observations.",
+  "split_policy": "Unassigned. For a time holdout, split all series at common target years, such as train through 2015, validation 2016–2019, test 2020–2024. Earlier years may supply observed history. An area holdout requires keeping every crop for that area together.",
+  "excluded_input_columns": [
+    "target-year yield",
+    "target-year area harvested",
+    "target-year production",
+    "target and history source flags",
+    "post-target observations"
+  ],
+  "target_transform": "source_kg_per_ha_no_conversion",
+  "quality_findings": [
+    "Three consecutive prior values and a target are required. Windows can overlap across consecutive years.",
+    "This is a retrospective lagged task from one published vintage. Revisions and publication lags preclude a real-time backtest claim.",
+    "The subset includes country and territory reporting areas. Regional aggregates and explicitly identified overlapping combined/predecessor areas are omitted.",
+    "A denotes an official figure and E an estimated one. Flags are retained outside input. Data have been filtered and reshaped by the repository authors."
+  ],
+  "tasks": {
+    "next_annual_crop_yield": {
+      "instruction": "Estimate this reporting area’s next annual yield for the specified cereal crop, using its three preceding annual yields.",
+      "field_description": "reporting_area is the FAOSTAT country or territory name. crop is the cereal. target_year is the year of the requested yield. prior_annual_yields_kg_per_ha lists the three preceding annual observations, in chronological order, each measured in kilograms per harvested hectare.",
+      "target_name": "next_annual_crop_yield",
+      "unit": "kg/ha",
+      "type": "continuous"
+    }
+  },
+  "source_version": "QCL bulk release dated 2025-12-31 in the FAOSTAT catalogue; observations through 2024",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "faostat_qcl",
+    "name": "FAOSTAT QCL cereal yields",
+    "batch": 4,
+    "candidate_id": "B4-FAOSTAT",
+    "raw_rows_selected": 23409,
+    "candidate_task_examples": 21311,
+    "output_examples": 21311,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 493,
+    "task_count": 1,
+    "split_groups": 418,
+    "examples_with_null_input": 0,
+    "flagged_examples": 5448,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 21311
+    },
+    "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+    "files": [
+      {
+        "path": "datasets/faostat_qcl_faostat/part-00001.jsonl.gz",
+        "records": 17314,
+        "sha256": "e6b96361afb30f8b360980894d5d0911d72ccf6a83ba3f5b612b49dac897fc2c",
+        "bytes": 2040545
+      },
+      {
+        "path": "datasets/faostat_qcl_faostat/part-00002.jsonl.gz",
+        "records": 3997,
+        "sha256": "df247fc3a2bc88b2c04606c30076481bf26c84e01939e796c8e328f3892c2ea6",
+        "bytes": 473680
+      }
+    ],
+    "uncompressed_sha256": "4bf40e7b48304ecef68a35d60470d96945eff0a0e36422f02ccde08edd202e4c"
+  },
+  "task_statistics": {
+    "next_annual_crop_yield": {
+      "prompt_chars_min": 794,
+      "prompt_chars_max": 859,
+      "records": 21311,
+      "label_min": 0,
+      "label_max": 39405.7,
+      "label_mean": 3084.75430998,
+      "zero_labels": 12
+    }
+  },
+  "quality_flag_counts": {
+    "estimated_history": 5061,
+    "estimated_target": 4156
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}
