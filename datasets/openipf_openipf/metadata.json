@@ -1,0 +1,191 @@
+{
+  "name": "OpenIPF adult raw three-lift deadlift results",
+  "dataset_id": "openipf",
+  "dataset_family": "openpowerlifting_competition_results",
+  "candidate_id": "B5-IPF",
+  "source_url": "https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html",
+  "version": "2.4.0",
+  "source_citation": "OpenPowerlifting project and contributors. OpenIPF IPF-affiliate results, 2026-11-21. https://www.openpowerlifting.org/",
+  "license": {
+    "name": "Competition data dedicated to the Public Domain",
+    "url": "https://openpowerlifting.gitlab.io/opl-csv/",
+    "archive_evidence": "openipf-2026-11-21/LICENSE.txt"
+  },
+  "source_files": [
+    {
+      "url": "https://openpowerlifting.gitlab.io/opl-csv/files/openipf-latest.zip",
+      "relativepath": "openipf-2026-11-21.zip",
+      "bytes": 68618822,
+      "sha256": "9633dfd0930c131ccdbaffc197320c2e3e9276fedbc1ecb7228d5d4ac20aae79"
+    }
+  ],
+  "raw_rows_selected": 1540272,
+  "excluded_source_rows": 1213419,
+  "target_transform": "reported_best_successful_deadlift_from_first_three_attempts_in_kg",
+  "preparation": "Selected adult Raw SBD entries in 2015–2024 with known positive bodyweight and best deadlift. Used pre-lift attributes only. Omitted division because multiple divisions can register the same performance. Matching task/input/label occurrences are merged with their row references.",
+  "split_guidance": "Use whole group_id holdouts to evaluate unfamiliar athletes. Groups join repeated source-disambiguated athlete names and identical inputs. Homonyms or aliases in the source may affect identity resolution. For forecasting later meets, split on meet_date and state how repeated athletes are treated.",
+  "quality_findings": [
+    "The source may give approximate fractional ages. Age is the reported value.",
+    "Results describe competitors with a successful recorded deadlift. They do not cover all entrants.",
+    "Different recorded outcomes for the same visible inputs are retained. The original athlete names, divisions, placing, attempted lifts, totals and derived scores are absent from the prompt."
+  ],
+  "tasks": {
+    "best_deadlift": {
+      "target_name": "best successful deadlift",
+      "unit": "kg",
+      "type": "continuous",
+      "instruction": "Estimate this adult competitor's best successful deadlift in the first three attempts at a raw three-lift powerlifting meet.",
+      "field_description": "age_years is the reported age. bodyweight_kg is the weigh-in mass. competition_sex is the source competition category. meet_date is the competition date. federation and the meet country, state and town describe the competition setting."
+    }
+  },
+  "source_version": "OpenIPF 2026-11-21, revision fb43e52f",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "openipf",
+    "name": "OpenIPF adult raw three-lift deadlift results",
+    "batch": 5,
+    "candidate_id": "B5-IPF",
+    "raw_rows_selected": 1540272,
+    "candidate_task_examples": 326853,
+    "output_examples": 312215,
+    "collapsed_duplicate_examples": 14638,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 1213419,
+    "task_count": 1,
+    "split_groups": 123013,
+    "examples_with_null_input": 230166,
+    "flagged_examples": 2483,
+    "identical_input_different_label_groups": 1219,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 312215
+    },
+    "source_url": "https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html",
+    "files": [
+      {
+        "path": "datasets/openipf_openipf/part-00001.jsonl.gz",
+        "records": 19096,
+        "sha256": "b6116cc1995b83be8a6cb4a79dc64d99e4a2ff8b6d16d1d3239436013a17a9f4",
+        "bytes": 1955490
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00002.jsonl.gz",
+        "records": 19084,
+        "sha256": "42e3d06085b4873643494ddd4b834f4950b8f03cf78545385e71e0da4ecbd434",
+        "bytes": 1944010
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00003.jsonl.gz",
+        "records": 19071,
+        "sha256": "a3e08f723f62496f137c655cdf6b84607d0a6f415c08deb23efdaf4bb47a670d",
+        "bytes": 1938643
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00004.jsonl.gz",
+        "records": 19120,
+        "sha256": "5c526aa4bd343e23aef5996edddde92a4d17d1e6301950e5337d827376883f4f",
+        "bytes": 1938070
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00005.jsonl.gz",
+        "records": 19141,
+        "sha256": "5ae2f02068f0861bf5139c36e18aec8c7acd75185522f9b34bbbf351684d7618",
+        "bytes": 1928568
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00006.jsonl.gz",
+        "records": 19135,
+        "sha256": "7c03a5beec484211d205da39362fdb278ffd177409a2638fd2afca15a92282e2",
+        "bytes": 1951466
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00007.jsonl.gz",
+        "records": 19148,
+        "sha256": "6fd666f1f733a15a710649b60e15206eee91af18fa22cff4fd81da3d9e5bc403",
+        "bytes": 1946789
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00008.jsonl.gz",
+        "records": 19146,
+        "sha256": "bcfa72f3ebcfb9b24179ba3b56eedcbbb04286af127732d0255c8e84ecffef9c",
+        "bytes": 1952721
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00009.jsonl.gz",
+        "records": 19120,
+        "sha256": "3f3e3eb02996a4189b93946801e0b1bf41998357ce6bb2b77d3fb4c09c72d8b3",
+        "bytes": 1948388
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00010.jsonl.gz",
+        "records": 19088,
+        "sha256": "1e5b09c4fab821b07c3f7b3ec0fea975760b27ed21d704bb7487c29e12a85c1f",
+        "bytes": 1934905
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00011.jsonl.gz",
+        "records": 19157,
+        "sha256": "e12ad33d7f38e0999148f108d80318b55769875d8fcaea09376af040c5571d35",
+        "bytes": 1922162
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00012.jsonl.gz",
+        "records": 19074,
+        "sha256": "4277c7620f351176dd65702c40e2586837a18a9fbcf8001e804d4a0b889c5356",
+        "bytes": 1903716
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00013.jsonl.gz",
+        "records": 19045,
+        "sha256": "f2a5d13e1b36288b12080377f2a5e1097fadc23e23f5f37d9502c6aac5bd703a",
+        "bytes": 1962236
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00014.jsonl.gz",
+        "records": 19080,
+        "sha256": "2ccfc8ea09001c219d8f51c8d64ffede0bf1440f9b44b24d4c6b0ed0137127bd",
+        "bytes": 1964251
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00015.jsonl.gz",
+        "records": 19027,
+        "sha256": "15bdaeabe26e25cb43eade44ecc9e6ad38ef6697cd44d86c1b65ca404d4857bd",
+        "bytes": 1948314
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00016.jsonl.gz",
+        "records": 19037,
+        "sha256": "6c5da0407ebd2eac469151c6b0a63c9b126dc1bed1149ce5d91298ec461e94fb",
+        "bytes": 1964287
+      },
+      {
+        "path": "datasets/openipf_openipf/part-00017.jsonl.gz",
+        "records": 6646,
+        "sha256": "6eca68071c90dcb238afad8ed983c0e018ab0eea7893948d05335e589a86220e",
+        "bytes": 673146
+      }
+    ],
+    "uncompressed_sha256": "cd05cefbef27712a007fa71e8349311e8ec9a8fdb584796c0641a89279b8bf08"
+  },
+  "task_statistics": {
+    "best_deadlift": {
+      "prompt_chars_min": 714,
+      "prompt_chars_max": 763,
+      "records": 312215,
+      "label_min": 20,
+      "label_max": 411,
+      "label_mean": 197.508389059,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "identical_input_multiple_labels": 2483
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

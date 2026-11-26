@@ -25,3 +25,10 @@ O1,P1,Auction Verification：验证属性JSON,源聚合平均验证时间，ms,"
 O2,P1,Video Transcoding：视频/编码配置JSON,utime，s,"68,784 source rows; 68,784 prepared records",数据CC BY4；可 / 元信息与标签可,https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset,approved_and_prepared
 O3,P2,Wave Energy：16点空间布局,模拟总功率；具体单位待核,"原源288,000；OpenML72,000子集",数据CC BY4；可 / 可，但先核单位/删泄漏字段,https://archive.ics.uci.edu/dataset/494/wave+energy+converters,pending
 O4,P2,FPS Benchmark：硬件+游戏配置JSON,帧率，frames/s,"24,624",CC BY版本和抓取上游权利不清；条件 / 暂缓,https://www.openml.org/d/44992,pending
+B5-LANCASTER,B5,"Lancaster Sensorimotor Norms: auditory, visual and haptic strength",auditory_strength (mean human rating (0-5)) / visual_strength (mean human rating (0-5)) / haptic_strength (mean human rating (0-5)),"119,121 prepared examples",CC BY 4.0,https://osf.io/7emr6/,prepared
+B5-IPF,B5,OpenIPF adult raw three-lift deadlift results,best successful deadlift (kg),"312,215 prepared examples",Competition data dedicated to the Public Domain,https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html,prepared
+B5-RETAIL,B5,Sales Transactions Weekly: next-week purchased quantity,next_week_purchased_quantity (purchased units per week),"35,684 prepared examples",CC BY 4.0,https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly,prepared
+FDM,B5,FDM printing configuration and peak tensile load,mean peak tensile load (N),500 prepared examples,CC BY 4.0,https://data.mendeley.com/datasets/zd6td6svd6/1,prepared
+MOTOR,B5,Synchronous Machine,synchronous motor excitation current (A),557 prepared examples,CC BY 4.0,https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set,prepared
+B5-FUKUCHI,B5,Fukuchi treadmill running biomechanics,95th percentile vertical ground reaction force (N),101 prepared examples,CC BY 4.0,https://doi.org/10.6084/m9.figshare.4543435.v5,prepared
+B5-BIDMC,B5,BIDMC PPG and manually annotated respiratory rate,mean manually annotated respiratory rate (breaths/min),424 prepared examples,Open Data Commons Attribution License v1.0,https://physionet.org/content/bidmc/1.0.0/,prepared

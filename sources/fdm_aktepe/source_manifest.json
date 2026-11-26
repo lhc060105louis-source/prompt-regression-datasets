@@ -1,0 +1,35 @@
+{
+  "source_url": "https://data.mendeley.com/datasets/zd6td6svd6/1",
+  "version": "Mendeley Data V1 (2026-07-17)",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://data.mendeley.com/datasets/zd6td6svd6/1"
+    }
+  },
+  "citation": {
+    "authors": [
+      "Elif Aktepe",
+      "Uçman Ergün"
+    ],
+    "doi": "10.17632/zd6td6svd6.1",
+    "corresponding_paper": "https://doi.org/10.3390/mi17070859"
+  },
+  "files": [
+    {
+      "relativepath": "fdm-parameters.xlsx",
+      "url": "https://data.mendeley.com/public-files/datasets/zd6td6svd6/files/d25c271e-dfb9-4448-99ad-25eb6a7dd965/file_downloaded",
+      "sha256": "fc85cbbe019090c55740d86e8bb451159443fa68100cd0a7c99dbdd75330a591",
+      "bytes": 60765
+    },
+    {
+      "relativepath": "fdm-description.pdf",
+      "url": "https://data.mendeley.com/public-files/datasets/zd6td6svd6/files/3b1f5da6-e3e7-4a6e-8f61-990ccfe4e31d/file_downloaded",
+      "sha256": "e42d5421dba89d1596bbd07e80b7de9df20222c4c63df27c40d707d509c7d50e",
+      "bytes": 78870
+    }
+  ],
+  "preparation": "See preprocessing/batch5 and per-dataset metadata.",
+  "raw_archives_included": false
+}

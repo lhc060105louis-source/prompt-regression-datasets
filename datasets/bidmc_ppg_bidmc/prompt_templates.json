@@ -1,0 +1,9 @@
+{
+  "manual_respiratory_rate": {
+    "target_name": "mean manually annotated respiratory rate",
+    "unit": "breaths/min",
+    "type": "continuous",
+    "instruction": "Estimate respiratory rate from this one-minute bedside photoplethysmogram.",
+    "field_description": "pleth_5hz_mean gives 300 consecutive 0.2-second averages of the pulse oximeter PLETH waveform, in original monitor amplitude units and chronological order."
+  }
+}

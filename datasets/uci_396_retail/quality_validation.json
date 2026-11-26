@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "candidates": 35684,
+  "records": 35684,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {
+    "integer_count_target": 35684
+  },
+  "training_executed": false
+}

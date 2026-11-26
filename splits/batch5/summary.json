@@ -1,0 +1,37 @@
+{
+  "lancaster_sensorimotor": {
+    "train": 95295,
+    "validation": 11913,
+    "test": 11913
+  },
+  "openipf": {
+    "train": 249974,
+    "validation": 31147,
+    "test": 31094
+  },
+  "uci_396": {
+    "train": 22708,
+    "validation": 6488,
+    "test": 6488
+  },
+  "fdm_aktepe": {
+    "train": 372,
+    "validation": 27,
+    "test": 101
+  },
+  "uci_607": {
+    "train": 395,
+    "validation": 90,
+    "test": 72
+  },
+  "fukuchi_running": {
+    "train": 71,
+    "validation": 16,
+    "test": 14
+  },
+  "bidmc_ppg": {
+    "train": 288,
+    "validation": 56,
+    "test": 80
+  }
+}

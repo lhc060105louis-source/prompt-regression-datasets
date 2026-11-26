@@ -1,0 +1,282 @@
+{
+  "dataset_id": "lancaster_sensorimotor",
+  "dataset_family": "lancaster_sensorimotor_norms",
+  "name": "Lancaster Sensorimotor Norms: auditory, visual and haptic strength",
+  "candidate_id": "B5-LANCASTER",
+  "source_url": "https://osf.io/7emr6/",
+  "creators": [
+    "Dermot Lynott",
+    "Louise Connell",
+    "Marc Brysbaert",
+    "James Brand",
+    "James Carney"
+  ],
+  "source_citation": "Lynott, D., Connell, L., Brysbaert, M., Brand, J., and Carney, J. (2020). The Lancaster Sensorimotor Norms: multidimensional measures of perceptual and action strength for 40,000 English words. Behavior Research Methods 52, 1271-1291. https://doi.org/10.3758/s13428-019-01316-z",
+  "version": "2.4.0",
+  "source_files": [
+    {
+      "relativepath": "raw/lancaster_sensorimotor.csv",
+      "url": "https://osf.io/download/48wsc/",
+      "sha256": "445d363fb1f9f3e50b86d88e2f46cdc9a22b5dd8a713ce4e7be2a773d57f43c5",
+      "bytes": 17196336
+    }
+  ],
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "data_node": "https://api.osf.io/v2/nodes/rwhs6/",
+      "license_relationship": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96a/"
+    },
+    "scope": "Original aggregate CSV words and ratings. Preserve author attribution, licence and adaptation notice. No third-party sentence or audio material is included."
+  },
+  "raw_rows_selected": 39707,
+  "candidate_task_examples": 119121,
+  "excluded_source_rows": 0,
+  "invalid_label_examples": 0,
+  "source_profile": {
+    "source_columns": [
+      "Word",
+      "Auditory.mean",
+      "Gustatory.mean",
+      "Haptic.mean",
+      "Interoceptive.mean",
+      "Olfactory.mean",
+      "Visual.mean",
+      "Foot_leg.mean",
+      "Hand_arm.mean",
+      "Head.mean",
+      "Mouth.mean",
+      "Torso.mean",
+      "Auditory.SD",
+      "Gustatory.SD",
+      "Haptic.SD",
+      "Interoceptive.SD",
+      "Olfactory.SD",
+      "Visual.SD",
+      "Foot_leg.SD",
+      "Hand_arm.SD",
+      "Head.SD",
+      "Mouth.SD",
+      "Torso.SD",
+      "Max_strength.perceptual",
+      "Minkowski3.perceptual",
+      "Exclusivity.perceptual",
+      "Dominant.perceptual",
+      "Max_strength.action",
+      "Minkowski3.action",
+      "Exclusivity.action",
+      "Dominant.action",
+      "Max_strength.sensorimotor",
+      "Minkowski3.sensorimotor",
+      "Exclusivity.sensorimotor",
+      "Dominant.sensorimotor",
+      "N_known.perceptual",
+      "List_N.perceptual",
+      "Percent_known.perceptual",
+      "N_known.action",
+      "List_N.action",
+      "Percent_known.action",
+      "Mean_age.perceptual",
+      "Mean_age.action",
+      "List#.perceptual",
+      "List#.action"
+    ],
+    "unique_normalized_words": 39707,
+    "selected_mean_columns": [
+      "Auditory.mean",
+      "Visual.mean",
+      "Haptic.mean"
+    ],
+    "unselected_mean_columns": [
+      "Gustatory.mean",
+      "Interoceptive.mean",
+      "Olfactory.mean",
+      "Foot_leg.mean",
+      "Hand_arm.mean",
+      "Head.mean",
+      "Mouth.mean",
+      "Torso.mean"
+    ]
+  },
+  "excluded_input_columns": [
+    "Auditory.mean",
+    "Gustatory.mean",
+    "Haptic.mean",
+    "Interoceptive.mean",
+    "Olfactory.mean",
+    "Visual.mean",
+    "Foot_leg.mean",
+    "Hand_arm.mean",
+    "Head.mean",
+    "Mouth.mean",
+    "Torso.mean",
+    "Auditory.SD",
+    "Gustatory.SD",
+    "Haptic.SD",
+    "Interoceptive.SD",
+    "Olfactory.SD",
+    "Visual.SD",
+    "Foot_leg.SD",
+    "Hand_arm.SD",
+    "Head.SD",
+    "Mouth.SD",
+    "Torso.SD",
+    "Max_strength.perceptual",
+    "Minkowski3.perceptual",
+    "Exclusivity.perceptual",
+    "Dominant.perceptual",
+    "Max_strength.action",
+    "Minkowski3.action",
+    "Exclusivity.action",
+    "Dominant.action",
+    "Max_strength.sensorimotor",
+    "Minkowski3.sensorimotor",
+    "Exclusivity.sensorimotor",
+    "Dominant.sensorimotor",
+    "N_known.perceptual",
+    "List_N.perceptual",
+    "Percent_known.perceptual",
+    "N_known.action",
+    "List_N.action",
+    "Percent_known.action",
+    "Mean_age.perceptual",
+    "Mean_age.action",
+    "List#.perceptual",
+    "List#.action"
+  ],
+  "target_transform": "original_source_mean_no_transformation",
+  "grouping_rule": "NFKC-normalized, stripped and casefolded original Word. All three target dimensions of a word share a group; the original input spelling is unchanged.",
+  "split_policy": "Unassigned. Assign word groups jointly across all dimensions, for example 80/10/10. Audit morphological relatives and cross-source overlapping words before claiming unseen-word evaluation.",
+  "quality_findings": [
+    "Only auditory, visual and haptic aggregate mean scores are selected. Other rating means, SDs, sample sizes and score-derived summary variables are excluded from input.",
+    "rating_sd and rating_n preserve source rater disagreement and sample size outside the prompt. They are not model prediction variance labels.",
+    "The OSF data node says the historical participant-ID correction affected trial-level data, not this aggregate file. Trial-level participant data are not included.",
+    "These are decontextualized human ratings across meanings of a word, not objective sensory measurements. References use 1-based data rows excluding the header."
+  ],
+  "tasks": {
+    "auditory_strength": {
+      "target_name": "auditory_strength",
+      "unit": "mean human rating (0-5)",
+      "type": "continuous",
+      "instruction": "Estimate the mean human rating of how strongly the meaning of this English word is experienced through hearing. The scale ranges from 0 (not experienced at all) to 5 (experienced greatly).",
+      "field_description": "word is the original English word or expression, without sentence context. Ratings summarize people's experience of its meaning across possible senses; they are not a measurement of a physical property."
+    },
+    "visual_strength": {
+      "target_name": "visual_strength",
+      "unit": "mean human rating (0-5)",
+      "type": "continuous",
+      "instruction": "Estimate the mean human rating of how strongly the meaning of this English word is experienced through vision. The scale ranges from 0 (not experienced at all) to 5 (experienced greatly).",
+      "field_description": "word is the original English word or expression, without sentence context. Ratings summarize people's experience of its meaning across possible senses; they are not a measurement of a physical property."
+    },
+    "haptic_strength": {
+      "target_name": "haptic_strength",
+      "unit": "mean human rating (0-5)",
+      "type": "continuous",
+      "instruction": "Estimate the mean human rating of how strongly the meaning of this English word is experienced through touch. The scale ranges from 0 (not experienced at all) to 5 (experienced greatly).",
+      "field_description": "word is the original English word or expression, without sentence context. Ratings summarize people's experience of its meaning across possible senses; they are not a measurement of a physical property."
+    }
+  },
+  "source_version": "OSF aggregate file 48wsc, SHA256-pinned, accessed 2026-11-26",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "lancaster_sensorimotor",
+    "name": "Lancaster Sensorimotor Norms: auditory, visual and haptic strength",
+    "batch": 5,
+    "candidate_id": "B5-LANCASTER",
+    "raw_rows_selected": 39707,
+    "candidate_task_examples": 119121,
+    "output_examples": 119121,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 3,
+    "split_groups": 39707,
+    "examples_with_null_input": 0,
+    "flagged_examples": 119121,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 119121
+    },
+    "source_url": "https://osf.io/7emr6/",
+    "files": [
+      {
+        "path": "datasets/lancaster_sensorimotor_lancaster/part-00001.jsonl.gz",
+        "records": 20000,
+        "sha256": "bf77bbd6e60d74e8d5bed8604c0c41ad3509208217573e4f60cb34b4d5c3abb1",
+        "bytes": 1427248
+      },
+      {
+        "path": "datasets/lancaster_sensorimotor_lancaster/part-00002.jsonl.gz",
+        "records": 20000,
+        "sha256": "0690838b15c99e37904eb9ce2ac37bbb2a058fc664e5618fac3cf20d8977fc09",
+        "bytes": 1424202
+      },
+      {
+        "path": "datasets/lancaster_sensorimotor_lancaster/part-00003.jsonl.gz",
+        "records": 20000,
+        "sha256": "eacdeae22307a586b2bf2ac6e0f0da54cdeff9e3300318e36653e35e23c57b1a",
+        "bytes": 1426024
+      },
+      {
+        "path": "datasets/lancaster_sensorimotor_lancaster/part-00004.jsonl.gz",
+        "records": 20000,
+        "sha256": "4ce9427c6d492b9fa306a354b978701468b99d78f6a07de5f71e31e09360e07e",
+        "bytes": 1427685
+      },
+      {
+        "path": "datasets/lancaster_sensorimotor_lancaster/part-00005.jsonl.gz",
+        "records": 20000,
+        "sha256": "5ebead5c365d544d1b659186c5f48e4926a899dd0aa99d9c02036c2f3550dab0",
+        "bytes": 1423470
+      },
+      {
+        "path": "datasets/lancaster_sensorimotor_lancaster/part-00006.jsonl.gz",
+        "records": 19121,
+        "sha256": "16f2763a55efacb509739c829aad02a25821d7c5a78ede0c33b1182bb7ae5204",
+        "bytes": 1364483
+      }
+    ],
+    "uncompressed_sha256": "b02bdb3827d961e60fd1b717a0e63a07e928868d11f19f9ce69512ef7d5646cd"
+  },
+  "task_statistics": {
+    "auditory_strength": {
+      "prompt_chars_min": 616,
+      "prompt_chars_max": 637,
+      "records": 39707,
+      "label_min": 0,
+      "label_max": 5,
+      "label_mean": 1.51399647434,
+      "zero_labels": 404
+    },
+    "visual_strength": {
+      "prompt_chars_min": 613,
+      "prompt_chars_max": 634,
+      "records": 39707,
+      "label_min": 0,
+      "label_max": 5,
+      "label_mean": 2.89718137324,
+      "zero_labels": 4
+    },
+    "haptic_strength": {
+      "prompt_chars_min": 612,
+      "prompt_chars_max": 633,
+      "records": 39707,
+      "label_min": 0,
+      "label_max": 4.944444444,
+      "label_mean": 1.07402529889,
+      "zero_labels": 1311
+    }
+  },
+  "quality_flag_counts": {
+    "human_aggregate_rating": 119121
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

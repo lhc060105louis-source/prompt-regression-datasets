@@ -1,0 +1,9 @@
+{
+  "next_week_purchased_quantity": {
+    "target_name": "next_week_purchased_quantity",
+    "unit": "purchased units per week",
+    "type": "continuous",
+    "instruction": "Predict the purchased quantity for this anonymous product in the next source week using its eight preceding weekly observations.",
+    "field_description": "product_code is an anonymous source product identifier, without a product description. target_week_index is the requested zero-based source week (0-51), not a calendar date. prior_weekly_purchased_quantities contains eight nonnegative integer quantities, oldest to newest, for the eight immediately preceding weeks."
+  }
+}

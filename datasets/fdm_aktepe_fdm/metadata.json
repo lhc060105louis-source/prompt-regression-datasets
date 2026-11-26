@@ -1,0 +1,131 @@
+{
+  "dataset_id": "fdm_aktepe",
+  "dataset_family": "aktepe_ergun_fdm",
+  "candidate_id": "FDM",
+  "name": "FDM printing configuration and peak tensile load",
+  "version": "2.4.0",
+  "source_url": "https://data.mendeley.com/datasets/zd6td6svd6/1",
+  "source_files": [
+    {
+      "relativepath": "fdm-parameters.xlsx",
+      "url": "https://data.mendeley.com/public-files/datasets/zd6td6svd6/files/d25c271e-dfb9-4448-99ad-25eb6a7dd965/file_downloaded",
+      "sha256": "fc85cbbe019090c55740d86e8bb451159443fa68100cd0a7c99dbdd75330a591",
+      "bytes": 60765
+    },
+    {
+      "relativepath": "fdm-description.pdf",
+      "url": "https://data.mendeley.com/public-files/datasets/zd6td6svd6/files/3b1f5da6-e3e7-4a6e-8f61-990ccfe4e31d/file_downloaded",
+      "sha256": "e42d5421dba89d1596bbd07e80b7de9df20222c4c63df27c40d707d509c7d50e",
+      "bytes": 78870
+    }
+  ],
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://data.mendeley.com/datasets/zd6td6svd6/1"
+    }
+  },
+  "source_citation": {
+    "authors": [
+      "Elif Aktepe",
+      "Uçman Ergün"
+    ],
+    "doi": "10.17632/zd6td6svd6.1",
+    "corresponding_paper": "https://doi.org/10.3390/mi17070859"
+  },
+  "tasks": {
+    "mean_peak_tensile_load": {
+      "target_name": "mean peak tensile load",
+      "unit": "N",
+      "type": "continuous",
+      "instruction": "Estimate the mean peak tensile load measured for specimens made with this fused deposition modeling configuration.",
+      "field_description": "printer_chamber is the open or closed printer type. material names the filament. layer_height_mm is the nominal layer thickness in millimetres. infill_pct is the infill percentage and infill_pattern is its layout. print_speed_mm_per_s is the print speed in millimetres per second. The output is the configuration-level mean of three specimens tested under the source study protocol."
+    }
+  },
+  "target_transform": "source_configuration_mean_no_further_aggregation",
+  "split_policy": "Unassigned. Keep each material family together when evaluating new polymers.",
+  "grouping_rule": "PLA variants share a family. PETG and recycled PET form a polyester group. ABS, PP, and TPU each form a family.",
+  "excluded_input_columns": [
+    "Sample No",
+    "Roughness AVG",
+    "Hardness AVG",
+    "Peak Load (N)",
+    "Peak Stress (kPa)",
+    "Strain at Break (mm/mm)",
+    "Modulus (MPa)",
+    "Width (mm)",
+    "Thickness (mm)"
+  ],
+  "quality_findings": [
+    "The workbook reports configuration-level values from physical experiments. Three specimens per configuration are represented by one aggregate observation; replicate-level variance is unavailable.",
+    "Post-print dimensions and all mechanical or surface outcomes are excluded. Only the six manufacturing settings are model inputs.",
+    "The source distinguishes printer chamber categories, which are confounded with printer hardware. There are only five polymer-family groups, with unequal group sizes."
+  ],
+  "invalid_label_examples": 0,
+  "excluded_source_rows": 0,
+  "raw_rows_selected": 500,
+  "candidate_task_examples": 500,
+  "source_profile": {
+    "family_counts": {
+      "polymer/pla": 336,
+      "polymer/pet_family": 101,
+      "polymer/pp": 9,
+      "polymer/tpu": 27,
+      "polymer/abs": 27
+    },
+    "unique_configurations": 500
+  },
+  "source_version": "Mendeley Data V1 (2026-07-17)",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "fdm_aktepe",
+    "name": "FDM printing configuration and peak tensile load",
+    "batch": 5,
+    "candidate_id": "FDM",
+    "raw_rows_selected": 500,
+    "candidate_task_examples": 500,
+    "output_examples": 500,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 5,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 500
+    },
+    "source_url": "https://data.mendeley.com/datasets/zd6td6svd6/1",
+    "files": [
+      {
+        "path": "datasets/fdm_aktepe_fdm/part-00001.jsonl.gz",
+        "records": 500,
+        "sha256": "b9a779af38f26bfa1af4d87b57da26eb5b30c6b810b4f7a2be43e84dcecbd51d",
+        "bytes": 46199
+      }
+    ],
+    "uncompressed_sha256": "e5cd837a2fdceeb8a67cf17be582338c8c30d678a9483eb5d2833b25bac537dd"
+  },
+  "task_statistics": {
+    "mean_peak_tensile_load": {
+      "prompt_chars_min": 824,
+      "prompt_chars_max": 843,
+      "records": 500,
+      "label_min": 120.495333333,
+      "label_max": 1135.01433333,
+      "label_mean": 710.943061333,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

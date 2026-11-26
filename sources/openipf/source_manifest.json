@@ -1,0 +1,20 @@
+{
+  "source_url": "https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html",
+  "version": "OpenIPF 2026-11-21, revision fb43e52f",
+  "license": {
+    "name": "Competition data dedicated to the Public Domain",
+    "url": "https://openpowerlifting.gitlab.io/opl-csv/",
+    "archive_evidence": "openipf-2026-11-21/LICENSE.txt"
+  },
+  "citation": "OpenPowerlifting project and contributors. OpenIPF IPF-affiliate results, 2026-11-21. https://www.openpowerlifting.org/",
+  "files": [
+    {
+      "url": "https://openpowerlifting.gitlab.io/opl-csv/files/openipf-latest.zip",
+      "relativepath": "openipf-2026-11-21.zip",
+      "bytes": 68618822,
+      "sha256": "9633dfd0930c131ccdbaffc197320c2e3e9276fedbc1ecb7228d5d4ac20aae79"
+    }
+  ],
+  "preparation": "See preprocessing/batch5 and per-dataset metadata.",
+  "raw_archives_included": false
+}

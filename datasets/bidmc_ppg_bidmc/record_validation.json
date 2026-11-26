@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "dataset_id": "bidmc_ppg",
+  "records": 424,
+  "source_candidate_occurrences": 424,
+  "raw_inventory_files_checked": 160,
+  "checks": [
+    "finite scalar labels",
+    "input/prompt equality",
+    "numeric precision",
+    "source-candidate label and input equality under declared rounding",
+    "all source references retained",
+    "official split occurrence preservation",
+    "same-input group closure",
+    "unique sample IDs",
+    "raw source checksums"
+  ],
+  "training_executed": false
+}

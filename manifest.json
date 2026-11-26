@@ -1,5 +1,5 @@
 {
-  "version": "2.3.0",
+  "version": "2.4.0",
   "created_date": "2026-11-09",
   "datasets": [
     {
@@ -1725,20 +1725,384 @@
       ],
       "uncompressed_sha256": "523177bc2d3dd3e2bf5dae4e34fccce6a3c569f7398bc32ddaa11cce1b3ed529",
       "uci_id": 487
+    },
+    {
+      "dataset_id": "lancaster_sensorimotor",
+      "name": "Lancaster Sensorimotor Norms: auditory, visual and haptic strength",
+      "batch": 5,
+      "candidate_id": "B5-LANCASTER",
+      "raw_rows_selected": 39707,
+      "candidate_task_examples": 119121,
+      "output_examples": 119121,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 3,
+      "split_groups": 39707,
+      "examples_with_null_input": 0,
+      "flagged_examples": 119121,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 119121
+      },
+      "source_url": "https://osf.io/7emr6/",
+      "files": [
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00001.jsonl.gz",
+          "records": 20000,
+          "sha256": "bf77bbd6e60d74e8d5bed8604c0c41ad3509208217573e4f60cb34b4d5c3abb1",
+          "bytes": 1427248
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00002.jsonl.gz",
+          "records": 20000,
+          "sha256": "0690838b15c99e37904eb9ce2ac37bbb2a058fc664e5618fac3cf20d8977fc09",
+          "bytes": 1424202
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00003.jsonl.gz",
+          "records": 20000,
+          "sha256": "eacdeae22307a586b2bf2ac6e0f0da54cdeff9e3300318e36653e35e23c57b1a",
+          "bytes": 1426024
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00004.jsonl.gz",
+          "records": 20000,
+          "sha256": "4ce9427c6d492b9fa306a354b978701468b99d78f6a07de5f71e31e09360e07e",
+          "bytes": 1427685
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00005.jsonl.gz",
+          "records": 20000,
+          "sha256": "5ebead5c365d544d1b659186c5f48e4926a899dd0aa99d9c02036c2f3550dab0",
+          "bytes": 1423470
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00006.jsonl.gz",
+          "records": 19121,
+          "sha256": "16f2763a55efacb509739c829aad02a25821d7c5a78ede0c33b1182bb7ae5204",
+          "bytes": 1364483
+        }
+      ],
+      "uncompressed_sha256": "b02bdb3827d961e60fd1b717a0e63a07e928868d11f19f9ce69512ef7d5646cd"
+    },
+    {
+      "dataset_id": "openipf",
+      "name": "OpenIPF adult raw three-lift deadlift results",
+      "batch": 5,
+      "candidate_id": "B5-IPF",
+      "raw_rows_selected": 1540272,
+      "candidate_task_examples": 326853,
+      "output_examples": 312215,
+      "collapsed_duplicate_examples": 14638,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 1213419,
+      "task_count": 1,
+      "split_groups": 123013,
+      "examples_with_null_input": 230166,
+      "flagged_examples": 2483,
+      "identical_input_different_label_groups": 1219,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 312215
+      },
+      "source_url": "https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html",
+      "files": [
+        {
+          "path": "datasets/openipf_openipf/part-00001.jsonl.gz",
+          "records": 19096,
+          "sha256": "b6116cc1995b83be8a6cb4a79dc64d99e4a2ff8b6d16d1d3239436013a17a9f4",
+          "bytes": 1955490
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00002.jsonl.gz",
+          "records": 19084,
+          "sha256": "42e3d06085b4873643494ddd4b834f4950b8f03cf78545385e71e0da4ecbd434",
+          "bytes": 1944010
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00003.jsonl.gz",
+          "records": 19071,
+          "sha256": "a3e08f723f62496f137c655cdf6b84607d0a6f415c08deb23efdaf4bb47a670d",
+          "bytes": 1938643
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00004.jsonl.gz",
+          "records": 19120,
+          "sha256": "5c526aa4bd343e23aef5996edddde92a4d17d1e6301950e5337d827376883f4f",
+          "bytes": 1938070
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00005.jsonl.gz",
+          "records": 19141,
+          "sha256": "5ae2f02068f0861bf5139c36e18aec8c7acd75185522f9b34bbbf351684d7618",
+          "bytes": 1928568
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00006.jsonl.gz",
+          "records": 19135,
+          "sha256": "7c03a5beec484211d205da39362fdb278ffd177409a2638fd2afca15a92282e2",
+          "bytes": 1951466
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00007.jsonl.gz",
+          "records": 19148,
+          "sha256": "6fd666f1f733a15a710649b60e15206eee91af18fa22cff4fd81da3d9e5bc403",
+          "bytes": 1946789
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00008.jsonl.gz",
+          "records": 19146,
+          "sha256": "bcfa72f3ebcfb9b24179ba3b56eedcbbb04286af127732d0255c8e84ecffef9c",
+          "bytes": 1952721
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00009.jsonl.gz",
+          "records": 19120,
+          "sha256": "3f3e3eb02996a4189b93946801e0b1bf41998357ce6bb2b77d3fb4c09c72d8b3",
+          "bytes": 1948388
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00010.jsonl.gz",
+          "records": 19088,
+          "sha256": "1e5b09c4fab821b07c3f7b3ec0fea975760b27ed21d704bb7487c29e12a85c1f",
+          "bytes": 1934905
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00011.jsonl.gz",
+          "records": 19157,
+          "sha256": "e12ad33d7f38e0999148f108d80318b55769875d8fcaea09376af040c5571d35",
+          "bytes": 1922162
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00012.jsonl.gz",
+          "records": 19074,
+          "sha256": "4277c7620f351176dd65702c40e2586837a18a9fbcf8001e804d4a0b889c5356",
+          "bytes": 1903716
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00013.jsonl.gz",
+          "records": 19045,
+          "sha256": "f2a5d13e1b36288b12080377f2a5e1097fadc23e23f5f37d9502c6aac5bd703a",
+          "bytes": 1962236
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00014.jsonl.gz",
+          "records": 19080,
+          "sha256": "2ccfc8ea09001c219d8f51c8d64ffede0bf1440f9b44b24d4c6b0ed0137127bd",
+          "bytes": 1964251
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00015.jsonl.gz",
+          "records": 19027,
+          "sha256": "15bdaeabe26e25cb43eade44ecc9e6ad38ef6697cd44d86c1b65ca404d4857bd",
+          "bytes": 1948314
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00016.jsonl.gz",
+          "records": 19037,
+          "sha256": "6c5da0407ebd2eac469151c6b0a63c9b126dc1bed1149ce5d91298ec461e94fb",
+          "bytes": 1964287
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00017.jsonl.gz",
+          "records": 6646,
+          "sha256": "6eca68071c90dcb238afad8ed983c0e018ab0eea7893948d05335e589a86220e",
+          "bytes": 673146
+        }
+      ],
+      "uncompressed_sha256": "cd05cefbef27712a007fa71e8349311e8ec9a8fdb584796c0641a89279b8bf08"
+    },
+    {
+      "dataset_id": "uci_396",
+      "name": "Sales Transactions Weekly: next-week purchased quantity",
+      "batch": 5,
+      "candidate_id": "B5-RETAIL",
+      "raw_rows_selected": 811,
+      "candidate_task_examples": 35684,
+      "output_examples": 35684,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 811,
+      "examples_with_null_input": 0,
+      "flagged_examples": 35684,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 35684
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly",
+      "files": [
+        {
+          "path": "datasets/uci_396_retail/part-00001.jsonl.gz",
+          "records": 17627,
+          "sha256": "e29a7913101cd4a327d4e12896371179f20e6efe480ed4b2190c6f6fef4c3208",
+          "bytes": 1858631
+        },
+        {
+          "path": "datasets/uci_396_retail/part-00002.jsonl.gz",
+          "records": 17650,
+          "sha256": "c483e5dd1effb8a4b264c7dc9cf1b27137b16414dd9a8eebde5368f425b5066a",
+          "bytes": 1842341
+        },
+        {
+          "path": "datasets/uci_396_retail/part-00003.jsonl.gz",
+          "records": 407,
+          "sha256": "94483e25120a02751aff8cffddbadea0f7e97ccdfccaddad8c5e23d6b9edac1f",
+          "bytes": 43721
+        }
+      ],
+      "uncompressed_sha256": "50b8d4e03bdb0ac23d6fb036c7331850d384e61fb1f2024be614c55787613e48",
+      "uci_id": 396
+    },
+    {
+      "dataset_id": "fdm_aktepe",
+      "name": "FDM printing configuration and peak tensile load",
+      "batch": 5,
+      "candidate_id": "FDM",
+      "raw_rows_selected": 500,
+      "candidate_task_examples": 500,
+      "output_examples": 500,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 5,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 500
+      },
+      "source_url": "https://data.mendeley.com/datasets/zd6td6svd6/1",
+      "files": [
+        {
+          "path": "datasets/fdm_aktepe_fdm/part-00001.jsonl.gz",
+          "records": 500,
+          "sha256": "b9a779af38f26bfa1af4d87b57da26eb5b30c6b810b4f7a2be43e84dcecbd51d",
+          "bytes": 46199
+        }
+      ],
+      "uncompressed_sha256": "e5cd837a2fdceeb8a67cf17be582338c8c30d678a9483eb5d2833b25bac537dd"
+    },
+    {
+      "dataset_id": "uci_607",
+      "name": "Synchronous Machine",
+      "batch": 5,
+      "candidate_id": "MOTOR",
+      "raw_rows_selected": 557,
+      "candidate_task_examples": 557,
+      "output_examples": 557,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 31,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 557
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set",
+      "files": [
+        {
+          "path": "datasets/uci_607_motor/part-00001.jsonl.gz",
+          "records": 557,
+          "sha256": "8d8ef3d3f4c19d21be42d8cfc2b57a76e1f59c9d052ae4260d64d92ca228b49f",
+          "bytes": 43824
+        }
+      ],
+      "uncompressed_sha256": "77246ade47bb60935a8405485c1e6af4357fbb13bd3a66c26e75cf95ea8d169a",
+      "uci_id": 607
+    },
+    {
+      "dataset_id": "fukuchi_running",
+      "name": "Fukuchi treadmill running biomechanics",
+      "batch": 5,
+      "candidate_id": "B5-FUKUCHI",
+      "raw_rows_selected": 904000,
+      "candidate_task_examples": 101,
+      "output_examples": 101,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 39,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 101
+      },
+      "source_url": "https://doi.org/10.6084/m9.figshare.4543435.v5",
+      "files": [
+        {
+          "path": "datasets/fukuchi_running_fukuchi/part-00001.jsonl.gz",
+          "records": 101,
+          "sha256": "ed6e64553ff41120725b73c092599d8b92ea95c4f42891d0f22fca1a7b788c40",
+          "bytes": 10849
+        }
+      ],
+      "uncompressed_sha256": "68b488b0685bbea1fc0a3f7f5880244bd3b02d73061fd70aea820a23e3e6d88f"
+    },
+    {
+      "dataset_id": "bidmc_ppg",
+      "name": "BIDMC PPG and manually annotated respiratory rate",
+      "batch": 5,
+      "candidate_id": "B5-BIDMC",
+      "raw_rows_selected": 3180053,
+      "candidate_task_examples": 424,
+      "output_examples": 424,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 53,
+      "task_count": 1,
+      "split_groups": 46,
+      "examples_with_null_input": 0,
+      "flagged_examples": 18,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 424
+      },
+      "source_url": "https://physionet.org/content/bidmc/1.0.0/",
+      "files": [
+        {
+          "path": "datasets/bidmc_ppg_bidmc/part-00001.jsonl.gz",
+          "records": 424,
+          "sha256": "4ba2cf5ebb78932af3ab521e6f6c5af16879790c3ed91ce9550d1675319fa79d",
+          "bytes": 561425
+        }
+      ],
+      "uncompressed_sha256": "c30760b1e93d2c7b7440cc06845f328ffb357ffe8225f1ab7f21b9b4b4ecc8b4"
     }
   ],
-  "dataset_count": 45,
-  "task_count": 52,
-  "total_selected_source_rows": 16573882,
-  "total_examples": 1787591,
-  "collapsed_duplicate_examples": 5083,
+  "dataset_count": 52,
+  "task_count": 61,
+  "total_selected_source_rows": 22239782,
+  "total_examples": 2256193,
+  "collapsed_duplicate_examples": 19721,
   "invalid_label_examples": 53995,
   "training_performed": false,
   "splits_assigned": true,
   "prompt_language": "English",
   "local_only": false,
   "updated_date": "2026-11-26",
-  "excluded_source_rows": 2617338,
+  "excluded_source_rows": 3830810,
   "record_schema_version": "1.0.0",
   "batches": [
     {
@@ -1784,6 +2148,28 @@
         "faostat_qcl",
         "uci_487"
       ]
+    },
+    {
+      "batch": 5,
+      "datasets": 7,
+      "tasks": 9,
+      "examples": 468602,
+      "dataset_ids": [
+        "lancaster_sensorimotor",
+        "openipf",
+        "uci_396",
+        "fdm_aktepe",
+        "uci_607",
+        "fukuchi_running",
+        "bidmc_ppg"
+      ],
+      "suggested_splits": {
+        "path": "splits/batch5/assignments.csv.gz",
+        "records": 468602,
+        "sha256": "c192e59d6201dc0e3ae0e2bf14b61a91b8abf22aaa34c96b22fb78a99616aee6",
+        "summary": "splits/batch5/summary.json",
+        "status": "proposed research partitions; source split fields remain unassigned"
+      }
     }
   ],
   "numeric_precision": {
@@ -1799,8 +2185,8 @@
     "raw_files_changed": false
   },
   "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard",
-  "source_release": "2.3.0",
-  "distribution_version": "2.3.0-github.1",
+  "source_release": "2.4.0",
+  "distribution_version": "2.4.0-github.1",
   "split_policy": "Published partitions retained for CompLex, ASAP2, C-MAPSS and UJIIndoorLoc. Other sources use unassigned. Consult per-source metadata for dependencies and split guidance.",
   "exclusion_count_note": "Source row exclusions only. Excluded engines/windows and unsampled temporal origins have separate source-specific counts; do not add these different units."
 }

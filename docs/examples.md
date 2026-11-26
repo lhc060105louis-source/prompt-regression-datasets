@@ -79,3 +79,13 @@ Return only one numeric prediction for the target.
 - [FRED-MD archival next-month CPI and unemployment](../datasets/fred_md_fred/preview.jsonl)
 - [FAOSTAT QCL cereal yields](../datasets/faostat_qcl_faostat/preview.jsonl)
 - [Gas sensor array temperature modulation](../datasets/uci_487_gas/preview.jsonl)
+
+## Release 2.4.0 previews
+
+- [Lancaster Sensorimotor Norms: auditory, visual and haptic strength](../datasets/lancaster_sensorimotor_lancaster/preview.jsonl)
+- [OpenIPF adult raw three-lift deadlift results](../datasets/openipf_openipf/preview.jsonl)
+- [Sales Transactions Weekly: next-week purchased quantity](../datasets/uci_396_retail/preview.jsonl)
+- [FDM printing configuration and peak tensile load](../datasets/fdm_aktepe_fdm/preview.jsonl)
+- [Synchronous Machine](../datasets/uci_607_motor/preview.jsonl)
+- [Fukuchi treadmill running biomechanics](../datasets/fukuchi_running_fukuchi/preview.jsonl)
+- [BIDMC PPG and manually annotated respiratory rate](../datasets/bidmc_ppg_bidmc/preview.jsonl)

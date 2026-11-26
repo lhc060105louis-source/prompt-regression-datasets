@@ -1,0 +1,9 @@
+{
+  "best_deadlift": {
+    "target_name": "best successful deadlift",
+    "unit": "kg",
+    "type": "continuous",
+    "instruction": "Estimate this adult competitor's best successful deadlift in the first three attempts at a raw three-lift powerlifting meet.",
+    "field_description": "age_years is the reported age. bodyweight_kg is the weigh-in mass. competition_sex is the source competition category. meet_date is the competition date. federation and the meet country, state and town describe the competition setting."
+  }
+}

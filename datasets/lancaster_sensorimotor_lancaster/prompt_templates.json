@@ -1,0 +1,23 @@
+{
+  "auditory_strength": {
+    "target_name": "auditory_strength",
+    "unit": "mean human rating (0-5)",
+    "type": "continuous",
+    "instruction": "Estimate the mean human rating of how strongly the meaning of this English word is experienced through hearing. The scale ranges from 0 (not experienced at all) to 5 (experienced greatly).",
+    "field_description": "word is the original English word or expression, without sentence context. Ratings summarize people's experience of its meaning across possible senses; they are not a measurement of a physical property."
+  },
+  "visual_strength": {
+    "target_name": "visual_strength",
+    "unit": "mean human rating (0-5)",
+    "type": "continuous",
+    "instruction": "Estimate the mean human rating of how strongly the meaning of this English word is experienced through vision. The scale ranges from 0 (not experienced at all) to 5 (experienced greatly).",
+    "field_description": "word is the original English word or expression, without sentence context. Ratings summarize people's experience of its meaning across possible senses; they are not a measurement of a physical property."
+  },
+  "haptic_strength": {
+    "target_name": "haptic_strength",
+    "unit": "mean human rating (0-5)",
+    "type": "continuous",
+    "instruction": "Estimate the mean human rating of how strongly the meaning of this English word is experienced through touch. The scale ranges from 0 (not experienced at all) to 5 (experienced greatly).",
+    "field_description": "word is the original English word or expression, without sentence context. Ratings summarize people's experience of its meaning across possible senses; they are not a measurement of a physical property."
+  }
+}

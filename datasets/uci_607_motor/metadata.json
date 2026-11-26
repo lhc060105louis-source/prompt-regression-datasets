@@ -1,0 +1,143 @@
+{
+  "dataset_id": "uci_607",
+  "dataset_family": "uci_607",
+  "candidate_id": "MOTOR",
+  "name": "Synchronous Machine",
+  "version": "2.4.0",
+  "source_url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set",
+  "source_files": [
+    {
+      "relativepath": "synchronous-machine.zip",
+      "url": "https://archive.ics.uci.edu/static/public/607/synchronous+machine+data+set.zip",
+      "sha256": "e34f66b956cd086facbdaabb5587a6d26f513e9eacaf73ff5611710464f05580",
+      "bytes": 14713
+    }
+  ],
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set"
+    }
+  },
+  "source_citation": {
+    "citation": "Synchronous Machine (2021). UCI Machine Learning Repository.",
+    "doi": "10.24432/C5W32R",
+    "experimental_reference": "https://doi.org/10.22531/muglajsci.466308"
+  },
+  "tasks": {
+    "excitation_current": {
+      "target_name": "synchronous motor excitation current",
+      "unit": "A",
+      "type": "continuous",
+      "instruction": "Estimate the field excitation current of the experimental synchronous motor at this operating point.",
+      "field_description": "load_current_a is the motor load current in amperes. power_factor is the measured dimensionless power factor at the same operating point."
+    }
+  },
+  "excluded_input_columns": [
+    "If",
+    "dIf",
+    "e"
+  ],
+  "target_transform": "none_applied",
+  "invalid_label_examples": 0,
+  "excluded_source_rows": 0,
+  "grouping_rule": "Group all points at the same load-current level.",
+  "split_policy": "Unassigned. Hold out entire load-current levels to evaluate transfer across loads on the experimental setup.",
+  "quality_findings": [
+    "Across all source rows, If minus dIf equals exactly 1.180 A. dIf is excluded to prevent direct target leakage.",
+    "The error column e equals 1 minus the power factor for all rows and is excluded.",
+    "The source covers a single experimental setup. No independent machine or acquisition-session identifier is available."
+  ],
+  "raw_rows_selected": 557,
+  "candidate_task_examples": 557,
+  "source_profile": {
+    "load_group_counts": {
+      "load/3": 18,
+      "load/3.1": 18,
+      "load/3.2": 18,
+      "load/3.3": 18,
+      "load/3.4": 18,
+      "load/3.5": 18,
+      "load/3.6": 18,
+      "load/3.8": 18,
+      "load/3.7": 18,
+      "load/3.9": 18,
+      "load/4": 18,
+      "load/4.1": 18,
+      "load/4.2": 18,
+      "load/4.3": 18,
+      "load/4.4": 18,
+      "load/4.5": 18,
+      "load/4.6": 17,
+      "load/4.7": 18,
+      "load/4.8": 18,
+      "load/4.9": 18,
+      "load/5": 18,
+      "load/5.1": 18,
+      "load/5.2": 18,
+      "load/5.3": 18,
+      "load/5.4": 18,
+      "load/5.5": 18,
+      "load/5.6": 18,
+      "load/5.7": 18,
+      "load/5.8": 18,
+      "load/5.9": 18,
+      "load/6": 18
+    },
+    "unique_operating_points": 557
+  },
+  "source_version": "UCI public archive (2026-11-26)",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_607",
+    "name": "Synchronous Machine",
+    "batch": 5,
+    "candidate_id": "MOTOR",
+    "raw_rows_selected": 557,
+    "candidate_task_examples": 557,
+    "output_examples": 557,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 31,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 557
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set",
+    "files": [
+      {
+        "path": "datasets/uci_607_motor/part-00001.jsonl.gz",
+        "records": 557,
+        "sha256": "8d8ef3d3f4c19d21be42d8cfc2b57a76e1f59c9d052ae4260d64d92ca228b49f",
+        "bytes": 43824
+      }
+    ],
+    "uncompressed_sha256": "77246ade47bb60935a8405485c1e6af4357fbb13bd3a66c26e75cf95ea8d169a",
+    "uci_id": 607
+  },
+  "task_statistics": {
+    "excitation_current": {
+      "prompt_chars_min": 485,
+      "prompt_chars_max": 490,
+      "records": 557,
+      "label_min": 1.217,
+      "label_max": 1.949,
+      "label_mean": 1.53065888689,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

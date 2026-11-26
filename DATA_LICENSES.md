@@ -291,3 +291,49 @@ CC BY 4.0 with FAO Statistical Database Terms of Use
 CC BY 4.0
 
 {"doi": "10.24432/C5S302", "authors": ["Javier Burgués"], "requested_papers": ["Burgués, Jiménez-Soto & Marco (2018). Estimation of the limit of detection in semiconductor gas sensors through linearized calibration models. Analytica Chimica Acta 1013, 13–25.", "Burgués & Marco (2018). Multivariate estimation of the limit of detection by orthogonal partial least squares in temperature-modulated MOX sensors. Analytica Chimica Acta 1019, 49–64."]}
+
+## Release 2.4.0 attribution
+
+### Lancaster Sensorimotor Norms: auditory, visual and haptic strength
+
+Lynott, D., Connell, L., Brysbaert, M., Brand, J., and Carney, J. (2020). The Lancaster Sensorimotor Norms: multidimensional measures of perceptual and action strength for 40,000 English words. Behavior Research Methods 52, 1271-1291. https://doi.org/10.3758/s13428-019-01316-z
+
+[Source](https://osf.io/7emr6/) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/lancaster_sensorimotor/source_manifest.json) · [Preparation and changes](datasets/lancaster_sensorimotor_lancaster/metadata.json)
+
+### OpenIPF adult raw three-lift deadlift results
+
+OpenPowerlifting project and contributors. OpenIPF IPF-affiliate results, 2026-11-21. https://www.openpowerlifting.org/
+
+[Source](https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html) · [Competition data dedicated to the Public Domain](https://openpowerlifting.gitlab.io/opl-csv/) · [Source manifest](sources/openipf/source_manifest.json) · [Preparation and changes](datasets/openipf_openipf/metadata.json)
+
+### Sales Transactions Weekly: next-week purchased quantity
+
+Tan, J. (2014). Sales Transactions Weekly [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5XS4Q.
+
+[Source](https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/uci_396/source_manifest.json) · [Preparation and changes](datasets/uci_396_retail/metadata.json)
+
+### FDM printing configuration and peak tensile load
+
+Elif Aktepe, Uçman Ergün. 10.17632/zd6td6svd6.1
+
+[Source](https://data.mendeley.com/datasets/zd6td6svd6/1) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/fdm_aktepe/source_manifest.json) · [Preparation and changes](datasets/fdm_aktepe_fdm/metadata.json)
+
+### Synchronous Machine
+
+. 10.24432/C5W32R
+
+[Source](https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/uci_607/source_manifest.json) · [Preparation and changes](datasets/uci_607_motor/metadata.json)
+
+### Fukuchi treadmill running biomechanics
+
+Reginaldo Fukuchi, Claudiane Fukuchi, Marcos Duarte. 10.6084/m9.figshare.4543435.v5
+
+[Source](https://doi.org/10.6084/m9.figshare.4543435.v5) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/fukuchi_running/source_manifest.json) · [Preparation and changes](datasets/fukuchi_running_fukuchi/metadata.json)
+
+### BIDMC PPG and manually annotated respiratory rate
+
+Marco Pimentel, Alistair Johnson, Peter Charlton, David Clifton. 10.13026/C2208R
+
+[Source](https://physionet.org/content/bidmc/1.0.0/) · [Open Data Commons Attribution License v1.0](https://physionet.org/content/bidmc/view-license/1.0.0/) · [Source manifest](sources/bidmc_ppg/source_manifest.json) · [Preparation and changes](datasets/bidmc_ppg_bidmc/metadata.json)
+
+This adaptation uses the public BIDMC PPG and Respiration Dataset on PhysioNet. The source authors extracted eight-minute ICU segments from MIMIC-II, added two sets of manual breath annotations and exported the data in several formats. We averaged consecutive PLETH samples and summarized manual breath counts in minute windows. Please cite the [original respiratory-rate study](https://doi.org/10.1109/TBME.2016.2613124) and [PhysioNet](https://doi.org/10.1038/s44360-026-00096-z). [Source modification notice](https://physionet.org/files/bidmc/1.0.0/LICENSE)

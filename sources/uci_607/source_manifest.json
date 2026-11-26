@@ -1,0 +1,26 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set",
+  "version": "UCI public archive (2026-11-26)",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set"
+    }
+  },
+  "citation": {
+    "citation": "Synchronous Machine (2021). UCI Machine Learning Repository.",
+    "doi": "10.24432/C5W32R",
+    "experimental_reference": "https://doi.org/10.22531/muglajsci.466308"
+  },
+  "files": [
+    {
+      "relativepath": "synchronous-machine.zip",
+      "url": "https://archive.ics.uci.edu/static/public/607/synchronous+machine+data+set.zip",
+      "sha256": "e34f66b956cd086facbdaabb5587a6d26f513e9eacaf73ff5611710464f05580",
+      "bytes": 14713
+    }
+  ],
+  "preparation": "See preprocessing/batch5 and per-dataset metadata.",
+  "raw_archives_included": false
+}

@@ -1,0 +1,723 @@
+{
+  "dataset_id": "fukuchi_running",
+  "dataset_family": "fukuchi_running",
+  "name": "Fukuchi treadmill running biomechanics",
+  "candidate_id": "B5-FUKUCHI",
+  "version": "2.4.0",
+  "source_url": "https://doi.org/10.6084/m9.figshare.4543435.v5",
+  "source_files": [
+    {
+      "relativepath": "fukuchi/version5.json",
+      "url": "https://api.figshare.com/v2/articles/4543435/versions/5",
+      "sha256": "5310b0bccff588bdfb77ebc06b692bcc5d4cbcd43606c6dbb104036957360e9d",
+      "bytes": 128845
+    },
+    {
+      "relativepath": "fukuchi/RBDSinfo.txt",
+      "url": "https://ndownloader.figshare.com/files/39452932",
+      "sha256": "7f73e42d12592c5f6149f1adbb78bc3dd12d60d5e17ee5d5d6d44f0dd8349121",
+      "bytes": 142235
+    },
+    {
+      "relativepath": "fukuchi/RBDS001runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802551",
+      "sha256": "aeba42cd0d3e73f890a525c6d3802acb4cefada05998864a678eb643e28bf88a",
+      "bytes": 408864
+    },
+    {
+      "relativepath": "fukuchi/RBDS001runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802557",
+      "sha256": "5e4001c7533e956eaf3333312e2c2abe46d00ad46a1592ea6ba594e589a09fd2",
+      "bytes": 401971
+    },
+    {
+      "relativepath": "fukuchi/RBDS001runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802554",
+      "sha256": "c072ece5802c8bfd3d1e1cf3c301aae7ce67d48474252edc44789185ddeb728e",
+      "bytes": 397567
+    },
+    {
+      "relativepath": "fukuchi/RBDS002runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802560",
+      "sha256": "c1bb191b000a61ecff9973cda90c18340fedbfd06430e9b0c65251727d6b6669",
+      "bytes": 426375
+    },
+    {
+      "relativepath": "fukuchi/RBDS002runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802563",
+      "sha256": "3b31132701738c72085c20d43220fa989f61f4c1ce25a337b0771e084cb293ad",
+      "bytes": 402481
+    },
+    {
+      "relativepath": "fukuchi/RBDS002runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802566",
+      "sha256": "807a86d6e1d5f2e9c51b21e216eed42829e03818e5d2bd0b214b919badc5c939",
+      "bytes": 396505
+    },
+    {
+      "relativepath": "fukuchi/RBDS003runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802569",
+      "sha256": "07676a015cfa2b7c336ad4a13fe50027c8fa9769698ea916e85cdc0da61ac273",
+      "bytes": 395754
+    },
+    {
+      "relativepath": "fukuchi/RBDS003runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802572",
+      "sha256": "75f7c384a4ce9a761fa1b05328713053cacd8fbc1af1c311cbbc59217331c475",
+      "bytes": 387192
+    },
+    {
+      "relativepath": "fukuchi/RBDS003runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802575",
+      "sha256": "4b34bc58460c01f61c5ad1606c77997aa6bb1777845bd6f3901d4cd89d3f30d8",
+      "bytes": 388631
+    },
+    {
+      "relativepath": "fukuchi/RBDS004runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802578",
+      "sha256": "3084c336f1cd7c1584f5b258c22ce7822d0ebc7157d446098105bfdf349e4137",
+      "bytes": 408315
+    },
+    {
+      "relativepath": "fukuchi/RBDS004runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802581",
+      "sha256": "680e4e676a25e7d8f73d20706dab16078bb837a326cd99594decffc2b2aece9f",
+      "bytes": 391055
+    },
+    {
+      "relativepath": "fukuchi/RBDS004runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802584",
+      "sha256": "4facb91abb91b87d0208bf446be29e989d730d8050a6b979986760733023ca0d",
+      "bytes": 384074
+    },
+    {
+      "relativepath": "fukuchi/RBDS005runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802587",
+      "sha256": "c60bed3e38d6c33cab256a727f7df6a0cf91726479f0350758a8820cd51975fe",
+      "bytes": 417399
+    },
+    {
+      "relativepath": "fukuchi/RBDS005runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802590",
+      "sha256": "83ad6c4eec6c5f8cd6fa185ba86cdbbf8496d4c6b7dd67b20152064f47ca81f8",
+      "bytes": 402292
+    },
+    {
+      "relativepath": "fukuchi/RBDS005runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802593",
+      "sha256": "19f644b0c74642a01eb96f850064c20f644273241aef6784ce45d5d6fb8f2875",
+      "bytes": 393797
+    },
+    {
+      "relativepath": "fukuchi/RBDS006runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802596",
+      "sha256": "365aa98c44892a2386eb1ed7c4f8300d096e259e056cb64ed1c9f245bed65610",
+      "bytes": 425878
+    },
+    {
+      "relativepath": "fukuchi/RBDS006runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802599",
+      "sha256": "19285d2db74d8c5b588ddf70d91ed21a4ac2de2ff8192ce1ac50ef50633238a1",
+      "bytes": 410890
+    },
+    {
+      "relativepath": "fukuchi/RBDS006runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802602",
+      "sha256": "3dd3f4b4fc5677a717ad4489c06eb7490a8f5c97a7e6df0ca8f43b0754aedd0c",
+      "bytes": 403103
+    },
+    {
+      "relativepath": "fukuchi/RBDS007runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802605",
+      "sha256": "f308acee02b3c7da80fa022f860a14d92d0e9dccfcd68f1c0a48b9ba3dafb3f9",
+      "bytes": 401684
+    },
+    {
+      "relativepath": "fukuchi/RBDS007runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802608",
+      "sha256": "5e4e75818624031b6b6808a63981e2270244385d13549fa4d64a5ab5f7ca269c",
+      "bytes": 391732
+    },
+    {
+      "relativepath": "fukuchi/RBDS007runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802611",
+      "sha256": "8f78e6964a882a459ed40f6bc27a4bee389bb871564496e08fb0e70409e4b23d",
+      "bytes": 388987
+    },
+    {
+      "relativepath": "fukuchi/RBDS008runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802614",
+      "sha256": "ef498da45e95f2907436966254791fafd70b60c3b254c4aaa46b14f15da6f32e",
+      "bytes": 424153
+    },
+    {
+      "relativepath": "fukuchi/RBDS008runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802617",
+      "sha256": "eef0af93c90b64f8788c434dee705577add30483418100c836757043c4cbdcb7",
+      "bytes": 405771
+    },
+    {
+      "relativepath": "fukuchi/RBDS008runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802620",
+      "sha256": "dc2e8ebe6d6786c1087392e1c55315ac633449399e57ee6b13ab4929f581f5cc",
+      "bytes": 398242
+    },
+    {
+      "relativepath": "fukuchi/RBDS009runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802623",
+      "sha256": "4d456f3af31ba6c2d79d83a340ff28f5fd303f1621408827e406064be219c314",
+      "bytes": 390364
+    },
+    {
+      "relativepath": "fukuchi/RBDS009runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802626",
+      "sha256": "5c348775e1a984c1aa3b8fa08f0f5528c613c3de0f38daf72fd793cc64b7e04e",
+      "bytes": 386646
+    },
+    {
+      "relativepath": "fukuchi/RBDS009runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802629",
+      "sha256": "a53642e6224a378a48b1ed63b2297da3125289402733f433f1e40047b09518cd",
+      "bytes": 386351
+    },
+    {
+      "relativepath": "fukuchi/RBDS010runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802632",
+      "sha256": "693d938bb5aa12a0a635adb916cdfc1febd0a6361279a73052c8f9877cb12ceb",
+      "bytes": 410185
+    },
+    {
+      "relativepath": "fukuchi/RBDS010runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802635",
+      "sha256": "6d6dd53a4944428ae4c90402dde3973bdfdb68685b6b9f824f8f34338f8215c1",
+      "bytes": 393220
+    },
+    {
+      "relativepath": "fukuchi/RBDS010runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802638",
+      "sha256": "8f18448ba321204fc6c10d8ba141427e82de961df8236bf4d64ba27bd8db8bb8",
+      "bytes": 383532
+    },
+    {
+      "relativepath": "fukuchi/RBDS011runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802641",
+      "sha256": "e499f79186b631c19d5f32f3e7f25bdffd0a28748ecf06604195decc23728959",
+      "bytes": 407799
+    },
+    {
+      "relativepath": "fukuchi/RBDS011runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802644",
+      "sha256": "f0cbe19b8987bd7877ae6def84c1c64d4abb6047c02d85b8e1172c3e95c6da21",
+      "bytes": 391863
+    },
+    {
+      "relativepath": "fukuchi/RBDS011runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802647",
+      "sha256": "310ae862136d1b6bee1c4d034032134b05078119d43cbc4a88ba21feea577c44",
+      "bytes": 388718
+    },
+    {
+      "relativepath": "fukuchi/RBDS012runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802650",
+      "sha256": "6917016c97655941ab7593ce774b8510a12addad6baa21b7b478be867d34ef28",
+      "bytes": 403800
+    },
+    {
+      "relativepath": "fukuchi/RBDS012runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802653",
+      "sha256": "590955177be2d3e89133b39ed9581f5697f1cbfe8eb8da1d54c2cf068c125fb2",
+      "bytes": 399105
+    },
+    {
+      "relativepath": "fukuchi/RBDS012runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802656",
+      "sha256": "7098a98366564e5c1905fc8d25da44d1e44e8e648c1cb4a92122412535723ad8",
+      "bytes": 394516
+    },
+    {
+      "relativepath": "fukuchi/RBDS013runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802659",
+      "sha256": "81c9c7deeff3d7d14de81db290207d06922c53869539af3c6c470f130a33a9e5",
+      "bytes": 384675
+    },
+    {
+      "relativepath": "fukuchi/RBDS013runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802662",
+      "sha256": "f1cc3c971f8833a488d2429ec1ebc67c2537a3f9ec7961026edbb368db671359",
+      "bytes": 371231
+    },
+    {
+      "relativepath": "fukuchi/RBDS013runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802665",
+      "sha256": "ab775e0ceaf422dd2a098dc93d95da602c6760de75a71e8aef5c807b4b974a67",
+      "bytes": 366471
+    },
+    {
+      "relativepath": "fukuchi/RBDS014runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802668",
+      "sha256": "017b0293c7c3ce341d95ea31a8646da0e2ea65eed75e939252d09540fdba2a3b",
+      "bytes": 420552
+    },
+    {
+      "relativepath": "fukuchi/RBDS014runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802671",
+      "sha256": "24dd89fa7b4775cc15828c2ba3623d82b25f2e608d2efd45b98cf23cc15ece36",
+      "bytes": 401141
+    },
+    {
+      "relativepath": "fukuchi/RBDS014runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802674",
+      "sha256": "9c7c9ea514ac2a97ffc8c4c9bf9c611d0f42c192152027dfdab73aa1986f45be",
+      "bytes": 398587
+    },
+    {
+      "relativepath": "fukuchi/RBDS015runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802677",
+      "sha256": "ff1a624cd298f0241ba0070753bd38398fee050d30c85a4a34291ad930da22de",
+      "bytes": 411777
+    },
+    {
+      "relativepath": "fukuchi/RBDS015runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802680",
+      "sha256": "f8349b73197537fcd4f0cd8c36027a57f325c9a477f68faf052f04c1c2b4fd15",
+      "bytes": 400281
+    },
+    {
+      "relativepath": "fukuchi/RBDS015runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802683",
+      "sha256": "a0973242a8518d0e1e7aec57ea030f29f732cf50ebcc8b24dbec7c49babfb70d",
+      "bytes": 394152
+    },
+    {
+      "relativepath": "fukuchi/RBDS016runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802686",
+      "sha256": "77d1ea5142482428925ec14aa6d31eeb8213661dd3f303ab7905e8dc16f3033a",
+      "bytes": 414073
+    },
+    {
+      "relativepath": "fukuchi/RBDS016runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802689",
+      "sha256": "80a2ae5cc7efc93c02ea5685e2be28d2b41dc7a3892d1c3fbb8d1793dc44c83d",
+      "bytes": 394281
+    },
+    {
+      "relativepath": "fukuchi/RBDS016runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802692",
+      "sha256": "f5de1d0515321e7f7694fe5a9e1722daa1a88c020e454196a2cc5461cd8b59a3",
+      "bytes": 388812
+    },
+    {
+      "relativepath": "fukuchi/RBDS017runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802695",
+      "sha256": "b9b08737fb4dee9e91c4af97254fb187b40104d3480f142b9154e30e121ad95e",
+      "bytes": 397739
+    },
+    {
+      "relativepath": "fukuchi/RBDS017runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802698",
+      "sha256": "92a71e90f352b8b3bbfbe72c983209967be53b7f1799d5ebf5f96debdb2e4bd4",
+      "bytes": 387796
+    },
+    {
+      "relativepath": "fukuchi/RBDS017runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802701",
+      "sha256": "4a6ec9769d89f3cd5b4c00e22860e39cdb2ef8ccf409487424da27b4ac053e67",
+      "bytes": 380746
+    },
+    {
+      "relativepath": "fukuchi/RBDS018runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802704",
+      "sha256": "135067bc06a82bc899d53793641f38e2367fe45d74f3a072e006c262039f52da",
+      "bytes": 413604
+    },
+    {
+      "relativepath": "fukuchi/RBDS018runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802707",
+      "sha256": "8313a22ffaa5bd7d559fe239014892a2eac75795d76b05f58726d64753cd6891",
+      "bytes": 393496
+    },
+    {
+      "relativepath": "fukuchi/RBDS018runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802710",
+      "sha256": "bb4d2c2362c5a3da9bc451f0ac5d9aa318a8eb79bc3b78bf98671d71f504a02c",
+      "bytes": 383244
+    },
+    {
+      "relativepath": "fukuchi/RBDS019runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802713",
+      "sha256": "7d672ec7509699a473572751cc02bf5cc753ad2a7066e8a7a517ce1db0ecf4d0",
+      "bytes": 391354
+    },
+    {
+      "relativepath": "fukuchi/RBDS019runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802716",
+      "sha256": "d3136d7ca51cf4a53d61a07a09e357dd025575f252107c2d988a7398c4d2b069",
+      "bytes": 381948
+    },
+    {
+      "relativepath": "fukuchi/RBDS019runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802719",
+      "sha256": "284d3fcb5f63a95d5fa2649ab43071752e82cdfaed1cc5c9018ab757528c1a46",
+      "bytes": 379313
+    },
+    {
+      "relativepath": "fukuchi/RBDS020runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802722",
+      "sha256": "ea530b56ed14ff3c18314db37ceed53b57ecd3ebbfddd5a030365add6962cbf4",
+      "bytes": 413378
+    },
+    {
+      "relativepath": "fukuchi/RBDS020runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802725",
+      "sha256": "f03d8a144a1ec24b8fc4149e4b085a838105dbe46993278884b65b156b49dbbd",
+      "bytes": 398575
+    },
+    {
+      "relativepath": "fukuchi/RBDS020runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802728",
+      "sha256": "c8144f909bce8fd07d51f46622d2f944ee23f413da2ab7536aec48a3dd6b3279",
+      "bytes": 393099
+    },
+    {
+      "relativepath": "fukuchi/RBDS021runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802731",
+      "sha256": "3143bbc30a633214df9ef4db6bb4d8bd81b5e63f41edead7b4049d2e8b83d383",
+      "bytes": 408048
+    },
+    {
+      "relativepath": "fukuchi/RBDS021runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802734",
+      "sha256": "55965f16bfd1b316c2b63f290c6ef5fe068edec9821b1d699864619aa7654daf",
+      "bytes": 397491
+    },
+    {
+      "relativepath": "fukuchi/RBDS021runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802737",
+      "sha256": "358b2bd265b955834f804876884b1faae017c95f4e28c864e93a0a046c66f164",
+      "bytes": 390981
+    },
+    {
+      "relativepath": "fukuchi/RBDS022runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802740",
+      "sha256": "89d8be4c94f4200e9b2a336d477f6c1cf7a34e95c6ed5ded455c4654c6c7becb",
+      "bytes": 421674
+    },
+    {
+      "relativepath": "fukuchi/RBDS022runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802743",
+      "sha256": "37a2e9d8650c359eb277a877b720a112c5e72f209a486a40189e04c757c39af2",
+      "bytes": 408442
+    },
+    {
+      "relativepath": "fukuchi/RBDS022runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802746",
+      "sha256": "f9066219a4b7d72085b0e32e57828a66da9831abb6ee4e42f1fe4ca7adac3291",
+      "bytes": 397854
+    },
+    {
+      "relativepath": "fukuchi/RBDS023runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802497",
+      "sha256": "1ad0f94d84e7f6342d2a4689685e707bdd1a3c4f5b9cebd9ae33e6e671ef0413",
+      "bytes": 404338
+    },
+    {
+      "relativepath": "fukuchi/RBDS023runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802500",
+      "sha256": "aa8f2d2c4ca18f8510299cc8af9cf5c168fc04cfef9b8068f2a17f363bff97c4",
+      "bytes": 395089
+    },
+    {
+      "relativepath": "fukuchi/RBDS023runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802503",
+      "sha256": "6496f0602f742e6fc83d3b70fb96c097bdc82c3e11d5854d1f41974cedf6c9c3",
+      "bytes": 389726
+    },
+    {
+      "relativepath": "fukuchi/RBDS024runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802506",
+      "sha256": "8ed89c376468cc4eddf3c7d240dc92d3db0f67e9d47c7932fe0511bcadeb3770",
+      "bytes": 399431
+    },
+    {
+      "relativepath": "fukuchi/RBDS024runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802509",
+      "sha256": "edcfdd97de2cbb4af9965fdb87a6d776b6b8d51910f61d955bc8188526a154b7",
+      "bytes": 389587
+    },
+    {
+      "relativepath": "fukuchi/RBDS024runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802512",
+      "sha256": "bae034067576d632ddefe9c58113082db2633434619ba77fb598e582a5c9d590",
+      "bytes": 389275
+    },
+    {
+      "relativepath": "fukuchi/RBDS025runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802515",
+      "sha256": "85cf190e3ef88de1bc4b1edb3250401e4c38fb2021cc8bf8e43f643e7b7fcf32",
+      "bytes": 408133
+    },
+    {
+      "relativepath": "fukuchi/RBDS025runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802518",
+      "sha256": "470a3c41806530f540091ab1823b046ba429d3b98e85badc54a4f97f7bf528e3",
+      "bytes": 394954
+    },
+    {
+      "relativepath": "fukuchi/RBDS025runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802521",
+      "sha256": "52ef488bc3e04da90b8c3add8f05c546d1eee569f47cacd6959488e8630b6299",
+      "bytes": 389164
+    },
+    {
+      "relativepath": "fukuchi/RBDS026runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802524",
+      "sha256": "82de9ba72e09bbaa24a4246d1bf5566137f7e2329931aed20e4a040d397cc330",
+      "bytes": 413806
+    },
+    {
+      "relativepath": "fukuchi/RBDS026runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802527",
+      "sha256": "094153148d76c8c6bd7dc0d726cc8c926a4b5251042b1568ca0a10815e9220dc",
+      "bytes": 390346
+    },
+    {
+      "relativepath": "fukuchi/RBDS026runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802530",
+      "sha256": "2804357291d3fdeff8994c27a25f30d88501b9143d1a496fe20e8382c8a6e67b",
+      "bytes": 374751
+    },
+    {
+      "relativepath": "fukuchi/RBDS027runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802533",
+      "sha256": "80a44086e4ca5579dbfe9700c9842d843395b2dd09c7d38e382411b87cdb905b",
+      "bytes": 405400
+    },
+    {
+      "relativepath": "fukuchi/RBDS027runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802536",
+      "sha256": "eeb5890467a34da5e77be8749275ddb5f2eb76913841569a9b88c49b6e646d64",
+      "bytes": 394361
+    },
+    {
+      "relativepath": "fukuchi/RBDS027runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802539",
+      "sha256": "9a1772e36b2eeae6a5e7641b2fac06773826306f1f2fc251a5fbb294f0cbcdce",
+      "bytes": 385500
+    },
+    {
+      "relativepath": "fukuchi/RBDS028runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802542",
+      "sha256": "f49f735094e1c54f3f5ff39d4d46c74ba0cc284cf89b808fddb8240410420bf0",
+      "bytes": 411306
+    },
+    {
+      "relativepath": "fukuchi/RBDS028runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802545",
+      "sha256": "e14020b328e27f2f036df2699b4d225e16804ff7281e22dc12a213e84056454c",
+      "bytes": 399903
+    },
+    {
+      "relativepath": "fukuchi/RBDS028runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/7802548",
+      "sha256": "cf7c57ed863996cfc4e7736565c2422cc3c10b3dc9258d60d11ade85d73fae6b",
+      "bytes": 395383
+    },
+    {
+      "relativepath": "fukuchi/RBDS029runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452683",
+      "sha256": "5ec906cffd859df09f81ce1cf6402158d9a64f9bd2857ad7ae472b4c56ad7c33",
+      "bytes": 478349
+    },
+    {
+      "relativepath": "fukuchi/RBDS029runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452692",
+      "sha256": "5ec906cffd859df09f81ce1cf6402158d9a64f9bd2857ad7ae472b4c56ad7c33",
+      "bytes": 478349
+    },
+    {
+      "relativepath": "fukuchi/RBDS029runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452701",
+      "sha256": "5ec906cffd859df09f81ce1cf6402158d9a64f9bd2857ad7ae472b4c56ad7c33",
+      "bytes": 478349
+    },
+    {
+      "relativepath": "fukuchi/RBDS030runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452719",
+      "sha256": "5bfa55d7884d95950e7f0345f7c547eaef0c5e88a2bee35c5c5d92a2dec8490f",
+      "bytes": 481332
+    },
+    {
+      "relativepath": "fukuchi/RBDS030runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452728",
+      "sha256": "5bfa55d7884d95950e7f0345f7c547eaef0c5e88a2bee35c5c5d92a2dec8490f",
+      "bytes": 481332
+    },
+    {
+      "relativepath": "fukuchi/RBDS030runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452737",
+      "sha256": "5bfa55d7884d95950e7f0345f7c547eaef0c5e88a2bee35c5c5d92a2dec8490f",
+      "bytes": 481332
+    },
+    {
+      "relativepath": "fukuchi/RBDS031runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452755",
+      "sha256": "c275752329a4c31c47a8d66904bb5ef0f17ad0eff92f038483a522b7ae9b2b4d",
+      "bytes": 478016
+    },
+    {
+      "relativepath": "fukuchi/RBDS032runT25forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452773",
+      "sha256": "12507e4231b2d9061e0ec3ff6559ac1479867c9cbe98b95472e2a4f65784640e",
+      "bytes": 491078
+    },
+    {
+      "relativepath": "fukuchi/RBDS032runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452782",
+      "sha256": "12507e4231b2d9061e0ec3ff6559ac1479867c9cbe98b95472e2a4f65784640e",
+      "bytes": 491078
+    },
+    {
+      "relativepath": "fukuchi/RBDS032runT45forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452791",
+      "sha256": "12507e4231b2d9061e0ec3ff6559ac1479867c9cbe98b95472e2a4f65784640e",
+      "bytes": 491078
+    },
+    {
+      "relativepath": "fukuchi/RBDS033runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452809",
+      "sha256": "18bd4cc98a94aab0f41408a59acc956fe00556ad13bdb873ff436853a37c6984",
+      "bytes": 489083
+    },
+    {
+      "relativepath": "fukuchi/RBDS034runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452827",
+      "sha256": "072002f40abc4f57b62e1231a15a067bb7b77c853a8e1b6e17ffdac8dbf1e643",
+      "bytes": 484906
+    },
+    {
+      "relativepath": "fukuchi/RBDS035runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452845",
+      "sha256": "40879ff566dde5f2436fbbb6b4ed304d8485f4e849ea00cc3daf308f33b80330",
+      "bytes": 481613
+    },
+    {
+      "relativepath": "fukuchi/RBDS036runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452866",
+      "sha256": "898881139f2e2d043bde45d609d1275fceaf8a39445db18fffb6670fa032d9b5",
+      "bytes": 480714
+    },
+    {
+      "relativepath": "fukuchi/RBDS037runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452884",
+      "sha256": "760f5dad86acc2e3fc3a612f715b552c26674238d76e68234e66daf046e4afab",
+      "bytes": 212468
+    },
+    {
+      "relativepath": "fukuchi/RBDS038runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452902",
+      "sha256": "4f3d1b6804932447cc1cbc696d02c97dc304ac1f20d82d9e874f14fc1c584e5d",
+      "bytes": 479423
+    },
+    {
+      "relativepath": "fukuchi/RBDS039runT35forces.txt",
+      "url": "https://ndownloader.figshare.com/files/39452920",
+      "sha256": "88c3c86a518f8b876a8992a107d904d52d1ddaa85c0cb8d1cefdb0653a69c0d0",
+      "bytes": 478796
+    }
+  ],
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "source_citation": {
+    "authors": [
+      "Reginaldo Fukuchi",
+      "Claudiane Fukuchi",
+      "Marcos Duarte"
+    ],
+    "doi": "10.6084/m9.figshare.4543435.v5",
+    "paper": "https://doi.org/10.7717/peerj.3298"
+  },
+  "raw_rows_selected": 904000,
+  "excluded_source_rows": 0,
+  "source_profile": {
+    "trials": 101,
+    "runners": 39,
+    "metadata_rows": 420,
+    "trials_per_speed": {
+      "2.5": 31,
+      "3.5": 39,
+      "4.5": 31
+    }
+  },
+  "target_transform": "Nearest-rank 95th percentile of every Fy sample in one original raw treadmill trial.",
+  "split_policy": "Unassigned. Split by runner with all speeds from a person together.",
+  "grouping_rule": "Hashed runner identifier shared by all trials of the same participant.",
+  "quality_findings": [
+    "The v5 sample includes 39 runners. The original paper analyzed an earlier subset.",
+    "Labels summarize absolute vertical forces in newtons on this treadmill, including swing phases. This statistic differs from the average of stride peaks."
+  ],
+  "tasks": {
+    "vertical_force_p95": {
+      "type": "continuous",
+      "target_name": "95th percentile vertical ground reaction force",
+      "unit": "N",
+      "instruction": "Estimate the 95th percentile of vertical ground reaction force over this treadmill running trial.",
+      "field_description": "speed_m_s is the imposed treadmill speed. Height is in centimeters and body mass in kilograms. running_level and training_sessions_per_week are recorded participant characteristics."
+    }
+  },
+  "candidate_task_examples": 101,
+  "invalid_label_examples": 0,
+  "source_version": "Figshare version 5; participant metadata file 39452932",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "fukuchi_running",
+    "name": "Fukuchi treadmill running biomechanics",
+    "batch": 5,
+    "candidate_id": "B5-FUKUCHI",
+    "raw_rows_selected": 904000,
+    "candidate_task_examples": 101,
+    "output_examples": 101,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 0,
+    "task_count": 1,
+    "split_groups": 39,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 101
+    },
+    "source_url": "https://doi.org/10.6084/m9.figshare.4543435.v5",
+    "files": [
+      {
+        "path": "datasets/fukuchi_running_fukuchi/part-00001.jsonl.gz",
+        "records": 101,
+        "sha256": "ed6e64553ff41120725b73c092599d8b92ea95c4f42891d0f22fca1a7b788c40",
+        "bytes": 10849
+      }
+    ],
+    "uncompressed_sha256": "68b488b0685bbea1fc0a3f7f5880244bd3b02d73061fd70aea820a23e3e6d88f"
+  },
+  "task_statistics": {
+    "vertical_force_p95": {
+      "prompt_chars_min": 608,
+      "prompt_chars_max": 616,
+      "records": 101,
+      "label_min": 1254.88,
+      "label_max": 2428.44,
+      "label_mean": 1697.56445545,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

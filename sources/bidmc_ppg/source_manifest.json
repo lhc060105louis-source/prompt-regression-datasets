@@ -1,0 +1,986 @@
+{
+  "source_url": "https://physionet.org/content/bidmc/1.0.0/",
+  "version": "PhysioNet 1.0.0",
+  "license": {
+    "name": "Open Data Commons Attribution License v1.0",
+    "url": "https://physionet.org/content/bidmc/view-license/1.0.0/",
+    "source_notice": "https://physionet.org/files/bidmc/1.0.0/LICENSE",
+    "upstream_notice": "https://archive.physionet.org/copying.shtml#data",
+    "modifications": "The authors extracted eight-minute segments from 53 MIMIC-II matched waveform ICU stays, manually annotated breaths twice on the impedance waveform and exported multiple formats. This adaptation uses PPG-only five-Hz block means and the mean manual breath count in one-minute windows."
+  },
+  "citation": {
+    "authors": [
+      "Marco Pimentel",
+      "Alistair Johnson",
+      "Peter Charlton",
+      "David Clifton"
+    ],
+    "doi": "10.13026/C2208R",
+    "paper": "https://doi.org/10.1109/TBME.2016.2613124",
+    "repository": "PhysioNet"
+  },
+  "files": [
+    {
+      "relativepath": "bidmc/SHA256SUMS.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/SHA256SUMS.txt",
+      "sha256": "e28756681318a18d9c682a68cdff65efcaccb3ece40cfccd380540b77a3fdd6d",
+      "bytes": 41306
+    },
+    {
+      "relativepath": "bidmc/bidmc_01_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_01_Fix.txt",
+      "sha256": "5acedc860fdf03ac117b333bc0ef6b6579fe066382ba89abfd14ccc863b83831",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_01_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_01_Breaths.csv",
+      "sha256": "698846517e27e7789d855875bae9774db3c189900efae8e486c300ed5ce58037",
+      "bytes": 2039
+    },
+    {
+      "relativepath": "bidmc/bidmc_01_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_01_Signals.csv",
+      "sha256": "21495169cc36e82352d8e12cc6430927946d02d240b030715088d02396ea2d5c",
+      "bytes": 2678552
+    },
+    {
+      "relativepath": "bidmc/bidmc_02_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_02_Fix.txt",
+      "sha256": "d201db17781166b11c865c64bfc0c2a2f292d66462f9f5ff5a666a25aa7ecb24",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_02_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_02_Breaths.csv",
+      "sha256": "b17230d3a2b3f7063b3a2e9b4dc94e46bf02c1dc7b3f71ee0507e0598d6609ac",
+      "bytes": 1483
+    },
+    {
+      "relativepath": "bidmc/bidmc_02_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_02_Signals.csv",
+      "sha256": "cbe4cc6532df50aaa56382cc6348effc76ed2347f6562a590876a0dfb747e2ea",
+      "bytes": 2771917
+    },
+    {
+      "relativepath": "bidmc/bidmc_03_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_03_Fix.txt",
+      "sha256": "1dabc778bfd78ca9507e2090a8a3dd64ea431a2b400df947c5f36185ccc70c71",
+      "bytes": 835
+    },
+    {
+      "relativepath": "bidmc/bidmc_03_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_03_Breaths.csv",
+      "sha256": "13369112102198ee51b291164c61614a06c73cc9edfa66af6b7070b786dded5f",
+      "bytes": 1717
+    },
+    {
+      "relativepath": "bidmc/bidmc_03_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_03_Signals.csv",
+      "sha256": "c8a642b9d5c0054d401489a96b050f8977890fa45c7ffe1f778bd32ce7086c53",
+      "bytes": 3155425
+    },
+    {
+      "relativepath": "bidmc/bidmc_04_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_04_Fix.txt",
+      "sha256": "827cd32b04c38784aeb20cc682ad6cb52f42499eaf8432037fcd640c11f09387",
+      "bytes": 835
+    },
+    {
+      "relativepath": "bidmc/bidmc_04_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_04_Breaths.csv",
+      "sha256": "ffbdd1b8bcd1047e45cca343487a2f3bc74fcf4b0a8c09a1d0951bc83c710d17",
+      "bytes": 1611
+    },
+    {
+      "relativepath": "bidmc/bidmc_04_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_04_Signals.csv",
+      "sha256": "46363e8552709b13b0ff35fc81914f441ac84e1ee656a5f5dbbf66cf7bcfea59",
+      "bytes": 3305980
+    },
+    {
+      "relativepath": "bidmc/bidmc_05_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_05_Fix.txt",
+      "sha256": "e690cbdeee11e7309bff2ff44810f5f1a3b8e88c3ce7654e1d3ffce3581fa0a2",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_05_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_05_Breaths.csv",
+      "sha256": "a3e0d2c3e4d7f999e448fe98eecaa7cf4db3ae3946197045505c7f9821cd25f7",
+      "bytes": 621
+    },
+    {
+      "relativepath": "bidmc/bidmc_05_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_05_Signals.csv",
+      "sha256": "1963671232fca4962400f660bcb437db3d53a414de2f9538ca423a67212112cf",
+      "bytes": 2628692
+    },
+    {
+      "relativepath": "bidmc/bidmc_06_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_06_Fix.txt",
+      "sha256": "19eddcfc359689d59b21cbecaed9952ee720903d208162c625c33f2cfd586599",
+      "bytes": 840
+    },
+    {
+      "relativepath": "bidmc/bidmc_06_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_06_Breaths.csv",
+      "sha256": "b7675b1d7a5633f602e3aa5060853487be818193d044e3b340907a1738d53f89",
+      "bytes": 1939
+    },
+    {
+      "relativepath": "bidmc/bidmc_06_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_06_Signals.csv",
+      "sha256": "fd82ddab95eb5c0d83b5e68f787809f29f8c3d2e3c02f6798d8630bc093e1a51",
+      "bytes": 3515832
+    },
+    {
+      "relativepath": "bidmc/bidmc_07_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_07_Fix.txt",
+      "sha256": "06ec092cc3fb5dd5dc295eb9fcb660b8724206f26a6178d0801a58b0b99d5309",
+      "bytes": 840
+    },
+    {
+      "relativepath": "bidmc/bidmc_07_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_07_Breaths.csv",
+      "sha256": "855dba26b1e3f3389bfab2ebde74d4ad3ba0ab8a4d6480ea6f6fdb95b7454354",
+      "bytes": 1925
+    },
+    {
+      "relativepath": "bidmc/bidmc_07_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_07_Signals.csv",
+      "sha256": "eb58108883ba819b26eb80e1984e395b31b4cb7fb4c3341c84b733bff97d090f",
+      "bytes": 3502846
+    },
+    {
+      "relativepath": "bidmc/bidmc_08_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_08_Fix.txt",
+      "sha256": "082ddc305c5caf7ffd0f577ed7203c7fb4bf1533c562ed9683e58b67acdebfc1",
+      "bytes": 840
+    },
+    {
+      "relativepath": "bidmc/bidmc_08_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_08_Breaths.csv",
+      "sha256": "d587152a09d862378484bb3ce6d9a148cce4f6cf788df9248c10666acbc6bbed",
+      "bytes": 2043
+    },
+    {
+      "relativepath": "bidmc/bidmc_08_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_08_Signals.csv",
+      "sha256": "3f2d0e9711ef2225e3ad3f25544140270ed88e34409ea456eb7c95a765ca69fc",
+      "bytes": 3583173
+    },
+    {
+      "relativepath": "bidmc/bidmc_09_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_09_Fix.txt",
+      "sha256": "7ca0bf2488078c96787ba8030337b1dbcd858c7e095320096f682cb15237e505",
+      "bytes": 833
+    },
+    {
+      "relativepath": "bidmc/bidmc_09_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_09_Breaths.csv",
+      "sha256": "1f112207036b4a7c496e25204c834d3c785edde313443656af1edbb971e020e2",
+      "bytes": 1939
+    },
+    {
+      "relativepath": "bidmc/bidmc_09_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_09_Signals.csv",
+      "sha256": "512173b79872d29d3b572bcd3a7b91f69d331eb78fe580d82e3faecfda8dd04b",
+      "bytes": 3265636
+    },
+    {
+      "relativepath": "bidmc/bidmc_10_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_10_Fix.txt",
+      "sha256": "e2bf5eadbf6130b02dbeb3ced89f3dd1e573a9632c3bbf72ca5afbeead19b0d5",
+      "bytes": 835
+    },
+    {
+      "relativepath": "bidmc/bidmc_10_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_10_Breaths.csv",
+      "sha256": "f57b75c32d95ba4dd1b340d04b2a1e1881ff273e983f37a21dc18959a585eec6",
+      "bytes": 1821
+    },
+    {
+      "relativepath": "bidmc/bidmc_10_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_10_Signals.csv",
+      "sha256": "36b50117c1445d929f551ecdd1cb1d4f243ec78f687a253dea27a5046693d662",
+      "bytes": 3197147
+    },
+    {
+      "relativepath": "bidmc/bidmc_11_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_11_Fix.txt",
+      "sha256": "598dac42dd0598a149de95e46808326d7683037f0b0870e8d98f9df636e16ed7",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_11_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_11_Breaths.csv",
+      "sha256": "c3b7ba78919895566d6134649bf8b5c7c572d11f32a8845cb1b269d45ec329ca",
+      "bytes": 1455
+    },
+    {
+      "relativepath": "bidmc/bidmc_11_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_11_Signals.csv",
+      "sha256": "64b931ccd9f6b94b293a8ff0558eca000d32a8c5c790247c04e5a883b259200f",
+      "bytes": 2762383
+    },
+    {
+      "relativepath": "bidmc/bidmc_12_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_12_Fix.txt",
+      "sha256": "2c7ee62e7a53bbaa8018b3b5e601f91f6571ca82e930a26b555082671faa2384",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_12_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_12_Breaths.csv",
+      "sha256": "754d147e4073d840e2cb668660cf7894debf9995143998e34c136f71d983f19c",
+      "bytes": 1831
+    },
+    {
+      "relativepath": "bidmc/bidmc_12_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_12_Signals.csv",
+      "sha256": "12b32c92e49c243ce8921b96ff25ac5fa0e6b22c7d1da289336893a3f7f6b32a",
+      "bytes": 2799995
+    },
+    {
+      "relativepath": "bidmc/bidmc_13_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_13_Fix.txt",
+      "sha256": "8b3c98443b35dd61de9e363dc16b9600b2a58ae42050be966c05ec58f84b5a1e",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_13_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_13_Breaths.csv",
+      "sha256": "a5aa67976df1a2fc338b67aa99677e2560cc22aaeb877bc5cac35e9803f15ef6",
+      "bytes": 1973
+    },
+    {
+      "relativepath": "bidmc/bidmc_13_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_13_Signals.csv",
+      "sha256": "a8edeba2345203812c8983175998c270642b6fa143a46c13d24dc678050cd35d",
+      "bytes": 2760574
+    },
+    {
+      "relativepath": "bidmc/bidmc_14_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_14_Fix.txt",
+      "sha256": "9208229bfa0d257fa1853eebd7bf45c992e9556858c23312513e51161c22e149",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_14_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_14_Breaths.csv",
+      "sha256": "49654e35bf41cf668cd661491556242c17b83cf19453320d291666db859a4174",
+      "bytes": 1339
+    },
+    {
+      "relativepath": "bidmc/bidmc_14_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_14_Signals.csv",
+      "sha256": "715637c6c00309746a57933d0074c3565257716521b46aa1810e0e2d91a8db93",
+      "bytes": 2840388
+    },
+    {
+      "relativepath": "bidmc/bidmc_15_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_15_Fix.txt",
+      "sha256": "43f3b76678240e15f7996061aa46eb4cf646c56205bfe4fe7e8df5e852464e4f",
+      "bytes": 829
+    },
+    {
+      "relativepath": "bidmc/bidmc_15_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_15_Breaths.csv",
+      "sha256": "ca90ae89f4f0d8a6f42f0edf5d84a687731d31c3b235ca7c718793db078978aa",
+      "bytes": 1480
+    },
+    {
+      "relativepath": "bidmc/bidmc_15_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_15_Signals.csv",
+      "sha256": "61497ee21946cbef61bec9fe3fde83ea6299a73f675c6b7d9d9dac00e287abdd",
+      "bytes": 2762890
+    },
+    {
+      "relativepath": "bidmc/bidmc_16_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_16_Fix.txt",
+      "sha256": "4e636e06cbb30a521eefa63fa52dccefa61db3d3242a5153d39eb8ef04c2ea8d",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_16_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_16_Breaths.csv",
+      "sha256": "a3bb8a50dc5c5bde24eed8c2cd88c026251c67584f61f8ed650ce0c5e31eb9cf",
+      "bytes": 1881
+    },
+    {
+      "relativepath": "bidmc/bidmc_16_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_16_Signals.csv",
+      "sha256": "cb2a73645b4e6ae9c7bbaad2edb2811664f1a66b51630e2111e1245422c6d0d5",
+      "bytes": 2591123
+    },
+    {
+      "relativepath": "bidmc/bidmc_17_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_17_Fix.txt",
+      "sha256": "ea527422301e24209e85e2ebdfc38b65cd9e384c7d57bf93a761911c0c86fb5e",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_17_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_17_Breaths.csv",
+      "sha256": "66ff32a2e47e618ea09385be2518a54126b00c675ffa8e9d6f2ae82e2cdba111",
+      "bytes": 1661
+    },
+    {
+      "relativepath": "bidmc/bidmc_17_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_17_Signals.csv",
+      "sha256": "35ee803bafd453f7d57756f0b7a3717367be84c986d20256240c11c81a68fa08",
+      "bytes": 2613799
+    },
+    {
+      "relativepath": "bidmc/bidmc_18_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_18_Fix.txt",
+      "sha256": "c3887a42f51e12ac86ac6cda445ca2c12c67f1738d7b2502abb4841f7a9d625b",
+      "bytes": 831
+    },
+    {
+      "relativepath": "bidmc/bidmc_18_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_18_Breaths.csv",
+      "sha256": "2eb7bc017f9a90977a8dc48542aca72f35b63a9bd7d394140fe10de24b05edf4",
+      "bytes": 1737
+    },
+    {
+      "relativepath": "bidmc/bidmc_18_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_18_Signals.csv",
+      "sha256": "2efa8c0a284ea51cbb0eec3e39187ba1b3fa5e989c2414691057b4a43a2f9763",
+      "bytes": 2793119
+    },
+    {
+      "relativepath": "bidmc/bidmc_19_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_19_Fix.txt",
+      "sha256": "e04a4803e21d52a1dfbcad123e5e98516f698abe1bc0607723edd0c781ddb003",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_19_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_19_Breaths.csv",
+      "sha256": "ccd976749bc94fe88ae09fe4a3ed404c5633169e95d341420bb3ac0c3a5c51c9",
+      "bytes": 1540
+    },
+    {
+      "relativepath": "bidmc/bidmc_19_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_19_Signals.csv",
+      "sha256": "7a7750aec599b6e08406a823f30a1d4f3c3f1c88c7e9179790411e2e530b42e4",
+      "bytes": 2751994
+    },
+    {
+      "relativepath": "bidmc/bidmc_20_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_20_Fix.txt",
+      "sha256": "f57f184e30ffc04071b242ca14373d89f7ec562da7d3c8ad25a92fcb3dc3b259",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_20_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_20_Breaths.csv",
+      "sha256": "4ce661a7c6fa9835552ec9b81ba5c1ce3866ced7a03f7da2af9ca46d50e88d86",
+      "bytes": 1477
+    },
+    {
+      "relativepath": "bidmc/bidmc_20_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_20_Signals.csv",
+      "sha256": "d26c85f5e25222ee0afe722df808e3dd4bdc95e41ac51e4ef819dde8ad374603",
+      "bytes": 2659532
+    },
+    {
+      "relativepath": "bidmc/bidmc_21_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_21_Fix.txt",
+      "sha256": "72b3369746e376459d7b98ae96a3133bd4c079d29db282d46d4e96e13c33c9ab",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_21_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_21_Breaths.csv",
+      "sha256": "d94036563f2b5de3bf7f51e547f80e3e28be0db0702fc142ad404e4b3920780c",
+      "bytes": 1745
+    },
+    {
+      "relativepath": "bidmc/bidmc_21_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_21_Signals.csv",
+      "sha256": "3c36c96d58803596222a1639d1c338fc758b4cfeb3ac75420ceea520fd30a206",
+      "bytes": 2660119
+    },
+    {
+      "relativepath": "bidmc/bidmc_22_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_22_Fix.txt",
+      "sha256": "646ebe6fb6bba4f7fcf1e675e152d9d1244cf5c1e3ea8786a08078c140acee08",
+      "bytes": 840
+    },
+    {
+      "relativepath": "bidmc/bidmc_22_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_22_Breaths.csv",
+      "sha256": "43b7a624f33110a0e429ed2c10850da0b1fb4e25cb1296f10559146cb4181850",
+      "bytes": 1807
+    },
+    {
+      "relativepath": "bidmc/bidmc_22_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_22_Signals.csv",
+      "sha256": "3e40bf7b43a15c247023cce4ca02beff72b5e463b2680bd1f6c2e391de147f89",
+      "bytes": 3485803
+    },
+    {
+      "relativepath": "bidmc/bidmc_23_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_23_Fix.txt",
+      "sha256": "35ea4b07fd7385a188e60343784af77b055bd45cad7328c0e5b4b22d475cd054",
+      "bytes": 835
+    },
+    {
+      "relativepath": "bidmc/bidmc_23_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_23_Breaths.csv",
+      "sha256": "335f5d7f3bcb29c0ccb8de05f1b71db64bf3120e658b26d6013140718681e73c",
+      "bytes": 1737
+    },
+    {
+      "relativepath": "bidmc/bidmc_23_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_23_Signals.csv",
+      "sha256": "3cedad370183b86759024c4c8c02d317a04fd91291fd5470e8e18268349674a6",
+      "bytes": 3133890
+    },
+    {
+      "relativepath": "bidmc/bidmc_24_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_24_Fix.txt",
+      "sha256": "d0ac12512954a5c96dac66baa4019b965dd23326c6880dc14432842a52101a6e",
+      "bytes": 840
+    },
+    {
+      "relativepath": "bidmc/bidmc_24_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_24_Breaths.csv",
+      "sha256": "9386936d53a599f18f69e9182ca48300dbdd036b61e43b0fd58c968309828fae",
+      "bytes": 2156
+    },
+    {
+      "relativepath": "bidmc/bidmc_24_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_24_Signals.csv",
+      "sha256": "c7e6e56af3c822521c90769c427e97ebf98121cd1801f6f4dea3d09d963746e7",
+      "bytes": 3546115
+    },
+    {
+      "relativepath": "bidmc/bidmc_25_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_25_Fix.txt",
+      "sha256": "2d79a7204560519b1e7ae904adc2ffe752d9b02a2f5e36e91e1b822cf4a17b32",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_25_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_25_Breaths.csv",
+      "sha256": "8c809581417fda4a087c38e8360879726ec6e642c4186afab605ec11272abb67",
+      "bytes": 1565
+    },
+    {
+      "relativepath": "bidmc/bidmc_25_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_25_Signals.csv",
+      "sha256": "d6a98ad4acb9ca578e3b377d094b6a7892294e7e26c1d3c0135bd88520c6b755",
+      "bytes": 2765128
+    },
+    {
+      "relativepath": "bidmc/bidmc_26_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_26_Fix.txt",
+      "sha256": "5a61a3d26848613018ba1c51992beb9e7678a8fd1362495e5ffa85ae341a68a5",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_26_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_26_Breaths.csv",
+      "sha256": "3fd2da8fd6d846abf289b2af20db3d58d322abed4f37bbda8dfc7e52dcd90e32",
+      "bytes": 1642
+    },
+    {
+      "relativepath": "bidmc/bidmc_26_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_26_Signals.csv",
+      "sha256": "97873512194c7ac28c9acf9a5574effbe1c52661ed15d70254956e6ce0790c69",
+      "bytes": 2695152
+    },
+    {
+      "relativepath": "bidmc/bidmc_27_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_27_Fix.txt",
+      "sha256": "601d724c8ee0873aafa39a6028dfce3870fefc6878d242f1751a545749c4afda",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_27_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_27_Breaths.csv",
+      "sha256": "ab74abb38757ffa006f998530615dd95bffda3d5590d4b6d94c3f6c7a5a97e1f",
+      "bytes": 1087
+    },
+    {
+      "relativepath": "bidmc/bidmc_27_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_27_Signals.csv",
+      "sha256": "161c7e5e03b146a25439db10364cdee262dc74f08509a8eedca397815c2bff64",
+      "bytes": 2830063
+    },
+    {
+      "relativepath": "bidmc/bidmc_28_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_28_Fix.txt",
+      "sha256": "565794dd85aff8f51ca39ac7a05425c6c2033471a324c48b2eb72574fdd77128",
+      "bytes": 836
+    },
+    {
+      "relativepath": "bidmc/bidmc_28_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_28_Breaths.csv",
+      "sha256": "2f98c94c51808ec73980469c4f888b42773078f8db22dd47f4056b42f0a79f6b",
+      "bytes": 1752
+    },
+    {
+      "relativepath": "bidmc/bidmc_28_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_28_Signals.csv",
+      "sha256": "730883ded213bc9665978fac63a333c0fc309dc3092609740a961f750a00fa46",
+      "bytes": 2966334
+    },
+    {
+      "relativepath": "bidmc/bidmc_29_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_29_Fix.txt",
+      "sha256": "6eb370be773d076e4c5fa05f589f278f3407265f53c781b9a4b1b68c4c3f3758",
+      "bytes": 835
+    },
+    {
+      "relativepath": "bidmc/bidmc_29_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_29_Breaths.csv",
+      "sha256": "b487055d0d089ae57a24821df3665683021a8437af6c3a78d888efff632d6da0",
+      "bytes": 1819
+    },
+    {
+      "relativepath": "bidmc/bidmc_29_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_29_Signals.csv",
+      "sha256": "66261436c7fce120f7195b8da1779c08c68331889e6a0230c89593ec77d0c5c4",
+      "bytes": 3161136
+    },
+    {
+      "relativepath": "bidmc/bidmc_30_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_30_Fix.txt",
+      "sha256": "ff89731b765a944ef3c0b37c9fa4aac8096038258cb7f21ed94ce7f64e913533",
+      "bytes": 832
+    },
+    {
+      "relativepath": "bidmc/bidmc_30_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_30_Breaths.csv",
+      "sha256": "aadfedbfef61776a64fae6a89a5e788e08928a4040cafae47fb13e4b8672f91e",
+      "bytes": 1801
+    },
+    {
+      "relativepath": "bidmc/bidmc_30_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_30_Signals.csv",
+      "sha256": "6f3707fccfca8c0d5563ff11ab92581bc6eaedae0710a715ceca921be751dd6c",
+      "bytes": 2788894
+    },
+    {
+      "relativepath": "bidmc/bidmc_31_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_31_Fix.txt",
+      "sha256": "db79e7ce6b921fdcdad90282ce4670d4444c14f666b08c5c970526a1d557811d",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_31_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_31_Breaths.csv",
+      "sha256": "52860719713e260a152984ff5318c14493d268bec19f2b425b1720a669a5cbf8",
+      "bytes": 1736
+    },
+    {
+      "relativepath": "bidmc/bidmc_31_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_31_Signals.csv",
+      "sha256": "90087fd07a7bcb1a7cc552ac1d0a22f95cb451db19c4bb3d03cc336540df8197",
+      "bytes": 2720869
+    },
+    {
+      "relativepath": "bidmc/bidmc_32_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_32_Fix.txt",
+      "sha256": "9e3c648d53520ee8478bc52477e9e667f26739241071196acdbcaaf06a16b2a0",
+      "bytes": 831
+    },
+    {
+      "relativepath": "bidmc/bidmc_32_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_32_Breaths.csv",
+      "sha256": "e44d12f68a1b03c13a518b7f4d7c06e1922cccb2e1faba22c3a8d64566d8ed8b",
+      "bytes": 2351
+    },
+    {
+      "relativepath": "bidmc/bidmc_32_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_32_Signals.csv",
+      "sha256": "f153d924d1971546a5f85b0e28bd41ca8c9362c08c00c0b7894b65710829fd2f",
+      "bytes": 2815227
+    },
+    {
+      "relativepath": "bidmc/bidmc_33_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_33_Fix.txt",
+      "sha256": "2d5cbb5306878a1d1cbcaf02d0fa924e61a42bcbee3a6e8d3a2e281faffd7b1f",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_33_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_33_Breaths.csv",
+      "sha256": "b5433da99cc56149afd2b1c5fe7e2e996bad46d4e55a5aba75ed6c7a4f6e9fd8",
+      "bytes": 1305
+    },
+    {
+      "relativepath": "bidmc/bidmc_33_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_33_Signals.csv",
+      "sha256": "41d6e6bdfbadfa92cf2c82e032240752b5478b67d6e0f3f41c7dfeb40bdaa870",
+      "bytes": 2679772
+    },
+    {
+      "relativepath": "bidmc/bidmc_34_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_34_Fix.txt",
+      "sha256": "c925cbf502aa6807379a497553d178b725fbe771128dbc5e549e4bf7ea604913",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_34_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_34_Breaths.csv",
+      "sha256": "743b5fdb988a7db1163d6031ae5645217dd81481b711657c5f2d6c36fdb4b871",
+      "bytes": 1695
+    },
+    {
+      "relativepath": "bidmc/bidmc_34_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_34_Signals.csv",
+      "sha256": "05c87d853d418719dca986f4a9d85d50f034c04caeaa843a063cca834ae570c8",
+      "bytes": 2897467
+    },
+    {
+      "relativepath": "bidmc/bidmc_35_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_35_Fix.txt",
+      "sha256": "dabdefb371ec82d68fa925fa37e88e0434f1062ff52efd0654781222199393c0",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_35_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_35_Breaths.csv",
+      "sha256": "8812e202d49a41e4ddf89b1f8634428936fee1d594dd23363c026e9209029e9c",
+      "bytes": 1712
+    },
+    {
+      "relativepath": "bidmc/bidmc_35_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_35_Signals.csv",
+      "sha256": "f7073289b8cacd266a607f5c9759612177b0d3215a255e2ed2808b004db5d096",
+      "bytes": 2455080
+    },
+    {
+      "relativepath": "bidmc/bidmc_36_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_36_Fix.txt",
+      "sha256": "e955bc6001aab88c3e438b5757a54f2419be39fb0c76db9fece4006147465b34",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_36_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_36_Breaths.csv",
+      "sha256": "510e469ba0d132226a5fd0244f5a0ac9141a6e13a33ff8c73ba08be77530bebd",
+      "bytes": 1786
+    },
+    {
+      "relativepath": "bidmc/bidmc_36_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_36_Signals.csv",
+      "sha256": "c70ee4544ecca539195a049726ad3e7e011cf62f3e54d7d1b2a177c8f0c24253",
+      "bytes": 2795341
+    },
+    {
+      "relativepath": "bidmc/bidmc_37_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_37_Fix.txt",
+      "sha256": "c16dd59858ddc9c84af3821828aa8ef4fee4f6b26b39a456e6ef8f1e8b4ca0c3",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_37_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_37_Breaths.csv",
+      "sha256": "b09778166264cdb3a320d5e8cc2b591894b9152fbcc04e1720e78c611c468e19",
+      "bytes": 1797
+    },
+    {
+      "relativepath": "bidmc/bidmc_37_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_37_Signals.csv",
+      "sha256": "320fede399f3254c3ef3a723147ddcbe2048608d09b9ee8dd13e41037b0220c1",
+      "bytes": 2764697
+    },
+    {
+      "relativepath": "bidmc/bidmc_38_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_38_Fix.txt",
+      "sha256": "300144bbe1a0faaeb82d65b2d513ed3f147535d9157f78f513c95dc7c551a556",
+      "bytes": 829
+    },
+    {
+      "relativepath": "bidmc/bidmc_38_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_38_Breaths.csv",
+      "sha256": "f6d36ac15f0aed02a273d3ce452df22a4b10a7157d276d233c9c23163a947f73",
+      "bytes": 1545
+    },
+    {
+      "relativepath": "bidmc/bidmc_38_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_38_Signals.csv",
+      "sha256": "0f08d0cbe4acebc4eebd769f63a1ff7d12b9943133a3b5fb107c3f789cbfcdfe",
+      "bytes": 2603770
+    },
+    {
+      "relativepath": "bidmc/bidmc_39_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_39_Fix.txt",
+      "sha256": "3908ea0daefd660efc0cb4ea56170b57280eb92ce0b788ec4d42a0365d34cc85",
+      "bytes": 827
+    },
+    {
+      "relativepath": "bidmc/bidmc_39_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_39_Breaths.csv",
+      "sha256": "04b577564b0fe060d5a6290ee5ead77aa765ef0d6419bdcf1d6a83cb4945b20e",
+      "bytes": 1389
+    },
+    {
+      "relativepath": "bidmc/bidmc_39_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_39_Signals.csv",
+      "sha256": "7cc409e295b4860356c981220bd61a16aedd8e21ad296df14afa92b24ec29274",
+      "bytes": 2490623
+    },
+    {
+      "relativepath": "bidmc/bidmc_40_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_40_Fix.txt",
+      "sha256": "76241c783917e80882df79c0f8702cbeafbef74aff3676b68f98e5a7714d5996",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_40_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_40_Breaths.csv",
+      "sha256": "9771ef176907635f22e20ff17b76c92c99998e3c9b2a49e75b7d0bda52627f39",
+      "bytes": 1587
+    },
+    {
+      "relativepath": "bidmc/bidmc_40_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_40_Signals.csv",
+      "sha256": "a9d2e881faf5d37489281a82cb0448e5f1f79085320d43f9299f5ab754f52b1e",
+      "bytes": 2670661
+    },
+    {
+      "relativepath": "bidmc/bidmc_41_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_41_Fix.txt",
+      "sha256": "dde737fcb9b662fa21e8d4ccac4439bd17fc1bc59511de958fde0cfc190fd30a",
+      "bytes": 832
+    },
+    {
+      "relativepath": "bidmc/bidmc_41_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_41_Breaths.csv",
+      "sha256": "da5792fd440e690f4cac742ea29cec39f2ad9738bd4c5fc599225f0c15920a82",
+      "bytes": 1333
+    },
+    {
+      "relativepath": "bidmc/bidmc_41_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_41_Signals.csv",
+      "sha256": "371e0c0341d64fe318d33168bdad69a59f8a4aee5c61ea7d113b977f90e7b501",
+      "bytes": 3268645
+    },
+    {
+      "relativepath": "bidmc/bidmc_42_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_42_Fix.txt",
+      "sha256": "ae0bc4bdd8f081aef8e4738f996df58de3fb275bc7c4d9535f9c56477d661161",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_42_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_42_Breaths.csv",
+      "sha256": "ac34c9cce28ec348983d5292524cbeaf40e67e8c7324844fd3b1f9f789deb4da",
+      "bytes": 1671
+    },
+    {
+      "relativepath": "bidmc/bidmc_42_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_42_Signals.csv",
+      "sha256": "b3a34df149eb0ff6923717a4cb1b466b99f368ffa66dba67e0872d3180f5e593",
+      "bytes": 2711876
+    },
+    {
+      "relativepath": "bidmc/bidmc_43_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_43_Fix.txt",
+      "sha256": "ad1d343bf1304d66b983164d6ad12c1a0bfc8a08cb46b7b19bf55a39337071d5",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_43_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_43_Breaths.csv",
+      "sha256": "9801ec81e9bc1f01cd14e75126335e13917b1a729de737639c9c8abebe479592",
+      "bytes": 1695
+    },
+    {
+      "relativepath": "bidmc/bidmc_43_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_43_Signals.csv",
+      "sha256": "edc9396efbf3b52dcacbbceebea9decf0efaeca477f52155d74b28aff84f753f",
+      "bytes": 2715666
+    },
+    {
+      "relativepath": "bidmc/bidmc_44_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_44_Fix.txt",
+      "sha256": "defb61cfe9a0e3599cc89a517cabdd2bb55551d21a8a2008a3dc77557989a3f3",
+      "bytes": 836
+    },
+    {
+      "relativepath": "bidmc/bidmc_44_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_44_Breaths.csv",
+      "sha256": "d4f1a314734c3485316866324d2daaa709d43de044c8fff66d786225c2935da3",
+      "bytes": 1601
+    },
+    {
+      "relativepath": "bidmc/bidmc_44_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_44_Signals.csv",
+      "sha256": "7410486868bd94173c2d1e9fd12b9b0f060233e48b283e2f56cc798eb12418a7",
+      "bytes": 3130226
+    },
+    {
+      "relativepath": "bidmc/bidmc_45_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_45_Fix.txt",
+      "sha256": "01d56fd890e31ec8e1598500dccb102f6340ff009c62c859ecd88ca5f260c78a",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_45_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_45_Breaths.csv",
+      "sha256": "8eac77db699fadffe6e46a6a15d6fc54043654915caa00fd44ea2c8dd0e8646f",
+      "bytes": 1557
+    },
+    {
+      "relativepath": "bidmc/bidmc_45_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_45_Signals.csv",
+      "sha256": "64930be88fe712d4d06e96e04c4e91bd8fe6e47aea09ba444af20b9ed8510ccd",
+      "bytes": 2830759
+    },
+    {
+      "relativepath": "bidmc/bidmc_46_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_46_Fix.txt",
+      "sha256": "b3db69170b7e35437cb119c1ad04d8402179bbbcf4786d03b1153e0510433c95",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_46_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_46_Breaths.csv",
+      "sha256": "e235842945df87fd63b313b4156723e8803f8c5db97cffc4954cbe577db0f097",
+      "bytes": 1456
+    },
+    {
+      "relativepath": "bidmc/bidmc_46_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_46_Signals.csv",
+      "sha256": "92e6901bc089185b302422db0c35a0a7c399cb5b171bfbb99524acfc18e80541",
+      "bytes": 2732009
+    },
+    {
+      "relativepath": "bidmc/bidmc_47_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_47_Fix.txt",
+      "sha256": "535694430e5b28bd9fcdee6fad9b75582325ef7b2221468180879b1206b68022",
+      "bytes": 835
+    },
+    {
+      "relativepath": "bidmc/bidmc_47_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_47_Breaths.csv",
+      "sha256": "9f91286b0c1c499c95dc1beebfbce34d571e4465380b6d043204c681d7a60d96",
+      "bytes": 2130
+    },
+    {
+      "relativepath": "bidmc/bidmc_47_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_47_Signals.csv",
+      "sha256": "2d8033ad7b54b26c609781957c67a67f3d043253c33004bd3ed0470a98e4cc91",
+      "bytes": 3155717
+    },
+    {
+      "relativepath": "bidmc/bidmc_48_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_48_Fix.txt",
+      "sha256": "26012a04d01dd4bb05ab5fd1af947373a8188b4932e01715c6df05e66dbf6dec",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_48_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_48_Breaths.csv",
+      "sha256": "f2a6a9a95d3a54b9d5c68e13a01793c1a340bbdf192b23a923f9a8a5a39c2708",
+      "bytes": 1710
+    },
+    {
+      "relativepath": "bidmc/bidmc_48_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_48_Signals.csv",
+      "sha256": "10b24b111b8e3db14f3854f7ceae37b00a44728ed391205c0871a0f1f3c1bb03",
+      "bytes": 2677958
+    },
+    {
+      "relativepath": "bidmc/bidmc_49_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_49_Fix.txt",
+      "sha256": "2924aa9c18724661bfa6370f255091c8c881e9ac9215f002ded6875e15990b91",
+      "bytes": 832
+    },
+    {
+      "relativepath": "bidmc/bidmc_49_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_49_Breaths.csv",
+      "sha256": "79a705f1eff0b0359f530eac75ea5d8ab290588456b507d0137c55351a927918",
+      "bytes": 1685
+    },
+    {
+      "relativepath": "bidmc/bidmc_49_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_49_Signals.csv",
+      "sha256": "c48b1a023517c22a0e9619e506de8ec358934ef2aa742bccdf3e799d6eb68da4",
+      "bytes": 2755348
+    },
+    {
+      "relativepath": "bidmc/bidmc_50_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_50_Fix.txt",
+      "sha256": "4ccbd1e8bfedd5ee9a5a3e64e4268639ba42984b122a753d88fcf2d9b83fd8f2",
+      "bytes": 829
+    },
+    {
+      "relativepath": "bidmc/bidmc_50_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_50_Breaths.csv",
+      "sha256": "366ee1ee2ab7feceffe473afd541dbf27ca92c32fa47af59e0b81d7ad6e8de0d",
+      "bytes": 1437
+    },
+    {
+      "relativepath": "bidmc/bidmc_50_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_50_Signals.csv",
+      "sha256": "f2bc29f02cd866c63c8c20bfc5ecf87d6dc966f75217c87eefe3346a4bb37bec",
+      "bytes": 2662099
+    },
+    {
+      "relativepath": "bidmc/bidmc_51_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_51_Fix.txt",
+      "sha256": "091bb7b04d0886f07318cfd2be45e7db2565a361516f8a4698b7d87d87981df0",
+      "bytes": 829
+    },
+    {
+      "relativepath": "bidmc/bidmc_51_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_51_Breaths.csv",
+      "sha256": "f49666ea0d0ea608e095d62284c3a180caee24eea9c498f293a6374db573a0b4",
+      "bytes": 1773
+    },
+    {
+      "relativepath": "bidmc/bidmc_51_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_51_Signals.csv",
+      "sha256": "fceebaf5c8ed50f01f1e36ee93a80df1173be3521855b904d2ade05a85bc8fad",
+      "bytes": 2886330
+    },
+    {
+      "relativepath": "bidmc/bidmc_52_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_52_Fix.txt",
+      "sha256": "77e445a7e3217d6220cadcf0390d5e03fd877c1963da92829d2c8e97121103ae",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_52_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_52_Breaths.csv",
+      "sha256": "b56a100378a99cee3a26407035b00c9378830424b66997f80afc354ed1df745d",
+      "bytes": 1783
+    },
+    {
+      "relativepath": "bidmc/bidmc_52_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_52_Signals.csv",
+      "sha256": "9f7b42a94b055d6debf94891c934188e962d6d112d73bbb1e0aca20da80d268f",
+      "bytes": 2716556
+    },
+    {
+      "relativepath": "bidmc/bidmc_53_Fix.txt",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_53_Fix.txt",
+      "sha256": "320343b531479268a33da8162b184aa67624459190faf3a876ea8bb9988cde50",
+      "bytes": 830
+    },
+    {
+      "relativepath": "bidmc/bidmc_53_Breaths.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_53_Breaths.csv",
+      "sha256": "880d82ff72875696bb84eb0385a38dfbce22ab7231e1340c84cf95feb73c4ea3",
+      "bytes": 1871
+    },
+    {
+      "relativepath": "bidmc/bidmc_53_Signals.csv",
+      "url": "https://physionet.org/files/bidmc/1.0.0/bidmc_csv/bidmc_53_Signals.csv",
+      "sha256": "136fd7a958cbc591e636605f438d05fcfd68f10489fdd98062e8c06267587f19",
+      "bytes": 2710021
+    }
+  ],
+  "preparation": "See preprocessing/batch5 and per-dataset metadata.",
+  "raw_archives_included": false
+}

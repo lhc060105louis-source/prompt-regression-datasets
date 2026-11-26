@@ -1,0 +1,9 @@
+{
+  "mean_peak_tensile_load": {
+    "target_name": "mean peak tensile load",
+    "unit": "N",
+    "type": "continuous",
+    "instruction": "Estimate the mean peak tensile load measured for specimens made with this fused deposition modeling configuration.",
+    "field_description": "printer_chamber is the open or closed printer type. material names the filament. layer_height_mm is the nominal layer thickness in millimetres. infill_pct is the infill percentage and infill_pattern is its layout. print_speed_mm_per_s is the print speed in millimetres per second. The output is the configuration-level mean of three specimens tested under the source study protocol."
+  }
+}

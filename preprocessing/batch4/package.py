@@ -10,7 +10,7 @@ import standardize
 import validate_extension
 
 
-def package(work, slug):
+def package(work, slug, *, batch=4, version="2.3.0"):
     standardize.ROOT = validate_extension.ROOT = work
     standardize.OUT = validate_extension.PUB = work / "publish"
     candidate = work / "candidates" / f"{slug}.meta.json"
@@ -22,11 +22,11 @@ def package(work, slug):
     standardize.build(slug)
     stats_path = work / "stats" / f"{slug}.json"
     stats = json.loads(stats_path.read_text())
-    stats["batch"] = 4
+    stats["batch"] = batch
     standardize.save(stats_path, stats)
     folder = standardize.OUT / Path(stats["files"][0]["path"]).parent
     prepared = json.loads((folder / "metadata.json").read_text())
-    prepared.update(version="2.3.0", stats=stats)
+    prepared.update(version=version, stats=stats)
     standardize.save(folder / "metadata.json", prepared)
     validate_extension.validate(slug)
     validation = json.loads((work / "stats" / f"{slug}.validation.json").read_text())
@@ -34,7 +34,7 @@ def package(work, slug):
     standardize.save(standardize.OUT / "sources" / stats["dataset_id"] / "source_manifest.json", {
         "source_url": meta["source_url"], "version": meta["version"], "license": meta["license"],
         "citation": meta["source_citation"], "files": prepared["source_files"],
-        "preparation": "See preprocessing/batch4 and per-dataset metadata.", "raw_archives_included": False})
+        "preparation": f"See preprocessing/batch{batch} and per-dataset metadata.", "raw_archives_included": False})
 
 
 if __name__ == "__main__":

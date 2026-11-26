@@ -1,0 +1,9 @@
+{
+  "vertical_force_p95": {
+    "type": "continuous",
+    "target_name": "95th percentile vertical ground reaction force",
+    "unit": "N",
+    "instruction": "Estimate the 95th percentile of vertical ground reaction force over this treadmill running trial.",
+    "field_description": "speed_m_s is the imposed treadmill speed. Height is in centimeters and body mass in kilograms. running_level and training_sessions_per_week are recorded participant characteristics."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "excitation_current": {
+    "target_name": "synchronous motor excitation current",
+    "unit": "A",
+    "type": "continuous",
+    "instruction": "Estimate the field excitation current of the experimental synchronous motor at this operating point.",
+    "field_description": "load_current_a is the motor load current in amperes. power_factor is the measured dimensionless power factor at the same operating point."
+  }
+}

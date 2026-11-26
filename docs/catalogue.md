@@ -57,3 +57,15 @@
 | [FRED-MD archival next-month CPI and unemployment](https://www.stlouisfed.org/research/economists/mccracken/fred-databases) | fred_md | 1,576 | 2 | [Files](../datasets/fred_md_fred) |
 | [FAOSTAT QCL cereal yields](https://www.fao.org/faostat/en/#data/QCL) | faostat_qcl | 21,311 | 1 | [Files](../datasets/faostat_qcl_faostat) |
 | [Gas sensor array temperature modulation](https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation) | uci_487 | 1,300 | 1 | [Files](../datasets/uci_487_gas) |
+
+## Release 2.4.0 additions
+
+| Source | Dataset ID | Examples | Tasks | Data |
+|---|---|---:|---:|---|
+| [Lancaster Sensorimotor Norms: auditory, visual and haptic strength](https://osf.io/7emr6/) | lancaster_sensorimotor | 119,121 | 3 | [Files](../datasets/lancaster_sensorimotor_lancaster) |
+| [OpenIPF adult raw three-lift deadlift results](https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html) | openipf | 312,215 | 1 | [Files](../datasets/openipf_openipf) |
+| [Sales Transactions Weekly: next-week purchased quantity](https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly) | uci_396 | 35,684 | 1 | [Files](../datasets/uci_396_retail) |
+| [FDM printing configuration and peak tensile load](https://data.mendeley.com/datasets/zd6td6svd6/1) | fdm_aktepe | 500 | 1 | [Files](../datasets/fdm_aktepe_fdm) |
+| [Synchronous Machine](https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set) | uci_607 | 557 | 1 | [Files](../datasets/uci_607_motor) |
+| [Fukuchi treadmill running biomechanics](https://doi.org/10.6084/m9.figshare.4543435.v5) | fukuchi_running | 101 | 1 | [Files](../datasets/fukuchi_running_fukuchi) |
+| [BIDMC PPG and manually annotated respiratory rate](https://physionet.org/content/bidmc/1.0.0/) | bidmc_ppg | 424 | 1 | [Files](../datasets/bidmc_ppg_bidmc) |

@@ -1,0 +1,24 @@
+{
+  "source_url": "https://osf.io/7emr6/",
+  "version": "OSF aggregate file 48wsc, SHA256-pinned, accessed 2026-11-26",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "data_node": "https://api.osf.io/v2/nodes/rwhs6/",
+      "license_relationship": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96a/"
+    },
+    "scope": "Original aggregate CSV words and ratings. Preserve author attribution, licence and adaptation notice. No third-party sentence or audio material is included."
+  },
+  "citation": "Lynott, D., Connell, L., Brysbaert, M., Brand, J., and Carney, J. (2020). The Lancaster Sensorimotor Norms: multidimensional measures of perceptual and action strength for 40,000 English words. Behavior Research Methods 52, 1271-1291. https://doi.org/10.3758/s13428-019-01316-z",
+  "files": [
+    {
+      "relativepath": "raw/lancaster_sensorimotor.csv",
+      "url": "https://osf.io/download/48wsc/",
+      "sha256": "445d363fb1f9f3e50b86d88e2f46cdc9a22b5dd8a713ce4e7be2a773d57f43c5",
+      "bytes": 17196336
+    }
+  ],
+  "preparation": "See preprocessing/batch5 and per-dataset metadata.",
+  "raw_archives_included": false
+}

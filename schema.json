@@ -36,5 +36,6 @@
     "raw_files_changed": false
   },
   "type": "continuous for measured/derived scalar targets; ordinal for ordered discrete scores such as ASAP2 1–6",
-  "sample_id": "For batches 3 and 4 sha256([task_id,input_hash,label,official_split]) first 24 hex; earlier release IDs unchanged."
+  "sample_id": "For batches 3 through 5 sha256([task_id,input_hash,label,official_split]) first 24 hex; earlier release IDs unchanged.",
+  "annotator_breath_counts": "BIDMC outcome metadata: the two manual counts whose mean supplies the label. Exclude from model inputs."
 }

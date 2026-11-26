@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "candidates": 500,
+  "records": 500,
+  "duplicate_occurrences_merged": 0,
+  "finite_labels": true,
+  "numeric_precision_checked": true,
+  "official_split_occurrences_preserved": true,
+  "quality_flag_counts": {},
+  "training_executed": false
+}

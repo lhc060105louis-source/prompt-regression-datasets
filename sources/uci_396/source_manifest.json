@@ -1,0 +1,23 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly",
+  "version": "UCI 396 ZIP, SHA256-pinned, accessed 2026-11-26",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": {
+      "url": "https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly"
+    },
+    "scope": "Published anonymous product codes and weekly quantities. Preserve citation, licence and adaptation notice."
+  },
+  "citation": "Tan, J. (2014). Sales Transactions Weekly [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C5XS4Q.",
+  "files": [
+    {
+      "relativepath": "raw/retail_weekly.zip",
+      "url": "https://archive.ics.uci.edu/static/public/396/sales+transactions+dataset+weekly.zip",
+      "sha256": "dededa20f199af8f2bb96184bb1696befda902849a700bde283fe763afc90ba9",
+      "bytes": 317571
+    }
+  ],
+  "preparation": "See preprocessing/batch5 and per-dataset metadata.",
+  "raw_archives_included": false
+}
