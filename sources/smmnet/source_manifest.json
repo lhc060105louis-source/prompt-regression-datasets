@@ -1,0 +1,21 @@
+{
+  "source_url": "https://www.kaggle.com/datasets/leomauro/smmnet",
+  "version": "Kaggle v1, 2019-05-13",
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "data_license_evidence": "https://www.kaggle.com/datasets/leomauro/smmnet",
+    "author_attribution": "https://github.com/leomaurodesenv/smmnet#citation"
+  },
+  "citation": "Leonardo Mauro Pereira Moraes and Robson Leonardo Ferreira Cordeiro. SMMnet: A Social Network of Games Dataset. SBBD Dataset Showcase Workshop, 2019. Source telemetry from Nintendo's Super Mario Maker Bookmark.",
+  "files": [
+    {
+      "relativepath": "smmnet-v1.zip",
+      "url": "https://api.kaggle.com/v1/datasets/download/leomauro/smmnet?datasetVersionNumber=1",
+      "sha256": "feb220c673e57e2ed8b13fbc61b5242b4301372fe3905c75a546004bed4cb624",
+      "bytes": 106558315
+    }
+  ],
+  "preparation": "See preprocessing/batch6 and per-dataset metadata.",
+  "raw_archives_included": false
+}

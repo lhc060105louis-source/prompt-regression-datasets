@@ -1,0 +1,20 @@
+{
+  "source_url": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset",
+  "version": "UCI dataset 272, donated 2013-10-21, pinned static ZIP",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset"
+  },
+  "citation": "Blair, M., Thompson, J., Henrey, A., and Chen, B. (2013). SkillCraft1 Master Table Dataset. UCI Machine Learning Repository. https://doi.org/10.24432/C5161N. Study: https://doi.org/10.1371/journal.pone.0075129",
+  "files": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/272/skillcraft1+master+table+dataset.zip",
+      "relativepath": "skillcraft1-uci272.zip",
+      "bytes": 500403,
+      "sha256": "d6f4f88c2d077a0938cf774ff242df511c9a5801dcc66e4461ffdf893ce23fc2"
+    }
+  ],
+  "preparation": "See preprocessing/batch6 and per-dataset metadata.",
+  "raw_archives_included": false
+}

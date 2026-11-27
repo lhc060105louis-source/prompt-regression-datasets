@@ -1,0 +1,41 @@
+{
+  "source_url": "https://zenodo.org/records/23166182",
+  "version": "Zenodo v3 (2026-10-05), OpenDota constants 54d1b834",
+  "license": {
+    "name": "CC BY 4.0 (match data), MIT (OpenDota hero-name lookup)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "hero_lookup": {
+      "url": "https://raw.githubusercontent.com/odota/dotaconstants/54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5/LICENSE",
+      "notice": "MIT License\n\nCopyright (c) 2017 The OpenDota Project\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    }
+  },
+  "citation": "Luis Alberto Sanchez Calderon (2026). Analysis-Ready Live Match Feature Snapshots for Professional Dota 2 (2023–2026), v3. DOI: 10.5281/zenodo.23166182. Telemetry: OpenDota (https://www.opendota.com/). Hero names: The OpenDota Project, odota/dotaconstants, revision 54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5.",
+  "files": [
+    {
+      "relativepath": "DB_03_Live_Features_ANALYSIS_v3.csv",
+      "url": "https://zenodo.org/records/23166182/files/DB_03_Live_Features_ANALYSIS_v3.csv?download=1",
+      "bytes": 223002035,
+      "sha256": "61b3852b5eedbf0f6f0688564dbd178238c22001741089eb64e736ad1102d044"
+    },
+    {
+      "relativepath": "Reproducibility_Experiment_211_Zenodo_v3.zip",
+      "url": "https://zenodo.org/records/23166182/files/Reproducibility_Experiment_211_Zenodo_v3.zip?download=1",
+      "bytes": 49017881,
+      "sha256": "8191d3ba57289ba79518ac66714766373525e898963e7ecac0971dd5d944b715"
+    },
+    {
+      "relativepath": "opendota-heroes-54d1b83.json",
+      "url": "https://raw.githubusercontent.com/odota/dotaconstants/54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5/build/heroes.json",
+      "bytes": 128700,
+      "sha256": "d08b94dbaa70e0fe3e848f387a2380805418d77082ab58de181a7046c6f6bca3"
+    },
+    {
+      "relativepath": "opendota-54d1b83-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/odota/dotaconstants/54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5/LICENSE",
+      "bytes": 1077,
+      "sha256": "13d8ee5053b6b9da5448fa298ff1af56cc3994b945e9739a5a38821ea7463abf"
+    }
+  ],
+  "preparation": "See preprocessing/batch6 and per-dataset metadata.",
+  "raw_archives_included": false
+}

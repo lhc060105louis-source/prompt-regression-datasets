@@ -15,7 +15,7 @@
   "label": "finite JSON number, never string; scalar target",
   "prompt": "English task-specific context + input JSON; excludes labels and provenance",
   "input": "original-scale typed feature object; null allowed; no statistical imputation",
-  "source_refs": "one or more original file/1-based data row references; excludes header row",
+  "source_refs": "one or more original source references. Tabular row numbers are one-based and exclude headers. Lookup references may use JSON dictionary keys instead.",
   "duplicate_count": "number of identical task/input/label source occurrences collapsed",
   "group_id": "known-dependence grouping key, dataset-scoped; does not replace chronological splitting",
   "split": "Published partitions retained for CompLex, ASAP2, C-MAPSS and UJIIndoorLoc. Other sources use unassigned. Consult per-source metadata for dependencies and split guidance.",

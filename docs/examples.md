@@ -89,3 +89,9 @@ Return only one numeric prediction for the target.
 - [Synchronous Machine](../datasets/uci_607_motor/preview.jsonl)
 - [Fukuchi treadmill running biomechanics](../datasets/fukuchi_running_fukuchi/preview.jsonl)
 - [BIDMC PPG and manually annotated respiratory rate](../datasets/bidmc_ppg_bidmc/preview.jsonl)
+
+## Release 2.5.0 previews
+
+- [Professional Dota 2 match time remaining at minute ten](../datasets/dota2_pro_dota/preview.jsonl)
+- [Super Mario Maker future course clear rate (SMMnet)](../datasets/smmnet_mario/preview.jsonl)
+- [SkillCraft1 StarCraft II replay actions per minute](../datasets/uci_272_starcraft/preview.jsonl)

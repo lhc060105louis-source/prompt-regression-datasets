@@ -69,3 +69,11 @@
 | [Synchronous Machine](https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set) | uci_607 | 557 | 1 | [Files](../datasets/uci_607_motor) |
 | [Fukuchi treadmill running biomechanics](https://doi.org/10.6084/m9.figshare.4543435.v5) | fukuchi_running | 101 | 1 | [Files](../datasets/fukuchi_running_fukuchi) |
 | [BIDMC PPG and manually annotated respiratory rate](https://physionet.org/content/bidmc/1.0.0/) | bidmc_ppg | 424 | 1 | [Files](../datasets/bidmc_ppg_bidmc) |
+
+## Release 2.5.0 additions
+
+| Source | Dataset ID | Examples | Tasks | Data |
+|---|---|---:|---:|---|
+| [Professional Dota 2 match time remaining at minute ten](https://zenodo.org/records/23166182) | dota2_pro | 90,530 | 1 | [Files](../datasets/dota2_pro_dota) |
+| [Super Mario Maker future course clear rate (SMMnet)](https://www.kaggle.com/datasets/leomauro/smmnet) | smmnet | 2,677 | 1 | [Files](../datasets/smmnet_mario) |
+| [SkillCraft1 StarCraft II replay actions per minute](https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset) | uci_272 | 3,336 | 1 | [Files](../datasets/uci_272_starcraft) |

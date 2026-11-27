@@ -1,0 +1,95 @@
+{
+  "name": "SkillCraft1 StarCraft II replay actions per minute",
+  "dataset_id": "uci_272",
+  "dataset_family": "skillcraft1_starcraft_ii_replays",
+  "candidate_id": "B6-SC2",
+  "source_url": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset",
+  "version": "2.5.0",
+  "source_citation": "Blair, M., Thompson, J., Henrey, A., and Chen, B. (2013). SkillCraft1 Master Table Dataset. UCI Machine Learning Repository. https://doi.org/10.24432/C5161N. Study: https://doi.org/10.1371/journal.pone.0075129",
+  "license": {
+    "name": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset"
+  },
+  "source_files": [
+    {
+      "url": "https://archive.ics.uci.edu/static/public/272/skillcraft1+master+table+dataset.zip",
+      "relativepath": "skillcraft1-uci272.zip",
+      "bytes": 500403,
+      "sha256": "d6f4f88c2d077a0938cf774ff242df511c9a5801dcc66e4461ffdf893ce23fc2"
+    }
+  ],
+  "raw_rows_selected": 3395,
+  "excluded_source_rows": 58,
+  "target_transform": "none_applied",
+  "preparation": "Read the numeric APM from each eligible replay and retain four background fields. Drop 57 incomplete profiles and one record whose reported playtime exceeds the player's lifetime. No same-replay action counts, timing statistics or game identifiers enter the prompt.",
+  "split_guidance": "Keep matching four-field profiles in one group. Sort released group IDs, then allocate 70%, 15% and 15% of groups to train, validation and test by largest remainder. The study collected one replay per respondent. GameID identifies a replay in the public table.",
+  "quality_findings": [
+    "All 55 Professional-league rows lack age and playtime information. The released cohort spans Bronze through GrandMaster.",
+    "Playtime is self-reported. Different replays can have the same profile and different APM."
+  ],
+  "tasks": {
+    "actions_per_minute": {
+      "target_name": "mean in-game actions per minute",
+      "unit": "actions per minute",
+      "type": "continuous",
+      "instruction": "Estimate the player's average number of actions per minute in this StarCraft II replay.",
+      "field_description": "league_index is the ranked league: 1 Bronze, 2 Silver, 3 Gold, 4 Platinum, 5 Diamond, 6 Master, 7 GrandMaster, 8 Professional. age_years is the player's age in years. hours_played_per_week and total_hours_played are self-reported weekly and lifetime StarCraft II playtime, both in hours."
+    }
+  },
+  "source_version": "UCI dataset 272, donated 2013-10-21, pinned static ZIP",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "uci_272",
+    "name": "SkillCraft1 StarCraft II replay actions per minute",
+    "batch": 6,
+    "candidate_id": "B6-SC2",
+    "raw_rows_selected": 3395,
+    "candidate_task_examples": 3337,
+    "output_examples": 3336,
+    "collapsed_duplicate_examples": 1,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 58,
+    "task_count": 1,
+    "split_groups": 2971,
+    "examples_with_null_input": 0,
+    "flagged_examples": 669,
+    "identical_input_different_label_groups": 304,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 3336
+    },
+    "source_url": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset",
+    "files": [
+      {
+        "path": "datasets/uci_272_starcraft/part-00001.jsonl.gz",
+        "records": 3336,
+        "sha256": "9c5e01b9e603f1f70b0548b1f76b1bd11dc018d70772bbbe5e5fc58273ab6a06",
+        "bytes": 359561
+      }
+    ],
+    "uncompressed_sha256": "c6b38117d89424699fb3da82cfec83f8f3c27fa96f0cc23f2e0a8f1ee0e04ecc",
+    "uci_id": 272
+  },
+  "task_statistics": {
+    "actions_per_minute": {
+      "prompt_chars_min": 679,
+      "prompt_chars_max": 684,
+      "records": 3336,
+      "label_min": 22.0596,
+      "label_max": 389.8314,
+      "label_mean": 114.531445737,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {
+    "identical_input_multiple_labels": 669
+  },
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

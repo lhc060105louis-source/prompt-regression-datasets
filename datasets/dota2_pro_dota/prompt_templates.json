@@ -1,0 +1,9 @@
+{
+  "remaining_match_seconds": {
+    "target_name": "remaining match duration after ten minutes",
+    "unit": "seconds",
+    "type": "continuous",
+    "instruction": "At the ten-minute mark of this professional Dota 2 match, estimate how many more seconds will elapse before the match ends.",
+    "field_description": "radiant_heroes and dire_heroes list the five heroes drafted by each side. radiant_earned_gold and dire_earned_gold give the total gold earned by each side through minute ten."
+  }
+}

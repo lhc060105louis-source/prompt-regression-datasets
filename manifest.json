@@ -1,5 +1,5 @@
 {
-  "version": "2.4.0",
+  "version": "2.5.0",
   "created_date": "2026-11-09",
   "datasets": [
     {
@@ -2089,20 +2089,153 @@
         }
       ],
       "uncompressed_sha256": "c30760b1e93d2c7b7440cc06845f328ffb357ffe8225f1ab7f21b9b4b4ecc8b4"
+    },
+    {
+      "dataset_id": "dota2_pro",
+      "name": "Professional Dota 2 match time remaining at minute ten",
+      "batch": 6,
+      "candidate_id": "B6-DOTA2",
+      "raw_rows_selected": 1007768,
+      "candidate_task_examples": 90530,
+      "output_examples": 90530,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 917238,
+      "task_count": 1,
+      "split_groups": 90530,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 90530
+      },
+      "source_url": "https://zenodo.org/records/23166182",
+      "files": [
+        {
+          "path": "datasets/dota2_pro_dota/part-00001.jsonl.gz",
+          "records": 15036,
+          "sha256": "d9cbfa2159a9aebe63153244090d51983609abbd6cdaea056d5b27443345c2ea",
+          "bytes": 3152389
+        },
+        {
+          "path": "datasets/dota2_pro_dota/part-00002.jsonl.gz",
+          "records": 15016,
+          "sha256": "6e17021a13313223ef21dc9323fe6ffffbb9912732d1456b0e1651c08a6dc6fc",
+          "bytes": 3142537
+        },
+        {
+          "path": "datasets/dota2_pro_dota/part-00003.jsonl.gz",
+          "records": 15048,
+          "sha256": "3cdd0ecf96618a22061fa181a9b51dc3721307a0c4d8489bf3b7ef25f1fca591",
+          "bytes": 3149111
+        },
+        {
+          "path": "datasets/dota2_pro_dota/part-00004.jsonl.gz",
+          "records": 15025,
+          "sha256": "faa669a0fcb06129a21cbb0a0f6affcb8c602f62c3bdc874adf5a7426c03c8da",
+          "bytes": 3140829
+        },
+        {
+          "path": "datasets/dota2_pro_dota/part-00005.jsonl.gz",
+          "records": 14967,
+          "sha256": "7202f9c2ca3f1274c89fe2510f6d742ab0e5c40551882f0ce33e6cd7ca8ba331",
+          "bytes": 3138585
+        },
+        {
+          "path": "datasets/dota2_pro_dota/part-00006.jsonl.gz",
+          "records": 15010,
+          "sha256": "bfbce86ff79fe55792c6292cf1faa406a4fb3bd9f15d69be1e09c99275e0b0c1",
+          "bytes": 3104211
+        },
+        {
+          "path": "datasets/dota2_pro_dota/part-00007.jsonl.gz",
+          "records": 428,
+          "sha256": "e2b0335479f229a4b9d8e0df52ae88ad135fde8f41ae1cad8585927f31a7ff6d",
+          "bytes": 89799
+        }
+      ],
+      "uncompressed_sha256": "49b50f83dee0b5a304e1a77181ba5a6836e169c2c21d61cc2930be4c9a9cea23"
+    },
+    {
+      "dataset_id": "smmnet",
+      "name": "Super Mario Maker future course clear rate (SMMnet)",
+      "batch": 6,
+      "candidate_id": "B6-SMM",
+      "raw_rows_selected": 115032,
+      "candidate_task_examples": 2677,
+      "output_examples": 2677,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 112355,
+      "task_count": 1,
+      "split_groups": 1381,
+      "examples_with_null_input": 0,
+      "flagged_examples": 2,
+      "identical_input_different_label_groups": 1,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 2677
+      },
+      "source_url": "https://www.kaggle.com/datasets/leomauro/smmnet",
+      "files": [
+        {
+          "path": "datasets/smmnet_mario/part-00001.jsonl.gz",
+          "records": 2677,
+          "sha256": "6d2acd1605808247bcc30800a63aafa8822be13f931f583f809a7065e645adc3",
+          "bytes": 373169
+        }
+      ],
+      "uncompressed_sha256": "ee5f0d991964907fcacb0409f8cba415231feda6687b5187dc46e8503bedc870"
+    },
+    {
+      "dataset_id": "uci_272",
+      "name": "SkillCraft1 StarCraft II replay actions per minute",
+      "batch": 6,
+      "candidate_id": "B6-SC2",
+      "raw_rows_selected": 3395,
+      "candidate_task_examples": 3337,
+      "output_examples": 3336,
+      "collapsed_duplicate_examples": 1,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 58,
+      "task_count": 1,
+      "split_groups": 2971,
+      "examples_with_null_input": 0,
+      "flagged_examples": 669,
+      "identical_input_different_label_groups": 304,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 3336
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_272_starcraft/part-00001.jsonl.gz",
+          "records": 3336,
+          "sha256": "9c5e01b9e603f1f70b0548b1f76b1bd11dc018d70772bbbe5e5fc58273ab6a06",
+          "bytes": 359561
+        }
+      ],
+      "uncompressed_sha256": "c6b38117d89424699fb3da82cfec83f8f3c27fa96f0cc23f2e0a8f1ee0e04ecc",
+      "uci_id": 272
     }
   ],
-  "dataset_count": 52,
-  "task_count": 61,
-  "total_selected_source_rows": 22239782,
-  "total_examples": 2256193,
-  "collapsed_duplicate_examples": 19721,
+  "dataset_count": 55,
+  "task_count": 64,
+  "total_selected_source_rows": 23365977,
+  "total_examples": 2352736,
+  "collapsed_duplicate_examples": 19722,
   "invalid_label_examples": 53995,
   "training_performed": false,
   "splits_assigned": true,
   "prompt_language": "English",
   "local_only": false,
-  "updated_date": "2026-11-26",
-  "excluded_source_rows": 3830810,
+  "updated_date": "2026-11-27",
+  "excluded_source_rows": 4860461,
   "record_schema_version": "1.0.0",
   "batches": [
     {
@@ -2170,6 +2303,24 @@
         "summary": "splits/batch5/summary.json",
         "status": "proposed research partitions; source split fields remain unassigned"
       }
+    },
+    {
+      "batch": 6,
+      "datasets": 3,
+      "tasks": 3,
+      "examples": 96543,
+      "dataset_ids": [
+        "dota2_pro",
+        "smmnet",
+        "uci_272"
+      ],
+      "suggested_splits": {
+        "path": "splits/batch6/assignments.csv.gz",
+        "records": 96543,
+        "sha256": "e5dfea7f1cf6d5969fdb90115b40893542626a4520bf62dffcce7639cf44bc90",
+        "summary": "splits/batch6/summary.json",
+        "status": "proposed research partitions; source split fields remain unassigned"
+      }
     }
   ],
   "numeric_precision": {
@@ -2185,8 +2336,8 @@
     "raw_files_changed": false
   },
   "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard",
-  "source_release": "2.4.0",
-  "distribution_version": "2.4.0-github.1",
+  "source_release": "2.5.0",
+  "distribution_version": "2.5.0-github.1",
   "split_policy": "Published partitions retained for CompLex, ASAP2, C-MAPSS and UJIIndoorLoc. Other sources use unassigned. Consult per-source metadata for dependencies and split guidance.",
   "exclusion_count_note": "Source row exclusions only. Excluded engines/windows and unsampled temporal origins have separate source-specific counts; do not add these different units."
 }

@@ -2,20 +2,20 @@
 
 这个仓库把不同领域的回归任务整理成同一种问答格式，方便训练和评测模型预测数值的能力。每条样本包含一个英文问题（`prompt`）和一个数值答案（`label`）。例如，模型读到混凝土的配比和养护天数后，要预测以 MPa 为单位的抗压强度。同一来源也可以有多个任务，比如用同一栋住宅的建筑参数分别估计供暖负荷和制冷负荷。
 
-English prompts paired with numeric targets for regression research. The full collection contains 61 tasks from 52 sources. [English loading guide and field reference](https://github.com/lhc060105louis-source/prompt-regression-datasets/blob/62c33afd4b6df1638af87b0a62ed33781501657d/README.md#load-the-data)
+English prompts paired with numeric targets for regression research. The full collection contains 64 tasks from 55 sources. [English loading guide and field reference](https://github.com/lhc060105louis-source/prompt-regression-datasets/blob/62c33afd4b6df1638af87b0a62ed33781501657d/README.md#load-the-data)
 
 | GitHub 分支 | 数据源 | 回归任务 | 样本数 |
 |---|---:|---:|---:|
 | [`main` · v2.3.0](https://github.com/lhc060105louis-source/prompt-regression-datasets/tree/main) | 45 | 52 | 1,787,591 |
-| [`data/next-domain-expansion` · v2.4.0](https://github.com/lhc060105louis-source/prompt-regression-datasets/tree/data/next-domain-expansion) | 52 | 61 | 2,256,193 |
+| [`data/next-domain-expansion` · v2.5.0](https://github.com/lhc060105louis-source/prompt-regression-datasets/tree/data/next-domain-expansion) | 55 | 64 | 2,352,736 |
 
-扩展分支包含主分支的全部数据，另加 7 个来源、9 个任务。以上是已整理和校验的数据量，目前尚未进行模型训练。
+扩展分支包含主分支的全部数据，另加 10 个来源、12 个任务。以上是已整理和校验的数据量，目前尚未进行模型训练。
 
 [查找任务](#任务目录) · [读取样本](#读取样本) · [训练与评测划分](#训练与评测划分) · [校验与复现](#校验与复现)
 
 ## 读取样本
 
-要使用全部 61 个任务，下载扩展分支。数据已按 UTF-8 JSONL 分片并用 gzip 压缩，读取只需要 Python 标准库。
+要使用全部 64 个任务，下载扩展分支。数据已按 UTF-8 JSONL 分片并用 gzip 压缩，读取只需要 Python 标准库。
 
 ```sh
 git clone --branch data/next-domain-expansion https://github.com/lhc060105louis-source/prompt-regression-datasets.git
@@ -39,9 +39,9 @@ print(sample["label"])   # 用于监督或评测的数值答案
 
 ## 任务目录
 
-下表每行对应一个实际发布的 `task_id`。点击数据源名称可查看样本和分片。标有 **扩展** 的 9 行仅在 v2.4.0 提供。样本数按任务统计，同一建筑、英文词或受试者可以对应多条样本。
+下表每行对应一个实际发布的 `task_id`。点击数据源名称可查看样本和分片。标有 **扩展** 的 12 个任务可在扩展分支读取，其中 3 个电竞与游戏任务随 v2.5.0 加入。样本数按任务统计，同一建筑、英文词或受试者可以对应多条样本。
 
-[工程与材料](#工程与材料) · [能源与环境](#能源与环境) · [交通与城市](#交通与城市) · [生命科学与健康](#生命科学与健康) · [经济与农业](#经济与农业) · [语言与社会](#语言与社会) · [计算与定位](#计算与定位) · [天文与物理](#天文与物理)
+[工程与材料](#工程与材料) · [能源与环境](#能源与环境) · [交通与城市](#交通与城市) · [生命科学与健康](#生命科学与健康) · [经济与农业](#经济与农业) · [语言与社会](#语言与社会) · [计算与定位](#计算与定位) · [天文与物理](#天文与物理) · [电竞与游戏](#电竞与游戏)
 
 ### 工程与材料
 
@@ -144,12 +144,21 @@ print(sample["label"])   # 用于监督或评测的数值答案
 |---|---|---|---|---:|
 | [SDSS DR17 星系](datasets/sdss_dr17_sdss)<br>`sdss_dr17/galaxy_spectroscopic_redshift` | 五个波段的消光校正星等及其测量误差 | 星系的光谱红移 | 无量纲 | 52,068 |
 
+### 电竞与游戏
+
+| 数据源与任务 ID | 输入 | 预测目标 | 单位或量表 | 样本数 |
+|---|---|---|---|---:|
+| [Dota 2 职业赛](datasets/dota2_pro_dota) · **扩展**<br>`dota2_pro/remaining_match_seconds` | 第 10 分钟双方英雄阵容和各队累计获得的金币 | 从第 10 分钟到比赛结束的剩余时间 | 秒 | 90,530 |
+| [超级马力欧创作家](datasets/smmnet_mario) · **扩展**<br>`smmnet/future_clear_rate` | 关卡风格和首次观测时的尝试数、通关数、玩家数 | 此后约一个月新增尝试的通关率 | % | 2,677 |
+| [星际争霸 II 天梯](datasets/uci_272_starcraft) · **扩展**<br>`uci_272/actions_per_minute` | 天梯段位、年龄、自报每周及累计游戏时数 | 该局平均每分钟操作数（APM） | 次/分钟 | 3,336 |
+
 ## 训练与评测划分
 
 | 来源 | 可用的划分 |
 |---|---|
 | CompLex、ASAP 2.0、NASA C-MAPSS、UJIIndoorLoc（4 个来源） | `split` 保留原发布方提供的分区。各来源提供的分区种类可能不同。 |
 | v2.4.0 新增的 7 个来源 | 样本中的 `split` 为 `unassigned`。可按 `sample_id` 关联[建议划分表](splits/batch5/assignments.csv.gz)。例如，同一个词的三个评分放在同一分区，零售数据按预测周先后划分。[各分区样本数](splits/batch5/summary.json) |
+| v2.5.0 新增的 3 个游戏来源 | 按 `sample_id` 关联[电竞与游戏划分表](splits/batch6/assignments.csv.gz)。Dota 2 按开赛年份，马力欧按关卡制作者及相同输入，星际争霸按相同玩家背景分组。源记录的 `split` 为 `unassigned`。[各分区样本数](splits/batch6/summary.json) |
 | 其余 41 个来源 | `split` 为 `unassigned`。各来源的 `metadata.json` 说明了可用的分组或时间信息，供实验时选择划分。 |
 
 比较未见受试者或新时间段的表现时，应在相应的人群或时间段上留出数据。CompLex 的官方分区仍有部分关联样本跨区，相关标记保存在 `quality_flags`。比较跨领域表现时，各任务应使用各自的量纲报告误差。
@@ -167,7 +176,7 @@ print(sample["label"])   # 用于监督或评测的数值答案
 
 缺失的输入保留为 `null`，缺失目标的记录不纳入。小数最多保留 12 位有效数字。英文 `prompt` 已经指明要预测什么。如果使用结构化 `input` 训练多任务模型，请同时提供 `task_id` 或目标说明。SGEMM 的四次运行读数（`target_observations`）和 BIDMC 的两位标注者计数（`annotator_breath_counts`）用于计算标签，应留作核验。
 
-有些目标需要结合同期观测来理解。北京 PM2.5 用当小时天气估计当小时浓度。FRED-MD 的下月预测使用固定版本的历史修订数据。蛋白质结构数据缺少蛋白质 ID，按描述量分组无法验证是否泛化到了新蛋白。燃气轮机排放和联合循环电厂共享 `turkish_power_plant` 数据家族。各来源的限制见对应目录的 `metadata.json`。[v2.3.0 质量报告](reports/quality_report_v2.3.0_zh.md) · [v2.4.0 质量报告](reports/quality_report_v2.4.0_zh.md)
+有些目标需要结合同期观测来理解。北京 PM2.5 用当小时天气估计当小时浓度。FRED-MD 的下月预测使用固定版本的历史修订数据。蛋白质结构数据缺少蛋白质 ID，按描述量分组无法验证是否泛化到了新蛋白。燃气轮机排放和联合循环电厂共享 `turkish_power_plant` 数据家族。各来源的限制见对应目录的 `metadata.json`。[v2.3.0 质量报告](reports/quality_report_v2.3.0_zh.md) · [v2.4.0 质量报告](reports/quality_report_v2.4.0_zh.md) · [v2.5.0 质量报告](reports/quality_report_v2.5.0_zh.md)
 
 ## 校验与复现
 
@@ -177,6 +186,6 @@ print(sample["label"])   # 用于监督或评测的数值答案
 python3 scripts/verify_release.py
 ```
 
-各分片路径、数量和 SHA-256 见[发布清单](manifest.json)。从原始数据重建时，前 29 个来源使用 [v2.1.0 预处理入口](preprocessing/rebuild.py) 和[依赖清单](preprocessing/requirements.txt)，后续批次各有复现说明。[v2.2.0](preprocessing/batch3/README.md) · [v2.3.0](preprocessing/batch4/README.md) · [v2.4.0](preprocessing/batch5/README.md)
+各分片路径、数量和 SHA-256 见[发布清单](manifest.json)。从原始数据重建时，前 29 个来源使用 [v2.1.0 预处理入口](preprocessing/rebuild.py) 和[依赖清单](preprocessing/requirements.txt)，后续批次各有复现说明。[v2.2.0](preprocessing/batch3/README.md) · [v2.3.0](preprocessing/batch4/README.md) · [v2.4.0](preprocessing/batch5/README.md) · [v2.5.0](preprocessing/batch6/README.md)
 
 使用数据时，请按来源引用原作者和 DOI，并注明使用的仓库版本或提交号。各来源独立授权，署名和许可见[数据许可清单](DATA_LICENSES.md)。

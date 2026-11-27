@@ -1,0 +1,2192 @@
+{
+  "version": "2.4.0",
+  "created_date": "2026-11-09",
+  "datasets": [
+    {
+      "uci_id": 165,
+      "name": "Concrete Compressive Strength",
+      "raw_rows_selected": 1030,
+      "raw_exact_duplicate_rows": 25,
+      "candidate_task_examples": 1030,
+      "invalid_label_examples": 0,
+      "output_examples": 1005,
+      "collapsed_duplicate_examples": 25,
+      "task_count": 1,
+      "split_groups": 428,
+      "input_field_count": 8,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 9,
+      "source_url": "https://archive.ics.uci.edu/dataset/165/concrete+compressive+strength",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_165_concrete_strength/part-00001.jsonl.gz",
+          "records": 1005,
+          "sha256": "904d69b2bc4251d3181ecad15967678d3d57ca121feb8486906efdf3e7a6d39a",
+          "bytes": 101363
+        }
+      ],
+      "uncompressed_sha256": "6f9a9cf76c1f30beac89d9e11bece8b6b0c79dca1029c8a21caefcb8cb87457c"
+    },
+    {
+      "uci_id": 242,
+      "name": "Energy Efficiency",
+      "raw_rows_selected": 768,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1536,
+      "invalid_label_examples": 0,
+      "output_examples": 1536,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 2,
+      "split_groups": 12,
+      "input_field_count": 8,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/242/energy+efficiency",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_242_energy_efficiency/part-00001.jsonl.gz",
+          "records": 1536,
+          "sha256": "5cbc5be78422c74282c070c14f2b2c608b72a17e70f1566fa9aee1b8d83574ae",
+          "bytes": 94017
+        }
+      ],
+      "uncompressed_sha256": "57469df967c389fedf02c1bacbd8fcad33ab6abaae604c96bf5e64b3d9d27fa2"
+    },
+    {
+      "uci_id": 294,
+      "name": "Combined Cycle Power Plant",
+      "raw_rows_selected": 9568,
+      "raw_exact_duplicate_rows": 41,
+      "candidate_task_examples": 9568,
+      "invalid_label_examples": 0,
+      "output_examples": 9527,
+      "collapsed_duplicate_examples": 41,
+      "task_count": 1,
+      "split_groups": 9527,
+      "input_field_count": 4,
+      "examples_with_null_input": 0,
+      "flagged_examples": 55,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/294/combined+cycle+power+plant",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_294_combined_cycle_power/part-00001.jsonl.gz",
+          "records": 9527,
+          "sha256": "ef452a6457410f4613d00f41974595cb43b0578e84befc04cdd7d576ecfaf422",
+          "bytes": 1039256
+        }
+      ],
+      "uncompressed_sha256": "6f59aae13a92d60ab278852f8e28b814b81d3e1b8199d3ae9d1fb9dbca056194"
+    },
+    {
+      "uci_id": 291,
+      "name": "Airfoil Self-Noise",
+      "raw_rows_selected": 1503,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1503,
+      "invalid_label_examples": 0,
+      "output_examples": 1503,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 106,
+      "input_field_count": 5,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/291/airfoil+self+noise",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_291_airfoil_noise/part-00001.jsonl.gz",
+          "records": 1503,
+          "sha256": "2fc98e6ea44a0b960d149c10c6c0a3226ec5a9837ca80d04c093572add60ef77",
+          "bytes": 125262
+        }
+      ],
+      "uncompressed_sha256": "46dc18d9fa4bcfcd700a2dd449905ae52d3f6e9a87bde5212c186f0e4cd20fb0"
+    },
+    {
+      "uci_id": 243,
+      "name": "Yacht Hydrodynamics",
+      "raw_rows_selected": 308,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 308,
+      "invalid_label_examples": 0,
+      "output_examples": 308,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 22,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/243/yacht+hydrodynamics",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_243_yacht_resistance/part-00001.jsonl.gz",
+          "records": 308,
+          "sha256": "98e44c9c406b0fc6aca2d74591f8fb09b7e91fe5f6066acbe8407d62a37abdde",
+          "bytes": 25676
+        }
+      ],
+      "uncompressed_sha256": "30d1d38803614b67f1a51694d3abd5361cae89155e2ce2085a9ab55c16ac0f73"
+    },
+    {
+      "uci_id": 1,
+      "name": "Abalone",
+      "raw_rows_selected": 4177,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 4177,
+      "invalid_label_examples": 0,
+      "output_examples": 4177,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 4177,
+      "input_field_count": 8,
+      "examples_with_null_input": 2,
+      "flagged_examples": 3,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/1/abalone",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_1_abalone_rings/part-00001.jsonl.gz",
+          "records": 4177,
+          "sha256": "f963e60b442486d922bcb00cbca6898b36a4edcc66b5976d00ddf4887d6a6b9c",
+          "bytes": 491703
+        }
+      ],
+      "uncompressed_sha256": "8677e532c744dfe63f0e3d719076e8cdd2b03f0c22a3ac6b4b676ae7197b5aa5"
+    },
+    {
+      "uci_id": 9,
+      "name": "Auto MPG",
+      "raw_rows_selected": 398,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 398,
+      "invalid_label_examples": 0,
+      "output_examples": 398,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 305,
+      "input_field_count": 7,
+      "examples_with_null_input": 6,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/9/auto+mpg",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_9_auto_mpg/part-00001.jsonl.gz",
+          "records": 398,
+          "sha256": "e3a50096decaf5278ab596f516fdb9922bee0c0397857f76c45a135f953453db",
+          "bytes": 41014
+        }
+      ],
+      "uncompressed_sha256": "ce85884d92c6b4ca952d551b5ffa19c40af2dfe93e83b90169c62f9d662aca1c"
+    },
+    {
+      "uci_id": 477,
+      "name": "Real Estate Valuation",
+      "raw_rows_selected": 414,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 414,
+      "invalid_label_examples": 0,
+      "output_examples": 414,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 369,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 20,
+      "source_url": "https://archive.ics.uci.edu/dataset/477/real+estate+valuation+data+set",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_477_real_estate/part-00001.jsonl.gz",
+          "records": 414,
+          "sha256": "5bfbed9d212b53d0701f7f5217fe15fd4e7b766e184ef246a3da6583a54a8bd0",
+          "bytes": 50221
+        }
+      ],
+      "uncompressed_sha256": "917c4304f22baa80409272cf68eca284dfec0ca7adea0a862de0385daf7601a7"
+    },
+    {
+      "uci_id": 29,
+      "name": "Computer Hardware",
+      "raw_rows_selected": 209,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 209,
+      "invalid_label_examples": 0,
+      "output_examples": 209,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 190,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 15,
+      "source_url": "https://archive.ics.uci.edu/dataset/29/computer+hardware",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_29_computer_hardware/part-00001.jsonl.gz",
+          "records": 209,
+          "sha256": "30f20396e4c512a8e1256350f57b89b3e02e26673b39519fed3b850a35649f3d",
+          "bytes": 19179
+        }
+      ],
+      "uncompressed_sha256": "55835c64fb0f0647b484e767c6edeb0c0e9880f93bd33638e3923f8b959fc880"
+    },
+    {
+      "uci_id": 87,
+      "name": "Servo",
+      "raw_rows_selected": 167,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 167,
+      "invalid_label_examples": 0,
+      "output_examples": 167,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 167,
+      "input_field_count": 4,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/87/servo",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_87_servo_response/part-00001.jsonl.gz",
+          "records": 167,
+          "sha256": "1b874868f4c02a3dd2f44758fbf434063e5d6c92459e6e8c98ca6a5b0a40cd69",
+          "bytes": 15222
+        }
+      ],
+      "uncompressed_sha256": "1e4e0a895ae940f974d68aea3e16553dc11debc7dbf1542efe20389bbe810b4d"
+    },
+    {
+      "uci_id": 464,
+      "name": "Superconductivty Data",
+      "raw_rows_selected": 21263,
+      "raw_exact_duplicate_rows": 66,
+      "candidate_task_examples": 21263,
+      "invalid_label_examples": 0,
+      "output_examples": 21193,
+      "collapsed_duplicate_examples": 70,
+      "task_count": 1,
+      "split_groups": 15164,
+      "input_field_count": 81,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 2375,
+      "source_url": "https://archive.ics.uci.edu/dataset/464/superconductivty+data",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_464_superconductivity/part-00001.jsonl.gz",
+          "records": 21193,
+          "sha256": "c0f961d38d9c3a214de145fe05459be0f4580d23466be3b73d3a7e7c845bc3c7",
+          "bytes": 17193540
+        }
+      ],
+      "uncompressed_sha256": "762dda6dd6acec429b28718d6caecb7d8ef5774bce379144cc14ce3c8393ef7a"
+    },
+    {
+      "uci_id": 504,
+      "name": "QSAR fish toxicity",
+      "raw_rows_selected": 908,
+      "raw_exact_duplicate_rows": 1,
+      "candidate_task_examples": 908,
+      "invalid_label_examples": 0,
+      "output_examples": 907,
+      "collapsed_duplicate_examples": 1,
+      "task_count": 1,
+      "split_groups": 775,
+      "input_field_count": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 84,
+      "source_url": "https://archive.ics.uci.edu/dataset/504/qsar+fish+toxicity",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_504_fish_toxicity/part-00001.jsonl.gz",
+          "records": 907,
+          "sha256": "f6129de5395ac939e4660b83ec48242b2022cd42950921a25b1a7686d505958a",
+          "bytes": 97670
+        }
+      ],
+      "uncompressed_sha256": "bd7b5dc8aed59f8810c3baa3ce3e78b9ad3b6c7c31692c2da0ff8261b41669fe"
+    },
+    {
+      "uci_id": 186,
+      "name": "Wine Quality",
+      "raw_rows_selected": 6497,
+      "raw_exact_duplicate_rows": 1177,
+      "candidate_task_examples": 6497,
+      "invalid_label_examples": 0,
+      "output_examples": 5320,
+      "collapsed_duplicate_examples": 1177,
+      "task_count": 1,
+      "split_groups": 5320,
+      "input_field_count": 12,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/186/wine+quality",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_186_wine_quality/part-00001.jsonl.gz",
+          "records": 5320,
+          "sha256": "2700c5bcf899a30cbac3a193217d35cad7aa4efc5db10cb5e8c137380a274133",
+          "bytes": 728561
+        }
+      ],
+      "uncompressed_sha256": "deda2e6d958efdbb6ea8a37d5c45518f97e07ef3e572c664ad0d046321feabee"
+    },
+    {
+      "uci_id": 320,
+      "name": "Student Performance",
+      "raw_rows_selected": 1044,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1044,
+      "invalid_label_examples": 0,
+      "output_examples": 1043,
+      "collapsed_duplicate_examples": 1,
+      "task_count": 2,
+      "split_groups": 662,
+      "input_field_count": 30,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 1,
+      "source_url": "https://archive.ics.uci.edu/dataset/320/student+performance",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_320_student_performance/part-00001.jsonl.gz",
+          "records": 1043,
+          "sha256": "b3651e816b19172e95db21a4f5044d85968d142cf180d69c5e966c5928db79db",
+          "bytes": 147671
+        }
+      ],
+      "uncompressed_sha256": "e24750f5aa812446bd3413596a506e7045be737304c7afba6e5ea6d6327bf84b"
+    },
+    {
+      "uci_id": 189,
+      "name": "Parkinsons Telemonitoring",
+      "raw_rows_selected": 5875,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 11750,
+      "invalid_label_examples": 0,
+      "output_examples": 11750,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 2,
+      "split_groups": 42,
+      "input_field_count": 16,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/189/parkinsons+telemonitoring",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_189_parkinsons/part-00001.jsonl.gz",
+          "records": 11750,
+          "sha256": "053723acc43ea9e5bc08d1fa8f7f7594bcfde93d8ad630a38bf109b354b8886b",
+          "bytes": 1506219
+        }
+      ],
+      "uncompressed_sha256": "c554164e09b9242708c0e71c54f4d821ef74e796a8d68ba09a0947baaab03c24"
+    },
+    {
+      "uci_id": 597,
+      "name": "Productivity Prediction of Garment Employees",
+      "raw_rows_selected": 1197,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 1197,
+      "invalid_label_examples": 0,
+      "output_examples": 1197,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 59,
+      "input_field_count": 11,
+      "examples_with_null_input": 506,
+      "flagged_examples": 37,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/597/productivity+prediction+of+garment+employees",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_597_garment_productivity/part-00001.jsonl.gz",
+          "records": 1197,
+          "sha256": "ba537b8796e884fdcaf5ba41ad6d4be4b2a4a8a9d437425d69b63ecac39287a6",
+          "bytes": 133284
+        }
+      ],
+      "uncompressed_sha256": "c7db103100fcd9cbf858e2073da02575649bc00d73182438944342e65537742f"
+    },
+    {
+      "uci_id": 275,
+      "name": "Bike Sharing",
+      "raw_rows_selected": 17379,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 17379,
+      "invalid_label_examples": 0,
+      "output_examples": 17379,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 731,
+      "input_field_count": 10,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_275_bike_sharing/part-00001.jsonl.gz",
+          "records": 17379,
+          "sha256": "9204d8339f54190931f0e7fadd1e2aded1e851882b3e1514ea6e459608b0d2b0",
+          "bytes": 1691786
+        }
+      ],
+      "uncompressed_sha256": "41d2ec8691a148e34819207b144f0855637c805e17a9f74d975d8d18a29ab4c8"
+    },
+    {
+      "uci_id": 492,
+      "name": "Metro Interstate Traffic Volume",
+      "raw_rows_selected": 48204,
+      "raw_exact_duplicate_rows": 17,
+      "candidate_task_examples": 48204,
+      "invalid_label_examples": 0,
+      "output_examples": 48187,
+      "collapsed_duplicate_examples": 17,
+      "task_count": 1,
+      "split_groups": 40575,
+      "input_field_count": 8,
+      "examples_with_null_input": 10,
+      "flagged_examples": 11,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/492/metro+interstate+traffic+volume",
+      "batch": 1,
+      "excluded_source_rows": 0,
+      "files": [
+        {
+          "path": "datasets/uci_492_metro_traffic/part-00001.jsonl.gz",
+          "records": 48187,
+          "sha256": "1a5166d3da9c3a1f4c3abbde39c78a55b63325b166f57084e43a7e815ec8b052",
+          "bytes": 4726850
+        }
+      ],
+      "uncompressed_sha256": "1593dff7ea446563cf13c692f8db980dfe690e602af5b122603eadd70f35182b"
+    },
+    {
+      "uci_id": 10,
+      "name": "Automobile",
+      "batch": 2,
+      "raw_rows_selected": 205,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 201,
+      "invalid_label_examples": 4,
+      "excluded_source_rows": 0,
+      "output_examples": 201,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 138,
+      "input_field_count": 23,
+      "examples_with_null_input": 8,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 8,
+      "source_url": "https://archive.ics.uci.edu/dataset/10/automobile",
+      "files": [
+        {
+          "path": "datasets/uci_10_automobile_price/part-00001.jsonl.gz",
+          "records": 201,
+          "sha256": "d0231717e27d5a5b0b8e77e654b3486d38926c592d6ce579830be4559f0dc6d0",
+          "bytes": 27201
+        }
+      ],
+      "uncompressed_sha256": "ffc2687e92b2f2be5434b5573c683f96bfb751c157cc4ccdfc2b092ff875f305"
+    },
+    {
+      "uci_id": 265,
+      "name": "Physicochemical Properties of Protein Tertiary Structure",
+      "batch": 2,
+      "raw_rows_selected": 45730,
+      "raw_exact_duplicate_rows": 1711,
+      "candidate_task_examples": 45730,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 44019,
+      "collapsed_duplicate_examples": 1711,
+      "task_count": 1,
+      "split_groups": 43974,
+      "input_field_count": 9,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 38,
+      "source_url": "https://archive.ics.uci.edu/dataset/265/physicochemical+properties+of+protein+tertiary+structure",
+      "files": [
+        {
+          "path": "datasets/uci_265_protein_structure/part-00001.jsonl.gz",
+          "records": 44019,
+          "sha256": "0375244e592995c37ce6c21394ab5fafed1f55886b1f43b4745734fd2face057",
+          "bytes": 7377888
+        }
+      ],
+      "uncompressed_sha256": "34778c35ecd1dd80506d2387b0b065b6c4cbd947bb55f341b4a05f5b5e1f2971"
+    },
+    {
+      "uci_id": 560,
+      "name": "Seoul Bike Sharing Demand",
+      "batch": 2,
+      "raw_rows_selected": 8760,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 8760,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 8760,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 365,
+      "input_field_count": 13,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/560/seoul+bike+sharing+demand",
+      "files": [
+        {
+          "path": "datasets/uci_560_seoul_bike/part-00001.jsonl.gz",
+          "records": 8760,
+          "sha256": "469672785da005fc76dcb75a27ada3bd7e3eb6a521524880cbcbd51afde40dfa",
+          "bytes": 1044303
+        }
+      ],
+      "uncompressed_sha256": "d42acf005d6e4b39caa9e89f5fc783cb4146c6023dfdf3664966f8f5052be821"
+    },
+    {
+      "uci_id": 374,
+      "name": "Appliances Energy Prediction",
+      "batch": 2,
+      "raw_rows_selected": 19735,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 19735,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 19735,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 138,
+      "input_field_count": 26,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/374/appliances+energy+prediction",
+      "files": [
+        {
+          "path": "datasets/uci_374_appliances_energy/part-00001.jsonl.gz",
+          "records": 19735,
+          "sha256": "17e83050a31572e4489dc60beae5c6ac9875b8b84c789f9ee580d11945f9faaf",
+          "bytes": 4104747
+        }
+      ],
+      "uncompressed_sha256": "4dde7a1e40dcd956b0aee0529f8adda1bdb876fdc71422168b79c116a24284f4"
+    },
+    {
+      "uci_id": 501,
+      "name": "Beijing Multi-Site Air Quality",
+      "batch": 2,
+      "raw_rows_selected": 420768,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 412029,
+      "invalid_label_examples": 8739,
+      "excluded_source_rows": 0,
+      "output_examples": 412029,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 34983,
+      "input_field_count": 8,
+      "examples_with_null_input": 1885,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/501/beijing+multi+site+air+quality+data",
+      "files": [
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00001.jsonl.gz",
+          "records": 100000,
+          "sha256": "2c424c00fdd65f785714359b4b9b779411eace622a8318ace84291d0228d2e7c",
+          "bytes": 11285739
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00002.jsonl.gz",
+          "records": 100000,
+          "sha256": "1d08e9555360ee8ddc2665a5a52dd576cce078bd8c085a9d45c4cccded61eb0f",
+          "bytes": 11272933
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00003.jsonl.gz",
+          "records": 100000,
+          "sha256": "05d1aa9842e5c5528772fe3583e66222a391f65d9021b20d5464ba01a570b533",
+          "bytes": 11296587
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00004.jsonl.gz",
+          "records": 100000,
+          "sha256": "c523bf59f4481cd4425c5873ab2f82ce81f9b1fe034d40140fc01dce7b391613",
+          "bytes": 11284171
+        },
+        {
+          "path": "datasets/uci_501_beijing_pm25/part-00005.jsonl.gz",
+          "records": 12029,
+          "sha256": "e12a3d7fd9e23cc50ed845cb408ad4c8fc72f3982699897f9dc04497bb56e05d",
+          "bytes": 1360765
+        }
+      ],
+      "uncompressed_sha256": "39a7bd09aad812077bf66e7fc7d144b8cf280447edd2aad317d1ccb63f313c2b"
+    },
+    {
+      "uci_id": 551,
+      "name": "Gas Turbine CO and NOx Emission Data Set",
+      "batch": 2,
+      "raw_rows_selected": 36733,
+      "raw_exact_duplicate_rows": 7,
+      "candidate_task_examples": 73466,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 73452,
+      "collapsed_duplicate_examples": 14,
+      "task_count": 2,
+      "split_groups": 36726,
+      "input_field_count": 9,
+      "examples_with_null_input": 0,
+      "flagged_examples": 956,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/551/gas+turbine+co+and+nox+emission+data+set",
+      "files": [
+        {
+          "path": "datasets/uci_551_gas_turbine_emissions/part-00001.jsonl.gz",
+          "records": 73452,
+          "sha256": "31fafd52f8f7f1936f3d59d107341e1a3cd9e898ccae5e137e978ce44df92354",
+          "bytes": 10810738
+        }
+      ],
+      "uncompressed_sha256": "8a951fdf66474d5432b572d55bf96ac21c7e00948c78a41ecc778db7f409593a"
+    },
+    {
+      "uci_id": 440,
+      "name": "SGEMM GPU kernel performance",
+      "batch": 2,
+      "raw_rows_selected": 241600,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 241600,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 241600,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 241600,
+      "input_field_count": 14,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/440/sgemm+gpu+kernel+performance",
+      "files": [
+        {
+          "path": "datasets/uci_440_sgemm_runtime/part-00001.jsonl.gz",
+          "records": 100000,
+          "sha256": "dc9a84f3a32bcf2e511fa1e365cad72205c1f5d8691b46f7a54ae8d772c77c93",
+          "bytes": 9565169
+        },
+        {
+          "path": "datasets/uci_440_sgemm_runtime/part-00002.jsonl.gz",
+          "records": 100000,
+          "sha256": "622fb419c9b49beefddebbdf9c63e841b14b65e8253017dedd505240942a7aa7",
+          "bytes": 9638849
+        },
+        {
+          "path": "datasets/uci_440_sgemm_runtime/part-00003.jsonl.gz",
+          "records": 41600,
+          "sha256": "89bacd414e5e254a6c580ccbb1562e0ae3a8a07ac137871140b0749061b9735f",
+          "bytes": 4116677
+        }
+      ],
+      "uncompressed_sha256": "509fcbd7bf9f12fdf82521f68a1ef2665f4563668a8159ae78676c25e0661788"
+    },
+    {
+      "uci_id": 332,
+      "name": "Online News Popularity",
+      "batch": 2,
+      "raw_rows_selected": 39644,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 39644,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 39644,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 39644,
+      "input_field_count": 42,
+      "examples_with_null_input": 1,
+      "flagged_examples": 1,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/332/online+news+popularity",
+      "files": [
+        {
+          "path": "datasets/uci_332_news_popularity/part-00001.jsonl.gz",
+          "records": 39644,
+          "sha256": "748843d5f7262e6fe492247f155cda98d5f1292534790f7b5d83f73caaa246ea",
+          "bytes": 12303580
+        }
+      ],
+      "uncompressed_sha256": "35a83067bad432ff112c2de960a1155d5d5824790db5a1e4a0a9fd6d5f896968"
+    },
+    {
+      "uci_id": 555,
+      "name": "Apartment for Rent Classified",
+      "batch": 2,
+      "raw_rows_selected": 99492,
+      "raw_exact_duplicate_rows": 84,
+      "candidate_task_examples": 99426,
+      "invalid_label_examples": 1,
+      "excluded_source_rows": 65,
+      "output_examples": 99277,
+      "collapsed_duplicate_examples": 149,
+      "task_count": 1,
+      "split_groups": 61375,
+      "input_field_count": 11,
+      "examples_with_null_input": 68994,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 186,
+      "source_url": "https://archive.ics.uci.edu/dataset/555/apartment+for+rent+classified",
+      "files": [
+        {
+          "path": "datasets/uci_555_apartment_rent/part-00001.jsonl.gz",
+          "records": 99277,
+          "sha256": "1fbf6a8725a7a25f680282869af3e6f29140e7402352adff70ab44aaf35f97f5",
+          "bytes": 41889743
+        }
+      ],
+      "uncompressed_sha256": "36f5d2a5cf6b57812294e7b6df23522b6265ffbbcf27913c2fdaecf3b393eaa7"
+    },
+    {
+      "uci_id": 162,
+      "name": "Forest Fires",
+      "batch": 2,
+      "raw_rows_selected": 517,
+      "raw_exact_duplicate_rows": 4,
+      "candidate_task_examples": 517,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 513,
+      "collapsed_duplicate_examples": 4,
+      "task_count": 1,
+      "split_groups": 36,
+      "input_field_count": 12,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 8,
+      "source_url": "https://archive.ics.uci.edu/dataset/162/forest+fires",
+      "files": [
+        {
+          "path": "datasets/uci_162_forest_fires/part-00001.jsonl.gz",
+          "records": 513,
+          "sha256": "e3f7e09d7755c09a9315eed1756dc5f6cf56e917d1da2d97145b0af9c704b3f7",
+          "bytes": 61979
+        }
+      ],
+      "uncompressed_sha256": "bcf2ac91d43309d2430189c51f3a7a34d9f374715c56a84b4f1eace63197f0dc"
+    },
+    {
+      "uci_id": 925,
+      "name": "Infrared Thermography Temperature",
+      "batch": 2,
+      "raw_rows_selected": 2029,
+      "raw_exact_duplicate_rows": 0,
+      "candidate_task_examples": 2029,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "output_examples": 2029,
+      "collapsed_duplicate_examples": 0,
+      "task_count": 1,
+      "split_groups": 1026,
+      "input_field_count": 34,
+      "examples_with_null_input": 5,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "source_url": "https://archive.ics.uci.edu/dataset/925/infrared+thermography+temperature+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_925_infrared_temperature/part-00001.jsonl.gz",
+          "records": 2029,
+          "sha256": "5bf9693faf51817dc93e39e0cec610439c748eb31efb48f4162e20e4160e61a8",
+          "bytes": 679139
+        }
+      ],
+      "uncompressed_sha256": "96db79263b25ebba0e56095f28177adfe782de5116ebfcf4ae21f967d77621a1"
+    },
+    {
+      "dataset_id": "complex",
+      "name": "CompLex 2.0 / SemEval 2021 Task 1",
+      "batch": 3,
+      "candidate_id": "T1",
+      "raw_rows_selected": 10800,
+      "candidate_task_examples": 10800,
+      "output_examples": 10800,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 3814,
+      "examples_with_null_input": 0,
+      "flagged_examples": 3910,
+      "identical_input_different_label_groups": 5,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 176,
+      "split_counts": {
+        "train": 9179,
+        "validation": 520,
+        "test": 1101
+      },
+      "source_url": "https://github.com/MMU-TDMLab/CompLex",
+      "files": [
+        {
+          "path": "datasets/complex_complex/part-00001.jsonl.gz",
+          "records": 10800,
+          "sha256": "c8138b055b0df5dd0d31b96833897167a30bd71ff5a5d7b9f8af8f76bafbf9f0",
+          "bytes": 2311454
+        }
+      ],
+      "uncompressed_sha256": "9d402516a0017bc2048d58a3d71befd83d069c62e445043998b5f461e914d40f"
+    },
+    {
+      "dataset_id": "empathy",
+      "name": "Empathic Reactions (EMNLP 2018)",
+      "batch": 3,
+      "candidate_id": "T2",
+      "raw_rows_selected": 1860,
+      "candidate_task_examples": 3720,
+      "output_examples": 3720,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 2,
+      "split_groups": 372,
+      "examples_with_null_input": 0,
+      "flagged_examples": 3720,
+      "identical_input_different_label_groups": 2,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 3720
+      },
+      "source_url": "https://github.com/wwbp/empathic_reactions",
+      "files": [
+        {
+          "path": "datasets/empathy_empathy/part-00001.jsonl.gz",
+          "records": 3720,
+          "sha256": "fb29a7cf93e64193efe9d26b080f9e07e4c39efa7c4d8d39c1989ac5211c9ab7",
+          "bytes": 691417
+        }
+      ],
+      "uncompressed_sha256": "6f2096695c858c126b763d1f276c3f041440129d65044886f14f56540936c88e"
+    },
+    {
+      "dataset_id": "asap2",
+      "name": "ASAP 2.0 (essay and assignment only)",
+      "batch": 3,
+      "candidate_id": "T3",
+      "raw_rows_selected": 24728,
+      "candidate_task_examples": 24728,
+      "output_examples": 24728,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 24728,
+      "examples_with_null_input": 28,
+      "flagged_examples": 24728,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "train": 17307,
+        "test": 7421
+      },
+      "source_url": "https://github.com/scrosseye/ASAP_2.0",
+      "files": [
+        {
+          "path": "datasets/asap2_asap2/part-00001.jsonl.gz",
+          "records": 5124,
+          "sha256": "664e6577f08118f342aa470039b22a8bfdf7b7f870fd61f8164659d5a8533a71",
+          "bytes": 4172492
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00002.jsonl.gz",
+          "records": 4933,
+          "sha256": "64401f87d68fa248d6d1289597fadd9f33ca31814dcd024dd4ec433b47303bfa",
+          "bytes": 4235441
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00003.jsonl.gz",
+          "records": 4936,
+          "sha256": "d34b6f73dc2e89ae8a2ae6ce2b24a78c780b06ad7e6ce6d0eb6b163cf1548e5b",
+          "bytes": 4593234
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00004.jsonl.gz",
+          "records": 4869,
+          "sha256": "0a32db81005e549290704cadbb7df18672b390a3217faeb294577da5d2d4b036",
+          "bytes": 4503562
+        },
+        {
+          "path": "datasets/asap2_asap2/part-00005.jsonl.gz",
+          "records": 4866,
+          "sha256": "ce768c75deb488a3e70c537795284582a928eef276f9a2afd5668dc1ade80334",
+          "bytes": 4472804
+        }
+      ],
+      "uncompressed_sha256": "d40b26b22ceb95f9b0cff59aab61ad0199e18512984ea2119a234848c11a0caa"
+    },
+    {
+      "dataset_id": "freesolv",
+      "name": "FreeSolv experimental hydration free energy",
+      "batch": 3,
+      "candidate_id": "S1",
+      "raw_rows_selected": 642,
+      "candidate_task_examples": 642,
+      "output_examples": 642,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 63,
+      "examples_with_null_input": 0,
+      "flagged_examples": 642,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 642
+      },
+      "source_url": "https://github.com/MobleyLab/FreeSolv",
+      "files": [
+        {
+          "path": "datasets/freesolv_freesolv/part-00001.jsonl.gz",
+          "records": 642,
+          "sha256": "648e490518ac25b48d94cbac888562bfaff743707a6864ff593b597d35605bd3",
+          "bytes": 70431
+        }
+      ],
+      "uncompressed_sha256": "a206fc32f2eae54bfd8ce7745fa7baff6d3dd7213443e3d0db8c7e4bc5d4be6e"
+    },
+    {
+      "dataset_id": "gb1",
+      "name": "Wu 2016 GB1 four-site observed binding fitness",
+      "batch": 3,
+      "candidate_id": "S2",
+      "raw_rows_selected": 191157,
+      "candidate_task_examples": 149361,
+      "output_examples": 149361,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 9209,
+      "excluded_source_rows": 41796,
+      "task_count": 1,
+      "split_groups": 149361,
+      "examples_with_null_input": 0,
+      "flagged_examples": 149361,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 149361
+      },
+      "source_url": "https://github.com/wchnicholas/ProteinGFourMutants",
+      "files": [
+        {
+          "path": "datasets/gb1_gb1/part-00001.jsonl.gz",
+          "records": 20000,
+          "sha256": "00832e7763e7114d95e9cf0dca5f9e2afa8bd69c66fe409b7c38f415b894aa5a",
+          "bytes": 2172241
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00002.jsonl.gz",
+          "records": 20000,
+          "sha256": "99f098615271f16d554c310ad419d083cc3a0a50532e1c38bfb906b12e90d412",
+          "bytes": 2175343
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00003.jsonl.gz",
+          "records": 20000,
+          "sha256": "52be67571492687b6530ceb275a9371315957d972b8da921a882a686a1998b06",
+          "bytes": 2177968
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00004.jsonl.gz",
+          "records": 20000,
+          "sha256": "784b7bd6d6ad49fa0fd35ff73294ab3af0b021b2b044517843d482937b5d31d6",
+          "bytes": 2179334
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00005.jsonl.gz",
+          "records": 20000,
+          "sha256": "cb8d6a3cb5554c0d6a1a6bbfc3f8d9b1de465f7af6d5b8cf57d9a06669b7e791",
+          "bytes": 2174744
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00006.jsonl.gz",
+          "records": 20000,
+          "sha256": "398b79db0d3d588c49209562cdc66db91242b451a297f2433f8c180c17c58cdf",
+          "bytes": 2175436
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00007.jsonl.gz",
+          "records": 20000,
+          "sha256": "778490273d0e7ba7a8f80f4fd1f9ea72a3f2a0976981a1230e2c70fbd0dc2145",
+          "bytes": 2179011
+        },
+        {
+          "path": "datasets/gb1_gb1/part-00008.jsonl.gz",
+          "records": 9361,
+          "sha256": "3d1d2c821176c55159f07a00ee324db22b957da84890323364ff694a32f35461",
+          "bytes": 1022127
+        }
+      ],
+      "uncompressed_sha256": "f45fe8773f51936949ce0c102a70cb9744a3fa86569b4e91c4a494aaed53156e"
+    },
+    {
+      "dataset_id": "jdft2d",
+      "name": "JARVIS 2D / Matbench jdft2d",
+      "batch": 3,
+      "candidate_id": "S4",
+      "raw_rows_selected": 636,
+      "candidate_task_examples": 636,
+      "output_examples": 636,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 568,
+      "examples_with_null_input": 0,
+      "flagged_examples": 636,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 636
+      },
+      "source_url": "https://figshare.com/articles/dataset/jdft_2d-7-7-2018_json/6815705/1",
+      "files": [
+        {
+          "path": "datasets/jdft2d_jdft2d/part-00001.jsonl.gz",
+          "records": 636,
+          "sha256": "3dc7c685d5242f8e6072febb27169019f1396e09475b0c6340e255dda5780045",
+          "bytes": 209004
+        }
+      ],
+      "uncompressed_sha256": "509ac4e9bf118f2417969ef572bca56bc3fd808a4f7921738a231035da092a65"
+    },
+    {
+      "dataset_id": "cmapss",
+      "name": "NASA C-MAPSS turbofan degradation",
+      "batch": 3,
+      "candidate_id": "H1",
+      "raw_rows_selected": 265256,
+      "candidate_task_examples": 15627,
+      "output_examples": 15627,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 1399,
+      "examples_with_null_input": 0,
+      "flagged_examples": 15627,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "train": 14937,
+        "test": 690
+      },
+      "source_url": "https://zenodo.org/records/15346912",
+      "files": [
+        {
+          "path": "datasets/cmapss_cmapss/part-00001.jsonl.gz",
+          "records": 2790,
+          "sha256": "d9f685a90486067f15a536040996a2d7bb5f92600aed2e765c984bd952fe8edd",
+          "bytes": 1951056
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00002.jsonl.gz",
+          "records": 2818,
+          "sha256": "60f655e399ba8274d794afcaf50849efbea280e6e7b50a6299cf40b79d08ccdb",
+          "bytes": 2089892
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00003.jsonl.gz",
+          "records": 2801,
+          "sha256": "e5b65a193bed8f3ba7980fd45ae6ef44ceab42e2fea414a4b5d070765a2da11a",
+          "bytes": 2199329
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00004.jsonl.gz",
+          "records": 2799,
+          "sha256": "f4dc4ff757f78e4611c8ae4a8b95f1501d4ba8d47919db1b3b7e8f65f323bdbd",
+          "bytes": 2028337
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00005.jsonl.gz",
+          "records": 2816,
+          "sha256": "52e10876cb5ef0d002a89e7d6a75cdabda3ce85c1717bc6389143d4cfe89b2c4",
+          "bytes": 2082052
+        },
+        {
+          "path": "datasets/cmapss_cmapss/part-00006.jsonl.gz",
+          "records": 1603,
+          "sha256": "0bcbf05528257cdc524f4c657cc8a252479c6f229673bb026276f1f100d6a55c",
+          "bytes": 1418267
+        }
+      ],
+      "uncompressed_sha256": "7fb81852fd727548b7ba3dc086afa84fd1f5e2d215c19b0813d2da6b7ced305b"
+    },
+    {
+      "dataset_id": "camels_gb",
+      "name": "CAMELS-GB v1 next-day specific discharge",
+      "batch": 3,
+      "candidate_id": "H2",
+      "raw_rows_selected": 11028556,
+      "candidate_task_examples": 324656,
+      "output_examples": 324656,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 36040,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 671,
+      "examples_with_null_input": 0,
+      "flagged_examples": 324656,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 324656
+      },
+      "source_url": "https://catalogue.ceh.ac.uk/documents/8344e4f3-d2ea-44f5-8afa-86d2987543a9",
+      "files": [
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00001.jsonl.gz",
+          "records": 9439,
+          "sha256": "871435d36e960a67c8c7b744c42755a8b816f0b9cf6b8c0d9f36530d7819e3c9",
+          "bytes": 2520915
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00002.jsonl.gz",
+          "records": 9437,
+          "sha256": "29debcaa7f78517213fed55b5247bbee3a6a411614ec7d81ae2e5c3628dfd3f6",
+          "bytes": 2534221
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00003.jsonl.gz",
+          "records": 9444,
+          "sha256": "e93608a361b876f287666c16ee43d7cc2b4a8bb27a05a6c6f637485b6ddb6eed",
+          "bytes": 2521227
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00004.jsonl.gz",
+          "records": 9441,
+          "sha256": "78e1a7ed65ead733495dc98e5a5db2d3abccfcce25d5dd33fda14d96233ace43",
+          "bytes": 2518558
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00005.jsonl.gz",
+          "records": 9442,
+          "sha256": "1b8f947834be6d7d23dde72e20ead0181e1f693d68009f6f4c5134ff4078b895",
+          "bytes": 2515502
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00006.jsonl.gz",
+          "records": 9444,
+          "sha256": "1ec3d5c37072b1d6eb72e3e25a13ec254399e5a36f461d2ceee6b74790eead24",
+          "bytes": 2496855
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00007.jsonl.gz",
+          "records": 9445,
+          "sha256": "b11d69ee6c5c4fea3a0045a58c0bc2aeb73027c247b0079a0a4884f8e2d38b56",
+          "bytes": 2513246
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00008.jsonl.gz",
+          "records": 9441,
+          "sha256": "26b82674f5b6cf1a7e2aa6c1ddec7a9e01a8a41e02b419d994bc70e7edcb918f",
+          "bytes": 2499084
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00009.jsonl.gz",
+          "records": 9450,
+          "sha256": "6a7df69b31a4a1cc5eb950b8c7f22a01554531d758dd5caa1bc35ff6c9f05ba3",
+          "bytes": 2483586
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00010.jsonl.gz",
+          "records": 9459,
+          "sha256": "3bae453b328b6d83a36a4292c71ed066cd72abac63eb0b4bd65028ab218d9b65",
+          "bytes": 2467195
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00011.jsonl.gz",
+          "records": 9454,
+          "sha256": "e11c397d604137d2fa6efcd3387071c02c9c6718517e1fd7b9b9e313a23a6e7f",
+          "bytes": 2455358
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00012.jsonl.gz",
+          "records": 9456,
+          "sha256": "20d9027bebcfdc1bbd8aa47d996e1dc3132cdd14a93be56110bd5d14b8dc3adf",
+          "bytes": 2460061
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00013.jsonl.gz",
+          "records": 9464,
+          "sha256": "7ec409cedb64d7bea2f0ca73ee7f0912ef51845ebf6bc9746e1529990e57ebc7",
+          "bytes": 2461137
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00014.jsonl.gz",
+          "records": 9455,
+          "sha256": "e49c06f203ce8c1e19285e21dd5d257655ef608011fc74a1cd8bfc81bc970107",
+          "bytes": 2456886
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00015.jsonl.gz",
+          "records": 9451,
+          "sha256": "7f1f71ae4574726eb4b44f75f2d793d10204855fb28ec82f457d0d1d55387fb4",
+          "bytes": 2467059
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00016.jsonl.gz",
+          "records": 9454,
+          "sha256": "35a54f7c191e53ce1f3dadddd66747432d63a42d5fd20331d3d8e3dc1fc0a983",
+          "bytes": 2467839
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00017.jsonl.gz",
+          "records": 9456,
+          "sha256": "d75590feef3ca4a79cc2523fec872514ba156c15a60db49f8efe622c4248c64b",
+          "bytes": 2468857
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00018.jsonl.gz",
+          "records": 9454,
+          "sha256": "2cb0a135a0116637e832d27ea46cdacc386bb1be1303456131c6b74088e0d7c2",
+          "bytes": 2495799
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00019.jsonl.gz",
+          "records": 9458,
+          "sha256": "eadd5a67c70e6c7c816631f237c8acf0f5efc1797718d01c288a2bb17dc46f39",
+          "bytes": 2473920
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00020.jsonl.gz",
+          "records": 9447,
+          "sha256": "0295160f9593a0c6a965e3bb5806f06c805b645ad5731fbc2853a2c33a23dfa7",
+          "bytes": 2497087
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00021.jsonl.gz",
+          "records": 9443,
+          "sha256": "0ea1a67b2205c9a0a1f36b4ce90de7a71efb29bb0c7e47f6ef86966931491ce5",
+          "bytes": 2529520
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00022.jsonl.gz",
+          "records": 9447,
+          "sha256": "f7e0f59c66ab8843c2a964b838f08298da9de666aa2bea46ce7f2a102264bd83",
+          "bytes": 2508083
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00023.jsonl.gz",
+          "records": 9442,
+          "sha256": "a0fa16537ce6938c9e848b7ff4b6fb4b4771c7e36aaef773806ae319ee40b951",
+          "bytes": 2493582
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00024.jsonl.gz",
+          "records": 9446,
+          "sha256": "28d2ab1af88314f251c2a945234e18d2699d555895fb73d1f6693c004f6411d4",
+          "bytes": 2493982
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00025.jsonl.gz",
+          "records": 9437,
+          "sha256": "9dc29ea4c679c79a7495237a8e3599b8cc638146fa032ebda657051e56656b25",
+          "bytes": 2511052
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00026.jsonl.gz",
+          "records": 9436,
+          "sha256": "dc392ab332f68bc828e108af89b12b6e9b108718613698bb652bc436ff3a9596",
+          "bytes": 2541071
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00027.jsonl.gz",
+          "records": 9436,
+          "sha256": "e59a9f33d23681629d901136426186998d9904f8da439710b9595987e2f800c3",
+          "bytes": 2544719
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00028.jsonl.gz",
+          "records": 9433,
+          "sha256": "9ea595bb740958e3d89d980da536ea7fc3f0ebcab0f00d69917cd7f4263ce268",
+          "bytes": 2530882
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00029.jsonl.gz",
+          "records": 9440,
+          "sha256": "4a82932b6ab8eca2d035c83bb85425da2e158a9954f0893426115867dec54fab",
+          "bytes": 2517393
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00030.jsonl.gz",
+          "records": 9433,
+          "sha256": "a997dec505fa8c0411fcd6f1c3b50557a991d7b83cfa5a39e6292133729b8301",
+          "bytes": 2541148
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00031.jsonl.gz",
+          "records": 9434,
+          "sha256": "b9c5f48718aaf30559c9953346ee484c46161f76dd2c7f701fd43ba829dff1bd",
+          "bytes": 2537347
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00032.jsonl.gz",
+          "records": 9434,
+          "sha256": "cc6afcb66316aa3bc4a486c3bcd415a62a0256d114c858c8ec653cd46d2ea56f",
+          "bytes": 2543729
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00033.jsonl.gz",
+          "records": 9436,
+          "sha256": "3d45d41d7ae8e1fdee17135e97cc08cbc896aee68ca93781f90e75e18f76ddff",
+          "bytes": 2533588
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00034.jsonl.gz",
+          "records": 9433,
+          "sha256": "78629a8ad33b35138cb3a9eed89fb90abbd82a554fc5a4fede22e7e410f46ac8",
+          "bytes": 2544326
+        },
+        {
+          "path": "datasets/camels_gb_camels_gb/part-00035.jsonl.gz",
+          "records": 3535,
+          "sha256": "f6be5607e1770bfd1cc4db40973c2a928778d7edc2f604d9524ee14a5811c9b4",
+          "bytes": 959229
+        }
+      ],
+      "uncompressed_sha256": "4ecbfefc9dcee319383261e3b9f8b97cea2434df67fbb09cb9150b463d484995"
+    },
+    {
+      "dataset_id": "uci_713",
+      "name": "Auction Verification",
+      "batch": 3,
+      "candidate_id": "O1",
+      "raw_rows_selected": 2043,
+      "candidate_task_examples": 2043,
+      "output_examples": 2043,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 24,
+      "examples_with_null_input": 0,
+      "flagged_examples": 2043,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 2043
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/713/auction+verification",
+      "files": [
+        {
+          "path": "datasets/uci_713_auction/part-00001.jsonl.gz",
+          "records": 2043,
+          "sha256": "217f4a33a2368072633b137485c1d68a8f5710f306c49209aec0fbc3b17fb478",
+          "bytes": 166216
+        }
+      ],
+      "uncompressed_sha256": "f34ff20eecfe5d1886e3f4e4e725bb67c1cab96b3ee94fa7e5fb3542be367ab8",
+      "uci_id": 713
+    },
+    {
+      "dataset_id": "uci_335",
+      "name": "Online Video Transcoding Time",
+      "batch": 3,
+      "candidate_id": "O2",
+      "raw_rows_selected": 68784,
+      "candidate_task_examples": 68784,
+      "output_examples": 68784,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 1099,
+      "examples_with_null_input": 0,
+      "flagged_examples": 1019,
+      "identical_input_different_label_groups": 81,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 68784
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/335/online+video+characteristics+and+transcoding+time+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_335_transcoding/part-00001.jsonl.gz",
+          "records": 15269,
+          "sha256": "800a2c7e0237c3e8584119278851ccf015f3d96769422a3d41ad6d563b5f9985",
+          "bytes": 1273313
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00002.jsonl.gz",
+          "records": 15292,
+          "sha256": "8be3f0c0edc7450cfb87a6e449d6d10f8bafb1dac6ebd56ff4c788f735277861",
+          "bytes": 1275978
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00003.jsonl.gz",
+          "records": 15278,
+          "sha256": "2c42baf67366cccd0c2bd3509690f39fab740784cd667e01b4d60077bd735360",
+          "bytes": 1274353
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00004.jsonl.gz",
+          "records": 15294,
+          "sha256": "92320774ce912e832d39a75e4ef64a659779309aee9e8cb5d0e1d88a74e6223b",
+          "bytes": 1273733
+        },
+        {
+          "path": "datasets/uci_335_transcoding/part-00005.jsonl.gz",
+          "records": 7651,
+          "sha256": "c88957dac2d7ab1039f06d8c48cfef145c01967276d6f1a16424177fa9b79886",
+          "bytes": 780457
+        }
+      ],
+      "uncompressed_sha256": "238a4ac1e4eb67a1651f0daa887467dc2e18b4db88d3edec253cdd405ad9f0f5",
+      "uci_id": 335
+    },
+    {
+      "dataset_id": "uci_1186",
+      "name": "Paddy Dataset",
+      "batch": 4,
+      "candidate_id": "B4-PADDY",
+      "raw_rows_selected": 2789,
+      "candidate_task_examples": 2789,
+      "output_examples": 2338,
+      "collapsed_duplicate_examples": 451,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 6,
+      "examples_with_null_input": 0,
+      "flagged_examples": 2303,
+      "identical_input_different_label_groups": 375,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 2338
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/1186/paddy+dataset",
+      "files": [
+        {
+          "path": "datasets/uci_1186_paddy/part-00001.jsonl.gz",
+          "records": 2338,
+          "sha256": "54a51c623439109c98b88bb5a546b775638bf507bad7bb51bab5c2d8b9bfb677",
+          "bytes": 280215
+        }
+      ],
+      "uncompressed_sha256": "fd695a9ebbe87f78070eafd2d4e4e5c84319631f0a5d0d56edaa0058ffff97f4",
+      "uci_id": 1186
+    },
+    {
+      "dataset_id": "uci_310",
+      "name": "UJIIndoorLoc",
+      "batch": 4,
+      "candidate_id": "U1",
+      "raw_rows_selected": 21048,
+      "candidate_task_examples": 41944,
+      "output_examples": 40522,
+      "collapsed_duplicate_examples": 1422,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 76,
+      "task_count": 2,
+      "split_groups": 47,
+      "examples_with_null_input": 0,
+      "flagged_examples": 186,
+      "identical_input_different_label_groups": 44,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "train": 38300,
+        "test": 2222
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/310/ujiindoorloc",
+      "files": [
+        {
+          "path": "datasets/uci_310_uji/part-00001.jsonl.gz",
+          "records": 19824,
+          "sha256": "6a907e50fb663403397c7316721cc4736780d19f86423e80b60162175550c555",
+          "bytes": 2361586
+        },
+        {
+          "path": "datasets/uci_310_uji/part-00002.jsonl.gz",
+          "records": 19455,
+          "sha256": "c20656bb9ddd80a8dc6c93f30a73eef6c09fe14370967617ea50d59c40b5bc24",
+          "bytes": 2348630
+        },
+        {
+          "path": "datasets/uci_310_uji/part-00003.jsonl.gz",
+          "records": 1243,
+          "sha256": "b2fe7edf28d6050b26a8ba0710b1d33411a94ab82545fa6ed5566b8764e22522",
+          "bytes": 161262
+        }
+      ],
+      "uncompressed_sha256": "2a5fb5b19ab1013a107b227e4ec4db0f8477fac72dbc3f2d4a4eae4e9604ab08",
+      "uci_id": 310
+    },
+    {
+      "dataset_id": "sdss_dr17",
+      "name": "SDSS-IV DR17 Galaxy Spectroscopic Redshift",
+      "batch": 4,
+      "candidate_id": "SDSS",
+      "raw_rows_selected": 52079,
+      "candidate_task_examples": 52068,
+      "output_examples": 52068,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 11,
+      "task_count": 1,
+      "split_groups": 633,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 52068
+      },
+      "source_url": "https://www.sdss4.org/dr17/",
+      "files": [
+        {
+          "path": "datasets/sdss_dr17_sdss/part-00001.jsonl.gz",
+          "records": 18012,
+          "sha256": "ba4d8519c2dfef12d4c5bb7fdab65f01838c0d766314ddf5969bd06167c633e5",
+          "bytes": 3930525
+        },
+        {
+          "path": "datasets/sdss_dr17_sdss/part-00002.jsonl.gz",
+          "records": 18078,
+          "sha256": "ade8a78a28ac40f2d7ddb5e96e03c5947c8c6f90d634328ad8f59c885232abfa",
+          "bytes": 3921997
+        },
+        {
+          "path": "datasets/sdss_dr17_sdss/part-00003.jsonl.gz",
+          "records": 15978,
+          "sha256": "3f7b198b427c11884056d12c1baf908edf9ee7522cb037faaff5cfaaeade2ac2",
+          "bytes": 3480684
+        }
+      ],
+      "uncompressed_sha256": "50cf96b99304a2218ed8a3cae8bb53ce15019aa7a2b9207692ec719022adec25"
+    },
+    {
+      "dataset_id": "fred_md",
+      "name": "FRED-MD archival next-month CPI and unemployment",
+      "batch": 4,
+      "candidate_id": null,
+      "raw_rows_selected": 813,
+      "candidate_task_examples": 1576,
+      "output_examples": 1576,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 2,
+      "excluded_source_rows": 0,
+      "task_count": 2,
+      "split_groups": 788,
+      "examples_with_null_input": 22,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 1576
+      },
+      "source_url": "https://www.stlouisfed.org/research/economists/mccracken/fred-databases",
+      "files": [
+        {
+          "path": "datasets/fred_md_fred/part-00001.jsonl.gz",
+          "records": 1576,
+          "sha256": "621fba624f8aa4ba3adf7ec58d0ccda9aae875958f17d79a2f030106507e12f8",
+          "bytes": 139497
+        }
+      ],
+      "uncompressed_sha256": "d8d32d0b093a2197b311c7a916225d63473136d66cbab0db6b6a2f64954bcc93"
+    },
+    {
+      "dataset_id": "faostat_qcl",
+      "name": "FAOSTAT QCL cereal yields",
+      "batch": 4,
+      "candidate_id": "B4-FAOSTAT",
+      "raw_rows_selected": 23409,
+      "candidate_task_examples": 21311,
+      "output_examples": 21311,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 493,
+      "task_count": 1,
+      "split_groups": 418,
+      "examples_with_null_input": 0,
+      "flagged_examples": 5448,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 21311
+      },
+      "source_url": "https://www.fao.org/faostat/en/#data/QCL",
+      "files": [
+        {
+          "path": "datasets/faostat_qcl_faostat/part-00001.jsonl.gz",
+          "records": 17314,
+          "sha256": "e6b96361afb30f8b360980894d5d0911d72ccf6a83ba3f5b612b49dac897fc2c",
+          "bytes": 2040545
+        },
+        {
+          "path": "datasets/faostat_qcl_faostat/part-00002.jsonl.gz",
+          "records": 3997,
+          "sha256": "df247fc3a2bc88b2c04606c30076481bf26c84e01939e796c8e328f3892c2ea6",
+          "bytes": 473680
+        }
+      ],
+      "uncompressed_sha256": "4bf40e7b48304ecef68a35d60470d96945eff0a0e36422f02ccde08edd202e4c"
+    },
+    {
+      "dataset_id": "uci_487",
+      "name": "Gas sensor array temperature modulation",
+      "batch": 4,
+      "candidate_id": "G1",
+      "raw_rows_selected": 3843160,
+      "candidate_task_examples": 1300,
+      "output_examples": 1300,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 2574897,
+      "task_count": 1,
+      "split_groups": 13,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 1300
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/487/gas+sensor+array+temperature+modulation",
+      "files": [
+        {
+          "path": "datasets/uci_487_gas/part-00001.jsonl.gz",
+          "records": 1300,
+          "sha256": "e5418d9794a0e6f60f05f8b01c301db523fc58c2e8aca4b97d4f5fc7fe90a861",
+          "bytes": 706528
+        }
+      ],
+      "uncompressed_sha256": "523177bc2d3dd3e2bf5dae4e34fccce6a3c569f7398bc32ddaa11cce1b3ed529",
+      "uci_id": 487
+    },
+    {
+      "dataset_id": "lancaster_sensorimotor",
+      "name": "Lancaster Sensorimotor Norms: auditory, visual and haptic strength",
+      "batch": 5,
+      "candidate_id": "B5-LANCASTER",
+      "raw_rows_selected": 39707,
+      "candidate_task_examples": 119121,
+      "output_examples": 119121,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 3,
+      "split_groups": 39707,
+      "examples_with_null_input": 0,
+      "flagged_examples": 119121,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 119121
+      },
+      "source_url": "https://osf.io/7emr6/",
+      "files": [
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00001.jsonl.gz",
+          "records": 20000,
+          "sha256": "bf77bbd6e60d74e8d5bed8604c0c41ad3509208217573e4f60cb34b4d5c3abb1",
+          "bytes": 1427248
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00002.jsonl.gz",
+          "records": 20000,
+          "sha256": "0690838b15c99e37904eb9ce2ac37bbb2a058fc664e5618fac3cf20d8977fc09",
+          "bytes": 1424202
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00003.jsonl.gz",
+          "records": 20000,
+          "sha256": "eacdeae22307a586b2bf2ac6e0f0da54cdeff9e3300318e36653e35e23c57b1a",
+          "bytes": 1426024
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00004.jsonl.gz",
+          "records": 20000,
+          "sha256": "4ce9427c6d492b9fa306a354b978701468b99d78f6a07de5f71e31e09360e07e",
+          "bytes": 1427685
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00005.jsonl.gz",
+          "records": 20000,
+          "sha256": "5ebead5c365d544d1b659186c5f48e4926a899dd0aa99d9c02036c2f3550dab0",
+          "bytes": 1423470
+        },
+        {
+          "path": "datasets/lancaster_sensorimotor_lancaster/part-00006.jsonl.gz",
+          "records": 19121,
+          "sha256": "16f2763a55efacb509739c829aad02a25821d7c5a78ede0c33b1182bb7ae5204",
+          "bytes": 1364483
+        }
+      ],
+      "uncompressed_sha256": "b02bdb3827d961e60fd1b717a0e63a07e928868d11f19f9ce69512ef7d5646cd"
+    },
+    {
+      "dataset_id": "openipf",
+      "name": "OpenIPF adult raw three-lift deadlift results",
+      "batch": 5,
+      "candidate_id": "B5-IPF",
+      "raw_rows_selected": 1540272,
+      "candidate_task_examples": 326853,
+      "output_examples": 312215,
+      "collapsed_duplicate_examples": 14638,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 1213419,
+      "task_count": 1,
+      "split_groups": 123013,
+      "examples_with_null_input": 230166,
+      "flagged_examples": 2483,
+      "identical_input_different_label_groups": 1219,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 312215
+      },
+      "source_url": "https://openpowerlifting.gitlab.io/opl-csv/bulk-csv.html",
+      "files": [
+        {
+          "path": "datasets/openipf_openipf/part-00001.jsonl.gz",
+          "records": 19096,
+          "sha256": "b6116cc1995b83be8a6cb4a79dc64d99e4a2ff8b6d16d1d3239436013a17a9f4",
+          "bytes": 1955490
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00002.jsonl.gz",
+          "records": 19084,
+          "sha256": "42e3d06085b4873643494ddd4b834f4950b8f03cf78545385e71e0da4ecbd434",
+          "bytes": 1944010
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00003.jsonl.gz",
+          "records": 19071,
+          "sha256": "a3e08f723f62496f137c655cdf6b84607d0a6f415c08deb23efdaf4bb47a670d",
+          "bytes": 1938643
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00004.jsonl.gz",
+          "records": 19120,
+          "sha256": "5c526aa4bd343e23aef5996edddde92a4d17d1e6301950e5337d827376883f4f",
+          "bytes": 1938070
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00005.jsonl.gz",
+          "records": 19141,
+          "sha256": "5ae2f02068f0861bf5139c36e18aec8c7acd75185522f9b34bbbf351684d7618",
+          "bytes": 1928568
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00006.jsonl.gz",
+          "records": 19135,
+          "sha256": "7c03a5beec484211d205da39362fdb278ffd177409a2638fd2afca15a92282e2",
+          "bytes": 1951466
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00007.jsonl.gz",
+          "records": 19148,
+          "sha256": "6fd666f1f733a15a710649b60e15206eee91af18fa22cff4fd81da3d9e5bc403",
+          "bytes": 1946789
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00008.jsonl.gz",
+          "records": 19146,
+          "sha256": "bcfa72f3ebcfb9b24179ba3b56eedcbbb04286af127732d0255c8e84ecffef9c",
+          "bytes": 1952721
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00009.jsonl.gz",
+          "records": 19120,
+          "sha256": "3f3e3eb02996a4189b93946801e0b1bf41998357ce6bb2b77d3fb4c09c72d8b3",
+          "bytes": 1948388
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00010.jsonl.gz",
+          "records": 19088,
+          "sha256": "1e5b09c4fab821b07c3f7b3ec0fea975760b27ed21d704bb7487c29e12a85c1f",
+          "bytes": 1934905
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00011.jsonl.gz",
+          "records": 19157,
+          "sha256": "e12ad33d7f38e0999148f108d80318b55769875d8fcaea09376af040c5571d35",
+          "bytes": 1922162
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00012.jsonl.gz",
+          "records": 19074,
+          "sha256": "4277c7620f351176dd65702c40e2586837a18a9fbcf8001e804d4a0b889c5356",
+          "bytes": 1903716
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00013.jsonl.gz",
+          "records": 19045,
+          "sha256": "f2a5d13e1b36288b12080377f2a5e1097fadc23e23f5f37d9502c6aac5bd703a",
+          "bytes": 1962236
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00014.jsonl.gz",
+          "records": 19080,
+          "sha256": "2ccfc8ea09001c219d8f51c8d64ffede0bf1440f9b44b24d4c6b0ed0137127bd",
+          "bytes": 1964251
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00015.jsonl.gz",
+          "records": 19027,
+          "sha256": "15bdaeabe26e25cb43eade44ecc9e6ad38ef6697cd44d86c1b65ca404d4857bd",
+          "bytes": 1948314
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00016.jsonl.gz",
+          "records": 19037,
+          "sha256": "6c5da0407ebd2eac469151c6b0a63c9b126dc1bed1149ce5d91298ec461e94fb",
+          "bytes": 1964287
+        },
+        {
+          "path": "datasets/openipf_openipf/part-00017.jsonl.gz",
+          "records": 6646,
+          "sha256": "6eca68071c90dcb238afad8ed983c0e018ab0eea7893948d05335e589a86220e",
+          "bytes": 673146
+        }
+      ],
+      "uncompressed_sha256": "cd05cefbef27712a007fa71e8349311e8ec9a8fdb584796c0641a89279b8bf08"
+    },
+    {
+      "dataset_id": "uci_396",
+      "name": "Sales Transactions Weekly: next-week purchased quantity",
+      "batch": 5,
+      "candidate_id": "B5-RETAIL",
+      "raw_rows_selected": 811,
+      "candidate_task_examples": 35684,
+      "output_examples": 35684,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 811,
+      "examples_with_null_input": 0,
+      "flagged_examples": 35684,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 35684
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/396/sales+transactions+dataset+weekly",
+      "files": [
+        {
+          "path": "datasets/uci_396_retail/part-00001.jsonl.gz",
+          "records": 17627,
+          "sha256": "e29a7913101cd4a327d4e12896371179f20e6efe480ed4b2190c6f6fef4c3208",
+          "bytes": 1858631
+        },
+        {
+          "path": "datasets/uci_396_retail/part-00002.jsonl.gz",
+          "records": 17650,
+          "sha256": "c483e5dd1effb8a4b264c7dc9cf1b27137b16414dd9a8eebde5368f425b5066a",
+          "bytes": 1842341
+        },
+        {
+          "path": "datasets/uci_396_retail/part-00003.jsonl.gz",
+          "records": 407,
+          "sha256": "94483e25120a02751aff8cffddbadea0f7e97ccdfccaddad8c5e23d6b9edac1f",
+          "bytes": 43721
+        }
+      ],
+      "uncompressed_sha256": "50b8d4e03bdb0ac23d6fb036c7331850d384e61fb1f2024be614c55787613e48",
+      "uci_id": 396
+    },
+    {
+      "dataset_id": "fdm_aktepe",
+      "name": "FDM printing configuration and peak tensile load",
+      "batch": 5,
+      "candidate_id": "FDM",
+      "raw_rows_selected": 500,
+      "candidate_task_examples": 500,
+      "output_examples": 500,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 5,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 500
+      },
+      "source_url": "https://data.mendeley.com/datasets/zd6td6svd6/1",
+      "files": [
+        {
+          "path": "datasets/fdm_aktepe_fdm/part-00001.jsonl.gz",
+          "records": 500,
+          "sha256": "b9a779af38f26bfa1af4d87b57da26eb5b30c6b810b4f7a2be43e84dcecbd51d",
+          "bytes": 46199
+        }
+      ],
+      "uncompressed_sha256": "e5cd837a2fdceeb8a67cf17be582338c8c30d678a9483eb5d2833b25bac537dd"
+    },
+    {
+      "dataset_id": "uci_607",
+      "name": "Synchronous Machine",
+      "batch": 5,
+      "candidate_id": "MOTOR",
+      "raw_rows_selected": 557,
+      "candidate_task_examples": 557,
+      "output_examples": 557,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 31,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 557
+      },
+      "source_url": "https://archive.ics.uci.edu/dataset/607/synchronous+machine+data+set",
+      "files": [
+        {
+          "path": "datasets/uci_607_motor/part-00001.jsonl.gz",
+          "records": 557,
+          "sha256": "8d8ef3d3f4c19d21be42d8cfc2b57a76e1f59c9d052ae4260d64d92ca228b49f",
+          "bytes": 43824
+        }
+      ],
+      "uncompressed_sha256": "77246ade47bb60935a8405485c1e6af4357fbb13bd3a66c26e75cf95ea8d169a",
+      "uci_id": 607
+    },
+    {
+      "dataset_id": "fukuchi_running",
+      "name": "Fukuchi treadmill running biomechanics",
+      "batch": 5,
+      "candidate_id": "B5-FUKUCHI",
+      "raw_rows_selected": 904000,
+      "candidate_task_examples": 101,
+      "output_examples": 101,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 0,
+      "task_count": 1,
+      "split_groups": 39,
+      "examples_with_null_input": 0,
+      "flagged_examples": 0,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 101
+      },
+      "source_url": "https://doi.org/10.6084/m9.figshare.4543435.v5",
+      "files": [
+        {
+          "path": "datasets/fukuchi_running_fukuchi/part-00001.jsonl.gz",
+          "records": 101,
+          "sha256": "ed6e64553ff41120725b73c092599d8b92ea95c4f42891d0f22fca1a7b788c40",
+          "bytes": 10849
+        }
+      ],
+      "uncompressed_sha256": "68b488b0685bbea1fc0a3f7f5880244bd3b02d73061fd70aea820a23e3e6d88f"
+    },
+    {
+      "dataset_id": "bidmc_ppg",
+      "name": "BIDMC PPG and manually annotated respiratory rate",
+      "batch": 5,
+      "candidate_id": "B5-BIDMC",
+      "raw_rows_selected": 3180053,
+      "candidate_task_examples": 424,
+      "output_examples": 424,
+      "collapsed_duplicate_examples": 0,
+      "invalid_label_examples": 0,
+      "excluded_source_rows": 53,
+      "task_count": 1,
+      "split_groups": 46,
+      "examples_with_null_input": 0,
+      "flagged_examples": 18,
+      "identical_input_different_label_groups": 0,
+      "cross_official_split_input_groups": 0,
+      "cross_official_split_entity_groups": 0,
+      "split_counts": {
+        "unassigned": 424
+      },
+      "source_url": "https://physionet.org/content/bidmc/1.0.0/",
+      "files": [
+        {
+          "path": "datasets/bidmc_ppg_bidmc/part-00001.jsonl.gz",
+          "records": 424,
+          "sha256": "4ba2cf5ebb78932af3ab521e6f6c5af16879790c3ed91ce9550d1675319fa79d",
+          "bytes": 561425
+        }
+      ],
+      "uncompressed_sha256": "c30760b1e93d2c7b7440cc06845f328ffb357ffe8225f1ab7f21b9b4b4ecc8b4"
+    }
+  ],
+  "dataset_count": 52,
+  "task_count": 61,
+  "total_selected_source_rows": 22239782,
+  "total_examples": 2256193,
+  "collapsed_duplicate_examples": 19721,
+  "invalid_label_examples": 53995,
+  "training_performed": false,
+  "splits_assigned": true,
+  "prompt_language": "English",
+  "local_only": false,
+  "updated_date": "2026-11-26",
+  "excluded_source_rows": 3830810,
+  "record_schema_version": "1.0.0",
+  "batches": [
+    {
+      "batch": 1,
+      "datasets": 18,
+      "tasks": 21,
+      "examples": 126220
+    },
+    {
+      "batch": 2,
+      "datasets": 11,
+      "tasks": 12,
+      "examples": 941259
+    },
+    {
+      "batch": 3,
+      "datasets": 10,
+      "tasks": 11,
+      "examples": 600997,
+      "approved_candidate_ids": [
+        "T1",
+        "T2",
+        "T3",
+        "S1",
+        "S2",
+        "S4",
+        "H1",
+        "H2",
+        "O1",
+        "O2"
+      ]
+    },
+    {
+      "batch": 4,
+      "datasets": 6,
+      "tasks": 8,
+      "examples": 119115,
+      "dataset_ids": [
+        "uci_1186",
+        "uci_310",
+        "sdss_dr17",
+        "fred_md",
+        "faostat_qcl",
+        "uci_487"
+      ]
+    },
+    {
+      "batch": 5,
+      "datasets": 7,
+      "tasks": 9,
+      "examples": 468602,
+      "dataset_ids": [
+        "lancaster_sensorimotor",
+        "openipf",
+        "uci_396",
+        "fdm_aktepe",
+        "uci_607",
+        "fukuchi_running",
+        "bidmc_ppg"
+      ],
+      "suggested_splits": {
+        "path": "splits/batch5/assignments.csv.gz",
+        "records": 468602,
+        "sha256": "c192e59d6201dc0e3ae0e2bf14b61a91b8abf22aaa34c96b22fb78a99616aee6",
+        "summary": "splits/batch5/summary.json",
+        "status": "proposed research partitions; source split fields remain unassigned"
+      }
+    }
+  ],
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "significant_digits": 12,
+    "rule": "Non-integral finite floats rounded to at most 12 significant decimal digits; integers, null and strings unchanged; no fixed decimal-place rounding or clipping.",
+    "relative_error_bound": 5.01e-12,
+    "scope": [
+      "input numeric values",
+      "label",
+      "target_observations"
+    ],
+    "raw_files_changed": false
+  },
+  "distribution_format": "UTF-8 JSON Lines, gzip compressed, at most 100000 records per shard",
+  "source_release": "2.4.0",
+  "distribution_version": "2.4.0-github.1",
+  "split_policy": "Published partitions retained for CompLex, ASAP2, C-MAPSS and UJIIndoorLoc. Other sources use unassigned. Consult per-source metadata for dependencies and split guidance.",
+  "exclusion_count_note": "Source row exclusions only. Excluded engines/windows and unsampled temporal origins have separate source-specific counts; do not add these different units."
+}

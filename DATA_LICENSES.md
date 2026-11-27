@@ -337,3 +337,25 @@ Marco Pimentel, Alistair Johnson, Peter Charlton, David Clifton. 10.13026/C2208R
 [Source](https://physionet.org/content/bidmc/1.0.0/) · [Open Data Commons Attribution License v1.0](https://physionet.org/content/bidmc/view-license/1.0.0/) · [Source manifest](sources/bidmc_ppg/source_manifest.json) · [Preparation and changes](datasets/bidmc_ppg_bidmc/metadata.json)
 
 This adaptation uses the public BIDMC PPG and Respiration Dataset on PhysioNet. The source authors extracted eight-minute ICU segments from MIMIC-II, added two sets of manual breath annotations and exported the data in several formats. We averaged consecutive PLETH samples and summarized manual breath counts in minute windows. Please cite the [original respiratory-rate study](https://doi.org/10.1109/TBME.2016.2613124) and [PhysioNet](https://doi.org/10.1038/s44360-026-00096-z). [Source modification notice](https://physionet.org/files/bidmc/1.0.0/LICENSE)
+
+## Release 2.5.0 attribution
+
+### Professional Dota 2 match time remaining at minute ten
+
+Luis Alberto Sanchez Calderon (2026). Analysis-Ready Live Match Feature Snapshots for Professional Dota 2 (2023–2026), v3. DOI: 10.5281/zenodo.23166182. Telemetry: OpenDota (https://www.opendota.com/). Hero names: The OpenDota Project, odota/dotaconstants, revision 54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5.
+
+[Source](https://zenodo.org/records/23166182) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/dota2_pro/source_manifest.json) · [Preparation and changes](datasets/dota2_pro_dota/metadata.json)
+
+The OpenDota hero-name lookup is distributed under the [MIT License](sources/dota2_pro/OpenDota-MIT-LICENSE.txt).
+
+### Super Mario Maker future course clear rate (SMMnet)
+
+Leonardo Mauro Pereira Moraes and Robson Leonardo Ferreira Cordeiro. SMMnet: A Social Network of Games Dataset. SBBD Dataset Showcase Workshop, 2019. Source telemetry from Nintendo's Super Mario Maker Bookmark.
+
+[Source](https://www.kaggle.com/datasets/leomauro/smmnet) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/smmnet/source_manifest.json) · [Preparation and changes](datasets/smmnet_mario/metadata.json)
+
+### SkillCraft1 StarCraft II replay actions per minute
+
+Blair, M., Thompson, J., Henrey, A., and Chen, B. (2013). SkillCraft1 Master Table Dataset. UCI Machine Learning Repository. https://doi.org/10.24432/C5161N. Study: https://doi.org/10.1371/journal.pone.0075129
+
+[Source](https://archive.ics.uci.edu/dataset/272/skillcraft1+master+table+dataset) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Source manifest](sources/uci_272/source_manifest.json) · [Preparation and changes](datasets/uci_272_starcraft/metadata.json)

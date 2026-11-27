@@ -1,0 +1,17 @@
+{
+  "dota2_pro": {
+    "train": 54934,
+    "validation": 30718,
+    "test": 4878
+  },
+  "smmnet": {
+    "train": 1930,
+    "validation": 368,
+    "test": 379
+  },
+  "uci_272": {
+    "train": 2340,
+    "validation": 505,
+    "test": 491
+  }
+}

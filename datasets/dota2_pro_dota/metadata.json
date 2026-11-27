@@ -1,0 +1,158 @@
+{
+  "name": "Professional Dota 2 match time remaining at minute ten",
+  "dataset_id": "dota2_pro",
+  "dataset_family": "opendota_professional_matches",
+  "candidate_id": "B6-DOTA2",
+  "source_url": "https://zenodo.org/records/23166182",
+  "version": "2.5.0",
+  "source_citation": "Luis Alberto Sanchez Calderon (2026). Analysis-Ready Live Match Feature Snapshots for Professional Dota 2 (2023–2026), v3. DOI: 10.5281/zenodo.23166182. Telemetry: OpenDota (https://www.opendota.com/). Hero names: The OpenDota Project, odota/dotaconstants, revision 54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5.",
+  "license": {
+    "name": "CC BY 4.0 (match data), MIT (OpenDota hero-name lookup)",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "hero_lookup": {
+      "url": "https://raw.githubusercontent.com/odota/dotaconstants/54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5/LICENSE",
+      "notice": "MIT License\n\nCopyright (c) 2017 The OpenDota Project\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all\ncopies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE\nSOFTWARE.\n"
+    }
+  },
+  "source_files": [
+    {
+      "relativepath": "DB_03_Live_Features_ANALYSIS_v3.csv",
+      "url": "https://zenodo.org/records/23166182/files/DB_03_Live_Features_ANALYSIS_v3.csv?download=1",
+      "bytes": 223002035,
+      "sha256": "61b3852b5eedbf0f6f0688564dbd178238c22001741089eb64e736ad1102d044"
+    },
+    {
+      "relativepath": "Reproducibility_Experiment_211_Zenodo_v3.zip",
+      "url": "https://zenodo.org/records/23166182/files/Reproducibility_Experiment_211_Zenodo_v3.zip?download=1",
+      "bytes": 49017881,
+      "sha256": "8191d3ba57289ba79518ac66714766373525e898963e7ecac0971dd5d944b715"
+    },
+    {
+      "relativepath": "opendota-heroes-54d1b83.json",
+      "url": "https://raw.githubusercontent.com/odota/dotaconstants/54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5/build/heroes.json",
+      "bytes": 128700,
+      "sha256": "d08b94dbaa70e0fe3e848f387a2380805418d77082ab58de181a7046c6f6bca3"
+    },
+    {
+      "relativepath": "opendota-54d1b83-LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/odota/dotaconstants/54d1b83415ab32d25cd55ac6f3f1c81d6170f8b5/LICENSE",
+      "bytes": 1077,
+      "sha256": "13d8ee5053b6b9da5448fa298ff1af56cc3994b945e9739a5a38821ea7463abf"
+    }
+  ],
+  "raw_rows_selected": 1007768,
+  "excluded_source_rows": 917238,
+  "target_transform": "audited_match_duration_seconds_minus_600",
+  "preparation": "Joined one minute-ten feature row per match to audited duration in seconds and UTC start date by match_id. Mapped each team's hero IDs to English names with a pinned OpenDota dictionary. The source's rad_total_nw and dire_total_nw sum the five players' gold_t values at 600 seconds. Dates are stored for partitioning. The outcome, later snapshots and final match duration are excluded from the model input.",
+  "split_guidance": "Assign by UTC match start year. Train on 2023–2024, validate on 2025, test on the 2026 matches through March 18 inclusive. The split measures performance on later matches. The same heroes, players or teams may recur over time.",
+  "quality_findings": [
+    "One example per professional match that lasts beyond ten minutes and has timestamp-aligned telemetry.",
+    "Dataset v3 removes 1,849 matches with shifted or irregular economic timestamps from v2.",
+    "Hero names identify the draft. Their list order is a stable identifier order, not pick order."
+  ],
+  "excluded_input_columns": [
+    "match_id",
+    "duration",
+    "duration_min",
+    "radiant_win",
+    "start_time",
+    "block"
+  ],
+  "tasks": {
+    "remaining_match_seconds": {
+      "target_name": "remaining match duration after ten minutes",
+      "unit": "seconds",
+      "type": "continuous",
+      "instruction": "At the ten-minute mark of this professional Dota 2 match, estimate how many more seconds will elapse before the match ends.",
+      "field_description": "radiant_heroes and dire_heroes list the five heroes drafted by each side. radiant_earned_gold and dire_earned_gold give the total gold earned by each side through minute ten."
+    }
+  },
+  "source_version": "Zenodo v3 (2026-10-05), OpenDota constants 54d1b834",
+  "record_schema_version": "1.0.0",
+  "stats": {
+    "dataset_id": "dota2_pro",
+    "name": "Professional Dota 2 match time remaining at minute ten",
+    "batch": 6,
+    "candidate_id": "B6-DOTA2",
+    "raw_rows_selected": 1007768,
+    "candidate_task_examples": 90530,
+    "output_examples": 90530,
+    "collapsed_duplicate_examples": 0,
+    "invalid_label_examples": 0,
+    "excluded_source_rows": 917238,
+    "task_count": 1,
+    "split_groups": 90530,
+    "examples_with_null_input": 0,
+    "flagged_examples": 0,
+    "identical_input_different_label_groups": 0,
+    "cross_official_split_input_groups": 0,
+    "cross_official_split_entity_groups": 0,
+    "split_counts": {
+      "unassigned": 90530
+    },
+    "source_url": "https://zenodo.org/records/23166182",
+    "files": [
+      {
+        "path": "datasets/dota2_pro_dota/part-00001.jsonl.gz",
+        "records": 15036,
+        "sha256": "d9cbfa2159a9aebe63153244090d51983609abbd6cdaea056d5b27443345c2ea",
+        "bytes": 3152389
+      },
+      {
+        "path": "datasets/dota2_pro_dota/part-00002.jsonl.gz",
+        "records": 15016,
+        "sha256": "6e17021a13313223ef21dc9323fe6ffffbb9912732d1456b0e1651c08a6dc6fc",
+        "bytes": 3142537
+      },
+      {
+        "path": "datasets/dota2_pro_dota/part-00003.jsonl.gz",
+        "records": 15048,
+        "sha256": "3cdd0ecf96618a22061fa181a9b51dc3721307a0c4d8489bf3b7ef25f1fca591",
+        "bytes": 3149111
+      },
+      {
+        "path": "datasets/dota2_pro_dota/part-00004.jsonl.gz",
+        "records": 15025,
+        "sha256": "faa669a0fcb06129a21cbb0a0f6affcb8c602f62c3bdc874adf5a7426c03c8da",
+        "bytes": 3140829
+      },
+      {
+        "path": "datasets/dota2_pro_dota/part-00005.jsonl.gz",
+        "records": 14967,
+        "sha256": "7202f9c2ca3f1274c89fe2510f6d742ab0e5c40551882f0ce33e6cd7ca8ba331",
+        "bytes": 3138585
+      },
+      {
+        "path": "datasets/dota2_pro_dota/part-00006.jsonl.gz",
+        "records": 15010,
+        "sha256": "bfbce86ff79fe55792c6292cf1faa406a4fb3bd9f15d69be1e09c99275e0b0c1",
+        "bytes": 3104211
+      },
+      {
+        "path": "datasets/dota2_pro_dota/part-00007.jsonl.gz",
+        "records": 428,
+        "sha256": "e2b0335479f229a4b9d8e0df52ae88ad135fde8f41ae1cad8585927f31a7ff6d",
+        "bytes": 89799
+      }
+    ],
+    "uncompressed_sha256": "49b50f83dee0b5a304e1a77181ba5a6836e169c2c21d61cc2930be4c9a9cea23"
+  },
+  "task_statistics": {
+    "remaining_match_seconds": {
+      "prompt_chars_min": 689,
+      "prompt_chars_max": 780,
+      "records": 90530,
+      "label_min": 59,
+      "label_max": 7599,
+      "label_mean": 1412.63655142,
+      "zero_labels": 0
+    }
+  },
+  "quality_flag_counts": {},
+  "numeric_precision": {
+    "id": "significant_digits_12_v1",
+    "relative_error_bound": 5.01e-12
+  },
+  "deduplication_rule": "Same task, normalized input, normalized label AND official split; preserve all source_refs. Across-split copies retained and flagged, same-input dependencies unioned. Different labels retained.",
+  "sample_id_rule": "sha256([task_id,input_hash,label,split]) first 24 hex; official split included to preserve split occurrences."
+}

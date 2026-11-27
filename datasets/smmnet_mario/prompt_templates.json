@@ -1,0 +1,9 @@
+{
+  "future_clear_rate": {
+    "target_name": "future course clear rate",
+    "unit": "percent",
+    "type": "continuous",
+    "instruction": "Estimate what percentage of new attempts at this Super Mario Maker course will clear it over approximately the next 30 days. Return a percentage from 0 to 100.",
+    "field_description": "game_style names the course's game style. initial_attempts counts attempts, initial_clears counts successful attempts, and initial_players counts players, all as recorded at the first observation."
+  }
+}
